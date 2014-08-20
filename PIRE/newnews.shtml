@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Refresh" content="200; newnews.shtml">
+</head>
+
+<body>
+Here's the news!
+<br>
+<br>
+Jason's Server
+<!--#exec cgi="http://jgull8502.homelinux.com/cgi-bin/pireblog_parse_v4.cgi"-->
+<br>
+<br>
+V4 (full)
+<!--#exec cgi="pireblog_parse_v4.cgi"-->
+<br>
+<br>
+V5 (include)
+<!--#include file="pireblog_parse_v6.cgi"-->
+<br>
+<br>
+V5 (exec)
+<!--#exec cgi="pireblog_parse_v6.cgi"-->
