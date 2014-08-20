@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Postdocs</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+img
+{
+float:left;
+}
+p.clear
+{
+clear:right;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.style1 {color: #2932A0}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <h1 align="center">Labs within the CLS</h1>
+
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+	 <div class="person">
+	 Dr. Judy Kroll: <a href="http://cls.psu.edu/people/faculty/kroll_judith.shtml">The Cognition and Language Lab</a><br /><br/>
+	 is currently recruiting undergraduate research assistants. Research in our lab is focused on bilingual language process, including how bilingual speakers 
+		manage to speak words in one language without intrusions from the other language, how adult learners of a second language acquire new vocabulary, 
+		how bilinguals understand sentences in their second language, and what information is available when proficient bilinguals read in one or both 
+		of their two languages<br/><br/>
+	 
+	 Email <a href="http://cls.psu.edu/people/faculty/kroll_judith.shtml">Dr. Kroll</a> at <a href="mailto:jfk7@psu.edu">jfk7@psu.edu</a> for more information!
+	 </div><div class="clearright"></div>
+	<br/>	 
+	 <hr>
+	<br/>	 
+
+	 <div class="person"><img align="left" src="labs/Dussias Lab 2.png" border="1" alt="Dussias Lab" width="300" height="200" style="float:left;margin:0 5px 0 0;"/>
+	 Dr. Giuli Dussias: <a href="http://www.personal.psu.edu/ped10">ISÍ (I see) Eye-tracking Laboratory</a><br /><br/>
+	 In my research program, I have employed behavioral methods (reaction time and eye tracking methodology) to examine reading and 
+	 spoken-language processing while bilinguals read sentences or hear utterances in one of their two languages. My students and I investigate 
+	 whether language-specific information is largely kept independent when bilinguals compute initial syntactic structure for the sentences 
+	 they read and hear, or whether information from one language influences decisions in the other language. The knowledge to be gained from 
+	 our research will contribute a more nuanced characterization of what it means to be a bilingual.<br/><br/>
+	 
+	 The graduate students in my lab and I are always looking for motivated undergraduate students with an interest in language and 
+	 bilingualism, who would like to gain research experience in data collection, data analysis, and experimental design.<br/><br/>
+	 
+	 Email <a href="http://www.personal.psu.edu/ped10/Giuli_Dussias/Welcome.html">Dr. Dussias</a> at ped10 [at] psu [dot] edu for more information!
+	 </div><div class="clearright"></div>
+	<br/>	 
+	 <hr>
+	<br/>	 
+	 <div class="person"><img align="left" src="labs/bild_lab.jpeg" border="1" alt="Van Hell Lab" width="300" height="200" style="float:left;margin:0 5px 0 0;"/>
+	 Dr. Janet van Hell: <a href="http://bild.la.psu.edu/">BiLD (Bilingualism and Language Development) Lab</a><br /><br/>
+	The Bilingualism and Language Development (BiLD) Lab studies the cognitive and neurocognitive processes related to language development, 
+	second language learning, and bilinguals’ use of two languages. We combine experimental and neurocognitive (ERPs) research methodologies. 
+	One of the questions we seek to answer is how L2 learners at different levels of proficiency process words and sentences in each of their 
+	languages, and how one language influences processing in the other language. In a second research line, we study the (neuro)cognitive 
+	processes engaged in one of the hallmarks of bilingual processing: code-switching. We also study sign-speech bilinguals who use spatial and 
+	oral languages from two different modalities. A second research theme in the BiLD Lab focuses on language development in school-aged children 
+	with typical or atypical development, including children with dyslexia or with specific language impairment, and children who are deaf.
+	<br/><br/>
+	We are always looking for motivated undergraduate students who would like to work in our lab and gain research experience. Please contact me 
+	if you are interested in one of the research topics outlined above, or a related topic. Methods of compensation: course credits 
+	(e.g., Independent Study LING 496 or Research Experience PSYCH 494) or work study positions (for undergraduate students who are eligible). 
+	The best time to start working in our lab is at the beginning of the semester. 
+	<br/><br/>
+	Email <a href="http://bild.la.psu.edu/people/principal-investigator">Dr. Janet van Hell</a> at <a a href="mailto:jgv3@psu.edu">jgv3@psu.edu</a> for more information!
+	</div><div class="clearright"></div>
+	<br/>
+	 
+	 <hr>
+	 <div class="person">
+	 Dr. Karen Miller: <a href="http://childlanguagelab.la.psu.edu/">The Language Acquisition Lab</a><br /><br/>
+     We work with children who are learning different varieties of English and Spanish as a first language. We are especially interested in the acquisition of sociolinguistic variation and how variation in the input affects acquisition of the target grammar.
+     <br /><br />
+     We are also interested in acquisition in children who are learning both Spanish and English at the same time. Currently our research is being supported by the <a href="http://www.nsf.gov/">National Science Foundation</a>.<br/><br/>
+	 
+	 Email <a href="http://cls.psu.edu/people/faculty/miller_karen.shtml">Dr. Miller</a> at <a href="mailto:kxm80@psu.edu">kxm80@psu.edu</a> for more information!
+	 </div><div class="clearright"></div>
+	<br/>	 
+	 <hr>
+	 
+	 <!--
+	 <div class="person"><a name= "D" class="name"  >Katharine Donnelly Adams</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Lab Affiliation: <a href="http://www.bild.la.psu.edu/">Bilingualism and Language Development Lab (BiLD lab)</a><br />
+	 Email: <a href="mailto:kda11@psu.edu">kda11 [at] psu.edu</a>
+	 </div><div class="clearright"></div>
+	 
+	 <div class="person"><img align="left" src="people/pics/heimbauer.jpg" border="1" alt="Lisa Heimbauer" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "H" class="name" href="https://sites.google.com/site/lisaheimbauer/">Lisa Heimbauer</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+     Email: <a href="mailto:lisa.heimbauer@gmail.com">lisa.heimbauer [at] gmail.com</a><br />
+	 Lab Affiliation: <a href="http://www.la6.psu.edu/research/WeissLab/index.html">The Comparative Communication Laboratory</a><br />
+     <em>Research Interests:</em><br/>Language-related perceptual and cognitive abilities, including
+	 speech perception, sequence learning, critical aspects of language learning, and language
+	 evolution.
+	 </div><div class="clearright"></div>
+	 
+	 <div class="person"><img align="left" src="people/pics/cruz.png" border="1" alt="María Cruz Martín García" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "M" class="name" href="people/postdoc/cruz.shtml">María Cruz Martín García</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Lab Affiliation: <a href="http://cls.psu.edu/purplelab/">Cognition and Language Lab; The Purple Lab</a><br />
+	 Email: <a href="mum39@psu.edu">mum39 [at] psu.edu</a><br/>
+	 <em>Research Interests:</em><br/>Language processing in bilinguals, executive processes on language selection.
+	 </div><div class="clearright"></div>
+ 
+	 <div class="person"><img align="left" src="people/pics/roman_patricia.jpg" border="1" alt="Patricia Roman" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "R" class="name" href="http://cls.psu.edu/PIRE/people/Roman.html">Patricia E. Rom&aacute;n</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Email: <a href="mailto:roman.patricia.e@gmail.com">roman.patricia.e [at] gmail.com</a><br/>
+	 Lab Affiliation: <a href="http://cls.psu.edu/PIRE/pire_partners_isi_psu.html">IS&Iacute; (I see) Eye-tracking laboratory</a><br/>
+	 <em>Research Interests:</em><br/>Executive processes in memory and language; second language acquisition; bilingualism.
+	 </div><div class="clearright"></div>
+	 
+	 <div class="person"><img align="left" src="people/pics/rossi.jpg" border="1" alt="Eleonora Rossi" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "R" class="name" align="left" href="people/postdoc/rossi_eleonora.shtml">Eleonora Rossi</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University </strong><br />
+	 Lab Affiliation: <a href="http://cls.psu.edu/purplelab/">Cognition and Language Lab; The Purple Lab</a><br />
+     Email: <a href="mailto:exr22@psu.edu">exr22 [at] psu.edu</a><br />
+     <em>Research Interests: </em><br />
+     Bilingualism, second language acquisition, aphasiology, agrammatism, bilingual aphasia, sentence processing.
+	 </div><div class="clearright"></div>
+	 
+	 <div class="person"><img align="left" src="people/pics/Darren_Tanner.jpg" border="1" alt="Darren Tanner" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "T" class="name" href="http://www.personal.psu.edu/dst12/index.html">Darren Tanner</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Lab Affiliation: <a href="http://www.bild.la.psu.edu/">Bilingualism and Language Development Lab (BiLD lab)</a><br />
+     Email: <a href="mailto:dstanner@gmail.com">dstanner [at] gmail.com</a><br />
+     <em>Research Interests:</em><br/>Sentence processing and parsing, second language acquisition, ERPs,
+	 morphosyntax, individual differences in language processing and learning.
+	 </div><div class="clearright"></div>
+	 
+     <div class="person"><img align="left" src="people/pics/Megan_Zirnstein.jpg" border="1" alt="Megan Zirnstein" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "Z" class="name" href="people/postdoc/zirnstein.shtml">Megan Zirnstein</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Lab Affiliation: <a href="http://cls.psu.edu/purplelab/">Cognition and Language Lab; The Purple Lab</a><br />
+	 Email: zirnstein [at] gmail.com<br />
+	 <em>Research Interests:</em><br/>Sentence processing, semantic composition, syntactic priming, individual differences in reading 
+	 behavior and comprehension, bilingual language processing, ERPs, eye tracking.
+	 </div><div class="clearright"></div>
+     
+     
+   -->
+    <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

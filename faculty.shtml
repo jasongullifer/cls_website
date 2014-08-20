@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+<a href="http://cls.psu.edu/index.shtml" title="CLS Home" id="cls_banner_link">Center for Language Science</a>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+	<p class="pagetitle"><a href="index.shtml">Home</a><a> / </a><a href="people.shtml">People</a><a> / </a>Faculty</p>  
+	<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+	<p class="letters"> 
+	A 
+	<a href="#B">B</a> 
+	<a href="#C">C</a> 
+	<a href="#D">D</a> 
+	E 
+	F 
+	<a href="#G">G</a> 
+	<a href="#H">H</a> 
+	I 
+	<a href="#J">J</a> 
+	<a href="#K">K</a> 
+	<a href="#L">L</a> 
+	<a href="#M">M</a> 
+	<a href="#N">N</a> 
+	O 
+	<a href="#P">P</a> 
+	Q 
+	R 
+	<a href="#S">S</a> 
+	<a href="#T">T</a> 
+	U 
+	<a href="#v">V</a> 
+	<a href="#W">W</a> 
+	X 
+	Y 
+	Z</p>
+	<!--<div class="hang_indent">-->
+
+	<div class="person"><img align="left" src="people/pics/Authier_Marc.jpg" border="1" alt="Marc Authier" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="B" class="name" href="people/faculty/Authier_Marc.shtml">Marc Authier</a><br />
+	<strong>Associate Professor of French and Linguistics</strong><Br />
+	<a href="mailto:jma11@psu.edu">E-mail</a> <Br />       
+	<em>Research Interests:</em> <Br />
+	Syntactic theory, Syntax-semantics interface, Romance linguistics <br/>
+	</div><div class="clearright"></div>
+	
+	<div class="person"><img align="left" src="people/pics/baldi_philip_crop.jpg" border="1" alt="Philip Baldi" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="B" class="name" href="people/faculty/baldi_philip.shtml">Philip Baldi</a><br />
+	<strong>Professor emeritus of Linguistics and Classics</strong><Br />
+	<a href="mailto:phb@psu.edu">E-mail</a> <Br />       
+	<em>Research Interests:</em> <Br />
+	Language change, morphology, Indo-European linguistics <br/>
+	</div><div class="clearright"></div>
+	
+	<div class="person"><img align="left" src="people/pics/carlson_matt.jpg" border="1" alt="Matthew Carlson" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="C" class="name" href="people/faculty/carlson_matt.shtml">Matthew Carlson</a><Br />
+	<strong>Assistant Professor of Spanish and Linguistics</strong><Br />
+	<!--<a href="mailto:kxm80@psu.edu">E-mail</a> <Br />-->
+	<em>Research Interests:</em> <Br />
+	Psycholinguistics, phonology, morphology, the mental lexicon, bilingualism, second language acquisition, language development, gesture.
+	
+	<br/>
+	</div><div class="clearright"></div>
+	
+	<div class="person"><img align="left" src="people/pics/diaz_michele.jpg" border="1" alt="Michele Diaz" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="C" class="name" href="http://www.biac.duke.edu/people/staff.asp?id=mtd3">Michele Diaz</a><Br />
+	<strong>Associate Professor of Psychology</strong><Br />
+	<!--<a href="mailto:kxm80@psu.edu">E-mail</a> <Br />-->
+	<em>Research Interests:</em> <Br />
+	The neural and cognitive mechanisms that support language. The role of the right hemisphere in language. Age-related differences in language. 
+	
+	<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/dussias_giuli.JPG" border="1" alt="Giuli Dussias" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="D" class="name" href="people/faculty/dussias_giuli.shtml">Paola E. (Giuli) Dussias</a><br />
+	<strong>Professor of Spanish, Linguistics and Psychology</strong><Br />
+	<a href="mailto:pdussias@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+	Psycholinguistics, bilingualism, sentence parsing, code-switching, second language acquisition<br/>
+	</div><div class="clearright"></div>
+ 
+	<div class="person"><img align="left" src="people/pics/Carrie.jpg" border="1" alt="Carrie Jackson" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="J" class="name" href="people/faculty/jackson_carrie.shtml">Carrie Jackson</a><br />
+	<strong>Associate Professor of German and Linguistics</strong><Br />
+	<a href="mailto:cnj1@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+	SLA, psycholinguistics, sentence processing<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/judy_kroll.png" border="1" alt="Judith Kroll" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="K" class="name" href="people/faculty/kroll_judith.shtml">Judith F. Kroll</a><br />
+	<strong>Distinguished Professor of Psychology, Linguistics, and Women's Studies</strong><Br />
+	<a href="mailto:jfk7@psu.edu">E-mail</a><Br />
+	<em>Research Interests:</em> <Br />
+	Psycholinguistics, bilingualism, second language acquisition, language processing<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/li.jpg" border="1" alt="Ping Li" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="L" class="name" href="people/faculty/li_ping.shtml">Ping Li</a><Br />
+	<strong>Professor of Psychology, Linguistics, and Information Sciences and Technology</strong><Br />
+	<a href="mailto:pul8@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em><Br /> 
+	Cognitive neuroscience, psycholinguistics, bilingualism, computational and neural mechanisms of language acquisition.<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/John_Lipski.jpg" border="1" alt="John Lipski" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="L" class="name" href="people/faculty/lipski_john.shtml">John Lipski</a><Br />
+	<strong>Professor of Spanish and Linguistics</strong><Br />
+	<a href="mailto:jml34@psu.edu">E-mail</a><Br />
+	<em>Research Interests:</em><Br />
+	Spanish phonology, Spanish and Portuguese dialectology and language variation, the linguistic aspects of bilingualism, and the African contribution to Spanish and Portuguese.<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/miller_carol_crop.jpg" border="1" alt="Carol Miller" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="M" class="name" href="people/faculty/miller_carol.shtml">Carol Miller</a><Br />
+	<strong>Associate Professor of Communication Sciences and Disorders and Linguistics</strong><Br />
+	<a href="mailto:cam47@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+	Typical and atypical language development; children with specific language impairment; cognitive processes in communication disorders, with emphasis on cognitive and perceptual processing in children and adults with language disorders.<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/Karen_Miller .jpg" border="1" alt="Karen Miller" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="M" class="name" href="people/faculty/miller_karen.shtml">Karen Miller</a><Br />
+	<strong>Assistant Professor of Spanish Linguistics</strong><Br />
+	<a href="mailto:kxm80@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+   Her field of research centers on first language acquisition in English and Spanish-speaking children and she has been working with children in Chile, Mexico and the Dominican Republic. She is especially interested in how linguistic variation is acquired by children and the extent to which variable input affects the acquisition of grammatical morphology. She also studies children’s acquisition of semantics and pragmatics. Other areas of research in which she is interested include bilingualism in children and the effect of variation on language processing in children and adults. Her work on language acquisition and variation is currently being funded by the National Science Foundation. For more information please visit: <a href="http://childlanguagelab.la.psu.edu/">http://childlanguagelab.la.psu.edu/</a><br/>
+	</div><div class="clearright"></div>
+	
+	<div class="person"><img align="left" src="people/pics/nadeu.jpeg "border="1" alt="Marianna Nadeu" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="N" class="name" href="people/faculty/nadeu_marianna.shtml">Marianna Nadeu</a><Br />
+	<strong>Assistant Professor of Spanish Linguistics</strong><Br />
+	<!--<a href="mailto:kxm80@psu.edu">E-mail</a> <Br />-->
+	<em>Research Interests:</em> <Br />
+	Phonetics, phonology, bilingualism, language variation and change, historical linguistics, contact linguistics, prosody. 
+	<br/>
+	</div><div class="clearright"></div>
+
+	<div class="person"><img align="left" src="people/pics/page_richard2_crop.jpg" border="1" alt="Richard Page" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="P" class="name" href="people/faculty/page_richard.shtml">Richard Page</a><Br />
+	<strong>Head of the Department of Germanic and Slavic Languages and Literatures</strong><Br />
+	<strong>Associate Professor of German and Linguistics</strong><Br />
+	<a href="mailto:brp3@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+	Germanic linguistics, historical linguistics, language change, language contact, Pennsylvania German, and phonology.<br/>
+	</div><div class="clearright"></div>
+ 
+	<div class="person"><img align="left" src="people/pics/putnam_mike_crop.jpg" border="1" alt="Michael T. Putnam" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="P" class="name" href="people/faculty/putnam_mike.shtml">Michael T. Putnam</a><Br />
+	<strong>Assisant Professor of German and Linguistics</strong><Br />
+	<a href="mailto:mtp12@psu.edu">E-mail</a><Br />
+	<em>Research Interests:</em> <Br /> 
+	Bilingualism, contact linguistics, linguistic formalisms (generative linguistics), syntax, morphology, semantics, heritage linguistics, global varieties of Germanic languages, philosophy of language<br/>
+	</div><div class="clearright"></div>
+	
+	<div class="person"><img align="left" src="people/pics/Reed_Lisa.jpg" border="1" alt="Lisa A. Reed" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="P" class="name" href="people/faculty/reed_lisa.shtml">Lisa A. Reed</a><Br />
+	<strong>Associate professor of French and Linguistics</strong><Br />
+	<a href="mailto:lar13@psu.edu">E-mail</a><Br />
+	<em>Research Interests:</em> <Br /> 
+	Syntax, Semantics<br/>
+	</div><div class="clearright"></div>
+ 
+	<div class="person"><img align="left" src="people/pics/rossi_eleonora.jpg" border="1" alt="Eleonora Rossi" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="N" class="name" href="people/faculty/rossi_eleonora.shtml">Eleonora Rossi</a><Br />
+	<strong>Visiting Assistant Professor of Linguistics</strong><Br />
+	<a href="mailto:exr22@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+	Bilingualism, second language acquisition, aphasiology, agrammatism, bilingual aphasia, sentence processing.
+	<br/>
+	</div><div class="clearright"></div>
+	
+	<div class="person"><img align="left" src="people/pics/cacoullos_rena_crop.jpg" border="1" alt="Rena Torres Cacoullos" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="T" class="name" href="people/faculty/cacoullos_rena.shtml">Rena Torres Cacoullos</a><Br />
+	<strong>Professor of Spanish and Linguistics</strong><Br />
+	<a href="mailto:rena@psu.edu">E-mail</a><Br />
+	<em>Research Interests:</em> <Br /> 
+	Language variation and change, grammaticalization, language contact, Spanish linguistics
+	<br/>
+	</div><div class="clearright"></div>
+
+    <div class="person"><img align="left" src="people/pics/vanhell_janet_crop.jpg" border="1" alt="Janet van Hell" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="V" class="name" href="people/faculty/vanhell_janet.shtml">Janet van Hell</a><Br />
+	<strong>Professor of Psychology and Linguistics<Br />
+	Director of the Linguistics Program<Br />
+	Professor of Language Development (Radboud U. Nijmegen, the Netherlands)</strong><Br />
+	<a href="mailto:jgv3@psu.edu">E-mail</a><Br />
+	<em>Research Interests: </em><Br />
+	Second language learning and bilingualism/multilingualism; code-switching, bimodal bilingualism; language development in children with a typical or atypical language development, cognitive neuroscience.<br/>
+	</div><div class="clearright"></div>
+       
+	<div class="person"><img align="left" src="people/pics/weiss_dan_crop.jpg" border="1" alt="Daniel J. Weiss" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	<a name="W" class="name" href="people/faculty/weiss_daniel.shtml">Daniel J. Weiss</a><Br />
+	<strong>Associate Professor of Psychology and Linguistics</strong><Br />
+	<a href="mailto:djw21@psu.edu">E-mail</a> <Br />
+	<em>Research Interests:</em> <Br />
+	Language Acquisition, Statistical Learning, Comparative Cognition and Communication with Nonhuman Primates.<br/>
+	</div><div class="clearright"></div>
+	<!--</div>-->
+     <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

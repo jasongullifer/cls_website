@@ -1,0 +1,32 @@
+<div id="slideshow">
+   <div>
+     <img src="images/Banner/img5.jpg">
+   </div>
+   <div>
+     <img src="images/Banner/img6.jpg">
+   </div>
+   <div>
+     <img src="images/Banner/img1.jpg">
+   </div>
+   <div>
+     <img src="images/Banner/img2.jpg">
+   </div>
+   <div>
+     <img src="images/Banner/img3.jpg">
+   </div>
+   <div>
+     <img src="images/Banner/img4.jpg">
+   </div>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+</script>
+</div>

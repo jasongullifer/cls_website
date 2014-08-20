@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State: Center for Language Science : People : Affiliates</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="index.shtml">Home</a><a> / </a><a href="people.shtml">People</a><a> / </a>Affiliates</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+     <p class="letters"> 
+     <a href="#atPenn">Affiliated Faculty at Penn State</a><br />
+     <a href="#outsidePenn">Affiliated Faculty outside Penn State</a><br />
+     <a href="#postDoc">Affiliated Post-Doctoral Fellows and Lecturers</a><br />
+     <a href="#visitingScholars">Affiliated Visiting Scholars (Past & Current)</a><br />
+     </p>
+    
+    <div class="hang_indent">
+    
+    <h4><a name="atPenn">Affiliated Faculty at Penn State</a></h4>
+	
+    <p><a class="name" href="people/affiliated/authier_marc.shtml">Marc Authier</a><br />
+      <strong>Associate Professor of French and Linguistics</strong><br />
+      <a href="mailto:jma11@psu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Formal treatments of natural language, focused on the syntax and semantics of various linguistic phenomena including quantification and anaphora in such languages as English, French, KiNande (Bantu), Mandarin Chinese, Tamil (Dravidian), and Thai. Broader interests include formal logic, mathematical linguistics, and the philosophy of language.</p>
+      
+      
+      
+      
+      <p>
+      <a class="name" href="people/affiliated/buckalew_ronald.shtml">Ronald E. Buckalew</a><br />
+      <strong>Associate Professor Emeritus of English</strong><br />
+      <a href="mailto:REB@psu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     History and Structure of the English Language, Historical Linguistics, Phonology.</p>
+     
+          
+      <p>
+      <a class="name" href="people/affiliated/mark_vera.shtml">Vera Mark</a><br />
+      <strong>Assistant Professor of French and Linguistics</strong><br />
+      <a href="mailto:vxm3@psu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     French regional languages; language, culture and history; language revival and language death; language and subjectivity</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/reed_lisa.shtml">Lisa Reed</a><br />
+      <strong>Associate Professor of French and Linguistics</strong><br />
+      <a href="mailto:LAR13@psu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Syntax and semantics, with a particular interest in representations of the interface between these two.</p>
+
+	  <p>
+      <a class="name" href="people/affiliated/rosenbaum_david.shtml">David Rosenbaum</a><br />
+      <strong>Distinguished Professor of Psychology</strong><br />
+      <a href="mailto:dar12@psu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      David Rosenbaum is interested in the cognitive substrates of skilled performance, especially those underlying human motor control and perceptual-motor integration. He focuses on the planning and control of manual performance (mainly reaching and grasping objects), using computer modeling and recording of behavior. He also works on rhythm and timing, temporal coordination of cognitive and perceptual-motor activities, and how people organize their external environments.</p>
+   
+     <p><a class="name" href="people/affiliated/schrauf_robert.shtml">Robert W. Schrauf</a><br />
+       <strong>Associate Professor of Applied Linguistics</strong><br />
+       <a href="mailto:rws23@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em> <br />
+       Bilingual autobiographical memory, language, culture and cognitive aging; and applied linguistics and health sciences.</p>
+ 
+   
+    <br /><h4><a name="outsidePenn">Affiliated Faculty outside Penn State</a></h4>
+    
+    <p><a class="name" href="http://cls.psu.edu/PIRE/people/allen.html">Thomas Allen</a><br />
+      <strong>Professor of Educational Foundations and Research: Gallaudet University</strong><br />
+      <a href="mailto:thomas.allen@gallaudet.edu ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Visual Language and Learning.</p>
+    
+    <p><a class="name" href="people/affiliated/bajo_teresa.shtml">Teresa Bajo</a><br />
+      <strong>Full Profesor, Departamento de Psicología Experimental: Universidad de Granada</strong><br />
+      <a href="mailto:mbajo@ugr.es">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Inhibitory processes in Memory. Cognitive Skills in translation and Interpretation, Comprehension processes in translation, Bilingualism.</p>
+      
+      <p><a class="name" href="http://christophergbotero.weebly.com/">Christopher Botero</a><br />
+     <strong> Assistant Professor of Spanish & SLA: Georgia Regents University</strong><br />
+     <a href="mailto:cbotero@gru.edu">E-mail</a><br />
+     <em>Research Interests: </em><br />
+     Phonetics, phonology, bilingualism, second-language acquisition.</p>
+	 
+      <p>
+      <a class="name" href="people/affiliated/bialystok_ellen.shtml">Ellen Bialystok</a><br />
+      <strong>Distinguished Research Professor of Psychology: York University, Toronto, Canada</strong><br />
+      <a href="mailto:ellenb@yorku.ca">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Research examines studies of cognitive development and cognitive decline across the lifespan with a focus on how these cognitive processes are modified by experience. The primary experience examined is bilingualism, considering how the need to control attention to two languages affects the nature of central cognitive processing. In addition, research considers issues in development, such as the acquisition of literacy for monolingual and bilingual children, and issues in aging, such as cognitive and linguistic dimensions of dementia and Parkinson's disease.</p>
+      
+         <p>
+      <a class="name" href="people/affiliated/carreiras_manuel.shtml">Manuel Carreiras</a><br />
+      <strong>Facultad de Psicología: Universidad de La Laguna</strong><br />
+      <a href="mailto:mcarreir@ull.es">E-mail</a><br />
+     </p>
+      
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/Chwilla.html">Dorothee Chwilla</a><br />
+      <strong>Senior Researcher of Language and Communication, Donders Centre for Cognition (DCC): Radboud University Nijmegen</strong><br />
+      <em>Research Interests: </em><br />
+     Semantic, syntactic and prosodic processes in language comprehension across contexts (single words, sentences and discourse).</p>
+            
+      <p>
+      <a class="name" href="people/affiliated/clahson_harald.shtml">Harald Clahsen</a><br />
+      <strong>Professor of Language and Linguistics: University of Essex</strong><br />
+      <a href="mailto:harald@essex.ac.uk">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     In addition to acquisition, disorders and processing of language, research interests include theories of morphology and syntax.</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/costa_albert.shtml">Albert Costa</a><br />
+      <strong>Associate Professor of Psychology: University of Barcelona</strong><br />
+      <a href="mailto:costalbert@gmail.com">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Language Production, bilingualism, attentional control</p>
+     
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/Demestre.html">Josep Demestre</a><br />
+      <a href="mailto:josep.demestre@urv.cat ">E-mail</a><br />      
+      <strong> Associate Professor of Psychology: Universitat Rovira i Virgili</strong><br />
+      <em>Research Interests: </em><br />
+     Human language processing, in particular the comprehension of sentences. He is also interested in bilingualism, focusing on the processing and representation of L1 and L2 words. </p>
+         
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/deuchar.html">Margaret Deuchar</a><br />
+      <strong> Professor of Linguistics: Bangor University</strong><br />
+      <em>Research Interests: </em><br />
+     Evaluating alternative models of code-switching with reference to various language pairs including Welsh-English, Spanish-English and Spanish-Welsh. </p>
+    
+      <p>
+      <a class="name" href="people/affiliated/dijkstra_ton.shtml">Ton Dijkstra</a><br />
+      <strong> Professor of Psycholinguistics and Multilingualism, Head of the Division of Psycholinguistics, Donders Centre for Cognition (DCC): Radboud University Nijmegen</strong><br />
+      <a href="mailto:t.dijkstra@psych.ru.nl">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Research by my group and me has focussed on understanding the word recognition process in monolinguals and bilinguals through behavioral studies, electrophysiological and neuro-imaging studies, and computational modeling. Recently, we have begun to consider bilingual sentence processing in comprehension and production.</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/emmorey_karen.shtml">Karen Emmorey</a><br />
+      <strong>Professor, School of Speech, Language, and Hearing Sciences: San Diego State University</strong><br />
+      <a href="mailto:kemmorey@mail.sdsu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     My research focuses on what sign languages can reveal about the nature of human language, cognition, and the brain. My lab studies the processes involved in how deaf people produce and comprehend sign language and how these processes are represented in the brain. We also investigate how experience with a signed language impacts nonlinguistic visual-spatial cognition, such as face processing, memory, and imagery. My research interests include how language modality impacts spatial language (talking about space), the linguistic functions of eye gaze in sign language, and the nature of bimodal bilingualism (ASL-English bilinguals). My investigations of the neural correlates of language and nonlinguistic cognitive functions draw on data from neuroimaging (fMRI and PET) and from patients who have suffered unilateral brain damage.</p>
+	 
+	 <p>
+      <a class="name" href="people/affiliated/escobar_anna.shtml">Anna María Escobar</a><br />
+      <strong>Associate Professor of Hispanic Linguistics</strong><br />
+      <a href="mailto:aescobar@uiuc.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Spanish Sociolinguistics and Dialectology, Contact Linguistics and Bilingualism, Language Variation and Change, Grammaticalization and Semantic Change</p>
+           
+     <p>
+      <a class="name" href="people/affiliated/Goldrick_Matt.shtml">Matt Goldrick</a><br />
+      <strong>Associate Professor of Linguistics: Northwestern University</strong><br />
+      <a href="mailto:matt-goldrick@northwestern.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Language production, bilingual phonetics and phonology, code switching</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/gollan_tamar.shtml">Tamar H. Gollan</a><br />
+      <strong>Associate Professor, Department of Psychiatry: University of California, San Diego</strong><br />
+      <a href="mailto:tgollan@ucsd.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Processing disadvantages and advantages associated with bilingualism , the joint effects of bilingualism, aging, and Alzheimer's disease on fluent and failed language production.</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/green_david.shtml">David Green</a><br />
+      <strong>Reader in Psychology: University College London</strong><br />
+      <a href="mailto:d.w.green@ucl.ac.uk">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Representation and control in bilingual speakers, neural bases of bilingualism, bilingual aphasia.</p>
+
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/gullberg.html">Marianne Gullberg</a><br />
+      <strong>Professor Psycholinguistics and Director of the Humanities Lab: Lund University</strong><br />
+      <a href="mailto:Marianne.Gullberg@ling.lu.se ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     The human language learning capacity, in how the representations of a new language develop and the co-exist with the representations of other languages in the minds and brains of individuals, and in the multimodal expression of language in real time.</p>
+       
+     <p><a class="name" href="people/affiliated/guo_taomei.shtml">Taomei Guo</a><br />
+      <strong>Associate Professor, State Key Laboratory for Cognitive Neuroscience and Learning: Beijing Normal University, China</strong><br />
+      <a href="mailto:guotm@bnu.edu.cn">E-mail</a><br />
+      <em>Research Interests: </em>
+      <br />Cognitive neuroscience; cross-linguistic studies of lexical and sentence processing; bilingualism. Of particular current interest is the neural mechanism of bilingual word production using both the ERP and fMRI techniques.<br />
+      </p>
+     
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/hopp.html">Holger Hopp</a><br />
+      <strong>Interim Professor for Multilingualism and Director of the Mannheim Eye Lab: University of Mannheim</strong><br />
+      <a href="mailto:hhopp@rumms.uni-mannheim.de ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     How different areas of Interlanguage grammars interact in bilingual comprehension and production.  Additionally, the cognitive factors and individual differences in bilingual language processing. </p>      
+
+      <p>
+      <a class="name" href="">Merel Keijzer</a><br />
+      <strong>Assistant Professor of Linguistics: University of Groningen<br />
+     </strong>
+      <a href="mailto:m.c.j.keijzer@rug.nl">E-mail</a><br /></p>
+
+      <p><a class="name" href="http://cls.psu.edu/people/affiliated/Johannessen_Janne_Bondi.shtml">Janne Bondi Johannessen</a><br />
+      <strong>Professor of Linguistics and Language Technology: University of Oslo</strong><br />
+      <a href="mailto:jannebj@iln.uio.no">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      My interests are in three different areas: theoretical linguistics (syntax and morphology) and dialectology, linguistics methodology and language technology.
+      </p>
+      
+                
+      <p>
+      <a class="name" href="people/affiliated/levine_william.shtml">William H. Levine</a><br />
+      <strong>Assistant Professor of Psychology: University of Arkansas<br />
+      Visiting Scholar at Penn State, Spring 2010</strong><br />
+      <a href="mailto:whlevine@uark.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Narrative comprehension, referential processing, inferential processes, negation, pragmatics, sentence processing.</p>
+       
+      <p><a class="name" href="people/affiliated/Lorimor_Heidi.shtml">Heidi Lorimor</a><br />
+      <strong>Assistant Professor of Languages, Cultures and Linguistics: Bucknell University</strong><br />
+      <a href="mailto:hml003@bucknell.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      The processes involved in language production, with a special focus on the influences of word order, conceptual information, and morphology on subject-verb agreement.<br />
+      </p>
+
+      <p>
+      <a class="name" href="http://cls.psu.edu/people/affiliated/MainelaArnold_Elina.shtml">Elina Mainela-Arnold</a><br />
+      <strong>Assistant Professor of Speech-Language Pathology: University of Toronto</strong><br />
+      <a href="mailto:elina.mainela.arnold@utoronto.ca">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Cognitive mechanisms involved in language development, the way in which these mechanisms interact with information in the language learning environment, and how this interaction might help explain individual differences in language ability. </p>
+
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/morford.html">Jill Morford</a><br />
+      <strong>Professor of Linguistics: University of New Mexico</strong><br />
+      <a href="mailto:morford@unm.edu ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Language acquisition and processing in the visual modality, including signed languages, written language and Augmentative and Alternative Communication systems.</p>                
+      
+      <p>
+      <a class="name" href="people/affiliated/myers-scotton_carol.shtml">Carol Myers-Scotton</a><br />
+      <strong>Emerita Carolina Distinguished Professor: University of South Carolina; Adjunct Professor, Department of Linguistics and Germanic, Slavic, Asian and African Languages: Michigan State University</strong><br />
+      <a href="mailto:carolms@gwm.sc.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Codeswitching, as well as Other Language Contact Phenomena in relation to Morpheme Classification and Language Production, Bilingualism, Socio-Pragmatics.</p>
+      
+	     <p><a class="name" href="people/affiliated/pinar_pilar.shtml">Pilar Piñar</a><br />
+       <strong>Associate Professor, Department of Foreign Languages: Gallaudet University</strong><br />
+       <a href="mailto:pilar.pinar@gallaudet.edu">E-mail</a><br />
+     <em>Research Interests:</em> <br />
+       Gesture and sign language research, bilingualism and second language acquisition, sentence processing and literacy.</p>
+       
+	  
+      <p>
+      <a class="name" href="people/affiliated/prior_anat.shtml">Anat Prior</a><br />
+      <strong>Lecturer in the faculty of Education: University of Haifa</strong><br />
+      <a href="mailto:aprior@construct.haifa.ac.il">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     I am interested in within and cross-language semantic conceptual representation and in the interplay between executive control, bilingualism and second language learning. In recent and ongoing projects my students and I are examining factors influencing translation choice in behavioral tasks and in large language corpora; the implications of grammatical class for meaning representation and bilingual performance; the detailed nature of executive control advantages accrued by bilinguals, with specific emphasis on cognitive flexibility; and how individual differences in executive control and cognitive flexibility might further our understanding of the variability in second language learning outcomes. </p>
+      
+      <p>
+      <a class="name" href="http://cls.psu.edu/PIRE/people/pugh.html">Kenneth Pugh</a><br />
+      <strong>Professor of Psychology, U. Connecticut; Associate Professor of Linguistics, Yale; and President of Research at Haskins Laboratories</strong><br />
+      <a href="mailto:pugh@haskins.yale.edu ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     The neurobiology of typical and atypical language and reading development in children. </p>
+
+      <p>
+      <a class="name" href="http://cls.psu.edu/people/affiliated/rothman_jason.shtml">Jason Rothman</a><br />
+      <strong>Professor of Linguistics: University of Reading</strong><br />
+      <a href="mailto:  j.rothman@reading.ac.uk">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      L1, L2, L3 Acquisition; Linguistic and Acquisition Theoretical Epistemology; Modelling of Initial Stages Linguistic Transfer (morphosyntax) in Multilingualism; Heritage Language Bilingual Acquisition, Development and Ultimate Attainment The Role of Cognitive Economy in Language Acquisition      
+      
+      <p>
+      <a class="name" href="http://www.juniata.edu/departments/international/lim/index.html">Deborah Roney</a><br />
+      <strong>Assistant Professor of English and Director of Language in Motion: Juniata College</strong><br />
+      <a href="mailto:  Roneyd@juniata.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      First and second language acquisition, phonology, language pedagogy, and service-learning.      
+      <p>
+      <a class="name" href="people/affiliated/salmons_joseph.shtml">Joseph Salmons</a><br />
+      <strong>Professor of Germanic Linguistics: University of Wisconsin-Madison</strong><br />
+      <a href="mailto: jsalmons@wisc.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      I work on language, especially speech sounds and language change, often drawing data from historical and contemporary Germanic languages.                 
+      
+      <p>
+      <a class="name" href="people/affiliated/sanz_cristina.shtml">Cristina Sanz</a><br />
+      <strong>Associate Professor of Spanish: Georgetown University</strong><br />
+      <a href="mailto:sanzc@georgetown.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     The interaction between external (nature of the input) and internal (cognitive capacity, degree, and type of bilingualism) factors in adult acquisition of non-primary languages. Computer-assisted research on explicitness in the input, in processing, and in knowledge. The role of practice in language acquisition.</p>
+     
+	
+          <p> <a name="S" class="name" href="people/affiliated/schwartz_ana.shtml">Ana I. Schwartz</a> <br />
+        <strong>Assistant Professor of Psychology: University of Texas at El Paso </strong><br />
+       <a href="mailto:aischwartz@utep.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+       Bilingual lexical representation and reading comprehension processes; bilingual emergent literacy and vocabulary acquisition; second language pedagogy and teacher preparation; eye-tracking methodology.</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/schwegler_armin.shtml">Armin Schwegler</a><br />
+      <strong>Professor of Spanish Linguistics and Director of Global Cultures: University of California, Irvine</strong><br />
+      <a href="mailto:aschwegl@uci.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Afro-Hispanic language and culture, Spanish creoles (esp. Palenquero), Spanish dialectology (Latin America), Black ritual language.</p>
+ 	 
+ 	 <p><a class="name" href="http://cls.psu.edu/PIRE/people/shu.html">Hua Shu</a><Br />
+     <strong>Assistant Professor of Linguistics: Covenant College</strong><Br />
+     <a href="mailto:shuh@bnu.edu.cn ">E-mail</a><Br />
+	 <em>Research Interests:</em> <Br />
+	Cognitive and neural mechanism of Chinese language processing, reading development and dyslexia .</p>   
+	 
+	 <p><a class="name" href="http://www.personal.psu.edu/nms20/">Nola Stephens</a><Br />
+     <strong>Assistant Professor of Linguistics: Covenant College</strong><Br />
+     <a href="mailto:nola.stephens@covenant.edu">E-mail</a><Br />
+	      
+     <p><a class="name" href="people/affiliated/sunderman_gretchen.shtml">Gretchen Sunderman</a> <br /> 
+     <strong>Associate Professor of Spanish: Florida State University </strong><br />
+       <a href="mailto:gsunderm@fsu.edu">E-mail</a> <br />
+       <em>Research Interests:</em> <br />
+       Second Language Acquisition, Bilingualism, Lexical Processing.</p>
+       
+     <p><a class="name" href="people/affiliated/swanson_amy.html">Amy Swanson</a><br />
+      <strong>PhD Candidate, SIP Department: University of Illinois at Urbana-Champaign</strong><br />
+      <a href="mailto:aswanson@uiuc.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Bilingualism, bilingual lexicon, SLA, psycholinguistics.</p>
+
+     <p><a class="name" href="http://cls.psu.edu/PIRE/people/tan.html">Li-Hai Tan</a><br />
+      <strong> Professor of Linguistics, Brain, and Cognitive Sciences: University of Hong Kong</strong><br />
+      <a href="mailto:tanlh@hkucc.hku.hk ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      The use of neuroimaging (fMRI and PET) and cognitive techniques to investigate neuroanatomical and cognitive mechanisms underlying language processing, language learning, memory, and attention</p>
+
+      <p><a class="name" href="http://cls.psu.edu/PIRE/people/thierry.html">Guillaume Thierry</a><br />
+      <strong>Professor of Cognitive Neuroscience: Bangor University</strong><br />
+      <a href="mailto: g.thierry@bangor.ac.uk ">E-mail</a><br />
+      <em>Research Interests: </em><br />
+       Verbal/non-verbal dissociations, visual object recognition, colour perception, functional cerebral asymmetry, language-emotion interactions, language development, developmental dyslexia and bilingualism.</p>
+
+      <p><a class="name" href="people/affiliated/Thrainnson_Hoskuldur.shtml">Höskuldur Thráinsson</a><br />
+      <strong>Professor of Icelandic linguistics: University of Iceland</strong><br />
+      <a href="mailto:hoski@hi.is">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Syntax (especially Icelandic, Faroese, Scandinavian, Germanic); Icelandic dialects and phonology; Variation and linguistic change; Comparative Scandinavian; Heritage languages(especially in North America); Linguistics in the schools; Agrammatism                               
+    
+     <p><a name="T" class="name" href="people/affiliated/tokowicz_natasha.shtml">Natasha Tokowicz</a><br />
+        <strong>Associate  Professor of Psychology and Linguistics and Research Scientist, Learning Research and Development Center: University of Pittsburgh </strong><br />
+       <a href="mailto:Tokowicz@pitt.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+       Second language learning, bilingualism.</p>
+      
+      <!--<p>
+      <a class="name" href="people/faculty/vanhell_janet.shtml">Janet van Hell</a><br />
+      <strong>Associate Professor: Radboud University Nijmegen<br />
+      Visiting Professor of Psychology and Linguistics at Penn State</strong><br />
+      <a href="mailto:j.vanhell@pwo.ru.nl">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     Language development in children with a typical or atypical language development (children who are deaf, children with dyslexia, with SLI, and bilingual children from an ethnic minority background), Second language learning and bilingualism/multilingualism.</p>
+      -->
+      <p>
+      <a class="name" href="people/affiliated/valian_virginia.shtml">Virginia Valian</a><br />
+      <strong>Distinguished Professor, Psychology and Linguistics: Hunter College and CUNY Graduate Center</strong><br />
+      <a href="mailto:virginia.valian@hunter.cuny.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Current research in my laboratory investigates two-year-olds' knowledge and use of language, second language learners' performance on similar tasks, native speakers' performance on similar sentences with different tasks, the role of input in syntax acquisition, gender differences in mathematics problem-solving. We are also investigating what interventions work best in improving gender equity in different types of organizations.</p>
+        
+        <p>
+      <a class="name" href="http://www.purdue.edu/hhs/slhs/research/WeberFox.html">Christine Weber-Fox</a><br />
+      <strong>Professor, Department of Speech, Language, and Hearing Sciences: Purdue University</strong><br />
+      <a href="mailto:weberfox@purdue.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+	  My areas of interest include how the brain is organized for language processing.  We utilizes event-related brain potential (ERP) in addition to behavioral measures.  Specifically, my work focuses on how neural subsystems may differ in speakers with different language experience and communication skills, such as bilinguals, and individuals who stutter or are language impaired. 
+     </p>
+     
+     <p><a name="T" class="name" href="http://cls.psu.edu/PIRE/people/Weekes.html">Brendan Weekes</a><br />
+        <strong>Chair Professor in Communication Science: University of Hong Kong </strong><br />
+       <a href="mailto:weekes@hku.hk ">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+       The memory mechanisms necessary for normal and impaired language processing (aphasia).</p>
+      
+      <p>
+      <a class="name" href="people/affiliated/wodniecka_zofia.shtml">Zofia Wodniecka</a><br />
+      <strong>Postdoctoral Fellow: York University and Rotman Research Institute</strong><br />
+      <a href="mailto:zofia@rotman-baycrest.on.ca">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      My main research interest is bilingualism from cognitive and psycholinguistic perspective. I am currently investigating cognitive processes underlying second language use as well as the enhancement of the executive functions in bilingual populations.</p>
+    <br /><h4><a name="postDoc">Affiliated Post-Doctoral Fellows and Lecturers</a></h4>
+    
+        
+    
+    <p>
+    <a class="name" href="people/affiliated/christoffels_ingrid.shtml">Ingrid Christoffels</a><br />
+      <strong>Research Fellow: Leiden Institute of Brain and Cognition and Department of Psychology: Leiden University</strong><br />
+      <a href="mailto:IChristoffels@fsw.leidenuniv.nl">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     My research interest concern neurocognitive and experimental approaches to language, executive functioning, cognitive control, and individual differences, using fMRI, EEG and behavioral measures. Currently, my research is focused on control in language production, multilingualism &amp; translation processes.</p>
+      
+      
+       
+      
+          <p><a class="name" href="people/affiliated/hu_jon-fan.shtml">Jon-Fan Hu</a><br />
+      <strong>Post-doctoral Fellow : Penn State University</strong><br />
+      <a href="mailto:jxh76@psu.edu">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Cognitive Science, computational Modeling, Mathmatical Psychology, Psycholinguistics, Language Acquisition, Bilingualism, Crosslinguistic Studies, Language and Cognition, Statistical Learning
+      </p>
+      
+      <p> <a class="name">Xuesong Lia</a><br />
+      <strong>Research Associate: Penn State University (Visiting Scholar from Southeast University of China)</strong><br />
+      <a href="mailto:xxl16@psu.edu>E-mail">E-mail</a><br />
+      <!--<em>Rsearch Interests: </em><br />-->   
+      
+     
+     
+
+      
+      <p>
+      <a class="name" href="people/affiliated/insausti_mikel.shtml">Mikel Santesteban Insausti</a><br />
+      <strong>Research Fellow: University of Edinburgh</strong><br />
+      <a href="mailto:msantesteban@ed.ac.uk">E-mail</a><br />
+      <em>Research Interests: </em><br />
+     My main research interest is bilingualism from cognitive and psycholinguistic perspective. I am currently investigating cognitive processes underlying second language use as well as the enhancement of the executive functions in bilingual populations.</p>
+     
+     <p><a class="name" href="people/affiliated/yang_jing.shtml">Jing Yang</a><br />
+     <strong> Post-doctoral Fellow: Penn State University</strong><br />
+     <a href="mailto:jxy27@psu.edu">E-mail</a><br />
+     <em>Research Interests: </em><br />
+     I am interested in how children and adults learn their first and second languages. My research uses brain imaging techniques to reveal the neural mechanisms subserving normal reading and reading disorders. In particular, I use fMRI and behavioral testing to study how normal and dyslexics have different neural connectivities durign working memory processing. I am also very interested in how the neural representations change during language acquisition and how cognitive factors, in particular working memory and attention, affect language learning and the brain mechanism underneath.</p>
+     
+     
+     
+     
+     
+     <h4><a name="visitingScholars">Affiliated Visiting Scholars (Current & Past)</a></h4>
+     <p>
+     <a class="name" href="http://www.ugr.es/%7Ememory/?People:PhD_students:Mar%26iacute%3Ba_Cruz_Mart%26iacute%3Bn_Garc%26iacute%3Ba">Maria Cruz Martin Garcia</a> <br />
+     <strong>PhD Candidate, Department of Experimental Psychology and Behavioural Physiology<br />
+      University of Granada</strong><br />
+      <a href="mailto:mcruzmartin@ugr.es">E-mail</a><br />
+      <em>Research Interests: </em><br />
+      Language processing in bilinguals. Executive processes on language selection.
+     
+     <p>
+     <a class="name">Nicole Swart</a><br />
+     <strong>Research Master MSc Behavioural Science, Radboud University Nijmegen, The Netherlands</strong><br />
+     <a href="mailto:nicole.swart@gmail.com">E-mail</a><br />
+     <em>Research Interests: </em><br />
+     Bilingualism, language planning, motor planning
+     
+     <p>
+     <a class="name">Erin Tavano</a><br />
+     <strong>PhD Candidate, Department of Linguistics, University of Southern California</strong><br />
+     <a href="mailto: tavano@usc.edu">E-mail</a><br />
+     <em>Research Interests: </em><br />
+     psycholinguistics, pragmatics, and computational linguistics / natural language processing
+     
+     <p>
+     <a class="name">Madelon van den Boer</a><br />
+     <strong>Research Master MSc Behavioural Science, Radboud University Nijmegen, The Netherlands</strong><br />
+     <a href="mailto:madelonvandenboer@student.ru.nl">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     bilingualism in children and adults: codeswitching, second language acquisition</p>
+     
+     <p><a class="name" href="http://www.mpi.nl/people/witteman-marijt">Marijt Witteman</a><br />
+     <strong> PhD Candidate, Max Planck Institute for Psycholinguistics, Nijmegen, The Netherlands</strong><br />
+     <a href="mailto:Marijt.Witteman@mpi.nl">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     bilingualism, L2 accents, code-switching
+     
+     
+     
+        
+     <p>
+     <a class="name" href="http://www.ugr.es/~memory/?People:PhD_students:Carolina_Yudes">Carolina Yudes</a><br />
+     <strong>PhD Candidate, Department of Experimental Psychology and Behavioural Physiology<br />
+      University of Granada</strong><br />
+      <a href=mailto:"cyudes@ugr.es">E-mail</a><br />
+      <em>Research Interests:</em><br />
+      Electrophysiology of language processing in monolinguals, bilinguals, professional translators and interpreters, and working memory 	 
+      processes.</p>
+     
+    <br />
+        
+   
+     </div>
+     
+     <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

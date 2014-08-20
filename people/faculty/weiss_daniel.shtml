@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Daniel J. Weiss</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Daniel J. Weiss<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/weiss_dan.jpg" alt="" name="pic" width="129" height="159" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Daniel J. Weiss<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Associate Professor of Psychology and Linguistics<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong><a href="http://psych.la.psu.edu/">Department of Psychology</a></strong><br />
+Pennsylvania State University<br /> 
+ 643 Moore Bldg.<br /> 
+ Pennsylvania State University<br /> 
+ University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> Phone: (814) 863-2265<br />
+E-mail: <a href="mailto:djw21@psu.edu">djw21@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://weisslab.weebly.com/people.html">Lab Website</a></span>
+      <span><a href="../files/faculty/CVWeissJune2012.pdf">View CV</a></span></p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" -->Comparative Communication Laboratory<!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">Language Acquisition, Statistical Learning, Comparative Cognition and Communication with Nonhuman Primates.</p> 
+<!-- InstanceEndEditable -->
+<p> <em>Research Opportunities:</em><br />
+</p>
+<!-- InstanceBeginEditable name="res_ops_desc" -->
+<p class="text_block">Availability for motivated undergraduates and new graduate students (see lab website).</p>
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+<p class="pubs">Mitchel, A., & Weiss, D.J. (in press) Visual speech segmentation: Using facial cues to locate word boundaries in continuous speech. <i>Language and Cognitive Processes.</i></p>
+<p class="pubs">Weiss, D.J. (in press) Statistical Learning in Infancy. For Brooks, P, Kempe, V., & Golson, J.G. (Eds.) Encyclopedia of Language Development. <i>SAGE.</i></p>
+<p class="pubs">Zander, S., Weiss, D.J., & Judge, P.G., (in press) The interface between morphology and action planning: A comparison of two species of New World monkeys. <i>Animal Behaviour.</i></p>
+<p class="pubs">Zinszer, B. & Weiss, D.J. (2013) When to hold and when to fold: Detecting structural changes in statistical learning. <i>Proceedings of the 32nd Annual Conference of the Cognitive Science Society</i>, 3858-3863.</p>
+<p class="pubs">Hotchkin, C.F., Parks, S.E., & Weiss, D.J. (2013) Vocal modifications in primates: Interactions of noise and behavioral context on the acoustic structure of vocalizations. <i>Proceedings of Meetings on Acoustics, (19)</i>.</p>
+<p class="pubs">Chapman, K.M. & Weiss, D.J. (2013). Pulling to scale: Motor planning for sequences of repeated actions by cotton-top tamarins (Saguinus oedipus). <i>Journal of Experimental Psychology: Animal Behavior Processes</i>.</p>
+<p class="pubs">Rosenbaum, D.A., Chapman, K.M., Weigelt, M., Weiss, D.J., & Van der Wel, R. (2012) Cognition, action, and object manipulation: The end-state comfort effect. <i>Psychological Bulletin</i>, <i>138(5)</i>, 924-946. doi: 10.1037/a0027839</p>
+<p class="pubs">Weiss, D.J., Chapman, K.M., Wark, J., & Rosenbaum, D.A. (2012) Motor planning in primates. A commentary on Vaesen, K., The cognitive basis of human tool use, <i>Brain & Behavioral Science</i>, <i>35(4)</i>, 244.</p>
+<p class="pubs">Poepsel, T., Gerfen, C. & Weiss, D.J. (2012). Context, mutual exclusivity, and the challenge of multiple mappings in word learning. <i>Proceedings of the 36th Annual Boston University Conference on Language Development</i>, <i>Volume 2</i>, 474-486.</p>
+<p class="pubs">Mitchel, A. & Weiss, D.J. (2012). The use of facial cues for speech segmentation. <i>Proceedings of the 36th Annual Boston University Conference on Language Development</i>, <i>Volume 2</i>, 361-373.</p>
+<p class="pubs">Mitchel, A. & Weiss, D.J. (2011). Simultaneous statistical learning in two modalities: Evidence for modality-general accounts. <i>Journal of Experimental Psychology: Learning, Memory, and Cognition</i>, <i>37(5)</i>, 1081-1091.</p>
+<p class="pubs">Linck, J. & Weiss, D.J. (2011). Working memory predicts the acquisition of explicit L2 knowledge. In Sanz, C. & Leow, R.P. (Eds.) <i>Implicit and Explicit Language Learning: Conditions Processes and Knowledge in SLA and Bilingualism</i>. Georgetown University Press.</p> 
+<p class="pubs">Weiss, D.J., Gerfen, C., & Mitchel, A.(2010). Colliding cues in word segmentation: The role of cue strength and general cognitive processes. <i>Language and Cognitive Processes</i>, <i>25(3)</i>, 402-422.</p>
+<p class="pubs">Weiss, D.J. & Chapman, K. (2010). Animal Learning and Behavior.  In Weiner, I.B. & Craighead, W.E.(eds.) <i>The Corsini Encyclopedia of Psychology 4th Edition</i>, <i>(1)</i>, 107-110, Wiley & Sons: Hoboken, N.J.</p>
+<p class="pubs">Mitchel, A. & Weiss, D.J. (2010). What's in a face?  Visual contributions to speech segmentation. <i>Language and Cognitive Processes</i>, <i>25(4)</i>, 456-482.</p>
+<p class="pubs">Chapman, K.M., Weiss, D.J., & Rosenbaum, D.A. (2010). Evolutionary roots of motor planning: The end-state comfort effect in lemurs. <i>Journal of Comparative Psychology</i>, <i>124(2)</i>, 229-232.</p>
+<p class="pubs">Weiss, D.J. & Wark, J. (2009). Hysteresis effect in a motor task in cotton-top tamarins (Saguinus oedipus). <i>Journal of Experimental Psychology: Animal Behavior Processes</i>, <i>35(3)</i>, 135-141.</p>
+<p class="pubs">Weiss, D.J., Gerfen, C. & Mitchel, A.D. (2009). Speech segmentation in a simulated bilingual environment: A challenge for statistical learning? <i>Language Learning and Development</i>, <i>5</i>, 30-49.</p>
+<p class="pubs">Mitchel, A. D. & Weiss, D.J. (2009). Faces in segmentation: The role of audio-visual integration. <i>Proceedings of the 33rd Annual Boston University Conference on Language Development</i>, 667-678.</p>
+<p class="pubs">Weiss, D.J. & Maye, J. (2008). The role of contrast in the acquisition of phonetic systems. Avery, P., Rice, K., and Dresher, B.E. (Eds.) <i>Contrast in Phonology: Theory, Perception, Acquisition</i>. Mouton de Gruyter (Berlin/ New York), 219-230.</p>
+<p class="pubs">Weiss, D.J., Gerfen, C., & *Mitchel, A. (2008). Colliding cues in word segmentation: The role of cue strength and individual differences. <i>Proceedings of the 32nd Annual Boston University Conference on Language Development</i>, 537-549.</p>
+<p class="pubs">Maye J., Weiss, D.J. & Aslin R.N. (2008). Statistical phonetic learning in infants: Facilitation and feature generalization. <i>Developmental Science</i>, <i>11(1)</i>, 122-134.</p>
+<p class="pubs">Weiss, D.J., *Wark, J. & Rosenbaum, D.A. (2007). Monkey see, monkey plan, monkey do: The end-state comfort effect in cotton-top tamarins (Saguinus oedipus). <i>Psychological Science</i>, <i>18(12)</i>, 1063-1068.</p>
+<p class="pubs">Rosenbaum, D.A., Cohen, R.G., Jax, S.A., Weiss, D.J. & van der Wel, R. (2007). The problem of serial order in behavior: Lashley's Legacy. <i>Human Movement Science</i>, <i>26</i>, 525-554.</p>
+<p class="pubs">Weiss, D.J. & Gerfen, C. (2006). Language segmentation in a bilingual environment. <i>Proceedings of the 30th Annual Boston University Conference on Language Development</i>.</p>
+<p class="pubs">Weiss, D.J. & Santos, L. (2006). Introduction to Thematic Collection:  Why Primates?: The Importance of Non-Human Primates for Understanding Human Infancy. <i>Infancy</i>, <i>9(2)</i>, 133-146.</p>
+<p class="pubs">Weiss, D.J. & Newport E. (2006). Mechanisms underlying language acquisition: Benefits from a comparative approach. <i>Infancy</i>, <i>9(2)</i>, 241-257.</p>
+<p class="pubs">Jordan, K., Weiss, D., Hauser, M., & McMurray, B. (2004). Individual recognition and antiphonal responses to loud contact calls produced by cotton-top tamarins (Saguinus oedipus). <i>International Journal of Primatology</i>, <i>25(2)</i>, 465-475. </p>
+<p class="pubs">Maye, J. & Weiss, D.J. (2003). Statistical cues facilitate infants’ discrimination of difficult phonetic contrasts. <i>Proceedings of the 27th Annual Boston University Conference on Language Development</i>.</p>
+<p class="pubs">Hauser, M.D., Weiss, D.J. & Marcus, G. (2002). Rule learning by cotton-top tamarins. <i>Cognition</i>, <i>86</i>, B15-B22. </p>
+<p class="pubs">Miller C., Weiss, D.J. & Hauser, M.D. (2002). Mechanisms of acoustic classification in primates. A. Ghazanfar (Ed.), <i>Primate Audition: Ethology and Neurobiology</i>. CRC Press. 43-61. </p>
+<p class="pubs">Weiss, D.J., Ghazanfar, A.A., Miller, C.T., & Hauser, M.D. (2002). Specialized processing of primate facial and vocal expressions: Evidence for cerebral asymmetries. L. Rogers and R. Andrew (Eds.), <i>Comparative Vertebrate Laterality</i>.  480-531. </p>
+<p class="pubs">Weiss, D.J. & Hauser, M.D. (2002). Perception of harmonics in the combination long call of cotton-top tamarins (Saguinus oedipus). <i>Animal Behaviour</i>, <i>64</i>, 415-426. </p>
+<p class="pubs">Weiss D.J., Kralik, J.D., & Hauser, M.D. (2001). Face processing in cotton-top tamarins (Saguinus oedipus). <i>Animal Cognition</i>, <i>3(4)</i>, 191-205. </p>
+<p class="pubs">Weiss, D.J., Garibaldi, B. T., & Hauser, M. D. (2001). The production and perception of long calls by cotton-top tamarins (Saguinus oedipus): Acoustic analyses and playback experiments. <i>Journal of Comparative Psychology</i>, <i>15(3)</i>, 258-271. </p>
+
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

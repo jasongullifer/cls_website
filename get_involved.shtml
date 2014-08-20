@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Get Involved!</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="./index.html">Home</a><a> / </a>Get Involved!</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+     
+     <p>Each semester, labs affiliated with Center for Language Science run a number of experiments. Our members are always looking for people to participate in their experiments. These studies typically look at a variety of languages ranging from English, Spanish, Chinese, to Dutch. Chances are, if you speak one or more languages (be it fluently, proficiently, or enough to get by), we can find an experiment for you!</p>
+     
+     <p>Listed below, you will find descriptions of the ongoing studies in our labs. If you are interested in participating, please contact the relevant party. Participants are compensated for their time in the form of cash or class credit.</p>
+     <p><em>Note:</em> Under the populations heading, the first language listed represents the speaker's native language. So Spanish-English means you learned Spanish first and English later.</p>
+
+<h3>Kroll Behavioral Lab</h3>
+
+<!--<p class="hang_indent">
+<strong>Foreign Language Word Learning</strong> <br />
+<em>Primary Investigator:</em> Judith Kroll <br />
+<em>Co-PI:</em> Cari Bogulski <br />
+<em>Populations:</em> English-Spanish bilinguals  <br />
+<em>Contact:</em> <a href="mailto:cari.bogulski@gmail.com">Cari Bogulski</a> <br /><br />
+
+Summary: <br />
+The study I am currently conducting teaches participants several words in Dutch, one by one. Then participants are tested on their memory for the meanings of these words. You will then be asked to study the words again, and then be tested again. To complete session 1, participants view several pictures in English and are asked to provide the names of these pictures in English. This will complete session 1, and should last about an hour. You will be compensated $10 for you participation in session 1. We hope to schedule the second session 1-4 days later. In this session, you will again be asked to study and be tested on these Dutch words. We will also ask you to complete a memory task and a simple visual attention task. This session of the study should take about an hour and participants will be compensated $10 again (for a total of $20 if you come for both sessions). We are looking for participants who are native English speakers who have learned (and fairly proficient in) Spanish as a second language, who also have little knowledge of other languages and no knowledge of German or Dutch. </p> -->
+
+<p class="hang_indent">
+<strong>Study of Spanish Lexical and Sentence Processing </strong><br />
+<em>Primary Investigators: </em>Judy Kroll & Giuli Dussias <br />
+<em>Co-PI</em>: Roxana Botezatu, Jason Gullifer<br />
+<em>Populations:</em> Spanish-English Bilinguals, English Monolinguals  <br />
+<em>Contact:</em> <a href="mailto:mrb359@psu.edu">Roxana Botezatu</a>, <a href="mailto:jason.gullifer@gmail.com">Jason Gullifer</a>,   <a href="mailto:lvv5000@psu.edu">Lisa Vitzthum</a>,  <a href="mailto:azc5018@psu.edu">Alex Broudy</a>    <br /><br />
+
+Summary:  <br />
+We are conducting a series of experiments looking at both lexical (i.e. word) and sentence processing in both monolinguals and bilinguals. The experiment you participate in will consist of either a word naming task or a task where you read sentences presented to you on the screen. Participation takes about an hour.</p>
+
+<p class="hang_indent">
+<strong>Word Triggers in Codeswitched Sentences</strong><br />
+<em>Primary Investigators:</em> Janet van Hell & Marijt Witteman <br />
+<em>Populations:</em> Learners of French<br />
+<em>Contact:</em> <a href="mailto:marijt.witteman@gmail.com">Marijt Witteman</a><br /><br />
+We are seeking learners of French. More specifically, we're looking for native English speakers who have at least  300 level French experience at the university. Our experiment is aimed at exploring the influence of word triggers in code switched phrases. Participants will read sentences in French and English.</p>
+
+
+<h3>Second Language Processing Lab</h3>
+
+
+
+<p class="hang_indent">
+<strong>Studies of German Lexical and Sentence Processing  </strong><br />
+<em>Primary Investigator:</em> Carrie Jackson <br />
+<em>Populations:</em> Learners of German<br />
+<em>Contact:</em> <a href="mailto:cnjl@psu.edu">Carrie Jackson</a>  <br />
+<em>Scheduling Participants:</em> Feb. 1 - March 6<br />
+<br />
+
+Summary: <br />
+We are looking for second language learners of German at a variety of  
+proficiency levels, ranging from beginning-level (GER 002) through  
+highly-proficient speakers, to participate in an experiment exploring  
+how L2 German learners process words and sentences in German. The 
+experiment lasts 70-90 minutes and participants will be compensated  
+at the end of the experiment for their participation.</p>
+
+
+<p class="hang_indent">
+<strong>Studies of German Lexical and Sentence Processing  </strong><br />
+<em>Primary Investigator:</em> Carrie Jackson and Janet van Hell <br />
+<em>Populations:</em> English monolinguals<br />
+<em>Contact:</em> <a href="mailto:cnjl@psu.edu">Carrie Jackson</a>  <br />
+<em>Scheduling Participants:</em> April - May<br />
+<br />
+
+Summary: <br />
+We are currently looking for volunteers to participate in a study examining the way in which people read and comprehend English sentences being conducted by Dr. Carrie Jackson for research purposes here at Penn State University. In order to be eligible to participate in this study you must be at least 18 years of age, and English must be your native language. No prior experience with a foreign language is necessary. Participating in this study will consist of one meeting lasting approximately 60 minutes with the experimenter or one of her assistants. All meetings will take place in 413 Burrowes. You will be paid $12/hr at the end of the session as compensation for your participation. For more information, contact Dr. Carrie Jackson, the director of the study (email: cnj1@psu.edu; phone: 814-863-7488).</p>
+
+
+
+<h3>Gerfen Linguistics Lab  </h3>
+<p class="hang_indent">
+<strong>Study: Spanish-English Code Switching</strong><br />
+<em>Primary Investigators:</em> Chip Gerfen and Giuli Dussias  <br />
+<em>Co-PI:</em> Rosa Guzzardo Tamargo<br />
+<em>Populations:</em> Spanish-English bilinguals   <br />
+<em>Contact:</em> <a href="mailto:reg195@psu.edu">Rosa Guzzardo Tamargo</a><br /><br />
+
+Summary:<br>  The study we are currently conducting is focused on bilingual processing of monolingual and code switched sentences. The participants will read sentences displayed one by one on a computer screen. Each of these sentences will be followed by a comprehension question or a grammaticality judgment. In addition, the participants will be asked to complete a memory task, a visual attention task, a naming task, and a short, simple grammar test. The experiment should take about two hours to complete. Participants will be compensated $20. We are looking for participants who are native Spanish speakers and who are very proficient in English as a second language. The participants can be speakers who code switch between their two languages regularly (for example, people that say something like “Today I’m not going to la universidad because I’m muy cansado”) or speakers that do not usually mix their languages. 
+ Scheduling Participants: February 11th – April 3rd   </p>
+
+
+    <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

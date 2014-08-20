@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Name</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../affiliates.shtml">Affiliates</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->David Rosenbaum<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/rosenbaum_david.jpg" width="132" height="188" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->David Rosenbaum<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Distinguished Professor of Psychology<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong>Department of Psychology</strong><br />
+Pennsylvania State University<br /> 
+642 Moore Bldg <br />
+University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> Phone: (814)-863-1991<br />
+Fax:  (814)-863-7002<br />
+E-mail: <a href="mailto:dar12@psu.edu">dar12@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://rosenb13.googlepages.com/davidrosenbaum2">View Personal Website</a></span> <span><a href="../files/Affilates/Rosenbaum_David.pdf">View CV</a></span> </p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" --> <a href="http://www.personal.psu.edu/faculty/d/a/dar12/">Laboratory For Cognition and Action</a><!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">David Rosenbaum is interested in the cognitive substrates of skilled performance, especially those underlying human motor control and perceptual-motor integration. He focuses on the planning and control of manual performance (mainly reaching and grasping objects), using computer modeling and recording of behavior. He also works on rhythm and timing, temporal coordination of cognitive and perceptual-motor activities, and how people organize their external environments. </p> 
+<!-- InstanceEndEditable -->
+<p> <em>Research Opportunities:</em><br />
+</p>
+<!-- InstanceBeginEditable name="res_ops_desc" --> <p class="text_block">My lab is open to undergraduates, graduate students, and visitors (interns, post-docs, and faculty on sabbatical).</p>
+<p class="text_block"> For more information about Getting Involved, <a href="http://www.personal.psu.edu/dar12/Getting_Involved_Folder/Getting_Involved_04_w.htm">click here</a>.</p><!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+<p class="pubs"><em>Books:</em></p>
+
+<p class="pubs">Rosenbaum, D. A. (2010). Human Motor Control (Second Edition). San Diego: Academic Press/Elsevier. </p>
+<p class="pubs">Rosenbaum, D. A. (2007). MATLAB For Behavioral Scientists. Mahwah, NJ: Lawrence Erlbaum Associates. </p>
+
+<p class="pubs"><em> Journal Articles and Book Chapters:</em></p>
+
+<p class="pubs">Jax, S. A., & Rosenbaum, D. A. (2009). Hand path priming in manual obstacle avoidance: Rapid decay of dorsal stream information. Neuropsychologia, 47, 1573-1577.</p>
+<p class="pubs">Rosenbaum, D. A. (2009). Walking down memory lane: Where walkers look as they descend stairs provides hints about how they control their walking behavior. American Journal of Psychology, 122, 425-430. </p>
+<p class="pubs">Rosenbaum, D. A., Vaughan, J., Meulenbroek, R. G. J., Jax, S., & Cohen, R. (2009). Smart moves: The psychology of everyday perceptual-motor acts. In E. Morsella, J. A. Bargh, & P. M. Gollwitzer, & (Eds.), Oxford Handbook of Human Action, pp. 121-135. New York: Oxford University Press. </p>
+<p class="pubs">Van der Wel, R. P., Sternad, D., & Rosenbaum, D. A. (In press). Moving the hand at different rates: Avoiding slow movements. Journal of Motor Behavior. </p> 
+<p class="pubs">van der Wel, R., Eder, J. R., Mitchel, A. D., Walsh, M. W. & Rosenbaum, D. A. (2009). Trajectories emerging from discrete versus continuous processing models in phonological competitor tasks: A commentary on Spivey, Grosjean, and Knoblich (2005). Journal of Experimental Psychology: Human Perception and Performance, 35, 588-594. </p>
+ <p class="pubs">Walsh, M. M. & Rosenbaum, D. A. (2009). Deciding how to act is not achieved by watching mental movies. Journal of Experimental Psychology: Human Perception and Performance, 35, 1481-1489. </p>
+ <p class="pubs">Weigelt, W., Rosenbaum, D. A., Huelshorst, S. & Schack T. (2009). Moving and memorizing: Motor planning modulates the recency effect in serial and free recall. Acta Psychologica, 132, 68–79. </p>
+
+<p class="pubs">Rosenbaum, D. A. (2008). Moving cognition. In M. A. Gluck, J.R. Anderson, &amp; S. M. Kosslyn (Eds.), Memory and mind: A Festschrift for Gordon Bower, pp. 173-194. Mahwah, New Jersey: Lawrence Erlbaum Associates/Taylor &amp; Francis Group. </p>
+
+<p class="pubs">Rosenbaum, D. A. &amp; Gaydos, M. J. (2008). A method for obtaining psychophysical estimation of movement costs. Journal of Motor Behavior, 40, 11-17. </p>
+<p class="pubs">Zhang, W. &amp; Rosenbaum, D. A. (2008). Planning for manual positioning: The end-state comfort effect for abduction-adduction of the hand. Experimental Brain Research, 184, 383-389.</p>
+<p class="pubs">Cohen, R. G. &amp; Rosenbaum, D. A. (2007). Directional bias of limb tremor prior to voluntary movement. Psychological Science, 18, 8-12. </p>
+<p class="pubs">Jax, S. A. &amp; Rosenbaum, D. A. (2007). Hand path priming in manual obstacle avoidance: Evidence that the dorsal stream does not only control visually guided actions in real time. Journal of Experimental Psychology: Human Perception and Performance, 33, 425-441. </p>
+<p class="pubs">Jax, S. A., Rosenbaum, D. A. &amp; Vaughan, J. (2007). Extending Fitts’ Law to manual obstacle avoidance. Experimental Brain Research, 180, 775–779. </p>
+<p class="pubs"> Rosenbaum, D. A., Cohen, R. G., Jax, S. A., Van Der Wel, R., &amp; Weiss, D. J. (2007). The problem of serial order in behavior: Lashley’s legacy. Human Movement Science, 26, 525–554. </p>
+<p class="pubs">Van Der Wel, R. P. &amp; Rosenbaum, D. A. (2007). Coordination of locomotion and prehension. Experimental Brain Research, 176, 281-287. </p>
+<p class="pubs">Van Der Wel, R. P. Fleckenstein, R., Jax, S., &amp; Rosenbaum, D. A. (2007). Hand path priming in manual obstacle avoidance: Evidence for abstract spatio-temporal forms in human motor control. Journal of Experimental Psychology: Human Perception and Performance, 33, 1117-1126. </p>
+<p class="pubs">Weigelt, M. Cohen, R. G., &amp; Rosenbaum, D. A. (2007). Returning home: Locations rather than movements are recalled in human object manipulation. Experimental Brain Research, 149, 191-198. </p>
+<p class="pubs">Weiss,  D. J., Wark, J. D., &amp; Rosenbaum, D. A. (2007). Monkey see, monkey plan, monkey do: The end-state comfort effect in cotton-top tamarins (Saguinus Oedipus). Psychological Science, 18,1063-1068. </p>
+
+<p class="pubs">Augustyn, J. S. &amp; Rosenbaum, D. A. (2006). Metacognitive control of action: Preparation for aiming reflects knowledge of Fitts’ Law. Psychonomic Bulletin &amp; Review, 12, 911-916. </p>
+<p class="pubs">Keller, P.E., Wascher, E., Prinz, W., Waszak, F., Koch, I., &amp; Rosenbaum, D.A. (2006). Differences between intention-based and stimulus-based actions. Journal of Psychophysiology, 20, 9-20. </p>
+<p class="pubs">Rosenbaum, D. A., Dawson, A. M., &amp; Challis, J. H. (2006). Haptic tracking permits bimanual independence. Journal of Experimental Psychology: Human Perception and Performance, 32,  1266-1275. </p>
+
+<p class="pubs">Rosenbaum, D. A. (2005). The Cinderella of psychology: The neglect of motor control in the science of mental life and behavior. American Psychologist, 60, 308-317. </p>
+<p class="pubs">Waszak, F., Wascher, E., Keller, P., Koch, I., Aschersleben, G., Rosenbaum, D. A., &amp; Prinz. W. (2005). Intention-based and stimulus-based mechanisms in action selection. Experimental Brain Research, 162, 346-356. </p>
+
+<p class="pubs">Cohen, R. G. &amp; Rosenbaum, D. A. (2004). Where objects are grasped reveals how grasps are planned: Generation and recall of motor plans. Experimental Brain Research, 157, 486-495.</p>
+
+<p class="pubs">Rosenbaum, D. A., Carlson, R. A., &amp; Gilmore, R. O. (2001) Acquisition of intellectual and perceptual-motor skills. Annual Review of Psychology, 52, 453-470. </p>
+<p class="pubs">Rosenbaum, D. A., Meulenbroek, R. G., Vaughan, J., &amp; Jansen, C. (2001). Posture-based motion planning: Applications to grasping. Psychological Review, 108, 709-734. </p>
+
+<p class="pubs">Rosenbaum, D. A., Loukopoulos, L. D., Meulenbroek, R. G. M., Vaughan, J., &amp; Engelbrecht, S. E. (1995). Planning reaches by evaluating stored postures. Psychological Review, 102, 28-67. </p>
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Judith F. Kroll</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Judith F. Kroll<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/kroll_judith.jpg" alt="" name="pic" width="144" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Judith F. Kroll<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Distinguished Professor of Psychology, Linguistics, and Women's Studies<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong><a href="http://psych.la.psu.edu/">Department of Psychology</a></strong><br />
+Pennsylvania State University<br /> 
+641 Moore Building<br />
+University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> <br />
+	 Phone: 814-863-0126<br />
+     Fax (814) 863-7002 <br />
+E-mail: <a href="mailto:jfk7@psu.edu">jfk7@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://psych.la.psu.edu/cognitivearea/judy.htm">View Personal Website</a></span></p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" --><a href="http://lsrg.psu.edu/purplelab/">Language and Cognition Laboratory (The Purple Lab)</a><!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">Psycholinguistics, bilingualism, second language acquisition, language processing</p> 
+
+<!-- InstanceEndEditable -->
+<p> <em>Research Opportunities:</em><br />
+</p>
+<!-- InstanceBeginEditable name="res_ops_desc" -->
+<p class="text_block">We are looking for a few enthusiastic undergraduates who would like to work in the lab with us on new projects.</p>
+
+<p class="text_block">Our lab conducts research on the cognitive processes that support the acquisition and proficient use of a second language. (for more information see our research page.) However, there is no requirement to speak a second language yourself. The only requirement is to be interested in gaining research skills and in being part of an interactive lab group.</p>
+
+<p class="text_block">For more information, please refer to the <a href="http://lsrg.psu.edu/purplelab/">Purple Lab Website</a></p>
+ 
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+    <p class="pubs"><em>Books:</em></p>
+
+<p class="pubs">Kroll, J. F., & De Groot, A. M. B., Eds. (2005). Handbook of bilingualism: Psycholinguistic approaches. New York: Oxford University Press.</p>
+
+    <p class="pubs"><em>Journal Articles and Book Chapters:</em></p>
+
+<p class="pubs">Kroll, J. F., Bobb, S. C., Misra, M. M., & Guo, T. (in press). Language selection in bilingual speech: Evidence for inhibitory processes.  Special issue of Acta Psychologica (Eds., M. Finkbeiner, A. Costa, & R. Hartsuiker), Lexical and Sentence Processing in Bilinguals: Functional and Neural Perspectives.</p>
+
+<p class="pubs">Linck, J. A., Hoshino, N., & Kroll, J. F. (in press). Cross-language lexical processes and inhibitory control. The Mental Lexicon.</p>
+
+<p class="pubs">Sunderman, G., & Kroll, J. F. (in press). When study abroad fails to deliver: The internal resources threshold effect. Journal of Applied Psycholinguistics. </p>
+
+<p class="pubs">Bobb, S. C., Hoshino, N., & Kroll, J. F. (in press). The role of language cues in constraining cross-language activity.  In EUROSLA Yearbook,  Volume 8 (Ed., L. Roberts). Amsterdam: John Benjamins Publishing Company.</p>
+
+<p class="pubs">Kroll, J. F. (2008). Adult second language acquisition: A cognitive science perspective. In J.J. Blascovich & C. R. Hartel (Eds.). Human behavior in military contexts (pp. 106-126). Washington, DC: The National Academies Press.</p>
+
+<p class="pubs">Kroll, J. F. (2008). <a href="http://www.apa.org/science/psa/kroll.html">Juggling  two languages in one mind.</a> Psychological Science Agenda, American Psychological Association, 22.</p>
+
+<p class="pubs">Kroll, J. F., Gerfen, C., & Dussias, P. (2008). Laboratory designs and paradigms in psycholinguistics. In L. Wei & M. Moyer (Eds.), The Blackwell guide to research methods in bilingualism. Cambridge, MA: Blackwell.</p>
+
+<p class="pubs">Hoshino, N., & Kroll, J. F. (2008). Cognate effects in picture naming: Does cross-language activation survive a change of script?  Cognition, 106, 501-511.</p>
+
+<p class="pubs">Prior, A., MacWhinney, B., & Kroll, J. F. (2007). Translation norms for English and Spanish: The role of lexical variables, word class, and L2 proficiency in negotiating translation ambiguity. Behavior Research Methods, 39, 1029-1038.</p>
+
+<p class="pubs">Tokowicz, N., & Kroll, J. F. (2007). Number of meanings and concreteness: Consequences of ambiguity within and across languages. Language and Cognitive Processes, 22, 727-779.</p>
+
+<p class="pubs">Kroll, J. F., & Linck, J. A. (2007). Representation and skill in second language learners and proficient bilinguals. Chapter in I. Kecskes & L. Albertazzi (Eds.), Cognitive aspects of bilingualism.   New York: Springer.</p>
+
+<p class="pubs">Schwartz, A. I., Kroll, J. F., & Diaz, M. (2007). Reading words in Spanish and English: Mapping orthography to phonology in two languages. Language and Cognitive Processes, 22,  106-129.</p>
+
+<p class="pubs">Schwartz, A. I., & Kroll, J. F. (2006). Language comprehension in bilingual speakers. In M. Traxler & M. A. Gernsbacher (Eds.), Handbook of Psycholinguistics,  2nd Edition (pp.967-999).  Amsterdam: Elsevier.</p>
+
+<p class="pubs">Schwartz, A. I., & Kroll, J. F. (2006). Bilingual lexical activation in sentence context. Journal of Memory and Language, 55, 197-212.</p>
+
+<p class="pubs">Kroll, J. F., Bobb, S., & Wodniekca, Z. (2006). Language selectivity is the exception, not the rule: Arguments against a fixed locus of language selection in bilingual speech. Bilingualism: Language and Cognition, 9, 119-135.</p>
+
+<p class="pubs">Sunderman, G., & Kroll, J. F. (2006). First language activation during second language lexical processing: An investigation of lexical form, meaning, and grammatical class. Studies in Second Language Acquisition, 28, 387-422.</p>
+
+<p class="pubs">Christoffels, I. K., De Groot, A. M. B., & Kroll, J. F. (2006). Memory and language skill in simultaneous interpreting: The role of expertise and language proficiency. Journal of Memory and Language, 54, 324-345.</p>
+
+<p class="pubs">Kroll, J. F. (2006). Adult bilingualism and bilingual development. In E. Hoff & P. McCardle (Eds.), Childhood bilingualism. Clevedon, UK: Multilingual Matters.</p>
+
+<p class="pubs">Kroll, J. F., Sumutka, B. M., & Schwartz, A. I. (2005). A cognitive view of the bilingual lexicon: Reading and speaking words in two languages. International Journal of Bilingualism, 9, 27-48.</p>
+
+<p class="pubs">Kroll, J. F., & Tokowicz, N. (2005). Models of bilingual representation and processing. In J. F. Kroll & A. M. B. De Groot (Eds.). Handbook of Bilingualism: Psycholinguistic Approaches (pp. 531-553). New York: Oxford University Press.</p>
+
+<p class="pubs">Tokowicz, N., Michael, E., & Kroll, J. F. (2004). The roles of study abroad experience and working memory capacity in the types of errors made during translation. Bilingualism: Language and Cognition, 7, 255-272.</p>
+
+<p class="pubs">Kroll, J. F., & Dussias, P. (2004). The comprehension of words and sentences in two languages. In T. Bhatia & W. Ritchie (Eds.). Handbook of Bilingualism (pp. 169-200). Cambridge, MA: Blackwell Publishers.</p>
+
+<p class="pubs">Sebastián-Gallés, N., & Kroll, J. F. (2003). Phonology in bilingual language processing: Acquisition, perception, and production. In N. Schiller & A. Meyer (Eds.). Phonetics and phonology in language comprehension and production: Differences and similarities (pp. 279-317). Berlin: Mouton de Gruyter.</p>
+
+<p class="pubs">Kroll, J. F., & Sunderman, G. (2003). Cognitive processes in second language acquisition: The development of lexical and conceptual representations. In C. Doughty & M. Long (Eds.), Handbook of second language acquisition (pp. 104-129). Cambridge, MA: Blackwell Publishers.</p>
+
+<p class="pubs">Tokowicz, N., Kroll, J. F., De Groot, A.M.B., & Van Hell, J.G. (2002). Number of translation norms for Dutch-English translation pairs: A new tool for examining language production. Behavior Research Methods, Instruments, and Computers, 34, 435-451.</p>
+
+<p class="pubs">Miller, N. A., & Kroll, J. F. (2002). Stroop effects in bilingual translation. Memory & Cognition, 30, 614-628.</p>
+
+<p class="pubs">Kroll, J. F., Michael, E., Tokowicz, N., & Dufour, R. (2002). The development of lexical fluency in a second language. Second Language Research, 18, 137-171.</p>
+
+<p class="pubs">De Bot, K., & Kroll, J. F. (2002). Psycholinguistics. In N. Schmitt (Ed.), Introduction to Applied Linguistics (pp. 133-149). Arnold Publishers.</p>
+
+<p class="pubs">Kroll, J. F., & Dijkstra, A. (2002). The bilingual lexicon. In R. Kaplan (Ed.), Handbook of Applied Linguistics (pp. 301-321). Oxford: Oxford University Press.</p>
+
+<p class="pubs">Kroll, J. F. (2001). Book Review: N. Poulisse (1999). Slips of the Tongue: Speech Errors in First and Second Language Production. Amsterdam/Philadelphia: John Benjamins Publishing Company. The Clarion, 7, 5-8.</p>
+
+<p class="pubs">Jared, D. & Kroll, J. F. (2001). Do bilinguals activate phonological representations in one or both of their languages when naming words? Journal of Memory and Language, 44, 2-31.</p>
+
+<p class="pubs">Gollan, T., & Kroll, J. F. (2001). Bilingual lexical access. In B. Rapp (Ed.), The handbook of cognitive neuropsychology: What deficits reveal about the human mind (pp. 321-345). Philadelphia, PA: Psychology Press.</p>
+
+<p class="pubs">Kroll, J. F., & Tokowicz, N. (2001). The development of conceptual representation for words in a second language. In J. L. Nicol (Ed.), One Mind, two languages: Bilingual language processing (pp. 49-71). Cambridge, MA: Blackwell Publishers.</p>
+
+<p class="pubs"><em>Active Funding</em></p>
+
+<p>NSF: Collaborative Research: Advance Leadership Award: Women in Cognitive Science (Co-PIs, Randi Martin and Suparna Rajaram), BCS-0317678, 2003-2008</p>
+
+<p>NSF Grant, BCS-0418071: Reading and speaking words in two languages: A psycholinguistic approach to bilingualism, 2004-2008</p>
+
+<p>National Science Foundation Grant, BCS-0750347: Supplement to Reading and speaking words in two languages: A psycholinguistic approach to bilingualism to investigate issues of bilingualism and deaf literacy in conjunction with the NSF Science of Learning Center at Gallaudet University (Co-PIs, Paola Dussias, Chip Gerfen, and Pilar Piñar), 2007-2008</p>
+
+<p>State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, General Open Grant Project (Co-PIs, Maya Misra and Taomei Guo), Cross-language competition in bilingual language production: Comparative studies with Chinese-English and Spanish-English bilinguals, 2006-2008</p>
+
+<p>National Science Foundation Doctoral Dissertation Research Grant (Co-PI, Susan C. Bobb), BCS-0720155: Morphology in bilingual language processing, 2007-2008 </p>
+
+<p>National Institute of Health NRSA Fellowship: F33HD055003: A proposal for senior NRSA training in cognitive neuroscience, 2007-2008</p>
+
+<p>National Institutes of Health Grant, R56-HD053146: Cognitive processes in bilinguals (Co-PIs, Chip Gerfen, Taomei Guo, and Maya Misra), 2007-2008</p>
+
+
+<p class="pubs"><em>Recent Professional Service:</em></p>
+
+<p>Coordinating Editor, Bilingualism: Language and Cognition, 2001-2002; Co-editor, 1997-2001</p>
+
+<p>Consulting Editor, Journal of Experimental Psychology: Learning, Memory, and Cognition, 1986-1993; 1995-present; Journal of Memory and Language, 1997-present; Behavior Research Methods, Instruments, & Computers, 2002-2004; Psychological Science, 2007-present</p>
+
+<p>Member, Advisory Board, NSF Pittsburgh Science of Learning Center, University of Pittsburgh and Carnegie Mellon University, 2005-present</p>
+
+<p>Member, Study Section, Language and Communication, CSR, National Institutes of Health, 2003-2007; Chair, 2005-2007</p>
+
+<p>Elected Member, Governing Board of the Psychonomic Society, 2006-2011</p>
+
+<p>Co-organizer, <a href="http://www.womencogsci.org/">Women in Cognitive Science</a>, 2001-present</p>
+
+
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

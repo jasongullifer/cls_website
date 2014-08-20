@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Home</title>
+<meta name="Description" content="The Center for Language Science at the Pennsylvania State University is an interdisciplinary group of linguists, psycholinguists, applied linguists, speech-language pathologists, speech scientists, and cognitive neuroscientists who share an interest in language acquisition and bilingualism." />
+<meta name="Keywords" content="center for language science, Penn State, linguistics, bilingualism, psycholingustics, applied linguistics, speech-language pathology, cognitive neuroscience, language development, language acquisition, psychology, german, communication disorders, spanish, italian, portuguese, french" /><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+</script>
+</head>
+
+<body class="twoColHybLtHdr">
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>
+	
+	<a href="http://cls.psu.edu/index.shtml" title="CLS Home" id="cls_banner_link">Center for Language Science</a>
+
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+    <!--<div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>-->
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      <!--</div>-->
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+ 
+	<div id="banner" >
+          <!--#include virtual="/includes/banner.ssi" -->
+	</div>
+	
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+<Br />
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <!--<p class="pagetitle">Home</p>-->
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+
+     <div style="text-align:center" class="welcome_div">
+     <span style="text-align:center" class="welcome_div">Welcome to the Center for Language Science</span>
+     </div>
+	 
+
+<!--
+<table width="700" height="150" border="8" cellpadding="5" cellspacing="10" bordercolor="#FF0000">
+<tr>
+<td>
+<a href="opportunities_under.shtml"><font size=3 color=blue><strong>Research Opportunities for Undergraduates</strong></font></a> <Br /><Br />
+<font size =2>	 
+&bull;Announcing A New International Research Opportunity for Penn State Undergraduate Students <strong>Who Are Non‐US citizens</strong>. Click 
+<a href="files/International_Research_Opportunity_for_Non-US citizens_SUMMER 2012_.pdf"><u>here</u></a> for more information.<Br /><Br />
+&bull;Announcing <strong>International Research Opportunities for Summer 2012
+for Penn State Undergraduate Students</strong>. Click <a href="files/PIRE Undergrad Announcement_Travel for summer 2012.pdf"><u>here</u></a> for more information.<Br /><Br />
+&bull;If you missed the Information session for potential PIRE undergraduate applicants, please contact <a href="mailto:pireundergrads@gmail.com">pireundergrads@gmail.com</a><Br /><Br />
+&bull;To learn more about PIRE: <i>Bilingualism, mind, and brain: An interdisciplinary program in
+cognitive psychology, linguistics, and cognitive neuroscience</i>, please visit <a href="http://cls.psu.edu/PIRE/">PIRE website</a><Br /><Br />
+<font color=red><b>DEADLINE EXTENSION</b></font>: Deadline to apply for PIRE Undergraduate Fellowships for Summer 2012 has been extended to <font color=red>Monday December 05th, 2011</font>.
+
+Information on eligibility requirements can be found <a href="http://cls.psu.edu/files/PIRE%20Undergrad%20Announcement_Travel%20for%20summer%202012.pdf">here</a><Br /><Br />
+
+
+
+</td>
+</tr>
+</table>
+
+<Br /><Br />
+
+<font color=blue><strong>Announcement</strong></font> <Br /><Br />
+<font size =2>	
+
+<b><font color=red>Announcing opening for CLS Neuroscience Post Doctoral Position</font></b>. Click <a href="files/CLS Neuroscience Post Doctoral Position.pdf">here</a> for more information.
+<b>The position is open to all eligible candidates regardless of citizenship</b>. Applicants should send a CV, several reprints or preprints, and a statement of research interests, to <a href="pirepostdoc@gmail.com">pirepostdoc@gmail.com</a>. For fullest consideration, all materials should be received by <b><font color=red>December 1, 2011</font></b>.<Br /><Br />
+
+
+<b><font color=red>Congratulations to the 2011-12 recipients of the Adele Miccio Memorial Travel Award!</font></b>  Colleen Balukas will visit Dr. James Walker at York University and Dr. Naomi Nagy at the University of Toronto, and Joe Bauman will visit Dr. David Pharies and Dr. Jessi Aaron at the University of Florida. </font><Br /><Br />
+
+<font color=blue><strong>Notices</strong></font> <Br /><Br />
+<font size =2>	 
+&bull;The Center for Language Science labs have moved to Thomas Building basement.<Br /><Br />
+&bull;The time of the CLS weekly meetings has changed for the Fall 2011.<Br />
+CLS Weekly Meetings: <font color=red>Fridays 9-10:30am</font> in <font color=red>102 Thomas Building</font><Br />
+       (Please note the change in location)<Br />
+       Refer to the <a href="meeting_series.shtml"> meeting schedule</a> for more details <Br />
+     Everyone is welcome to participate! <Br /><Br /><Br />-->
+<!--
+<strong><h2 class="text_block" style="text-align:center"><font color=red><font size=3><a href="http://cls.psu.edu/upcoming.shtml">Click here for the CLS Events Calendar</a></h2></strong></font></font>
+<p class="text_block"><b>Postdoc position</b>:</p>
+<p class="text_block">The Center for Language Science at The Pennsylvania State University invites applications for a postdoctoral position. We will begin to review applications by <b>March 15, 2014</b>. For more information, please see <a href="../files/Postdoc Center for Language Science.pdf">the position announcement.</a>
+</p>-->
+<!--<font size=2>-->
+<!--<p align="center">
+We have just concluded our fourth annual Young Scholar Speaker Series!<br/><br/>
+<strong><a href="http://cls.psu.edu/PIRE/ysss_2013.shtml">Click here</a></strong> for a description of the 2013 Young Scholar 
+Speaker Series.
+</p>!-->
+<!--
+Congratulations to the eight undergraduates who have been awarded PIRE fellowships for the Summer 2013!<br />
+<p style="text-align:center"><font size=2>Kaylee Roupas (Nijmegen)<br />
+Brendan Tomoschuk (Bangor)<br />
+Daniel Bloodgood (Granada)<br />
+Britney Massimino (Granada)<br />
+Leah Pappas (Leipzig)<br />
+Maggie Lamb (Hong Kong)<br />
+Kelsey  Halloran (Granada)<br />
+Benjamin Stewart (Granada)<br />
+</p>
+-->
+</font>
+</font>
+
+<!--
+
+<p class="text_block"><b>For current undergraduate students</b>:</p>
+<p class="text_block">Want to get involved in language science as an <b>undergraduate research assistant</b>? <a href="http://cls.psu.edu/opportunities_under.shtml">Click here!</a></p>
+<p class="text_block">If you are interested in language science, traveling abroad, and becoming a Summer 2013 PIRE student, 
+<a href="http://cls.psu.edu/PIRE/faq/PIRE%20FAQ%20Sheet_Summer%202013.pdf"><b>more information can be found here</b></a>.
+The application deadline is <b>December 7, 2012</b>.<br/><br/>
+Nine candidates will be chosen for the Summer 2013 undergraduate PIRE cohort (8 U.S. citizens and 1 non-U.S. citizen).<br/><br/></p>
+<strong><a href="http://cls.psu.edu/PIRE" target="new">Partnership for International Research and Education (PIRE)</a></strong></font>
+-->
+    
+     <!--<p style="text-align:center">&nbsp;</p>-->
+     <!--<h3 class="text_block" style="text-align:center">Announcing International Research Opportunities for CLS Graduate Students. Click <a href="files/PIRE_Grad_Fall_2011.pdf">here</a> for more info.</h3>-->
+
+ <!--    <h3 class="text_block" style="text-align:center">Announcing the winners of the 2010-11 Adele Miccio Memorial Travel Award:     </h3>
+     <ul>
+     <li>Cari Bogulski (Psychology) will visit the lab of Lee Osterhout at the University of Washington.</li>
+     <li>Ashley Roccamo (German) will visit Mary Grantham O’Brien’s lab at the University of Calgary.</li>
+     <li>Jorge Valdes (Spanish) plans an extended visit to the lab of John Trueswell at the University of Pennsylvania.</li>
+     </ul>
+     <p style="text-align:center">     Congratulations to all three winners!  We look forward to hearing about their experiences. </p>
+     <p style="text-align:center">
+       Updates: <span class="new"><a href="podcasts.shtml">Karen Emmorey Podcast</a> Uploaded</span><Br />
+     <Br /></h3>--> 
+
+	 
+	 
+<strong><h2 class="text_block" style="text-align:center"><font size=3>About the CLS</a></h2></strong></font>
+<p class="text_block">The Center for Language Science (CLS), located in the Thomas Building, is an interdisciplinary group of linguists, psycholinguists, applied linguists, speech-language pathologists, speech scientists, and cognitive neuroscientists who share an interest in language acquisition and bilingualism. </p>
+     <div style="float:right">
+     <img alt="Flowers in front of Moore building" src="images/moore_flowersb.jpg" width="283" height="214" /></div>
+
+     <p class="text_block">Our research focuses on language science from a diverse set of perspectives. These include:</p>
+     <ul>
+     <li> typical language development</li>
+     <li>atypical language development</li>
+     <li>psycholinguistics</li>
+     <li>cognitive neuroscience</li>
+     </ul>
+              
+          <p class="text_block">Using sophisticated behavioral and neuroscience methods such as eye tracking, acoustic analysis, and electrophysiological recording of brain activity, members of the CLS seek to learn about the inner workings of language with a special focus on bilingualism. </p>
+
+     <p class="text_block">The CLS meets weekly to discuss research, read papers together, share new methodological developments, and practice giving conference talks. One of our main goals is to foster collaborative research projects across the disciplines. </p>
+     
+        
+      <p class="text_block">The CLS includes affiliated researchers around the  world. Our many national and international collaborations bring distinguished visitors to the Penn State  campus, and provide opportunities for our students to gain valuable research  experience at other U.S.  universities as well as in other countries.?The CLS is an affiliate of the NSF Science of Learning Center at Gallaudet University,  opening up further opportunities for collaboration in deaf studies, translation, and sign languages.</p>
+           <p class="text_block">Support for the CLS is provided from within Penn State by the <a href="http://www.cyfc.psu.edu/">Children, Youth, and Families Consortium</a>; The <a href="http://www.la.psu.edu/">College of the Liberal Arts</a>; and the <a href="http://www.hhdev.psu.edu/">College of Health and Human Development</a>. Funding for individual faculty and graduate students is provided by grants from the <a href="http://www.nih.gov/">National Institutes of Health</a> and the <a href="http://www.nsf.gov/">National Science Foundation</a>.   </p>
+
+    <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

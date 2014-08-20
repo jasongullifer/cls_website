@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Affiliates : Ton Dijkstra</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script src="../../SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../affiliates.shtml">Affiliates</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Ton Dijkstra<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/dijkstra_ton.jpg" alt="" name="pic" width="157" height="188" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Ton Dijkstra<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Professor of Psycholinguistics and Multilingualism, Head of the Division of Psycholinguistics, Donders Centre for Cognition (DCC), Radboud University Nijmegen<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong>Radboud University Nijmegen, Faculty of Social Sciences</strong><br />
+Nijmegen Institute for Cognition and Information<br /> 
+Spinoza Building, room B.01.15<br /> 
+PO Box 9104<br /> 
+6500 HE Nijmegen, The Netherlands <!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> Phone: +31 24 36 15639<br />
+E-mail: <a href="mailto:t.dijkstra@psych.ru.nl">t.dijkstra@psych.ru.nl</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://www.socsci.ru.nl/~dijkstra/index.html">View Personal Website</a></span></p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" -->Language Development in Diverse Context<!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">Research by my group and me has focussed on understanding the word recognition process in monolinguals and bilinguals through behavioral studies, electrophysiological and neuro-imaging studies, and computational modeling. Recently, we have begun to consider bilingual sentence processing in comprehension and production. </p>
+
+<div id="CollapsiblePanel1" class="CollapsiblePanel">
+  <div class="CollapsiblePanelTab" tabindex="0">More (Click to Expand)</div>
+  <div class="CollapsiblePanelContent">  <p class="text_block">In the past 15 years, we have published empirical, theoretical, and simulation papers on bilingual recognition of isolated words. The empirical papers were concerned with the effects of cross-linguistic identity or similarity on bilingual word recognition. We demonstrated, for instance, that (1) a larger number of similar (“neighbor”) or morphologically related (“family member”) words from the same or another language slows down target word recognition in bilinguals (Dijkstra et al., 1998; Van Heuven et al., 1998; Dijkstra, Moscoso del Prado Martin et al., 2004); (2) interlingual homograph and cognate recognition are affected systematically by their relative frequency in the two languages and by their cross-linguistic similarity (Dijkstra, Van Jaarsveld, &amp; Ten Brinke, 1998; Dijkstra, Grainger, &amp; Van Heuven, 1999; Lemhöfer &amp; Dijkstra, 2004); (3) variations in instruction and task demands do systematically affect the obtained reaction time patterns but in a complex way (Dijkstra et al., 1998; 2000a, 2000b); (4) systematic differences in N400 arise for interlingual homographs (De Bruijn et al., 2001; Kerkhofs et al., 2006); (5) systematic fMRI effects are found for interlingual homographs, supporting a distinction between a word identification system and a task/decision system (Van Heuven et al., submitted).</p> 
+
+<p class="text_block">In theoretical work (e.g., Dijkstra &amp; Van Heuven, 1998, 2002), we accounted for these findings by developing a connectionist view holding that (1) bilingual word recognition is automatic, bottom-up, and language independent, implying the simultaneous activation of word candidates from several languages; (2) task demands affect a control system that specifies the processing steps required for the task and sets the relevant parameters for word identification. Other researchers have in large majority obtained results in accordance our interpretations (e.g., Font, 2001).  </p>
+
+<p class="text_block">The notions we developed were implemented in the Bilingual Interactive Activation (BIA) model, the most successful computational model of bilingual word recognition so far (in collaboration with Walter Van Heuven and Jonathan Grainger). Simulation work replicated the basic findings for interlingual homographs, cognates, and words differing in cross-linguistic neighborhood density (Dijkstra, Grainger, &amp; Van Heuven, 1998; Van Heuven et al., 1998; Van Heuven &amp; Dijkstra, in preparation).  </p>
+
+<p class="text_block">In recent years, our bilingual research has quickly expanded. We have investigated the relationship between the word identification system and the task/decision system (Smits et al., 2006), the existence of language membership representations, the functional overlap between tasks, bilingual word recognition in the auditory modality, effects of language switching, and the effects of sentence context on target word recognition. We have explored new tasks (e.g., Progressive Demasking and Language Decision, measurement of Event Related Potentials and fMRI), stimulus materials (e.g., items differing in morphological family size), participant groups (e.g., trilinguals, high-school students, and children), experimental designs (e.g., cross-sectional designs and comparisons of cross-linguistic effects of different native languages, language switching), and analysis techniques  (e.g., complex regression analyses).  </p>
+
+<p class="text_block">In an exciting project that has just started, an attempt is made to bridge the existing gap between linguistics and psycholinguistics with respect to code-switches in bilingual language production. In this project, linguists and psycholinguists collaborate to unveil the mechanisms underlying language switches in bilingual utterances by eliciting language switches under more or less controlled circumstances. Colleagues involved in this project are Prof. Dr. P. Muysken (Faculty of Arts, Nijmegen) and Dr. Janet van Hell (BSI, Faculty of Social Sciences, Nijmegen). Ph.D. students are Sybrine Bultena (DCC), Kimberley Mulder (DCC), Gerrit Jan Kootstra (BSI) and Pascal Brenders (BSI/DCC).  </p>
+
+<p class="text_block">In all discussed projects, the computational model we developed provides a unifying framework for the research enterprise that yields predictions and systematizes the interpretation of new RT and ERP data. Currently, I am collaborating with Van Heuven, Schriefers, and Hagoort to test several model predictions for isolated words in fMRI studies (Van Heuven et al., under revision). So far, the obtained results uphold the bilingual word recognition model with respect to the distinction between a word identification system and a task/control system, and its views on stimulus-response binding and response competition (Van Heuven &amp; Dijkstra, submitted).</p></div>
+</div>
+<!-- InstanceEndEditable -->
+<p> <em>Research Opportunities:</em><br />
+</p>
+<!-- InstanceBeginEditable name="res_ops_desc" -->
+<p class="text_block">The Nijmegen Institute for Cognition and Information consists of several divisions, working in different areas of cognitive neuroscience and cognitive psychology. More information can be found on the Institute’s website:  <a href="http://www.ru.nl/donders/ ">http://www.ru.nl/donders/</a> </p>
+
+<p class="text_block">Research in the division of Psycholinguistics covers lexical, sentence, and discourse processing in healthy monolingual and multilingual language users, and in adult language users suffering from disorders. One new topic of investigation is the executive control that bilingual speakers are able to exert when they choose one of their languages for an utterance; another concerns intrasentential code-switching, i.e. language switching during bilingual sentence production. These topics are investigated by using the state-of-the art technical facilities of DCC, including several fully-equiped experimentation rooms, three EEG labs, and an eye-tracker laboratory. Under certain conditions, DCC members also have access to the sophisticated fMRI apparatus at the F.C. Donders Centre for Neuroimaging.  </p>
+
+<p class="text_block">Visitors to DCC who wish to collaborate on monolingual or bilingual issues are very welcome, as long as a project plan can be formulated on topics of mutual interest.</p>
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+<p class="pubs">Dijkstra, A., Hilberink-Schulpen, B., & van Heuven, W.J.B. (in press). Repetition and masked form priming within and between languages using word and nonword neighbors. Bilingualism: Language and Cognition.</p>
+
+<p class="pubs">Dijkstra, A. (2009). The multilingual lexicon. In Sandra, D., Östman, J.-O., Verschueren, J., &  (Eds.), Cognition and language use: Handbook of Pragmatics Highlights. Also Handbook of Pragmatics On-Line. </p>
+
+<p class="pubs">Kootstra, G. J., van Hell, J. G., & Dijkstra, T. (2009). Two speakers, one dialogue. An interactive alignment perspective on code-switching in bilingual speakers. In L. Isurin, D. Winford, & K. de Bot (Eds.), Interdisciplinary approaches to code switching (pp. 129-159). Amsterdam / Philadelphia: John Benjamins. </p>
+
+<p class="pubs">Smits, E., Sandra, D., Martensen, H. & Dijkstra, A. (2009). Phonological inconsistency in word naming: Determinants of the interference effect between languages. Bilingualism: Language and Cognition, 12, 23-39. doi:10.1017/S136672890800346. </p>
+
+<p class="pubs">Dijkstra, A. (2008). Met andere woorden: over taal en meertaligheid. [In other words: about language and multilingualism.] Acceptance speech for a chair in ‘Psycholinguistics and Multilingualism’ in the Faculties of Social Sciences and Arts of the Radboud University Nijmegen. ISBN 978-90-813118-1-6. </p>
+
+<p class="pubs">Kwisthout, J. Vogt, P., Haselager, W., & Dijkstra, A. (2008). Joint attention and language evolution. Connection Science, 20 (2-3), 155 - 171. </p>
+
+<p class="pubs">Lemhoefer, K., Dijkstra, A., Schriefers, H., Baayen, H., Grainger, J., & Zwitserlood, P. (2008). Native language influences on word recognition in a second language: A mega-study. Journal of Experimental Psychology: Learning, Memory, and Cognition, 34, 12-31. </p>
+
+<p class="pubs">Van Heuven, W., Schriefers, H., Dijkstra, A., & Hagoort, P. (2008). Language conflict in the bilingual brain. Cerebral Cortex, 18, 11,  2706-2716. doi:10.1093/cercor/bhn030 </p>
+
+<p class="pubs">Dijkstra, A. (2007). The multilingual lexicon. In Gaskell, M.G. (Ed.), Handbook of Psycholinguistics (pp. 251-265). Oxford University Press. </p>
+
+<p class="pubs">Dijkstra, A. (2007). Task and context effects in bilingual processing. In I. Kecskes & L. Albertazzi (Eds.), Cognitive aspects of bilingualism (pp. 213-235). Dordrecht: Springer. </p>
+
+
+
+
+<p class="pubs">Brysbaert, M., &amp; Dijkstra, A. (2006). Changing views on word recognition in bilinguals. In J. Morais &amp; G. d’Ydewalle (Eds.), Bilingualism and second language acquisition (pp. 25-37). Brussels: The Royal Academies for Science and the Arts of Belgium. </p>
+
+<p class="pubs">Dijkstra, A., &amp; Van Heuven, W.J.B. (2006). On language and brain! – Or on (psycho)linguists and neuroscientists? Comments on A. Rodriguez-Fornells et al., Language Learning, 56, 191-198. Special issue edited by M. Güllberg &amp; P. Indefrey. </p>
+
+<p class="pubs">Kerkhofs, R., Dijkstra, A., Chwilla, D. &amp; De Bruijn, E. (2006). Testing a model for bilingual semantic priming with interlingual homographs: RT and ERP effects. Brain Research, 1068, 170-183. </p>
+
+<p class="pubs">Sandra, D., Smits, E., Martensen, H., &amp; Dijkstra, A. (2006). In J. Morais &amp; G. d’Ydewalle (Eds.), Bilingualism and second language acquisition (pp. 69-77). Brussels: The Royal Academies for Science and the Arts of Belgium. </p>
+
+<p class="pubs">Smits, E., Martensen, H., Dijkstra, A., &amp; Sandra, D. (2006). Naming interlingual homographs: Variable competition and the role of the decision system. Bilingualism: Language and Cognition, 9, 281-297. </p>
+
+<p class="pubs">Bastiaansen, M.C.M., van der Linden, M., ter Keurs, M., Dijkstra, A., &amp; Hagoort, P. (2005). Theta responses are involved in lexical-semantic retrieval during language processing. Journal of Cognitive Neuroscience, 17, 530-541. </p>
+
+<p class="pubs">Dijkstra, A. (2005). Word recognition and lexical access II: Connectionist approaches. In D.A. Cruse, F. Hundsnurscher, M. Job, &amp; P.R. Lutzeier (Eds.), Lexikologie vol. II – Lexicology vol. II (pp. 1722-1730). Berlin: Walter de Gruyter. (Article 218.) </p>
+
+<p class="pubs">Dijkstra, A. (2005). Bilingual visual word recognition and lexical access. In J.F. Kroll &amp; A. De Groot (Eds.), Handbook of Bilingualism: Psycholinguistic Approaches (pp. 178-201). Oxford University Press. </p>
+
+<p class="pubs">Dijkstra, A., Moscoso del Prado Martin, F., Schulpen, B., Baayen, H., &amp; Schreuder, R. (2005). A roommate in cream? Morphological family size effects on interlingual homograph recognition. Language and Cognitive Processes. Special issue on morphology, 20, 7-41. </p>
+
+<p class="pubs">Martensen, H., Dijkstra, A., &amp; Maris, E. (2005). A werd is not quite a word: On the role of sublexical phonological information in visual lexical decision. Language and Cognitive Processes, 20, 513-552. </p>
+
+<p class="pubs">Tuinman, A., &amp; Dijkstra, A. (2005). Herkenning van homografen door tweetaligen: De invloed van taakeisen en stimuluslijstcompositie. [Recognition of interlingual homographs by bilinguals: The effects of task demands and stimulus list composition.)] Toegepaste Taalwetenschap in Artikelen, 73, 31-40. </p>
+
+<p class="pubs">Dijkstra, A., &amp; Haverkort, M. (2004). APT: Costs and benefits of a hybrid model. Bilingualism: Language &amp; Cognition, 7, 26-28. 
+</p>
+<p class="pubs">Dijkstra, A., &amp; Snoeren, N. (2004). Appartenance linguistique dans la reconnaissance et la production des mots ches les bilingues. In L. Ferrand, &amp; J. Grainger (Red.), Psycholinguistique  cognitive: Essais en l’honneur de Juan Segui (pp. 377-399). Bruxelles: De Boeck &amp; Larcier s.a.  </p>
+
+<p class="pubs">Lemhöfer, K., &amp; Dijkstra, A. (2004). Recognizing cognates and interlingual homographs: Effects of code similarity in language specific and generalized lexical decision. Memory &amp; Cognition, 32, 533-550. </p>
+
+<p class="pubs">Lemhöfer, K., Dijkstra, A., &amp; Michel, M. (2004). Three languages, one ECHO: Cognate effects in trilingual word recognition. Language and Cognitive Processes, 19, 585-611.  </p>
+
+<p class="pubs">Timmermans, M., Schriefers, H.J., Dijkstra, A., &amp; Haverkort, M. (2004). Disagreement on Agreement: Person Agreement between coordinated subjects and verbs in Dutch and German. Linguistics, 42, 905-929. </p>
+
+<p class="pubs">Dijkstra, A. (2003). Lexical processing in bilinguals and multilinguals: The word selection problem. In J. Cenoz, B. Hufeisen, &amp; U. Jessner (Eds.), The multilingual lexicon (pp. 11-26). Dordrecht: Kluwer Academic Publishers.  
+</p>
+<p class="pubs">Dijkstra, A. (2003). Lexical storage and retrieval in bilinguals. In R. van Hout, A. Hulk, F. Kuiken, &amp; R. Towell (Eds.), The interface between syntax and the lexicon in second language acquisition (pp. 129-150). Amsterdam: John Benjamins. </p>
+
+<p class="pubs">Dijkstra, A., &amp; Van Hell, J. (2003). Testing the Language Mode hypothesis using trilinguals. International Journal of Bilingual Education and Bilingualism, 6, 2-16.  </p>
+
+<p class="pubs">Schulpen, B., Dijkstra, A., Schriefers, H.J., &amp; Hasper, M. (2003). Recognition of interlingual homophones in bilingual auditory word recognition. Journal of Experimental Psychology: Human Perception and Performance, 29, 1155-1178.  </p>
+
+<p class="pubs">Martensen, H., Maris, E., &amp; Dijkstra, A. (2003). Phonological ambiguity and context sensitivity: On sublexical clustering in visual word recognition. Journal of Memory and Language, 49, 375-395. </p>
+
+<p class="pubs">Baayen, R.H., McQueen, J.M., Dijkstra, A., &amp; Schreuder, R. (2003). Frequency effects in regular inflectional morphology: Revisiting Dutch plurals. In R.H. Baayen &amp; R. Schreuder (Eds.), Morphological Structure in Language Processing (pp. 355-390). Berlin: Mouton de Gruyter. </p>
+
+<p class="pubs">Dijkstra, A., &amp; Van Heuven, W.J.B. (2002). The architecture of the bilingual word recognition system: From identification to decision. Bilingualism: Language and Cognition, 5, 175-197. </p>
+
+<p class="pubs">Dijkstra, A., &amp; Van Heuven, W.J.B. (2002). Authors’ response: Modelling bilingual word recognition: Past, present and future. Bilingualism: Language and Cognition, 5, 219-224.  </p>
+
+<p class="pubs">Kroll, J.F., &amp; Dijkstra, A. (2002). The bilingual lexicon. In R. Kaplan (Ed.), Handbook of Applied Linguistics (pp. 301-321). Oxford: Oxford University Press. </p>
+
+<p class="pubs">Van Hell, J., &amp; Dijkstra, A. (2002). Foreign language knowledge can influence native language performance. Psychonomic Bulletin &amp; Review, 9(4), 780-789.  </p>
+
+<p class="pubs">Van Minnen, A., Wessel, I., Dijkstra, A., &amp; Roelofs, K. (2002). Changes in PTSD patients’ narratives during prolonged exposure therapy: A replication and extension. Journal of Traumatic Stress, 15, 255-258.</p>  
+<script type="text/javascript">
+<!--
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", {contentIsOpen:false});
+//-->
+</script>
+    <!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

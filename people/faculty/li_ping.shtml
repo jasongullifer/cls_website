@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Ping Li</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="false" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="false" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Ping Li<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/li_ping.jpg" alt="" name="pic" width="111" height="195" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Ping Li<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Professor of Psychology, Linguistics, and Information Sciences and Technology<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong>Department of Psychology</strong><br />
+Pennsylvania State University<br /> 
+452 Moore Building
+<br />
+University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> Phone:   (814) 863-3921  <br />
+Fax:(814)863-7002   <br />
+E-mail: <a href="mailto:pul8@psu.edu">pul8@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://blclab.org/">View Lab Website</a></span> <span><a href="http://www.personal.psu.edu/pul8/personal/cv_pli.pdf">View CV</a></span> </p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">Cognitive neuroscience, psycholinguistics, bilingualism, computational and neural mechanisms of language acquisition </p> 
+
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+
+<p class="pubs">Grosjean, F., & Li, P. (2013). <i>The psycholinguistics of bilingualism</i>. New York, NY: John Wiley & Sons, Inc.</p>
+<p class="pubs">Li, P., & MacWhinney, B. (2013). Competition model. In C.A. Chapelle (ed.), <i>The encyclopedia of applied linguistics</i>. Malden, MA: John Wiley & Sons, Inc. (Wiley Online Library: DOI: 10.1002/9781405198431.wbeal0168).</p>
+<p class="pubs">Li, P., & Zhao, X. (2013). Connectionism. In C.A. Chapelle (ed.), <i>The encyclopedia of applied linguistics</i>. Malden, MA: John Wiley & Sons, Inc. (Wiley Online Library: DOI: 10.1002/9781405198431.wbeal0186).</p>
+<p class="pubs">Li, P., & Zhao, X. (2013). Connectionist models of second language acquisition. In M.P. Garcia Mayo, M. Junkal, G. Mangado, & M. Adrian  (eds.), <i>Contemporary approaches to second language acquisition</i> (pp. 177-198). Amsterdam, the Netherlands: John Benjamins.</p>
+<p class="pubs">Li, P. (2013). Computational modeling of bilingualism. A special issue of <i>Bilingualism: Language and Cognition</i>, <i>16(2)</i>, 241-441.</p>
+<p class="pubs">Xu, G., Zhang, L., Shu, H., Wang, X., & Li, P. (2013). Access to lexical meaning in pitch-flattened Chinese sentences: An fMRI study. <i>Neuropsychologia</i>, <i>51</i>, 550-556.</p>
+<p class="pubs">Yue, Q., Zhang, L., Xu, G., Shu, H., & Li, P. (2013). Task-modulated activation and functional connectivity of the temporal-frontal areas during speech comprehension. <i>Neuroscience</i>, <i>237</i>, 87-95.</p>
+<p class="pubs">Zhao, X., & Li, P. (2013). Simulating cross-language priming with a dynamic computational model of the lexicon. <i>Bilingualism: Language and Cognition</i>, <i>16</i>, 288-303.</p>
+<p class="pubs">Li, P. (2012). Neuro-computational approaches to Chinese. In C.F. Sun, W. S-Y Wang, & Y. Tsai (eds.), <i>Oxford Handbook of Chinese Linguistics</i>. Oxford, UK: Oxford University Press.</p>
+<p class="pubs">Li, P., & MacWhinney, B. (2012). Competition model. In C.A. Chapelle (ed.), <i>The Encyclopedia of Applied Linguistics</i> (in press). Malden, MA: John Wiley & Sons, Inc.</p>
+<p class="pubs">Li, P., & . Marrongelle, K. (2012). <i>Having Success with NSF: A Practical Guide</i>. New York, NY: John Wiley & Sons, Inc.</p>
+<p class="pubs">Li, P., Shu, H., & Liu, Y. (2012). Neurocognitive approaches to the processing of Chinese. In J. Huang, A. Li, & A. Simpson (eds.), <i>Wiley-Blackwell Handbook of Chinese Linguistics</i>. Malden, MA: John Wiley & Sons, Inc.</p>
+<p class="pubs">Li, P., & Tokowicz, N. (2012). The psycholinguistics of second language acquisition. In P. Robinson (ed.), <i>Routledge Encyclopedia of Second Language Acquisition</i>. New York, NY: Taylor & Francis/Routledge.</p>
+<p class="pubs">Li, P., & Zhao, X. (2012). Connectionist approaches to bilingual lexical representation. In J. Altarriba & R. Heredia (eds.), <i>Understanding Bilingual Memory: Theory and Application</i>. Springer Science Publishers.</p>
+<p class="pubs">Li, P., & Zhao, X. (2012). Connectionism. In M. Aronoff (ed.), Oxford bibliographies online. New York, NY: Oxford University Press. (<a href"http://www.oxfordbibliographies.com/">www.oxfordbibliographies.com</a>)</p>
+<p class="pubs">Yang, J., & Li, P. (2012). Brain networks of explicit and implicit learning. <i>PLoS One</i>, <i>7</i>, e42993. doi:10.1371/journal.pone.0042993</p>
+<p class="pubs">Zhang, Y., Zhang, L., Shu, H., Xi, J., Wu, H., Zhang, Y., & Li, P. (2012). Universality of categorical perception deficit in developmental dyslexia: An investigation of Mandarin Chinese tones. Journal of Child Psychiatry and Psychology.</p>
+<p class="pubs">Zhang, L., Xi, J., Wu, H., Shu, H., & Li, P. (2011). Electrophysiological evidence of categorical perception of Chinese lexical tones in attentive condition. <i>NeuroReport</i>. <i>23</i>, 35-39.</p>
+<p class="pubs">Yang, J., Tan, L., & Li, P. (2011). Lexical representation of nouns and verbs in the late bilingual brain. <i>Journal of Neurolinguistics</i>, <i>24</i>, 674-682.</p>
+<p class="pubs">He, H.B., Li, P., & Wang, H.W. (2011). Advances in knowledge discovery and data analysis for artificial intelligence. <i>Journal of Experimental and Artificial Intelligence</i>, <i>23 (1)</i>, 1-136.</p>
+<p class="pubs">Zhang, L., Xi, J., Xu, G., Shu, H., Wang, X., & Li, P. (2011). Cortical dynamics of acoustic and phonological processing in speech processing. <i>PLoS One</i>, <i>e20963</i>. doi:10.1371/journal.pone.0020963.</p>
+<p class="pubs">Liu, Y., Hao, M., Li, P., & Shu, H. (2011). Timed picture naming norms for Mandarin Chinese. <i>PLoS One</i>, <i>6</i>, e16505.</p>
+<p class="pubs">Zhao, X., Li, P., & Kohonen, T. (2011). Contextual self-organizing map: Software for constructing semantic representation. <i>Behavior Research Methods</i>, <i>43</i>, 77-88.</p>
+
+<p> <br /> 
+    <em>Current Grants:</em> </p>
+
+	<p class="pubs">2013-2015 Co-PI, National Research Council, Taiwan: (NT10,000,000 per annum). "Advanced Joint Center for the Study of Learning Sciences" (PI: Yaoting Sung, National Taiwan Normal University, Co-PI, David Monk, Ping Li, Penn State)
+</p>
+
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

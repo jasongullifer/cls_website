@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Janet van Hell</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Janet van Hell<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/vanhell_janet.jpg" width="178" height="230" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Janet van Hell<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->
+      Professor of Psychology and Linguistics<Br />
+Director of the Linguistics Program<Br />
+<Br />
+</p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong> 
+      Department of Psychology</strong><Br />
+4G Thomas Building <Br />
+University Park, PA 16802<Br /><Br />
+
+
+
+    <Br />
+    <!-- InstanceEndEditable --><Br />
+    <Br />
+    <!-- InstanceBeginEditable name="contact" -->    Phone (Penn State): 814-867-6754 <Br /> 
+
+    Email: <a href="mailto:jgv3@psu.edu">jgv3@psu.edu</a>
+<!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://bild.la.psu.edu/people/principal-investigator">View Personal Website</a></span> </p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p><em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" --><a href="http://bild.la.psu.edu/">Bilingualism and Language Development Lab (BiLD lab)</a><!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><Br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->    <p class="text_block">Second language learning and bilingualism/multilingualism.</p>
+
+<p class="text_block">The Bilingualism and Language Development (BiLD) Lab studies the cognitive and neurocognitive processes related to language development, second language learning, and bilinguals’ use of two languages. We combine behavioral, neuropsychological (ERPs), and linguistic techniques to study patterns of cross-language interaction and transfer in second language learners at different levels of proficiency, as well as neural and cognitive mechanisms involved in code-switching. We also study sign-speech bilinguals who use spatial and oral languages from two different modalities. A second research theme in the BiLD Lab focuses on language development in school-aged children with typical or atypical development, including children with dyslexia or with specific language impairment, and children who are deaf. </p>
+
+<!-- InstanceEndEditable -->
+<p> <em>Research Opportunities:</em><Br />
+</p>
+<!-- InstanceBeginEditable name="res_ops_desc" -->
+<p class="text_block">The Bilingualism and Language Development (BiLD) Lab is a new lab in the Psychology and Linguistics Departments, and focuses on language development and bilingualism at middle childhood and beyond. Questions we examine include: How do bilinguals with different levels of proficiency in their second language process words and sentences in their first and second language? Why do bilinguals switch between languages and what triggers a switch to the other language? How do beginning second language learners learn new words and syntactic structures in the second language? How do children with dyslexia or with Specific Language Impairment process complex morphosyntactic structures? How does sign language influence processing in an oral language in sign-speech bilinguals? </p>
+
+<p class="text_block">There are many opportunities for research for students interested in particular languages (e.g., Spanish, German, Chinese, American Sign Language), but you don’t have to speak a second language yourself. We seek students who are curious, enthusiastic, and responsible, and who seek training in experimental and neurocognitive research related to language processing.
+Method of compensation: Independent study (Psychology 494 or Linguistics 496) or work study positions are available for undergraduate students who are eligible. Please contact me at <a href="mailto:jvg3@psu.edu">jgv3@psu.edu</a> if you are interested.</p>
+
+
+
+<!-- InstanceEndEditable -->
+<p> <Br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+<p class="pubs">* denotes a student author</p>
+<p class="pubs">Kootstra*, G. J., Van Hell, J. G., & Dijkstra, T. (in press). Code-switching in sentences: The role of lexical repetition, cognates, and language proficiency. Bilingualism: Language and Cognition.</p>
+<p class="pubs">Van Hell, J. G., & Kroll, J. F. (in press). Using electrophysiological measures to track the mapping of words to concepts in the bilingual brain: a focus on translation. In J. Altarriba & L. Isurin (Eds.), Memory, Language, and Bilingualism: Theoretical and Applied Approaches. New York: Cambridge University Press.</p>
+<p class="pubs">Poarch*, G. J. & Van Hell, J. G. (in press). Cross-language activation in children’s speech production: Evidence from second language learners, bilinguals, and trilinguals. Journal of Experimental Child Psychology. doi:10.1016/j.jecp.2011.09.008</p>
+<p class="pubs">Schwartz, A. I. & Van Hell, J. G. (in press). Bilingual visual word recognition in sentence context. In J. Adelman (Ed.), Visual Word Recognition (Ed. J. Adelman). Psychology Press.</p>
+<p class="pubs">Hoogeveen*, L., Van Hell, J. G., & Verhoeven, L. (in press). Accelerated gifted students in the Netherlands: Social and emotional characteristics and behavior. British Journal of Educational Psychology. DOI: 10.1111/j.2044-8279.2011.02047.x</p>
+<p class="pubs">Van Hell, J. G. & Poarch*, G. J. (in press). Lexical and conceptual representations in second language acquisition. In M. Gullberg & J. Williams (Eds.), The Encyclopedia of Applied Linguistics.</p>
+
+<p class="pubs">Hermans, D., Ormel, E., Van den Besselaar*, R., & Van Hell, J. G. (in press). Lexical activation in bilinguals’ speech production is dynamic: How language ambiguous words can affect cross-language activation. Language and Cognitive Processes. DOI: 10.1080/01690965.2010.530411</p>
+<p class="pubs">Van Beijsterveldt*, L. M., & Van Hell, J. G. (in press). The development of deaf writers’ tense marking in narrative and expository text: a bimodal bilingual perspective. Bilingualism: Language and Cognition. DOI:10.1017/S1366728910000465</p>
+<p class="pubs">Jackson, C. N., & Van Hell, J. G. (2011). The effects of L2 proficiency level on the processing of wh-questions among Dutch second language speakers of English. International Review of Applied Linguistics in Language Teaching, 49 (3), 195-219.</p>
+<p class="pubs">Brenders*, P., Van Hell, J. G., & Dijkstra, T. (2011). Word recognition in child second language learners: Evidence from cognates and false friends. Journal of Experimental Child Psychology, 109, 383-396. DOI:10.1016/j.jecp.2011.03.012</p>
+<p class="pubs">Kootstra*, G. J., Van Hell, J. G., & Dijkstra, T. (2010). Alignment in the production of code-switched sentences: The role of word order and dialogue partner. Journal of Memory and Language, 63, 210-236. doi:10.1016/j.jml.2010.03.006</p>
+<p class="pubs">Kroll, J. F., Van Hell, J. G., Tokowicz, N., & Green, D. W. (2010). The Revised Hierarchical model: A critical review and assessment. Bilingualism: Language and Cognition, 13 (3), 373-381. doi:10.1017/S136672891000009X</p>
+<p class="pubs">Van Beijsterveldt*, L. M. & Van Hell, J. G. (2010). Lexical noun phrases in texts written by deaf children and adults with different proficiency levels in sign language. International Journal of Bilingual Education and Bilingualism, 13 (4), 439-468. DOI: 10.1080/13670050903477039</p>
+<p class="pubs">Van Hell, J. G., & Tokowicz, N. (2010). Event-related brain potentials and second language learning: Syntactic processing in late L2 learners at different L2 proficiency levels. Second Language Research, 26 (1), 43-74. DOI: 10.1177/0267658309337637</p>
+<p class="pubs">De Jong, T., van Gog, T., Jenks, K., Manlove, S., Van Hell, J.G., Jolles, J., van Merrienboer, J., van Leeuwen, T., Boschloo, A. (2009). Explorations in Learning and the Brain. On the Potential of Cognitive Neuroscience for Educational Science. Springer. ISBN: 978-0-387-89511-6</p>
+<p class="pubs">Hoogeveen*, L., Van Hell, J. G., & Verhoeven, L. (2009). Self-concept, social status and reputation of accelerated and non-accelerated students in the Netherlands. Gifted Child Quarterly, 53, 50-67. DOI: 10.1177/0016986208326556</p>
+<p class="pubs">Kootstra*, G. J., Van Hell, J. G., & Dijkstra, T. (2009). Two speakers, one dialogue: An interactive alignment perspective on codeswitching in bilingual speakers. In: L. Isurin, D. Winford, & K. de Bot (Eds.), Multidisciplinary approaches to code switching (pp. 129-159). Amsterdam / Philadelphia: John Benjamins.</p>
+<p class="pubs">Van Beijsterveldt*, L. M., & Van Hell, J. G. (2009). Evaluative expression in deaf children’s written narratives. International Journal of Language and Communication Disorders, 44 (5), 675-692. DOI: 10.1080/13682820802301498</p>
+<p class="pubs">Van Beijsterveldt*, L. M., & Van Hell, J. G. (2009). Structural priming of adjective-noun structures in hearing and deaf children. Journal of Experimental Child Psychology, 104 (2), 179-196. doi:10.1016/j.jecp.2009.05.002</p>
+<p class="pubs">Van Hell, J. G., & Witteman*, M. J. (2009). The neurocognition of switching between languages: A review of electrophysiological studies. In: L. Isurin, D. Winford, & K. de Bot (Eds.), Multidisciplinary approaches to code switching (pp. 53-84). Amsterdam / Philadelphia: John Benjamins.</p>
+<p class="pubs">Van Hell, J. G. & De Groot, A. M. B. (2008). Sentence context affects lexical decision and word translation. Acta Psychologica, 128, 431-451. doi:10.1016/j.actpsy.2008.03.010</p>
+
+<p class="pubs">Van Hell, J. G., Verhoeven, L., & Van Beijsterveldt*, L. M. (2008). Pause time patterns in writing narrative and expository texts by children and adults. Discourse Processes, 45, 406-427. DOI: 10.1080/01638530802070080</p>
+<p class="pubs">Verhoeven, L. & Van Hell, J. G. (2008). From knowledge representation to writing text: A developmental perspective. Discourse Processes, 45, 387-405.</p>
+<p class="pubs">Van Hell, J. G., & van Weerdenburg, M. (2007). Taalontwikkeling and taalproblemen [Language development and language disorders]. In: K. Verschueren & H. Koomen, Handboek diagnostiek in de leerlingenbegeleiding [Handbook for diagnostics in school service] (pp. 89-104). Leuven, Belgium: Garant.</p>
+<p class="pubs">Bosman, A. M. T., Van Hell, J. G., & Verhoeven, L. (2006). Learning the spelling of strange words in Dutch benefits from regularized reading. Journal of Educational Psychology, 98, 879-890. DOI: 10.1037/0022-0663.98.4.879</p>
+<p class="pubs">De Groot, A. M. B., & Van Hell, J. G. (2005). The learning of foreign language vocabulary. In: J. F. Kroll & A. M. B. de Groot (Eds.), Handbook of bilingualism: Psycholinguistic approaches (pp. 9-29). Oxford: Oxford University Press.</p>
+<p class="pubs">Hoogeveen*, L., Van Hell, J. G., & Verhoeven, L. (2005). Teacher attitudes toward academic acceleration and accelerated students in the Netherlands. Journal for the Education of the Gifted, 29, 30-59.</p>
+<p class="pubs">Van Hell, J. G., Verhoeven, L., Tak*, M., & van Oosterhout*, M. (2005). To take a stance: A developmental study on the use of pronouns and passives in spoken and written texts in different genres. Journal of Pragmatics, 37, 239-273. doi:10.1016/j.pragma.2004.08.004</p>
+
+
+
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

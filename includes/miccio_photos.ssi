@@ -1,0 +1,44 @@
+<div id="miccio_slideshow">
+   <div>
+     <img src="images/MiccioAwardees/img1.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img2.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img3.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img4.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img5.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img6.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img7.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img8.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img9.jpg">
+   </div>
+   <div>
+     <img src="images/MiccioAwardees/img10.jpg">
+   </div>
+<script>
+$("#miccio_slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#miccio_slideshow > div:first')
+    .fadeOut(3000)
+    .next()
+    .fadeIn(3000)
+    .end()
+    .appendTo('#miccio_slideshow');
+},  6000);
+</script>
+</div>

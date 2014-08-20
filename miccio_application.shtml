@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Information for Prospective Students</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+.navlink {width: 100%; text-align:center;}
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+
+	<a href="http://cls.psu.edu/index.shtml" title="CLS Home" id="cls_banner_link">Center for Language Science</a>
+	
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="index.shtml">Home</a><a> / </a> Adele Miccio Memorial Travel Award</p>
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+    <!--<h3 class="text_block" style="text-align:center"><em>News</em>: Adele Miccio Memorial Travel Award<br />
+    The CLS will sponsor a travel award to promote professional development for doctoral students. <br />
+     For more information, click <a href="news.shtml">here</a>. For application details, click <a href="files/AdeleMiccioMemorialTravelAward2009-10.pdf">here</a>. </h3>-->
+    <p class="text_block">
+		<div id="horizontal_container" class="text_block">
+			<div><b><a href="http://cls.psu.edu/miccio.shtml">About Adele Miccio</b></a></div>
+			<div><b><a href="http://cls.psu.edu/miccio_application.shtml">2013 Application</b></a></div>
+			<div><b><a href="http://cls.psu.edu/miccio_awardees.shtml">List of Previous Awardees</b></a></div>
+		</div>
+	</p>
+	
+	<p class="text_block">Our late colleague, Professor Adele Miccio, loved to travel and cared deeply for students. In her honor, the Center for Language Science sponsors a student travel award. Although many graduate students attend professional conferences, it is often difficult in this context for them to meet and discuss their work with more senior scientists. Networking experiences are an important way in which individuals become known in the professional community, develop collaborative relationships, and arrange informal visits outside of professional meetings. Given the relatively short time frame of the tenure period, it is essential that individuals learn to make these connections to others in the field early in their careers. Therefore, the purpose of this award is to provide incentives for planned networking and resources for these experiences.</p>
+	<p class="text_block">Applicants for the award will generate a plan for travel to meet with one or more senior scientists. In most cases, the applicant will visit the laboratory or working environment of the scientist. In some cases, the applicant willattend a conference or workshop where he/she can arrange meetings with one or more senior scientists. If meetings at a conference are proposed, the applicant must explain how there will be adequate time for meaningful private meetings in that context. After the travel plan is completed, the student will provide a brief written report of the experience, and will give a presentation at a CLS meeting to share the experience with other students.</p>
+	<p class="text_left">Here are examples of types of networking experiences that have proven beneficial in the past.</p>
+		<ul>
+			<li>The applicant makes a two-day visit to a university with an active language science program.  While there, the applicant presents at a colloquium and a lab meeting, meets with graduate students and post-docs from several labs, has meetings with several faculty members whose research is relevant to the applicant’s own, and has 2 extended meetings with the researcher who is the sponsor of the visit.  In these meetings, the applicant receives detailed feedback on a manuscript and a grant proposal, and future collaboration is planned.  </li>
+			<li>In another scenario, the applicant attends a small international conference at which several researchers from Europe will be present—people who live too far from the applicant for a lab visit to be feasible.  Because the conference is relatively small and does not include parallel sessions, the applicant is able to arrange ahead of time to meet 3 of the international researchers individually to discuss their presentations as well as preliminary data collected by the applicant.  One of these meetings occurs soon after the applicant’s own presentation, so he/she is able to receive direct and immediate feedback.  One of the researchers agrees to serve as a consultant on a grant application.  </li>
+		</ul>
+	<p class="text_left">Submission requirements:</p>
+	<p class="text_block">
+		<ol>
+			<li><u>Cover sheet with the following information</u>: Your name, department, address, phone, email address and the name of your advisor(s). Indicate type of networking: either visiting another lab or targeted networking at a conference. <b>Applicants must be doctoral students who have passed their candidacy, and must be regular attendees of the CLS Friday morning meetings</b>. Please note that unlike the PIRE grant, the Miccio Award is intended to support professional development through networking, not direct research activity.  Be sure that your application describes a networking plan.  Our resources are limited, so applicants who have received a previous Miccio Award will not be eligible.</li>
+			<li><u>Provide a networking plan</u>: A 1-page, single-spaced, 12-point font summary of</li>
+				<ol>
+					<li type="A"; style="font-size: 125%;">Networking plan and its impact on the applicant's research program.</li>
+					<li type="A"; style="font-size: 125%;">Provide specific reasons for the proposed visit and specific goals to be accomplished during the visit (e.g., learn a new technique, collaboration, exchange of ideas, receive input on a grant proposal or a manuscript).</dt>
+						<ul>
+						<li style="font-size: 125%;">If planning a lab visit, state the length of time of the visit and provide a concise justification for the time frame; i.e., how you will be able to accomplish your goals in the time planned (longer is not necessarily better, it depends on the situation).</li>
+						<li style="font-size: 125%;">If planning to meet one or more individuals at a conference, meeting times should be at least tentatively set and described in the application, explaining how the meeting(s) will be productive in the often hectic atmosphere of a conference; also, explain how the meeting will contribute to your goals in a way that email correspondence would not.</li>
+						</ul>
+					<li type="A"; style="font-size: 125%;">Describe the extent of prior contact, if any, with the targeted senior scientist.</li>
+				</ol>
+			<li><u>Include corroborating letters from</u></li>
+				<ol>
+					<li type="A"; style="font-size: 125%;">The targeted senior scientist/s confirming the proposed networking plan.</li>
+					<li type="A"; style="font-size: 125%;">Your doctoral advisor stating support for the plan.</li>
+				</ol>
+			<li><u>A budget page</u> showing the projected expenses including travel (e.g., airfare), lodging, conference registration. There is an upper limit of $2500 for the award.</li>
+			<li><u>A copy of your up-to-date CV</u>.</li>
+		</ol>
+	</p>
+	<p class="text_left">How to submit an application:
+		<ol>
+			<li>All applications should be submitted electronically to the Chair of the travel award committee at the email address shown below. All of the application materials should be submitted as an integrated single PDF file with materials in the order listed above and emailed to the committee chair as an attachment.</li>
+			<li>Questions may be addressed to the Chair of the travel award committee.</li>
+		</ol>
+	</p>
+			</ol>
+	<p class="text_left">Relevant Dates:<br/><br/>
+	Deadline for submission:  <b>October 25, 2013</b><br/><br/>
+	Date of announcement of awards:  <b>November 15, 2013</b><br/><br/>
+	Period for using the award:  <b>January 2014-December 2014</b><br/><br/>
+	Deadline for submitting the final report:  no later than <b>6 weeks after returning from the funded trip</b>
+	</p>
+	<p>Travel Award Committee Chair<br/>
+Carol Miller<br/>
+Dept. of Communication Sciences and Disorders<br/>
+<a href="mailto:cam47@psu.edu">cam47@psu.edu</a><br/>
+865-6213
+	</p>
+	<!--<div style="float:right;"><img alt="Old Main" src="images/om_lawn.jpg" /></div>-->
+     <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

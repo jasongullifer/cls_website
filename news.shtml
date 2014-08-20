@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Recent News</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="index.shtml">Home</a><a> / </a>Recent News</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+
+<div style="text-align:center"><h4><a name="News & Announcements">News & Announcements</a></h4></div>
+<p class="text_block">Upcoming Events<br />
+The Center for Language Science at The Pennsylvania State University announces its 2015 Young Scholar Speaker Series (YSSS) that will be held January 28th - 30th, 2015.
+<br></br>
+We are pleased to announce our invited young scholar:
+Michael Frank, Stanford University, USA
+<br></br>
+Dr. Frank is an assistant professor of Psychology at Stanford University and research focuses on child language development and how it relates to their understanding of the world around them using a variety of measures including behavioral and computational methods.
+<br></br>
+The event will feature a research presentation by Dr. Frank, a poster session that will display the engaging research being conducted at the Center for Language Science, and a professional development workshop.
+<br></br>
+<p class="text_block">2013-2014<br />
+Congratulations to postdoctoral research Melinda Fricke and Megan Zirnstein who have been awarded an NSF-SBE Interdisciplinary Postdoctoral Research Fellowship!
+<br></br>
+Congratulations to CLS-student and PIRE undergraduate fellow Benjamin Stewart (major Applied Spanish with Linguistics option) who received a U.S. Department of State's Critical Language Scholarship (CLS) program fellowship!
+<br></br>
+Janet van Hell and Ping Li, together with Darren Tanner (former CLS postdoc, now assistant professor UIUC) and Katharine Donnelly Adams (CLS postdoc), received an NSF grant for their project "Lexical and sentence processing in novice L2 learners: Psycholinguistic and neurocognitive investigations".
+<br></br>
+CLS-student and PIRE undergraduate fellow Leah Pappas (dual major Linguistics and French) has been selected as the Student Marshal for French and Francophone studies. Congratulations!
+<br></br>
+Congratulations to CLS students Mizuki Moriyasu (major Psychology) and Brendan Tomoschuk (dual major Linguistics and Science) who each received the 2014 Center for Global Studies Thesis Prize for their honors thesis. 
+<br></br>
+Congratulations to CLS student and PIRE undergraduate fellow Kaylee Roupas (major Linguistics) who received a Fulbright teaching assistantship to Romania!
+<br></br>
+CLS student and PIRE undergraduate fellow Daniel Bloodgood (major Biology) received the 2014 Sukhi and Delania Jolly Phi Beta Kappa Honors Thesis Prize. Congratulations!
+<br></br>
+Courtney Fowler, who is a Dual-Title Doctoral Degree in Language Science student and PIRE graduate fellow, received an NSF Doctoral Dissertation Improvement Grant. Earlier this year, she also received a dissertation support grant from Language Learning. Congratulations!
+<br></br>
+Congratulations to Rhonda McClain (Dual-Title Doctoral Degree in Language Science student and PIRE graduate fellow) who has been awarded an NIH-NRSA doctoral dissertation fellowship!
+<br></br>
+John Lipski received an NSF grant for his project "Determining the suppressibility of functional categories in second-language acquisition: from Spanish to Palenquero".
+<br></br>
+Congratulations to CLS student and PIRE graduate fellow Ben Zinszer who received a Graduate Fellowship from the NASA Pennsylvania Space Grant Consortium!
+<br></br>
+Jason Gullifer (Dual-Title Doctoral Degree in Language Science student and PIRE graduate fellow) received an NSF Dissertation Grant. Congratulations! 
+
+<br></br>
+<a href="files/Newsletter_Sep_2011.pdf"><font color=red size=3><u>05/2011~09/2011 Newsletter</u></font></a>
+
+<p class="text_block">6/21/10<br />
+A special lab meeting will be held on 6/29(Tuesday) at 2pm in the Brain, Language, and Computation Lab (644 Moore) and Carol Madden will present a talk titled <em>Embodied Language Comprehension</em>. Anyone who is around is welcome.
+
+
+ 
+<p class="text_block">04/06/10<br />
+
+  Congratulations to Amelia Dietrich from Spanish (working with Giuli Dussias) who has won an NSF Graduate Fellowship and Helen Marie Graves (working with Dan Weiss) has been recognized with an honorable mention! It is also important to mention that two other PSU students, Anthony Nelson (working with Reg Adams) and Chase Coelho (working with David Rosenbaum) have also won honorable mentions in this year's competition. All of these students worked together this Fall with numerous faculty members across various Departments and Colleges on their proposals, and the process has clearly yielded wonderful results.<br /><br />
+
+Congratulations to everyone involved!
+
+<p class="text_block">12/07/09<br />
+  Jared Linck, Gretchen Sunderman, and Judith Kroll published an article this month in the journal Psychological Science, Losing access to the native language while immersed in a second language: Evidence for the role of inhibition in second-language learning, that has now been featured in a 60-second science podcast on the <a href="http://www.scientificamerican.com/podcast/episode.cfm?id=language-immersion-impedes-access-t-09-11-30">Scientific American website</a>.</p>
+<p class="text_block">11/05/09<br />
+The <a href="http://www.cls.psu.edu">Center for Language Science</a> announces the recipients of the first annual Adele Miccio Memorial Travel Award, Gerard (Trace) Poll and Roxana Botezatu, doctoral candidates in Communication Sciences and Disorders.  The award was created to honor the memory of Adele Miccio, Professor of Communication Sciences and Disorders and Linguistics, to enable CLS graduate students to enhance their research by visiting senior scholars in their field.  Roxana will visit Rebecca Treiman and David Balota at Washington University in St. Louis to further her research on reading skills in bilingual children and adults.  Trace will visit Bruce Tomblin and Amanda Owen at the University of Iowa to advance his work on specific language impairment in children and young adults.</p>
+
+
+
+<br/>
+<p> More information about upcoming talks and conferences can be found here: <br/><a href="upcoming.shtml">Upcoming Colloquia</a>, <a href="conferences.shtml">Upcoming Conferences</a>, <a href="meeting_series.shtml">CLS Meeting Series</a></p>
+
+<!--<p class="hang_indent"><strong>Adele Miccio Memorial Travel Award</strong><br /><br />
+Our late colleague, Professor Adele Miccio, loved to travel and cared deeply for students. In her honor, the Center for Language Science will sponsor a student travel award to support beneficial networking experiences for doctoral students. Applicants for the award will generate a plan for travel to meet with one or more senior scientists. In most cases, the applicant will visit the laboratory or working environment of the scientist.  In some cases, the applicant will attend a conference or workshop where he/she can arrange meetings with one or more senior scientists. After the travel plan is completed, the student will provide a brief written report of the experience, and will give a presentation at a CLS meeting to share the experience with other students.<br /><br />
+ A complete description of the award guidelines can be found <a href="files/AdeleMiccioMemorialTravelAward2009-10.pdf">here</a>.<br />Applications are due <em>October 23, 2009</em>, and the award recipient will be announced by December 18.<br />
+Questions should be directed to Carol Miller (<a href="mailto:cam47@psu.edu">cam47@psu.edu</a>, 865-6213). <br /></p>-->
+
+<!--<p class="hang_indent"><strong>Center for Language Science: Offically open for business!</strong><br />
+  
+  The launching event for the Center for Language Science happend on Thursday Dec. 6th. In honor of this event, CLS advisory board member Dr. John Trueswell came to PSU where he gave a talk as well as met with professors and graduate students.<br />    </p>
+ <center>
+
+<table align="center" border="0" cellspacing="10">
+<tr valign="bottom"><td align="center"><a href="images/CLS_Opening/images/231607644-M_jpg.jpg"><img style="border-style:none" src="images/CLS_Opening/thumbnails/231607644-M_jpg.jpg" border="0"></a>
+</td>
+<td align="center"><a href="images/CLS_Opening/images/231609212-M-1_jpg.jpg"><img src="images/CLS_Opening/thumbnails/231609212-M-1_jpg.jpg" border="0"></a>
+</td>
+</tr>
+
+<tr valign="bottom"><td align="center"><a href="images/CLS_Opening/images/fulllhouse_jpg.jpg"><img src="images/CLS_Opening/thumbnails/fulllhouse_jpg.jpg" border="0"></a>
+</td>
+<td align="center"><a href="images/CLS_Opening/images/IMG_0352_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0352_jpg.jpg" border="0"></a>
+</td>
+</tr>
+
+<tr valign="bottom"><td align="center"><a href="images/CLS_Opening/images/IMG_0354_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0354_jpg.jpg" border="0"></a>
+</td>
+<td align="center"><a href="images/CLS_Opening/images/IMG_0356_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0356_jpg.jpg" border="0"></a>
+</td>
+</tr>
+
+<tr valign="bottom"><td align="center"><a href="images/CLS_Opening/images/IMG_0357_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0357_jpg.jpg" border="0"></a>
+</td>
+<td align="center"><a href="images/CLS_Opening/images/IMG_0358_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0358_jpg.jpg" border="0"></a>
+</td>
+</tr>
+
+<tr valign="bottom"><td align="center"><a href="images/CLS_Opening/images/IMG_0359_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0359_jpg.jpg" border="0"></a>
+</td>
+<td align="center"><a href="images/CLS_Opening/images/IMG_0360_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0360_jpg.jpg" border="0"></a>
+</td>
+</tr>
+
+<tr valign="bottom"><td align="center"><a href="images/CLS_Opening/images/IMG_0361_jpg.jpg"><img src="images/CLS_Opening/thumbnails/IMG_0361_jpg.jpg" border="0"></a>
+</td>
+<td align="center"><a href="images/CLS_Opening/images/trueswell_kroll_jpg.jpg"><img src="images/CLS_Opening/thumbnails/trueswell_kroll_jpg.jpg" width="214" height="154" border="0"></a></td>
+</tr>
+</table>
+</center>-->
+    
+
+
+
+    <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

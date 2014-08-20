@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Philip Baldi</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="false" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="false" --><!-- InstanceParam name="res_ops" type="boolean" value="false" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Philip Baldi<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/baldi_philip.jpg" alt="" name="pic" width="180" height="135" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Philip Baldi<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Professor emeritus of Linguistics and Classics<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong><a href="http://www3.la.psu.edu/cams/">Department of Classics and Ancient Mediterranean Studies (CAMS)</a></strong><br />
+Pennsylvania State University<br />
+108 Weaver Building<br />
+University Park, PA 16802-5500
+<!-- InstanceEndEditable --><br />
+    <br />
+  
+E-mail: <a href="mailto:phb@psu.edu">phb@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p><span><a href="../files/faculty/baldi CV.pdf">View CV</a></span> </p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" --><p class="text_block">Latin linguistics, Indo-European, morphology, syntactic change</p><!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+    <p class="pubs"> <em><b>Books:</b></em></p>
+    <p class="pubs"><em>The Foundations of Latin</em>. Berlin: Mouton de Gruyter, 1999. (Paperback, 2002.)</p>
+    <p class="pubs"><em>New Perspectives on Historical Latin Syntax</em>. 4 volumes. Berlin: Mouton de Gruyter, 2009-11 (co-edited with Pierluigi Cuzzolin).</p>
+
+
+
+
+   <p><em><b>Articles and Chapters:</b></em></p>
+   
+   
+<!--
+<p class="pubs">Considerazioni etimologiche, areali e tipologiche dei verbi di «avere» nelle lingue indeuropee. In <em>Latin et langues romanes: études de linguistique offertes à József Herman à l'occasion de son 80ème anniversaire</em>, ed. Sándor Kiss, Luca Mondin, and Giampaolo Salvi, pp. 27-36. Tübingen: Niemeyer, 2005 (co-authored with Pierluigi Cuzzolin).</p>
+<p class="pubs">Towards a History of the Manner of Motion Parameter in Greek and Indo-European. In <em>Fonologia e tipologia lessicale nella storia della lingua greca: Atti del VI Incontro Internazionale di Linguistica Greca (Bergamo, settembre 2005)</em>, ed. Pierluigi Cuzzolin and Maria Napoli, pp. 13-31. Milan: FrancoAngeli, 2006. [Spanish translation in <em>Estudios Clásicos</em> 137, 7-28 (2010)].</p>
+<p class="pubs">Review article on <em>Europa Vasconica-Europa Semitica</em>, by Theo Vennemann. <em>Lingua</em> 116 (2006):2183-2220 (co-authored with Richard Page).</p>
+<p class="pubs">Indo-European Languages. In <em>The World’s Major Languages</em>, 2d edn, ed. Bernard Comrie, pp. 23-50. London: Routledge, 2009. </p> -->
+<p class="pubs">English as an Indo-European language. In <em>A Companion to the History of the English Language</em>, ed. Haruko Momma and Michael Matto, pp. 127-141. Chichester, UK: Wiley-Blackwell, 2008.</p>
+<p class="pubs">Prolegomena. In <em>New Perspectives on Historical Latin Syntax</em>, ed. Philip Baldi and Pierluigi Cuzzolin, vols. 1-3, pp. 1-17. Berlin: Mouton de Gruyter, 2009-2011 (co-authored with Pierluigi Cuzzolin).</p> 
+<p class="pubs">Osservazioni sulla morfologia del comparativo in greco antico. In <em>La morfologia del greco tra tipologia e diacronia</em>, ed. Ignazio Putzu et al., pp. 46-61. Milan: FrancoAngeli, 2010 (co-authored with Pierluigi Cuzzolin).</p>
+<p class="pubs">The Latin Temporal Adverb <em>semper</em> and Its Relatives. <em>Alessandria: Rivista di Glottologia</em> 3 (2009):13-26 (co-authored with Pierluigi Cuzzolin).</p>
+<p class="pubs">Possession in Latin. In <em>New Perspectives on Historical Latin Syntax</em>, ed. Philip Baldi and Pierluigi Cuzzolin, vol. 3, pp. 239-387. Berlin: Mouton de Gruyter, 2010 (co-authored with Andrea Nuti).</p>
+<p class="pubs">Possessive Expressions in Oscan and Umbrian. <em>Language Typology and Universals</em> 64.2: 103-113 (2011)</p>
+<p class="pubs">Syntactic Change in the History of Latin. Do New Perspectives lead to New Results? In <em>New Perspectives on Historical Latin Syntax</em>, ed. Philip Baldi and Pierluigi Cuzzolin, vol. 4, pp. 865-893. Berlin: Mouton de Gruyter, 2011 (co-authored with Pierluigi Cuzzolin).</p>
+<p class="pubs">Epilegomena. In <em>New Perspectives on Historical Latin Syntax</em>, ed. Philip Baldi and Pierluigi Cuzzolin, vol. 4, pp. 1-9. Berlin: Mouton de Gruyter, 2011 (co-authored with Pierluigi Cuzzolin).</p>
+<p class="pubs">The Syntax of Italic. In <em>Handbuch der vergleichenden Sprachwissenschaft</em>, ed. Matthias Fritz and Jared S. Klein, forthcoming. Berlin: Mouton de Gruyter.</p>
+<p class="pubs">Italic languages. In the <em>Oxford Bibliographies Online:  Classics</em>, ed. Dee Clayman.  Oxford Univ. Press (co-authored with Gabriel Bakkum).</p>
+<p class="pubs">Old Wine, New Bottles.  A Fresh Look at Syntactic Change in the History of Latin. In <em>Proceedings of the XVI International Colloquium on Latin Linguistics</em>, ed, by Gerd Haverling.  forthcoming.</p>
+<p class="pubs">Taking a Position in Latin.  In a <em>Festschrift for J.P. Mallory</em>, forthcoming (co-authored with Pierluigi Cuzzolin).</p>
+<p class="pubs">Linguistica storica e linguistica cognitive, forthcoming in <em>Analisi</em> (Cagliari) (co-authored with Giuli Dussias).</p>
+
+
+    <!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

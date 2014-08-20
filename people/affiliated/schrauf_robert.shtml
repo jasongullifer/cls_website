@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Robert W. Schrauf</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Robert W. Schrauf<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/schrauf_robert.JPG" alt="" name="pic" width="169" height="184" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Robert W. Schrauf<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Associate Professor of Applied Linguistics<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong><a href="http://lals.la.psu.edu/">Department of Linguistics and Applied Language Studies</a></strong><br />
+Pennsylvania State University<br /> 
+305 Sparks  Building<br />
+University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> Phone: (814) 865-9622 <br />
+E-mail: <a href="mailto:rws23@psu.edu">rws23@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p><span><a href="http://www.personal.psu.edu/rws23/">View Personal Website</a></span><span><a href="../files/faculty/schrauf_robert.pdf">View CV</a></span> </p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" -->Applied Linguistics and Health Sciences<!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">Cognitive aging and multilingualism, bilingual autobiographical memory; linguistic and cultural adaptation of health assessment tools.</p> 
+<!-- InstanceEndEditable -->
+<p> <em>Research Opportunities:</em><br />
+</p>
+<!-- InstanceBeginEditable name="res_ops_desc" -->
+<p class="text_block">Students with interests in language, health, and aging are always welcome to work in my lab.</p>
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+<p class="pubs">Steis, M. and Schrauf, Robert W. (2009).  A review of translations and adaptations of the MMSE in languages other than English and Spanish.  Research in Gerontological Nursing, 2(2), 214-224.</p>
+
+<p class="pubs">Schrauf, Robert W. (2009) Intracultural variation in cross-cultural gerontology.  Journal of Cross-Cultural Gerontology, 24,115-120. </p>
+
+<p class="pubs">Schrauf, Robert. W. (2009). "English use among older bilingual immigrants in linguistically concentrated neighborhoods: Social proficiency and internal speech as intracultural variation." Journal of Cross-Cultural Gerontology, 24, 157-179. </p>
+
+<p class="pubs">Schrauf, Robert W. and Sanchez, J. (2008).  Using freelisting to identify, assess, and characterize age-differences in cultural domains.  Journal of Gerontology: Social Sciences, 63B(6) S385-S393. </p>
+
+<p class="pubs">Schrauf, Robert W.and Lesa Hoffman. (2007). The effects of revisionism on remembered emotion: The valence of older, voluntary immigrants’ pre-migration memories.  Applied Cognitive Psychology. 21: 895-913. </p>
+
+<p class="pubs">Rubin, D.C., Schrauf, Robert W., Gulgoz, Sami, and Naka, Makiko. (2007). On the cross-cultural variability of component processes in autobiographical remembering:  Japan Turkey, and the U.S.A. Memory 15(5) 536-547. </p>
+<p class="pubs">Schrauf, Robert W., Sandra Weintraub, and Ellen Navarro. (2006). Is a validation of the Word Accentuation Test (WAT) of premorbid intelligence necessary for use among older, Spanish-speaking immigrants in the United States?  Journal of the International Neuropsychological Society, 12, 391-399. </p>
+<p class="pubs">Schrauf, Robert W. and Ellen Navarro. (2005). On using existing scales and tests in the field.  Field Methods. 17(4): 373-393. </p>
+<p class="pubs">Rubin, D. C., Schrauf, Robert W., & Greenberg, Daniel. L. (2004). Stability in autobiographical memories. Memory, 12(6), 715-721. </p>
+<p class="pubs">Schrauf, Robert W. and Julia Sanchez (2004).  The preponderance of negative emotion words across generations and across cultures. Journal of Multilingual and Multicultural Development, 25(2-3), 266-284. </p>
+<p class="pubs">Schrauf, Robert W. and Rubin, David C. (2004).  The ‘language’ and ‘feel’ of bilingual memory: Mnemonic traces and narrative framing.  Sociolinguistica, 5(1), 21-39. </p>
+<p class="pubs">Schrauf, Robert W. (2003). Settling on the Best Fit: Cognition as the Maximal Satisfaction of Multiple Constraints. Theory and Psychology, 13(5), 718-720. </p>
+<p class="pubs">Rubin, David. C., Schrauf, R. W., & Greenberg, Daniel. L. (2003). Belief and recollection of autobiographical memories. Memory and Cognition, 31(6), 877-886. </p>
+<p class="pubs">Schrauf, Robert W. (2003). A protocol analysis of retrieval in autobiographical memory. International Journal of Bilingualism, 7(3), 235-256. </p>
+<p class="pubs">Schrauf, Robert W., Pavlenko, Aneta., & Dewaele, Jean-Marc. (2003). Bilingual episodic memory: An introduction. International Journal of Bilingualism, 7(3), 221-233. </p>
+<p class="pubs">Schrauf, Robert W. (2002). Comparing cultures within-subjects: A cognitive account of acculturation as a framework for cross-cultural study. Anthropological Theory, 2(1):98-115. </p>
+<p class="pubs">Schrauf, Robert W. (2002). Bilingual inner speech as the medium of cross-modular retrieval in autobiographical memory. Behavioral and Brain Sciences, 25, 698-699. </p>
+<p class="pubs">Larsen, Steen F., Schrauf, R.W., Fromholt, Pia., and Rubin, David C.  (2002).  Inner speech and bilingual autobiographical memory: A Polish-Danish cross-cultural study.  Memory 10 (1), 45-54. </p>
+<p class="pubs">Schrauf, Robert W. and Rubin, David C.  (2001).  Effects of voluntary immigration on the distribution of autobiographical memory over the lifespan.  Applied Cognitive Psychology 15, S75-S88. </p>
+<p class="pubs">Schrauf, Robert W.  (2000) Narrative repair of threatened identity. Narrative Inquiry, 10(1):1-19. </p>
+<p class="pubs">Schrauf, Robert W. (2000). Bilingual autobiographical memory: Experimental studies and clinical cases. Culture & Psychology, 6(4), 387-417. </p>
+<p class="pubs">Schrauf, Robert W. and Rubin, David C. (2000).  Internal languages of retrieval: The bilingual encoding of memories for the personal past. Memory and Cognition. 28, 616-623. </p>
+
+
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

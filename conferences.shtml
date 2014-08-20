@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Upcoming Conferences</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="./index.html">Home</a> <a>/ </a> <a href="news.shtml">Recent News</a> <a>/ </a>Upcoming Conferences</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+    
+    <ul>
+</li>
+
+<li><a href="http://psych.nyu.edu/cuny/index.html">CUNY 2010: Conference on Human Sentence Processing</a>
+<ul>
+<li>Location: NYU Law School (Washington Sqaure Village), NY</li>
+<li>Dates: March 18-20, 2010</li>
+<li>Submission Due Date: December 1, 2009</li>
+</ul>
+</li>
+
+<li><a href="http://w3.coh.arizona.edu/lsrl39/">Linguistic Symposium on Romance Languages 40</a>
+    <ul>
+    <li>Location: University of Washington</li>
+    <li>Dates: March 26–28, 2010</li>
+    <li> Submission Due Date: November 13, 2009</li>
+    </ul>
+</li>
+
+<li><a href="http://www.cnsmeeting.org/">Cognitive Neuroscience Society Annual Meeting 2010</a> 
+<ul>
+<li>Location: Montreal</li>
+<li>Dates: April 17-20, 2010</li>
+<li>Submssion Due Date: October 27, 2009</li>
+</ul>
+</li>
+
+<li>Germanic Linguistics Annual Conference
+<ul>
+<li>Location: Milwaukee</li>
+<li>Dates: April 30 - May 2, 2010</li>
+</ul>
+</li>
+
+
+<li><a href="http://www.hf.uio.no/iln/om-instituttet/arrangementer/isb8/index.html">International Symposium on Bilingualism 8</a>
+    <ul>
+    <li>Location: University of Oslo</li>
+    <li>Dates: June 15-18, 2011</li>
+    </ul>
+    </li>
+    
+
+<li><a href="http://www.amlap.org/announcements/amlap_2007_in_turku.html">Architectures and Mechanisms for Language Processing (AMLaP)</a>
+<ul>
+<li>Location: Barcelona, Spain</li>
+<li>Dates: September 7-9,2009</li>
+<li>Submission Due Date: May 31, 2009</li>
+</ul>
+</li>
+<li><a href="http://www.escop09.eu/index.php">The European Society for Cognitive Psychology (ESCoP) Conference</a>
+<ul>
+<li>Location: the Jagiellonian University, Cracow</li>
+<li>Dates: September 2-5, 2009</li>
+</ul></li> 
+
+
+
+
+<li><a href="http://www.srcld.org/home/home.aspx">Symposium on Research on Child Language Disorders</a>
+	<ul>
+    <li>Location:  Monona Terrace Convention Center in Madison, Wisconsin</li>
+    <li>Dates: June 4-6, 2009</li>
+    <li>Submission Due Date: February 1, 2009</li>
+    </ul>
+</li>
+
+
+
+
+
+<li><a href="http://www.cbs.dk/forskning_viden/konferencer/eye_to_it">Eye-to-IT conference on translation processes
+</a> (web site works best with Internet Explorer)
+	<ul>
+    <li>Location: Copenhagen Business School in Frederiksberg </li>
+    <li>Dates: April 28-29, 2009</li>
+    <li>Submission Due Date: January 23, 2009</li>
+    </ul>
+    
+<li><a href="http://hls09.uprrp.edu/callapapers.html">Hispanic Linguistics Symposium 2009</a>
+<ul>
+<li>Location:  Universidad de Puerto Rico, Río Piedras</li>
+<li>Dates: October 21-24, 2009 </li>
+<li> Submission Due Date: April 20, 2009 </li>
+</ul>
+</li>
+
+<li><a href="http://sls.msu.edu/slrf09/"> Second Language Research Forum</a>
+<ul>
+<li>Location: Michigan State University, Michigan</li>
+<li>Dates: October 29 - November 1, 2009</li>
+<li>Submission Due Date: May 2, 2009</li>
+</ul>
+</li>
+
+<li><a href="http://www.bu.edu/linguistics/APPLIED/BUCLD/">Boston University Conference on Language Development</a>
+<ul>
+<li>Location: George Sherman Union, Boston University, Massachusetts</li>
+<li>Dates: November 6-8, 2009</li>
+<li>Submission Due Date: May 15, 2009</li>
+</ul>
+</li>
+
+<li><a href="http://www.asha.org/events/convention/">2009 ASHA Convention</a>
+<ul>
+<li>Location: Ernest N. Morial Convention Center, New Orleans, LA</li>
+<li>Dates: November 19-21, 2009</li>
+</ul>
+</li>
+
+<li><a href="http://www.psychonomic.org/meet.html">Psychonomic Society</a>
+<ul>
+<li>Location: Boston, Massachusetts</li>
+<li>Dates: November 19-22, 2009</li>
+<li>Submission Due Date: June 1, 2009</li>
+</ul>
+
+</li>
+
+
+</ul>
+<p class="text_block"> If you know of any conferences that should be posted here, please contact the <a href="mailto:fxa143@psu.edu">webmaster</a></p>
+     <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

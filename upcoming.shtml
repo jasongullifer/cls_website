@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Upcoming CLS Events</title>
+
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function unhide(divID) {
+  var item = document.getElementById(divID);
+  if (item) {
+    item.className=(item.className=='hidden')?'unhidden':'hidden';
+  }
+}
+</script>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div> 
+	
+<a href="http://cls.psu.edu/index.shtml" title="CLS Home" id="cls_banner_link">Center for Language Science</a>
+	
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="index.shtml">Home</a><a> / <a href="news.shtml">Recent News</a> / </a>Upcoming CLS Events</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" --><div style="text-align:center">   
+       
+<iframe src="https://www.google.com/calendar/embed?mode=AGENDA&src=8k2hnv94dbmsjdshavkhk5jcls%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="700" height="524" frameborder="0" scrolling="no"></iframe>
+	   
+	   <!--
+	   
+       <h4><a name="upcoming_colloquia">Upcoming Colloquia and Talks</a></h4>	  
+       
+       <h5><strong>Thursday, November 17, 2011</strong><br />
+4:00 PM in Berg Auditorium</h5>
+       <p class="center"><em>Reshaping the Mind: The Benefits of Bilingualism</em></p>
+       <p class="center"> Ellen Bialystok<br/>
+	   Distinguished Research Professor of Psychology<br/>
+         York University</p>
+       <p><a href="javascript:unhide('Bialystok_abstract');"><strong>Show Abstract</strong></a></p>
+       <div id="Bialystok_abstract" class="hidden">
+         <p class="hang_indent"><br />
+           <br />
+           A growing body of research has shown that bilingualism enhances aspects of executive control and leads to better performance on a range of cognitive tasks for children and young adults. More recently, this advantage has been shown to extend into older age, demonstrating slower cognitive decline for bilinguals with healthy aging. The present talk will focus on new research that examines changes in the brain that underlie some of these differences. I will report evidence from younger and older adults showing that the regions used by bilinguals to perform certain cognitive tasks are somewhat different than those used by monolinguals, and that the crucial areas in the front part of the brain necessary for performing these tasks are more intact in bilinguals. The presentation will also describe research investigating the memory and cognitive performance of individuals diagnosed with dementia, including Alzheimer's disease, where these protective effects continue to exert an influence on bilinguals.<br />           
+       </div>      
+       <p>&nbsp;</p>
+       <h5>&nbsp;</h5>
+       
+       
+       <h5><strong>December 2, 2011</strong><br />
+9:00-10:30 am in 102 Thomas Building</h5>
+       <p class="center"><em>LANGUAGE LEARNING, PLASTICITY, AND THE "ACHIEVEMENT GAP"</em></p>
+       <p class="center"> Mark Seidenberg<br/>
+	   Hilldale Professor<br/>
+	   Donald O. Hebb Professor<br/>
+	   Department of Psychology<br/>
+	   University of Wisconsin- Madison</p>
+       <p><a href="javascript:unhide('Seidenberg_abstract');"><strong>Show Abstract</strong></a></p>
+       <div id="Seidenberg_abstract" class="hidden">
+         <p class="hang_indent"><br />
+           <br />
+           There is enormous underutilized potential to bring modern research on the behavioral and brain bases of language and cognition to bear on critical issues in education. I will present research concerning the seemingly intractable "achievement gap" in reading between African American children and whites.  This gap is not wholly explained by SES or environmental factors, and it increases during the first few years of schooling. One neglected factor is differences in language background. Building on research on first and second language learning and neuroplasticity, we have begun to examine how differences between home and school dialects affect children's classroom experiences. Other factors aside, children who speak a "nonstandard" dialect such as African American English face a more complex learning environment than children who speak the "standard" dialect:  they are learning to accommodate the standard dialect while acquiring reading, math and other skills. Because all children are assessed against the same achievement standards, a "gap" results.  This research also suggests ways in which the impacts of dialect differences could potentially be ameliorated.<br />           
+       </div>      
+       <p>&nbsp;</p>
+       <h5>&nbsp;</h5>
+       
+-->
+       
+         <!--<h5><Strong>October 5,2009</Strong></h5>
+       <h5>11:00-12:30<br/>Location: Moore 254</h5>
+       <h5><em>The discrepancy between L1 and L2: a perspective from L1 attrition</em></h5>
+       <p class="center">Monika S. Schmid<br/><br/>English Department<br/>Rijksuniversiteit Groningen</p>
+      
+       <p><a href="javascript:unhide('schmid_abstract');"><strong>Show Abstract</strong></a></p>
+       
+        <div id="schmid_abstract" class="hidden">
+    	<p class="indent">One of the most puzzling observations for linguists is the difference between learning a language from birth and later in life: while all normally developing children can attain full native language proficiency, there is considerable variability in ultimate attainment among older speakers who attempt to acquire a second language (L2). There is an ongoing controversy in linguistic research on whether this discrepancy is due to a maturationally constrained window of linguistic development making language learning difficult or impossible after puberty, or to general cognitive factors linked to the fact that the later an L2 is established, the stronger the competition it has to overcome from the more deeply entrenched first language (L1).         
+Studies attempting to resolve this controversy have so far focussed exclusively on the development of L2 skills. New insight may be provided by investigating native speakers who are in many ways similar to L2 learners, namely migrants who have become dominant in the L2 (referred to as L1 attriters). On the one hand, such speakers have learned their L1 monolingually during childhood and are therefore not impeded by maturational constraints. On the other, they experience competition between their seldom-used L1 and their highly entrenched L2. A comparison of L2 learners on the one hand and L1 attriters on the other may therefore be able to shed some light on the question of whether there is indeed a fundamental difference between early- and late-learned languages.</p></div>-->
+       </p>
+       <p>
+          <!--
+<p class="hang_indent">Friday April 10 - <strong>Eleonora Rossi (PSU)</strong> - <em>The processing of clitic pronouns in L1 Spanish and L1 English L2 learners of Spanish</em> </p>
+<p class="hang_indent">Friday April 17 - <strong>Pierluigi Cuzzolin (University of Bergamo and PSU)</strong> - <em>My dad's stronger than your dad, or, how languages make comparisons</em></p>
+<p class="hang_indent">Friday April 24 - <strong>Arturo Hernandez (U of Houston)</strong> - <em>Age of acquisition, language proficiency and the bilingual brain</em> 
+<br /> <strong> Nadine Martin (Temple U)</strong> - <em>Temporal components of language processing:  Implications
+for models of verbal STM, aphasia and treatment of language disorders.</em>
+<br /><br />
+
+<strong>Hernandez Abstract: </strong>What factors affect the coding of two languages in one brain?  For over 100 years, researchers have suggested that age of acquisition (when) vs. proficiency (how well) in a particular language play a role in its neural representation.  Recent work in my laboratory has explored the influence of these two variables in bilingual language processing using fMRI.  Studies have also extended this work by looking at these two factors in monolinguals and in motor skill processing in athletes.  The similarities across these domains provide compelling evidence of the link between language and motor skill learning. They are also consistent with an emergentist view in which neural representations arise from a series of interactions at multiple levels.  The implications of this conceptualization of language for clinicians and educators alike will be discussed.
+
+<br /><br />
+<strong>Martin Abstract: </strong>
+Aphasia affects comprehension and/or production of language and varies in severity across individuals. Research in the last few decades has made clear that aphasia is not just a ‘language’ problem, but involves deficits of other cognitive processes as well. Invariably, it is accompanied by deficits in verbal short-term memory, an association that is so pervasive, it has motivated an active area of research that has revealed much about the cognitive and neuroanatomical relationships between language processing and verbal STM and how impairments of these abilities affect language function and verbal learning.   Additionally, some individuals with aphasia demonstrate deficits in executive functions and allocation of attentional resources in language processing.  These ‘extra-linguistic’ functions have been categorized by some as ‘control processes” and are in keeping with views that aphasia is a deficit of language processing rather than a loss of language representations or knowledge.  In this talk, I will review our model of the relation of word processing and verbal STM and evidence from patterns of language and verbal STM impairment in aphasia that support this model.  Our studies reveal two types of word activation deficit that affect language and verbal STM performance:  slowed activation and premature decay of activation of semantic and phonological representations of words.  On the basis of these studies, we suggest consideration of a new way to view the nature of aphasia as a dynamic process that involves activation and maintenance of language representations over the course of any language task, including verbal span tasks.  From this perspective, aphasia could be viewed as a severe verbal STM impairment that affects retention, not just of multiple words, but also of the semantic and/or phonological representations of single words, thus making completion of some single word processing tasks difficult. From the perspective of short-term memory, the processes of activation and maintenance of language representations over time can be viewed as one component of what we think of as verbal short-term memory.  Along with the theoretical implications of our studies, I will discuss implications of the word activation and activation-maintenance deficits for diagnosis and treatment of language impairments in aphasia.  
+</p> 
+<p class="hang_indent">Tuesday April 28 - <strong>Dorothee Chwilla (Radboud)</strong> - <em>Driven to Make Sense: How the Brain Establishes Meaning in Language</em><br /><br />
+<strong>Abstract:</strong> What is the relation between semantic knowledge and different kinds of world knowledge? How fast are
+these different kinds of knowledge accessed and integrated into a higher-order meaning representation
+within language context? I will present Event-Related Potential !ERP" data on the time-course of
+accessing/integrating semantic knowledge and word knowledge !conceptual scripts". I will argue that
+these two kinds of familiar knowledge are immediately integrated into context. I will then turn to the
+question how novel meanings are established. Novel meanings are ubiquitous in language use. Novel
+words !e.g., compounds" are constantly added to our vocabulary. Despite the novelty of the information,
+the sense of understanding is seldom lost. An important question is how novel meanings that are not
+stored in long-term memory are created. I will present the ERP results of two experiments on novel
+meaning creation that support the view that even novel meanings are established immediately. The ERP
+results reveal a striking flexibility in semantic processing. I will argue that these findings support
+embodied theories of language but challenge abstract symbolic theories of meaning. To further test
+these models against each other we recently investigated the effects of emotional state on semantic
+processing. I will present the ERP data of the emotion study and will discuss the implications of the
+results for current theories of meaning and for the functional significance of the N400 component.
+</p>
+
+<p class="hang_indent">Friday May 1 - <strong>Rosa Guzzardo (PSU)</strong> - <em>Spanish-English code-switching at the auxiliary phrase: An eye-tracking study</em></p>
+  
+-->
+
+
+<br />
+<br />
+
+
+
+  <p> For previous colliquia and podcasts, please refer <a href="podcasts.shtml"> here</a>.</p>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!-- <h4><a name="meeting_schedule">Weekly Meeting Schedule and Events Calendar</a></h4>
+<iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hq7edg6jejvkl237d6en9bjqjc%40group.calendar.google.com&amp;color=%23BE6D00" style=" border-width:0 " width="450" height="600" frameborder="0" scrolling="no"></iframe>-->
+                                                                        </p>
+     </div><!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

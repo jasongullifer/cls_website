@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Faculty : Karen Miller</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../faculty.shtml">Faculty</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Karen Miller<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/Karen_Miller .jpg" alt="" name="pic" width="144" height="172" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Karen Miller<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Assistant Professor of Linguistics and Spanish Linguistics<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong><a href="http://sip.la.psu.edu">Department of Spanish, Italian, and Portuguese</a></strong><br />
+Pennsylvania State University<br /> 
+345 Burrowes Building<br />
+University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> 
+E-mail: <a href="mailto:kxm80@psu.edu">kxm80@psu.edu</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><span><a href="http://cls.psu.edu/PIRE/people/faculty_bios/Karen_Miller_CV.pdf">View CV</a></span> </p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" --><a href="http://childlanguagelab.la.psu.edu/">Language Acquisition Lab</a><!-- InstanceEndEditable --></p>
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">I study language acquisition in children. I am interested in how children acquire sociolinguistic variation and how variable input affects their acquisition of grammar. </p> 
+
+<!-- InstanceEndEditable -->
+<!--<p> <em>Research Opportunities:</em><br />
+</p>-->
+<!-- InstanceBeginEditable name="res_ops_desc" -->
+<!--<p class="text_block">My graduate students and I are always looking for motivated undergraduate students with an interest in language, bilingualism, and experimental approaches to language questions who would like to gain research experience. Announcements are posted on the 3rd floor in Burrowes Building, the 6th floor in Moore Building, and on the website of the Center for Language Science. Opportunities involve training in phonetic analysis, data collection, experiment construction, data coding and analysis. We have a number of projects studying both monolingual and bilingual speakers. </p>-->
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" -->
+<p class="pubs">Miller, K. & Hendricks, A. E. (submitted) What impact does ambiguous input have on bilingual language acquisition? <i>Linguistic Approaches to Bilingualism</i>.</p>
+<p class="pubs">Requena, P., Hernandez-Roman, A., & Miller, K. (accepted) Children's Knowledge of the Spanish Copulas ser and estar with Novel Adjectives. <i>Language Acquisition: A Journal of Language Development</i>.</p>
+<p class="pubs">Miller, K. (2014) Assessing plural morphology in children acquiring /s/-leniting dialects of Spanish. <i>Language, Speech, and Hearing Services in Schools</i>.</p>
+<p class="pubs">Miller, K. (2013) <a href="http://cls.psu.edu/pubs/pubs/Miller 2013 LV&C.pdf">Acquisition of variable rules: /s/-lenition in the speech of Chilean Spanish-speaking children and their caregivers</a>. <i>Language Variation and Change</i> 25, 3, 311-340.</p>
+<p class="pubs">Miller, K. (2013) <a href="http://cls.psu.edu/pubs/pubs/Miller_VI.pdf">Variable Input: What Sarah reveals about non-agreeing don't and theories of root infinitives</a>. <i>Language Acquisition: A Journal of Developmental Linguistics</i>.</p>
+<p class="pubs">Miller, K. & Schmitt, C. (2012) Variable input and the acquisition of plural morphology. <i>Language Acquisition: A Journal of Language Development</i>, <i>19 (3)</i>, 223-261.</p>
+<p class="pubs">Miller, K. (2012) Not all children agree: Acquisition of agreement when the input is variable. <i>Language Learning & Development</i>, <i>8 (3)</i>, 255-277.</p>
+<p class="pubs">Miller, K. (2012) <a href="http://childlanguagelab.la.psu.edu/publications/Sarah_BUCLD_2012_FINAL.pdf">Sociolinguistic Variation in Brown's Sarah Corpus</a>. In: <i>Boston University Conference on Language Development (BUCLD) Proceedings 36</i>. (eds.) A. Biller, E. Chung, A. Kimbal, 339-348, Cascadilla Press.</p>
+<p class="pubs">Miller, K. (2011) Acquisition of Agreement Marking on 'do': A Production- Comprehension Asymmetry. In: N. Danis, K. Mesh, and H. Sung (eds.) <i>Proceedings of the 35th annual Boston University Conference on Language Development</i>, 2010, Cascadilla Press, 466-476.</p>
+<p class="pubs">Miller, K. & Schmitt, C. (2010) Effects of variable input in the acquisition of plural in two dialects of Spanish. <i>Lingua</i> 120 (5) 1178-1193.</p>
+<p class="pubs">Schmitt, C. & Miller, K. (2010) Using comprehension methods in language acquisition research. In: S. Unsworth & E. Blom (eds.) <i>Experimental Methods in Language Acquisition Research</i>, John Benjamins, 35-56.</p>
+<p class="pubs">Miller, K. & Schmitt, C. (2009) Syllable-final /s/ lenition and the acquisition of plural morphology in Spanish-speaking children. In: J. Grinstead (ed.) <i>Hispanic Child Languages: Typical and Impaired Development.</i> John Benjamins, 3-27.</p>
+<p class="pubs">Schmitt, C. & Miller, K. (2007) Making discourse dependent decisions: The case of the copulas ser and estar in Spanish. <i>Lingua</i>, 117 (11), 1907-1929.</p>
+<p class="pubs">Miller, K. & Schmitt, C. (2004) An experimental study of child comprehension of Spanish indefinites and bare singulars. <i>Language Acquisition: A Journal of Developmental Linguistics</i>, 12 (3&4), 247-256.</p>
+
+<p><em>Current Grants:</em> </p>
+<p class="pubs">National Science Foundation Doctoral Dissertation Improvement Grant #BCS 1251989. (with Carrie Jackson and Alison Hendricks), Doctoral Dissertation Research: Inconsistent input and amount of exposure: Child second language acquisition of Fering, a dialect of North Frisian. [$15,118], Feb-2013 - present.</p>
+
+
+<!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

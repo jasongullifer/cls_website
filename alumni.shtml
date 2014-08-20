@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Penn State Alumni</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style1 {color: #2932A0}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="index.shtml">Home</a><a> / </a><a href="people.shtml">People</a><a> / </a>Penn State Alumni</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+     <p class="letters"> A <a href="#B">B</a> <a href="#C">C</a> <a href="D">D</a> E F <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> J <a href="#K">K</a> <a href="#L">L</a> M N O <a href="#P">P</a> Q <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> U V W X Y Z</p>
+<div class="hang_indent">
+     
+     <p><a name="B" class="name" href="http://www.personal.psu.edu/cpb144/">Colleen Balukas</a><br />
+	 <strong>Assistant Professor of Spanish, Department of Modern Languages and Classics, Ball State University</strong><br />
+	 <a href="mailto:cpb144@psu.edu">E-mail</a><br /> 
+	 </p>
+	 
+     <p><a name="B" class="name" href="http://www.personal.psu.edu/jrb922/twtc/">Joe Bauman</a><br />
+	 <strong>Lecturer in Spanish, Penn State University</strong><br />
+	 <a href="mailto:jrb922@psu.edu">E-mail</a><br /> 
+	 </p>
+	 
+	 <p><a name="B" class="name"  >Cindy Blanco</a><br />
+     <a href="mailto:cynthiapblanco@gmail.com">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     Grammatical gender, phonology, morphology, (first) language acquisition, bilingualism, and cognition.</p>
+         
+     <p><a name="B" class="name">Geraldine Blattner</a><br />
+     <strong>Associate Professor of French, Florida Atlantic University</strong><br />
+     <a href="mailto:gblattne@fau.edu">E-mail</a><br />
+     <em>Research Interests:</em>     <br />
+     Sentence processing, second language acquisition, language learning in education abroad, technology in the classroom.</p>
+     
+     <p><a name="B" class="name" href="http://christophergbotero.weebly.com/">Christopher Botero</a><br />
+     <strong> Assistant Professor of Spanish & SLA, Georgia Regents University</strong><br />
+     <a href="mailto:cbotero@gru.edu">E-mail</a><br />
+     <em>Research Interests: </em><br />
+     Phonetics, phonology, bilingualism, second-language acquisition.</p>
+      
+     <p><a name="B" class="name"  >Susan C. Bobb</a><br />
+     <strong>Postdoctoral Researcher, Universität Göttingen</strong><br />
+     <a href="mailto:scb207@gmail.com">E-mail</a><br />
+     <em>Research Interests:</em>     <br />
+     Bilingualism, word production, second language acquisition.</p>
+    
+    		 <p><a name="F" class="name" id="F">Cari Bogulski</a><br />
+		 <strong>Postdoctoral Researcher, York University</strong><br />
+      <a href="mailto:cab485@psu.edu">E-mail</a><br /></p>
+    
+	<p><a name="B" class="name" href="http://sites.google.com/site/monaroxanabotezatu/home" >Mona Roxana Botezatu</a><br />
+    <strong>Post Doctoral Fellow, Moss Rehabilitation Research Institute</strong><br />
+    <a href="mailto:botezatr@einstein.edu">E-mail</a><br />
+    <em>Research Interests:</em>     <br />
+    Phonological, orthographic, semantic and cognitive control aspects of visual and auditory word recognition in bilingual, aphasic and aging populations
+	</p>
+     
+     <p><a name="B" class="name" href="http://www.uwec.edu/Flang/facstaff/brown.htm">Joshua R. Brown</a><br />
+     <strong>Assistant Professor, University of Wisconsin at Eau Claire</strong><br />
+     <a href="mailto:brownjo@uwec.edu">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     Sociolinguistics, sociology of language, language contact, language and gender/sexuality</p>
+  <!--   <p id="C"><a name="C" class="name" href="http://academics.utep.edu/Default.aspx?tabid=70486">Matthew T. Carlson</a> <br />
+     <strong>Assistant Professor, University of Texas at El Paso</strong><br />
+     <a href="mailto:mtcarlson@utep.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+     First and Second Language Phonology, First and second language acquisition, Emergent grammar, statistical learning, working memory and SLA, gesture, bilingualism.</p>
+-->
+     
+     	 <p><a name="C" class="name" id="F">Katie Chapman</a><br />
+         <strong>Visiting Assistant Professor of Psychology, University of Arkansas</strong><br />
+         <a href="mailto:kmc025@uark.edu">E-mail</a><br />
+     
+		 <p><a name="C" class="name" id="F">Peiyao Chen</a><br />
+		 <strong>Graduate Student, Northwestern University</strong><br />
+      <a href="mailto:puc15@psu.edu">E-mail</a><br /></p>
+     
+     <p><a name="C" class="name" href="http://www.davidcounselman.com/" >David Counselman</a><br />
+     <strong>Assistant Professor of Spanish, Ohio Wesleyan University</strong><br />
+     <a href="mailto:dwcounse@owu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+     L2 pronunciation, L1 and L2 speech perception and production</p>
+
+     <p><a name="D" class="name" href="www.ameliajdietrich.com" >Amelia Dietrich </a><br />
+     <strong>Research Project Manager; Penn State University</strong><br />
+     <a href="mailto:ajd303@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+      Bilingualism; Sentence processing; Corpus linguistics; Code-switching; Language contact</p>
+		 
+	 <p><a name="D" class="name" id="F">Melisa Dracos</a><br />
+		 <strong>Assistant Professor in Linguistics, Baylor University</strong><br />
+      <a href="mailto:mjd1021@psu.edu">E-mail</a><br /></p> 
+	 
+     <p id="D"><a name="D" class="name">Megan Dunn Davison</a> <br />
+        <strong>Research Assistant Professor, University of New Mexico</strong><br />
+       <a href="mailto:davisonm@unm.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+     Language and literacy development and disorders in preschool-age children with a special interest in diverse, at-risk populations.</p>
+     
+     <p><a name="D" class="name"  >Evelyn Duran Urrea</a><br />
+     <!--<strong>PhD Candidate, Spanish, Italian, and Portuguese</strong><br />
+     <a href="mailto:ded188@psu.edu">E-mail</a><br />-->
+     <em>Research Interests:</em><br/>Sociolinguistics, language contact, bilingualism, codeswitching, discourse analysis, functional syntax and Spanish as a heritage Language </p>
+	 
+	 
+      <p id="G"><a name="G" class="name">Verónica González López</a><br />
+     <a href="mailto:vxg909@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+     Cross-language speech perception and production, contact linguistics</p>
+    
+	 <p><a name="G" class="name">Rosa Guzzardo Tamargo</a><br />
+     <strong>University of Puerto Rico</strong><br />
+     <a href="mailto:reguzzardo@gmail.com">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     Codeswitching, bilingualism, sentence processing, sociolinguistics, language contact</p>
+
+	 <p><a name="H" class="name">Aroline Seibert Hanson</a><br />
+     <strong>Post-doctoral student, The Pennsylvania State University</strong><br />
+     <a href="mailto:aes284@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     Second language acquisition and processing (specifically of clitic pronouns), and cognitive individual differences</p>
+	 
+     <p><a name="H" class="name" href="http://www.kobe-cufs.ac.jp/institute/faculty/hoshino.html">Norkio Hoshino</a> <br />
+     <strong>Associate Professor, Kobe City University of Foreign Studies</strong><br />
+     <!--<a href="mailto:n.hoshino@bangor.ac.uk">E-mail</a> <br />-->
+     <em>Research Interests:</em> <br />
+     Bilingualism, psycholinguistics, language production.</p>
+     
+	 <p><span name="H" class="name style1">Adelina Hristova</span><br />
+     <strong>PhD student, College  of Education, Department of Learning and Performance Systems, Adult Education  Program</strong><br />
+     <a href="mailto:agh13@psu.edu">E-mail</a> <br />
+     <em>Research Interests:</em><br/>
+     Literacy for culturally and  linguistically diverse populations, bilingualism and multilingualism in the  global context, measurements of success for adult learners, comparative and  international education, distance education and web-based learning.</p>
+     
+	 <p><a href="http://php.scripts.psu.edu/nai106" name="I" class="name" id="I">Noelle Andrie (Isenberg</a><span class="name">)</span><br />
+     <strong>PhD candidate, German Applied Linguistics</strong><br />
+     <a href="mailto:isenberg@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+	 Web-based foreign language learning, applied psycholinguistics.</p>
+         
+     <p><a name="L" class="name"  >Jared Linck</a><br />
+     <strong>Assistant Research Scientist - Second Language Acquisition, University of Maryland Center for Advanced Study of Language</strong><br />
+     <a href="mailto:jlinck@casl.umd.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+     Bilingualism, individual differences in L2 acquisition, context of learning, immersion learning, executive functioning/cognitive control and     their roles in L2 acquisition and use, aptitude for foreign  language learning.</p>
+     
+     <p><a name="M" class="name"  >Aaron Mitchel</a><br />
+     <strong>Assistant Professor of Psychology, Bucknell University</strong><br />
+     <a href="mailto:adm018@bucknell.edu">E-mail</a><br />
+     <em>Research Interests:</em><br />
+     First and second language acquisition, simultaneous bilingualism, bilingual language representation, and the evolution of language.</p>
+
+     <p><a name="P" class="name">Juliana Peters</span><br />
+     <!--<strong>Graduate Student, Psychology</strong><br />
+     <a href="mailto:jkp935@psu.edu">E-mail</a>-->
+	 
+     <p><a name="P" class="name"  >Tyler Phelps</a><br />
+     <a href="mailto:tep144@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+	 Lexical and syntactic processing, codeswitching.</p>
+	
+	 <p><a name="P" class="name"  >Gerard (Trace) Poll</a><br />
+     <strong>Assistant Professor of Communication Sciences and Disorders, Elmhurst College</strong><br />
+     <a href="mailto:gerard.poll@elmhurst.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+	 Developmental language and literacy disorders in adolescents and young adults; relationships between delayed language emergence and language disorders in children;  typical first language development.</p>
+
+	 <p><a name="S" class="name" href="people/alumni/scaltz_tracy.shtml"  >Tracy Cramer Scaltz</a><br />
+            <a href="mailto:tracyc@psu.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+     Psycholinguistics, bilingualism, sentence parsing, second language acquisition</p>
+
+     <p><a name="S" class="name"  >Shelley Scarpino</a><br />
+     <!--<strong>PhD Candidate, Communication Sciences and Disorders</strong><br />
+     <a href="mailto:ses1007@psu.edu">E-mail</a><br />-->
+     <em>Research Interests:</em><br/>
+     Typical and atypical first and second language phonological acquisition, emerging literacy in children, relationship between vocabulary and phonology</p>
+     
+     <p><a name="S" class="name" href="people/affiliated/schwartz_ana.shtml">Ana I. Schwartz</a> <br />
+        <strong>Assistant Professor of Psychology, University of Texas at El Paso </strong><br />
+       <a href="mailto:aschwegl@uci.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+      Bilingual lexical representation and reading comprehension processes; bilingual emergent literacy and vocabulary acquisition; second language pedagogy and teacher preparation; eye-tracking methodology.</p>
+    
+     <p><a name="S" class="name"  >Mike Shelton</a><br />
+     <strong>Assistant Professor of Spanish and Linguistics, Occidental College</strong><br />
+     <a href="mailto:mshelton@oxy.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+     Experimental approaches to phonology, cognitive representation of phonological structure, speech production.</p>
+
+     <p><a name="S" class="name"  >Hiram Smith</a><br />
+     <strong>Assistant Professor of Spanish, Bucknell University</strong><br />
+     <a href="mailto:hiram.smith@bucknell.edu">E-mail</a><br />
+     
+     <p><a name ="S" class="name"  >Eva María Suárez Büdenbender</a><br />
+     <a href="mailto:ezs109@psu.edu">E-mail</a><br />
+    <!-- <em>Research Interests:</em></p>-->
+       
+     <p><a name= "S" class="name" href="people/affiliated/sunderman_gretchen.shtml">Gretchen Sunderman</a> <br /> 
+        <strong>Associate Professor of Spanish, Florida State University </strong><br />
+       <a href="mailto:gsunderm@fsu.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+       Second Language Acquisition, Bilingualism, Lexical Processing.</p>
+     
+	 <p><a name="T" class="name" id="T">Joyce Tam</a><br />
+       <strong>Research Technologist</strong><br />
+       <a href="mailto:jwt140@psu.edu">E-mail</a> <br />
+       <em>Lab Affiliation:</em><br />
+       <a href="research_groups/psych_research.shtml">The Language and Cognition Laboratory (The Purple Lab)</a><br />
+       <a href="research_groups/csd_research.shtml">The Brain, Language, and Literacy Laboratory</a></p>
+     
+      <p><a name="T" class="name" id="T" href="http://cls.psu.edu/people/affiliated/Tanner_Darren.shtml">Darren Tanner</a><br />
+       <strong>Assistant Professor of Linguistics, Second Language Acquisition, and Teacher Education, University of Illinois at Urbana-Champaign</strong><br />
+       <a href="mailto:dstanner@gmail.com">E-mail</a> <br />
+       <!--<em>Lab Affiliation:</em><br />
+       <a href="research_groups/psych_research.shtml">The Language and Cognition Laboratory (The Purple Lab)</a><br />
+       <a href="research_groups/csd_research.shtml">The Brain, Language, and Literacy Laboratory</a></p>
+     -->
+     
+	 <p><a name = "T" class="name" href="http://www.psychology.pitt.edu/people/faculty/faculty.php?fc_id=76">Natasha Tokowicz</a><br />
+     <strong>Associate Professor of Psychology and Linguistics and Research Scientist, Learning Research and Development Center, University of Pittsburgh </strong><br />
+       <a href="mailto:Tokowicz@pitt.edu">E-mail</a> <br />
+     <em>Research Interests:</em> <br />
+       Second language learning, bilingualism.</p>
+	   
+	 <p><a name="V" class="name">Jorge Vald&eacute;s Kroff</a><br />
+     <strong>Assistant Professor of Spanish, University of Florida</strong><br />
+     <a href="mailto:jvald@sas.upenn.edu">E-mail</a><br />
+     <em>Research Interests:</em><br/>
+		 Sentence processing, auditory comprehension, psycholinguistics, codeswitching, and perception and production in bilingual	         populations</p>
+
+	 <p><a name = "V" class="name" href="http://www.personal.psu.edu/azv115/TWTC/index.html">Alvaro Villegas</a><br />
+     <strong>Assistant Professor of Spanish, University of Central Florida </strong><br />
+       <a href="mailto:azv115@psu.edu">E-mail</a> <br /></p>
+       	
+     </div>
+     <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

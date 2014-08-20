@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/personal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Affiliates : Harald Clahsen</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="false" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="false" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
+<link href="../../styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="../../images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="../../upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="../../images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent">
+      <p class="pagetitle"><a href="../../index.shtml">Home</a><a> / </a><a href="../../people.shtml">People</a><a> / </a><!-- InstanceBeginEditable name="dept" --><a href="../../affiliates.shtml">Affiliates</a><!-- InstanceEndEditable --><a> / </a><!-- InstanceBeginEditable name="name2" -->Harald Clahsen<!-- InstanceEndEditable --></p>  
+     
+    
+    <div class="info_pic_container">
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/clahson_harald.jpg" alt="" name="pic" width="134" height="213" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="info">
+    <p><strong><!-- InstanceBeginEditable name="name" -->Harald Clahsen<!-- InstanceEndEditable --></strong><br/> 
+      <!-- InstanceBeginEditable name="title1" -->Professor of Language &amp; Linguistics, University of Essex<!-- InstanceEndEditable --></p>
+    
+    <p><!-- InstanceBeginEditable name="address" --><strong>Department of Spanish, Italian, and Portuguese</strong><br />
+Pennsylvania State University<br /> 
+0211 Burrowes Building<br />
+University Park, PA 16802<!-- InstanceEndEditable --><br />
+    <br />
+    <!-- InstanceBeginEditable name="contact" --> Phone: ++44-1206-87-2228<br /> 
+    Fax: ++44-1206-87-2198<br />
+E-mail: <a href="mailto:harald@essex.ac.uk">harald@essex.ac.uk</a> <!-- InstanceEndEditable --></p>
+    </div>
+	</div>
+
+    <div class="info_block">
+    
+    
+    <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
+      <p> <span><a href="http://privatewww.essex.ac.uk/~harald/">View Personal Website</a></span></p>
+    <!-- InstanceEndEditable --></div>
+    
+
+    
+    <p>
+    <em>Research Interests:</em><br /></p>
+     
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">In addition to acquisition, disorders and processing of language, his research interests include theories of morphology and syntax.</p> 
+<!-- InstanceEndEditable -->
+<p> <br /> 
+    <em>Recent Publications:</em> </p>
+<!-- InstanceBeginEditable name="publications" --><p class="pubs">2007: Antecedent priming at trace positions in children’s sentence processing. Journal of Psycholinguistic Research 36: 175-188; with L. Roberts, T. Marinis, and C. Felser.</p>
+
+<p class="pubs">2006: How native-like is non-native language processing? Trends in Cognitive Sciences 10: 564-570; with C. Felser.</p>
+
+<p class="pubs">2006: Linguistic perspectives on morphological processing. In: D. Wunderlich (ed.), Advances in the theory of the lexicon. Mouton de Gruyter: Berlin, pp. 355-388.</p>
+
+<p class="pubs">2006: Ambiguity resolution in sentence processing: The role of lexical and contextual information. Journal of Linguistics 42: 109-138; with D. Papadopoulou.</p>
+
+<p class="pubs">2006: Grammatical processing in language learners. Applied Psycholinguistics 27: 3-42; with C. Felser. [Keynote article]</p>
+
+<p class="pubs">2006: Continuity and shallow structures in language processing. Applied Psycholinguistics 27: 107-126; with C. Felser. [Authors’ Response]</p>
+
+<p class="pubs">2006: Brain potentials to morphologically complex words during listening. Brain Research 1077: 144-152; with M. Lueck and A. Hahne.</p>
+
+<p class="pubs">2006: Stem allomorphy in the Spanish mental lexicon: Evidence from behavioral and ERP experiments. Brain &amp; Language 97: 110-120; with R. E. Linares and A. Rodriguez-Fornells.</p>
+
+<p class="pubs">2006: Morphological processing in a second language: Behavioral and event-related brain potential evidence for storage and decomposition. Journal of Cognitive Neuroscience 18: 121-134; with A. Hahne and J. Müller.</p>
+
+<p class="pubs">2005: Structural and lexical case in child German: Evidence from language-impaired and typically-developing children. Language Acquisition 13: 3-32; with S. Eisenbeiss and S. Bartke.</p>
+
+<p class="pubs">2005: Distinct patterns of language impairment in Down’s Syndrome and Williams Syndrome: The case of syntactic chains. Journal of Neurolinguistics 18: 479-501; with M. Ring.</p>
+
+<p class="pubs">2005: Finiteness and verb-second in German agrammatism. Brain &amp; Language 92: 33-44; with M. Wenzlaff.</p>
+
+<p class="pubs">2005: Gaps in second language sentence processing. Studies in Second Language Acquisition 27: 53-78; with T. Marinis, L. Roberts and C. Felser.</p>
+
+<p class="pubs">2004: Speeded production of inflected words in children and adults. Journal of Child Language 31: 683-712; with M. Hadler and H. Weyerts.</p>
+
+<p class="pubs">2004: On the L2 acquisition of the morphosyntax of German nominals. Linguistics 42: 669-705; with T. Parodi and B. Schwartz.</p>
+
+<p class="pubs">2004: Tense and agreement in German agrammatism. Brain &amp; Language 89: 57-68; with M. Wenzlaff.</p>
+
+<p class="pubs">2003: Children’s processing of ambiguous sentences: a study of relative clause attachment. Language Acquisition 11: 127-163; with C. Felser and T. Marinis.</p>
+
+<p class="pubs">2003: Storage and integration in the processing of filler-gap dependencies: an ERP study of topicalisation and wh-movement in German. Brain &amp; Language 87: 345-354; with C. Felser and T. Münte.</p>
+
+<p class="pubs">2003: Parsing strategies in L1 and L2 sentence processing: a study of relative clause attachment in Greek. Studies in Second Language Acquisition 25: 501-528; with D. Papadopoulou.</p>
+
+<p class="pubs">2003: Derivational morphology in the German mental lexicon: a dual mechanism account. In: H. Baayen &amp; R. Schreuder (Eds.), Morphological structure in language processing. Mouton de Gruyter: Berlin, pp. 125-155; with I. Sonnenstuhl and J. Blevins.</p>
+
+<p class="pubs">2003: Words and rules in children with Williams Syndrome. In: Y. Levy &amp; J. Schaeffer (Eds.), Language competence across populations. Erlbaum Press: Hillsdale, NJ, pp. 323-352; with C. Temple.</p>
+
+<p class="pubs">2002: Antecedent priming at trace positions in Japanese long-distance scrambling. Journal of Psycholinguistic Research 31: 531-571; with Y. Nakano and C. Felser.</p>
+
+<p class="pubs">2002: The development of regular and irregular verb inflection in Spanish child language. Journal of Child Language 29: 591-622; with F. Aveledo and I. Roca.</p>
+
+<p class="pubs">2002: Morphological priming in Spanish verb forms: an ERP repetition priming study. Journal of Cognitive Neuroscience 14: 443-454; with A. Rodriguez-Fornells and T. Münte.</p>
+
+<p class="pubs">2002: Word order in sentence processing: An experimental study of verb placement in German. Journal of Psycholinguistic Research 31: 211-268; with H. Weyerts, M. Penke, T. Münte and H.-J. Heinze.</p>
+
+<p class="pubs">2002: Strong stems in the German mental lexicon: evidence from child language acquisition and adult processing. In: I. Kaufmann &amp; B. Stiebels (Eds.), More than words: a festschrift for Dieter Wunderlich. (Studia grammatica 53). Akademie-Verlag: Berlin, pp. 91-112; with P. Prüfert, S. Eisenbeiss and J. Cholin.</p>
+
+<p class="pubs">2002: Words, rules and stems in the Italian mental lexicon. In: S. Nooteboom, F. Weerman &amp; F. Wijnen (Eds.), Storage and computation in the language faculty. Kluwer: Dordrecht, pp. 93-129; with T. Say.</p>
+
+<p class="pubs">2001: The mental representation of inflected words: an experimental study of adjectives and verbs in German. Language 77: 510-543; with I. Sonnenstuhl, M. Hadler and S. Eisenbeiss.</p>
+
+<p class="pubs">2001: Compounding and inflection in language impairment: evidence from Williams Syndrome (and SLI). Lingua 111: 729-757; with M. Almazan.</p>
+
+<p class="pubs">2001: Morphological paradigms in language processing and language disorders. Transactions of the Philological Society 99: 247-277; with I. Sonnenstuhl, M. Hadler and S. Eisenbeiss.</p>
+
+<p class="pubs">2001: Event-related brain responses to morphological violations in Catalan. Cognitive Brain Research 11: 47-58; with A. Rodriguez-Fornells, C. Lleó, W. Zaake and T. Münte.</p><!-- InstanceEndEditable --></div>
+
+     
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

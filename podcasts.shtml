@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : Podcasts</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events </a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" -->
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="index.shtml">Home</a><a> / </a>Podcasts</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+    <p class="text_block">Welcome to the podcast page. In order to
+    download any of these files, you must supply the proper username and
+    password when prompted(Contact <a href="mailto:jwt140@psu.edu">Joyce Tam</a> for more information or further assistance).</p>   
+    
+    
+                
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+      	<li class="TabbedPanelsTab" tabindex="0">Spring 2010</li>
+        <li class="TabbedPanelsTab" tabindex="0">Fall 2009</li>
+        <li class="TabbedPanelsTab" tabindex="0">Spring 2009</li>
+        <li class="TabbedPanelsTab" tabindex="0">Fall 2008</li>
+        <li class="TabbedPanelsTab" tabindex="0">Spring 2008</li>
+        <li class="TabbedPanelsTab" tabindex="0">Fall 2007</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">   
+          
+     
+      
+      
+      <!--Spring2010--><div class="TabbedPanelsContent">
+      <p class="hang_indent">An Information Theoretic Perspective on Language Production</a> by Florian Jaeger</strong><br /><img src="images/yaeger_florian.jpg" width="102" height="116" align="right" />
+      <em> (Presented on February 5 2010)</em><br />
+     
+            <a href="http://www.bcs.rochester.edu/people/fjaeger/">Powerpoint and Related Materials</a><br /><br />
+      
+      		In this talk, I return to a question that has fascinated language researchers for over a century (e.g. Schuchardt, 1885; Zipf, 1935, 1949; etc.): To what extent is language shaped to be efficient? I introduce recent work that links information theoretic proofs (Shannon, 1948) to efficiency in human language use and to incremental language production. I present evidence that speakers trade off redundancy and the amount of signal they produce, in a way expected if language production is organized to be communicative efficient. The evidence comes from a variety of choice points, including the phonetic and phonological realization of words (Bell et al., 2003; Jaeger and Poster, 2010), the distribution of disfluencies and gestures (Cook, Jaeger, and Tanenhaus, 2009), morphological contraction (he's vs. he is; Frank & Jaeger, 2008), and so called syntactic reduction (e.g. that-mentioning; Wasow et al., in press; Jaeger, 2006, 2010a,b; Jaeger, Levy, and Ferreira, 2010; Levy and Jaeger, 2007). I also discuss recent cross-linguistic evidence from the distribution of information across discourses (Qian and Jaeger, 2009, 2010; Gomez Gallo, Jaeger, and Smyth, 2008). If time permits, I present data that bilinguals produce language efficiently according to their beliefs about the language (though not necessarily as measured by native speakers; Qian, 2009).
+
+I also discuss some of the consequences for linguistic theory (in particular with regard to language change and typological realizations) as well as for the study of alternations (choice points).</p>
+
+ <p class="hang_indent"><strong><a href="podcasts/wicha talk.MP3">Prediction and processing of gender-marked words in monolingual and bilingual sentences </a> by <br />Nicole Wicha</strong><br />
+   <img src="images/wicha_nicole.jpg" width="146" height="106" align="right">
+      <em> (Presented on February 19 2010)</em><br />
+      <br />
+      
+      I will present a series of sentence comprehension studies that address two main questions. First, does the brain use an active mechanism for sentence comprehension in which context is used to anticipate upcoming words, or is it solely a passive system that waits to integrate words into the current context? Second, can semantics and syntax interact online during sentence comprehension, or are the contributions of syntax and semantics serial and modular? Both questions are addressed using grammatical gender in Spanish as a window into these processes with both monolingual Spanish speakers and bilingual speakers of Spanish and English. I will present brain (event related potentials) and behavioral evidence for a system that is both active and integrative in nature.</p>
+      
+      
+      <p class="hang_indent"><strong><a href="podcasts/adrover-roig_talk.mp3">The impact of language learning on cognitive reserve</a> by Daniel Adrover-Roig</strong><br />
+   <img src="images/Adrover-Roig_Daniel.jpg" width="124" height="126"align="right">
+      <em> (Presented on March 5 2010)</em><br />
+      <a href="podcasts/files/Adrover-Roig_talk.pdf">Powerpoint</a>
+      <br /><br />
+      Many of us are required to speak a language different of our native one on a daily basis. Thus, language learning is nowadays a very common experience and therefore, language switching operations may be often required. Thus, attentional control operations allows us to switch between languages while minimizing mutual interferences between them. In this talk, I will present a body of evidence that suggests different capacities in some domains involving cognitive control among bilinguals (with special aim in the elderly) and also its implications on the age-related cognitive decline. I will also present our fMRI results regarding lexical learning both with young and elderly adults. Finally, I will present our current project, which aims at testing the relationship between bilingualism and cognitive reserve and scaffolding mechanisms. Due to the growing interest in the relationship between cognitive function and neural change, some neural candidates that could account for the “bilingual advantage” are proposed, especially with regard to interference control. </p>
+      
+      
+      <p class="hang_indent"><strong><a href="podcasts/Tomblin_edited.mp3">Genetics of Developmental Language Impairment: Pathways to Cognitive Systems for Language</a> by Bruce Tomblin</strong><br />
+   <img src="images/tomblin_bruce.jpg" width="124" height="126"align="right">
+      <em> (Presented on March 26 2010)</em>
+        <br /><br />
+      Dr. Tomblin is a true pioneer in the field of research on developmental language disorders. Under his direction, the Child Language Research Center has produced research of unprecedented scale and impact. The center started out with an epidemiologic study of language disorders, testing language skills of 7,000 Midwestern kindergarten children. A subset of these children were followed until early adulthood to study language growth patterns and outcomes. The center has also studied speech, language and reading skills of children with cochlear implants. The latest projects have involved a search for genes involved in language development. At the Penn State Center for Language Science, Dr. Tomblin will discuss the recent considerable advances in molecular genetics that offer new opportunities for research into complex developmental traits. Language development and disorders stand as a prime examples of complex traits that could be influenced by genetic mechanisms. A handful of labs around the world, including Dr. Tomblin’s, have begun to attempt to associate genetic information with language. As we approach this work, it is necessary to consider how one might want to conceive of relationships between genes and language. Dr. Tomblin will describe the approach he has taken and present some of the early findings, including a link between FOXP2, individual differences in language abilities and the procedural memory system.</p>
+      
+       <p class="hang_indent"><strong><a href="podcasts/sankoff_talked.mp3">Language transmission and language change across the life cycle </a> by Gillian Sankoff</strong><br />
+   <img src="images/sankoff_gillian.jpg" width="122" height="151" align="right">
+      <em> (Presented on April 9 2010)</em>
+        <br />
+        <br />
+      Variation and change have long been a central concern of sociolinguistic research, but examining their relationship through the lens of the life cycle of speakers allows us to focus on, and perhaps help to resolve, some long-standing conundrums and paradoxes. If language change takes place largely between the generations as children learn their parents’ language, we nevertheless have to explain the fact that any mismatch is very small, and can hardly account for the massive changes documented in many studies. If change is largely a result of language contact, how do we explain the ability of immigrant children to disregard parental input and replicate the grammar and phonology of host communities? I propose that speakers at different stages of the life cycle (early childhood, later childhood, adolescence, young adulthood and maturity) contribute differently to language change. Focusing on life cycle differences may also help to bridge the conceptual gap between individual speakers’ early-learned internalized grammars and the grammars we induce from the data of the historical record. Data to be discussed are drawn mainly from the longitudinal study of Québécois French, analyzing the relationship between community changes in the last three decades of the 20th century and changes over the lifespans of individual speakers over the same period. The conclusions highlight the complex relationship between historical language change and the life cycle of speech community members.</p>
+      
+       <p class="hang_indent"><strong><a href="podcasts/Baldi_talk_2010_edited.mp3">Language transmission and language change across the life cycle </a> by Phil Baldi</strong><br />
+   <img src="images/baldi_phil.JPG" width="146" height="154" align="right">
+      <em> (Presented on April 16 2010)</em>
+        <br />
+        <br />
+        This paper considers a series of far-reaching syntactic changes in the history of Latin, including:<br /><br />
+ 
+             1. The shift from SOV to SVO word order <br />                                                 
+             2. The erosion of distinctive nominal inflection<br />
+             3. The rise of prepositional usage<br />
+             4. The change in complement type from accusative-infinitive to finite subordination<br /><br />
+
+Despite the broadly structural nature of these changes, we will demonstrate that a structurally-based approach is inadequate to account for the facts, and that a multi-leveled approach which includes pragmatic, functional, typological and structural processes provides a much more satisfactory set of generalizations.  We also discuss the famous issue of "drift" first raised nearly a century ago by Edward Sapir, which we conclude is little more than an appealing myth. All examples in this presentation are provided with English translations. Knowledge of Latin, while helpful, is not necessary for understanding. 
+        </p>
+      </div>
+      
+        <!--Fall2009--><div class="TabbedPanelsContent">
+        
+        <p class="hang_indent"><strong><a href="podcasts/Rossi_ERPlecture.MP3">Learning ERPS for language research! A two day introductory course</a> by Eleonora Rossi</strong><br /> <img src="people/pics/rossi_eleonora.jpg" align="right">
+        <em>(Presented on October 1 2009)</em><br />
+        <a href="podcasts/files/Rossi_ERPlecture.pdf">Powerpoint</a><br /><br />
+        
+        The aim of this two-day course is to introduce basic theoretical concepts that are at the base of the ERP (Event Related Potentials) technique, with a special focus on language research, together with a basic practical training.
+The course is organized in two sessions. In the first one, I provide the theoretical background necessary to understand the fundamental principles that guide ERPs research (i.e  EEG signal, the electrobiological bases of the EEG signal, averaging, artifacts, etc.). The goal of the second lecture is to simulate one session of a potentially real experiment, starting from the participant’s preparation (putting the cap, lowering the impedance), to the actual running of a very short experiment, and to a first visual analysis of a raw EEG recording.</p>
+        
+        <p class="hang_indent"><strong><a href="podcasts/Schmid_talk.MP3">The discrepancy between L1 and L2: a perspective from L1 attrition</a> by Monika Schmid</strong><br /><img src="images/Schmid_Monika.jpg" width="96" height="124" align="right">
+        <em>(Presented October 5 2009)</em><br /><br />
+        One of the most puzzling observations for linguists is the difference between learning a language from birth and later in life: while all normally developing children can attain full native language proficiency, there is considerable variability in ultimate attainment among older speakers who attempt to acquire a second language (L2). There is an ongoing controversy in linguistic research on whether this discrepancy is due to a maturationally constrained window of linguistic development making language learning difficult or impossible after puberty, or to general cognitive factors linked to the fact that the later an L2 is established, the stronger the competition it has to overcome from the more deeply entrenched first language (L1).
+
+      Studies attempting to resolve this controversy have so far focussed exclusively on the development of L2 skills. New insight may be provided by investigating native speakers who are in many ways similar to L2 learners, namely migrants who have become dominant in the L2 (referred to as L1 attriters). On the one hand, such speakers have learned their L1 monolingually during childhood and are therefore not impeded by maturational constraints. On the other, they experience competition between their seldom-used L1 and their highly entrenched L2. A comparison of L2 learners on the one hand and L1 attriters on the other may therefore be able to shed some light on the question of whether there is indeed a fundamental difference between early- and late-learned languages.</p>
+        
+        
+        </div>
+        <!--Spring 2009--><div class="TabbedPanelsContent"><br />
+			<p class="hang_indent"><strong><a href="podcasts/emmorey_talk.mp3">The Psycholinguistic and Neural Consequences of Bimodal Bilingualism</a> by Karen Emmorey</strong><br />
+<img src="images/emmorey_karen.jpg" alt="" width="101" height="123" align="right" />
+          <em>(Presented January 15 2009)            </em><br />
+             <br />
+            <!--<em>Bi-directional talker-listener adaptation in
+          speech communication</em><br /><br />-->
+Bimodal bilinguals, fluent in a signed and a spoken language, exhibit a unique form of bilingualism
+because their two languages access distinct sensory-motor systems for comprehension and
+production. When a bilingual’s languages are both spoken, the two languages compete for
+articulation (only one language can be spoken at a time), and both languages are perceived by the
+same perceptual system: audition. Differences between unimodal and bimodal bilinguals have
+implications for how the brain might be organized to control, process, and represent two languages.
+In this talk, I highlight recent results that illustrate what bimodal bilinguals can tell us about
+language processing and about the functional neural organization for language.</p>
+
+<p class="hang_indent"><strong>Driven to Make Sense: How the Brain Establishes Meaning in Language by Dorothee Chwilla</strong><br />
+  <img src="images/chwilla_Dorothee.jpg" width="132" height="115"  align="right"/>
+  <em>(Presented April 28 2009)</em><br /><br />
+  What is the relation between semantic knowledge and different kinds of world knowledge? How fast are these different kinds of knowledge accessed and integrated into a higher-order meaning representation within language context? I will present Event-Related Potential (ERP) data on the time-course of accessing/integrating semantic knowledge and word knowledge (conceptual scripts). I will argue that these two kinds of familiar knowledge are immediately integrated into context. I will then turn to the question how novel meanings are established. Novel meanings are ubiquitous in language use. Novel words (e.g., compounds) are constantly added to our vocabulary. Despite the novelty of the information, the sense of understanding is seldom lost. An important question is how novel meanings that are not stored in long-term memory are created. I will present the ERP results of two experiments on novel meaning creation that support the view that even novel meanings are established immediately. The ERP results reveal a striking flexibility in semantic processing. I will argue that these findings support embodied theories of language but challenge abstract symbolic theories of meaning. To further test these models against each other we recently investigated the effects of emotional state on semantic processing. I will present the ERP data of the emotion study and will discuss the implications of the results for current theories of meaning and for the functional significance of the N400 component.</p>
+  
+  <p class="hang_indent"><strong>Code-switching, Transfer and Other Misconceptions by Kees de Bot</strong><br />
+  <em>(Presented June 22 2009)</em><br />
+  <br />
+  
+</div>
+        <!--Fall 2008--><div class="TabbedPanelsContent">
+        <p class="hang_indent"><b><em><a href="podcasts/macwhinney.mp3">A Unified Model for First and Second Language Acquisition:  An Alternative to Critical Periods</a> by Brian MacWhinney</em></b> <br /><img src="images/macwhinney_brian.jpg" alt="brian macwhinney" width="101" height="124" align="right" />
+    <em>(Presented
+    October 09 2008)</em><br /> 
+    Powerpoint to Appear<br /><br />
+
+Despite a variety of logical and empirical problems, many researchers believe that language learning is limited by a critical period.  The unified version of the Competition Model presents a way of accounting for age-related differences in language learning abilities that does not rely on critical periods, but instead on first language entrenchment, competition between multiple languages, and changing patterns of social integration into a new language community. The analysis has led to a variety of experiments designed to evaluate ways of improving L2 learning in adulthood.</p>   
+
+<p class="hang_indent"><strong><a href="podcasts/gullberg_verbdevelopment.mp3">The development of verb meaning in first and second language acquisition: Talking and gesturing about placement</a> by Marianne Gullberg</strong> <br /><img src="images/gullberg_marianne.jpg" alt="marianne gullberg" width="101" height="105" align="right" />
+    <em>(Presented November 19 2008)</em><br /> 
+    <a href="podcasts/files/gullberg_verbdevelopment.pdf">Powerpoint</a><br />
+    <br />
+     Studies of both first and second language acquisition have largely focused on the acquisition of form over meaning. While comprehension studies indicate that language learners' understanding is not always adult- or target-like, surprisingly little is known about the nature of the differences, the details of children's and adult L2 learners' semantic systems once forms are in use, and when and what changes take place. In this talk I will present three studies exploring what child and adult language learners' gestures reveal about their verb meanings. The target domain is of that of placement (e.g., putting a cup on a table), which is lexicalized differently crosslinguistically. The first study shows how differences in placement verb meanings in Dutch and French are reflected in two distinct patterns of adult gesture use. The second study examines Dutch four- to five-year-old children's acquisition of placement verbs demonstrating that their placement gestures change systematically as their placement verb meanings develop. The last study illustrates different gesture patterns in adult Dutch learners of L2 French depending on influences of the L1 and different degrees of semantic reorganization. Together the studies support the notion that speech and gesture form an integrated system as revealed (a) in robust crosslinguistic differences in gestural practices parallel to differences in speech, and (b) in similar parallel differences across modalities in development. The integrated nature of the systems further means that gestures open a new window on details of semantic representations; and that they can shed light on the process of acquisition by revealing shifts in such representations.
+            <!--<em>Bi-directional talker-listener adaptation in speech communication</em><br /><br />-->
+       </p>
+       
+       <p class="hang_indent"><strong><a href="podcasts/deuchar_incommensurability.mp3">Overcoming incommensurability in theories of code-switching</a> by Margaret Deuchar</strong><em><br /> <img src="images/deuchar_margaret.jpg" alt="" width="101" height="123" align="right" />
+    (Presented November 20 2008</em>)<br />    
+    <a href="podcasts/files/deuchar_incommensurability.zip">Powerpoint and related files</a><br />
+
+    <br />
+    
+            <!--<em>Bi-directional talker-listener adaptation in speech communication</em><br /><br />-->
+            Research on code-switching has progressed to the extent that there are now several competing models attempting to account for the patterns found in conversational data from bilinguals.  One of the goals of our research programme at Bangor is to critically evaluate these competing models rather than to work within only one theoretical framework.  The purpose of this talk is to defend the goal of critical evaluation in the face of the argument that two theories are never comparable, or what philosophers of science have called ‘incommensurability’. I seek to show in particular that the critical evaluation of two theories which at first sight appear not to be conducive to comparison can lead to new insights, including the redefinition of concepts and the generation of new hypotheses. <br />
+      <br />    
+
+An example of incommensurability in theories of code-switching may be found by considering the different views held by Poplack and Myers-Scotton regarding the proper scope of a theory of code-switching (see e.g. Poplack & Meechan, 1998, Myers-Scotton, 2002) vs borrowing.  Here the problem of incommensurability arises because the notion of linguistic integration is key to the definition of borrowing for Poplack, while it is at best a hypothesis about borrowing for Myers-Scotton.  We attempt a solution to this problem by critically examining the notion of linguistic integration in order to determine whether a clear line can be drawn between integrated and unintegrated donor-language items.  The data we have used for this are English-origin verbs in data collected from Welsh-English bilingual speakers who speak mainly Welsh.   We have subjected these to three tests of linguistic integration to see whether a clearcut distinction can be drawn between switches and borrowings.  We show that the three tests have different results, and that the notion of a continuum between switches and borrowings is more defensible.  Finally, we propose a new hypothesis to be examined in relation to the data, that the linguistic integration of donor-language items will be related to their frequency. </p> 
+
+<p class="hang_indent"><strong><a href="podcasts/stowe_beyondwh.mp3">Long Distance Dependencies: Beyond WH-Movement</a> by Laurie Stowe</strong><br />  (<em>Presented December 10 2008</em><em>)</em><br />
+    Powerpoint to appear<br /><br />
+            <!--<em>Bi-directional talker-listener adaptation in speech communication</em><br /><br />-->
+          One of the interesting phenomena in language is that one word (or phrase) can introduce a syntactic commitment for the occurrence of a word or phrase with particular syntactic characteristics which can occur much later in the sentence. WH-phrases are one of the most studied of these dependencies.  These are particularly interesting because the commitment is for a missing element (trace or gap).  That is the WH-phrase Which boy in Which boy did John tell Susan that he went to the movies with ___ yesterday? has to be paired with an unfilled NP position like that following with; note that without the WH-phrase this sentence would be ungrammatical in most varieties of English.  Research using ERPs has shown that WH-phrases introduce a memory load which is carried until the commitment is filled and that there are also effects at the point at which the gap is located which are modulated by the distance over which integration with the WH-phrase must extend. There are a number of interesting issues about the processing of long-distance dependencies. First, it has not been clear whether there are specific processing routines for WH-dependencies, or if similar effects can be found for other types of syntactic commitments.  I will discuss an experiment that involves the processing of the particle zai in Chinese, which introduces a commitment for a locative postposition.  Compared to sentences with no specific commitment (copula constructions), these sentences show a sustained negativity similar to that found for WH-sentences.  There are also signs of costs of integration across distance which are similar to those found in WH-constructions.  This suggests that these processes are not specific to gap location and filling, but reflect more general processes regarding maintaining and resolving commitments. A second issue has to do with the extent to which the processing effects described above should be considered to be those of syntactic commitment and resolution or of semantic commitment and integration.  This can be addressed manipulating the degree of semantic commitment that is embodied in the word or phrase which introduces the long distance commitment. For example, Chinese classifiers are similar to grammatical gender systems in that they introduce a commitment for a particular type of head noun, but it appears to be much more semantic in nature than the syntactic commitment introduced by grammatical gender.  Nevertheless distance to the point of integration induces a positivity which is similar to that found for the zai construction, in which the semantic constraint is considerably less detailed.  The primary difference is that the effect is much larger for the classifier commitments.  Likewise, manipulating the degree of semantic constraint of a WH phrase modulates the size of the maintenance effect over intervening material.  These results suggest that the semantic aspect of the commitment may be as important as the syntactic aspects in the brain processes which are reflected in these two ERP effects.</p>
+
+</div>
+        
+        <!--SPRING 2008--><div class="TabbedPanelsContent">
+        <p class="hang_indent"><b><em><a href="podcasts/tokowicz_regression.mp3">Using hierarchical regression analyses in psycholinguistic 	
+        investigations: A mini-tutorial</a></em> by Natasha Tokowicz</b> <br /><img src="people/pics/tokowicz_natasha.jpg" alt="natasha tokowicz" 
+        width="101" height="101" align="right" />
+       <em>(Presented April 8 2008)</em><br />
+		The slides from the workshop, along with the SPSS data file and output file, and the Excel spreadsheet (with a ReadMe) are attached <a 		
+        href="podcasts/files/tokowicz_regressionworkshop.zip">here</a>.<br /><br /><br /><br /><br /></p>
+        
+        <p class="hang_indent"><b><em><a href="podcasts/bradlow_adaptation.mp3">Bi-directional talker-listener adaptation in speech communication	
+        </a></em> by Ann Bradlow</b> <br />
+        <img src="images/bradlow_ann.jpg" alt="ann bradlow" width="101" height="96" align="right" />
+		<em>(Presented April 11 2008)</em><br />
+		<br />
+ 		&quot;Speech communication involves a chain of events that ideally aligns mental representations in the talker with those in the listener.
+Links in the chain can be "broken" at many points, particularly in cases where the talker and listener approach each other with
+non-optimally aligned linguistic sound systems (e.g. when they do not come from the same native language background) or when the listener's
+access to the speech signal may be blocked by a hearing impairment or the presence of background noise. I will present a series of studies
+that aimed to understand how talkers and listeners repair these breakdowns in order to achieve talker-listener alignment.  The first
+study examined talker adaptation to the listener.  Specifically, we conducted a series of acoustic-phonetic comparisons of "clear speech"
+across languages with various phonological structures.  A second study focused on the other side of the talker-listener channel by examining
+listener adaptation to the talker. In particular, we investigated listener adaptation to foreign-accented speech.  Both of these studies
+examined talker-listener adaptation under laboratory conditions in which the talker and listener did not interact directly.  A third
+study examined talker-listener interactions under more natural conditions of spontaneous, dialogue recordings.  In this study we
+examined communicative efficiency and phonetic convergence in English conversations between pairs of native English talkers and in
+conversations between one native and one non-native talker of English. Together, these studies build a picture of speech communication as a
+bidirectional process of talker-listener alignment even in the case of communication between interlocutors who do not share a "mother
+tongue.&quot; </p>
+
+<p class="hang_indent"><b><em><a href="podcasts/linck_f1f2.mp3">Addressing the "Language as fixed effect fallacy" (F1-F2) debate with advanced regression models: A user-friendly tutorial on using Hierarchical Linear Modeling in SPSS to combine by-subjects and by-items analyses.</a></em> by Jared Linck</b><img src="images/linck_jared.jpg" align="right"/><br />
+	<em>(Presented
+    May 02 2008)</em><br /> 
+    <a href="podcasts/files/linck_f1f2_files.zip">Powerpoint and related files</a><br /><br />
+
+There have been calls in the literature to analyze data in the typical
+manner by subjects (i.e., computing condition means for each
+participant, averaging across all items) but also by items (i.e.,
+computing condition means for each item averaged across all subjects),
+which are referred to as F1 and F2 analyses, respectively. Finding a
+significant effect in both the F1 and the F2 analyses (i.e., the F1 x
+F2 approach) or in the more conservative min F prime calculation
+(which integrates F1 and F2 values into one inferential statistic) has
+been (mis)interpreted as suggesting the effect "generalizes across
+participants and items." After briefly reviewing the need for and
+implentation of the F1 x F2 and min F prime analytic approaches using
+ANOVAs, I will discuss some recent criticisms of these
+approaches. Then, I will provide a brief tutorial on using an advanced
+regression technique known as Hierarchical Linear Modeling or Mixed
+Level Modeling that provides a more powerful analysis while also
+addressing these concerns. To illustrate the usefulness and ease of
+implementation of this regression technique, I will present analyses
+of Translation Recognition RT data from our lab and compare the
+results of the typical ANOVA models with the results of these
+regression models. Time permitting, I plan to walk through in detail
+how to interpret the output from these regression models so others can
+begin using this analytic technique in their own research.
+
+  </p>
+
+        </div>
+        
+        <!--Fall 2007--><div class="TabbedPanelsContent">
+        <p class="hang_indent"><b><em><a href="podcasts/linck_mixmatch.mp3">Experimental Design on a Dime</a> by Jared Linck</em></b><img src="images/linck_jared.jpg" align="right"> <br />
+        <em>(Presented December 14 2007)</em><br />
+		You can obtain the mix and match programs and example files <a href="podcasts/files/linck_MixMatchDemo.zip">here</a> or on the CLS Angel 		
+        Page.<br /><br />
+ 		&quot;In this presentation, I will present two computer programs that can be extremely helpful when preparing stimuli for an experiment. 	
+        The MATCH program can be used to match stimuli on any number of dimensions ( e.g., word frequency, word length, reaction times). The MIX 
+        program can be used to create randomly or pseudorandomly mixed stimulus lists. This program is particularly useful when certain 
+        constraints need to be set for the ordering of stimuli.&quot;</p></div>
+      </div>
+    </div>    
+    
+  
+  
+
+    
+    
+
+    
+    
+    
+      
+    
+      
+    
+    
+    
+        
+
+
+
+    
+      
+       
+    
+     
+
+
+
+ 
+     <script type="text/javascript">
+<!--
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+//-->
+     </script>
+     <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>
