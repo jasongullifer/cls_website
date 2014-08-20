@@ -1,0 +1,36 @@
+How To Edit the CLS Website with Dreamweaver
+
+*Adding the Site to Dreamweaver*
+Note: If it isn't already there in the "Files" pane (check the pulldown
+menu and look for CLS), you must add the site to dreamweaver. All of 
+the necessary files to edit the website are on the server. 
+
+1) Open up dreamweaver and go to "Site" --> "New Site"
+
+2) Under Local Info
+"Site name" can be anything you want, its just he name Dreamweaver
+referes to it as.
+
+"Local Root Folder" is where you want to store the site on your
+computer. It's probably best to put it in your Documents folder.
+
+You can leave the default images folder blank, I don't think it
+matters. I've also been leaving links relative to document. 
+
+"HTTP Address" is http://lsrg.psu.edu"
+
+3) Under Remote Info
+Access: FTP
+
+FTP Host: splogin.cac.psu.edu
+
+Host Directory: /.../dce.psu.edu/fs/services/www/dept/lsrg/
+
+Login and Password: your psu id and pass (contact IST to get access to modify the site)
+
+Make sure to check "Use Secure FTP"
+
+Everything else should be fine as is.
+
+4) On the files pane, click "get files" and the site should be
+downloaded to your computer.

@@ -1,0 +1,56 @@
+*Site 
+|This is the main site root folder. It contains all the subdirectories
+|listed below as well as the main site pages.
+|
+|
+|---/Connections 
+|    Not sure what its for, I just leave it there.
+|
+|---/Files 
+|    I use this for posting flyers and other misc. things that I
+|    link to from the website.
+|
+|---/images
+|    This contains all the images used on the site except for images
+|    of people, which are located under the people folder.
+|
+|---/includes
+|    This folder is where I put server-side includes. If you aren't
+|    sure what they are, that's OK. What you do need to be concearned
+|    with is that the code for the menu bar and mini-schedule are in
+|    here. 
+|
+|---/oldcls 
+|    This is the location of some old cls web pages that
+|    haven't been migrated yet, just in case.
+|
+|---/people
+|    This folder contains the personal pages for the faculty,
+|    affiliates, students, etc. They are all catagorized in seperate
+|    folders. 
+|------------/files
+|	      This subfolder is where I have been putting people's
+|	      CVs.
+|  
+|------------/pics 
+|	      Contains all the pictures of CLS members,
+|	      catagorized in folders.
+|
+|---/pubs
+|    Folder to hold publications linked to from the site.
+|
+|---/research_groups
+|    Contains all the pages for our research groups.
+|
+|---/SpryAssets
+|    Spry assets used by Dreamweaver.
+|
+|---/styles
+|    Contains all my CSS styles used by the website.
+|    
+|---/Templates
+     Contains dreamweaver templates. These won't have to be modified
+     often. I would make sure to backup the entire site before
+     modifying these. Early on I messed up some pages I had already
+     made and fixing them was not fun.
+
