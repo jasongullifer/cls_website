@@ -235,7 +235,34 @@ function unhide(divID) {
 	<div class="TabbedPanelsContent">
 	  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
 
-	<p class="hang_indent">January 30, 2015 - Young Scholar Speaker Series - <strong> Michael Frank (Stanford University) </strong><em></em><br />
+	<p class="hang_indent">January 30, 2015 - Young Scholar Speaker Series - <strong> Michael Frank (Stanford University) </strong><em></em> - Foster Auditorium<br />
+		<br />
+		</p>
+		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
+	
+	<div id="Frank_abstract" class="hidden">
+		<p class="indent">
+		</p>
+	</div>-->
+	<p class="hang_indent">March 20, 2015 <strong> Lisa Davidson (NYU) </strong><em></em><br />
+		<br />
+		</p>
+		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
+	
+	<div id="Frank_abstract" class="hidden">
+		<p class="indent">
+		</p>
+	</div>-->
+	<p class="hang_indent">April 17, 2015 <strong> Charles Yang (UPenn) </strong><em></em><br />
+		<br />
+		</p>
+		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
+	
+	<div id="Frank_abstract" class="hidden">
+		<p class="indent">
+		</p>
+	</div>-->
+	<p class="hang_indent">April 24, 2015 <strong> Armin Schwegler (UC Irvine) </strong><em></em><br />
 		<br />
 		</p>
 		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
@@ -264,6 +291,52 @@ function unhide(divID) {
 	<div id="McClain_abstract" class="hidden">
 		<p class="indent">
 		  <b>Title:</b> Using ERPs to investigate the scope and time course of inhibition in bilingual speech.
+		  <br></br>
+		  <b>Abstract: </b>Bilingualism has been hypothesized to place heightened demands
+
+on speech production. Speaking a second language (L2) is often 
+
+effortful and thought to reflect the competition arising from the more 
+
+dominant first language (L1). To date, very little research has directly 
+
+examined the consequences of bilingualism for speech planning in the 
+
+L1, although recent fMRI studies suggest that the neural substrates of 
+
+speech production in the L1 may differ for bilinguals and monolinguals. 
+
+One hypothesis about the source of L1 differences for bilinguals and 
+
+monolinguals comes from ERP studies that have examined the time 
+
+course of speech planning. These studies suggest that the L1 may be 
+
+suppressed when bilinguals speak the L1 after speaking the L2. Critically, 
+
+the time course over which suppression is observed is long, suggesting 
+
+the presence of a global mechanism of inhibitory control. If bilinguals 
+
+repeatedly inhibit the L1 to enable production in the L2, there may be 
+
+consequences that then account for the observed fMRI differences. In 
+
+this talk, I report a set of experiments that use ERPs to investigate the 
+
+differences in the earliest stages of speech planning in the L1. These 
+
+experiments ask three questions about speech planning: 1. Do L2 
+
+speakers and monolinguals differ in planning L1?; 2. Do L2 learners who 
+
+are less proficient in the L2 and highly dominant in the L1 reveal the same 
+
+differences that have been observed for proficient bilinguals?; and 3. 
+
+When L2 speakers are required to produce L2 and then revert to L1, how 
+
+extended are the consequences of L2 on L1 speech?
 		</p>
 	</div>
 	
@@ -348,7 +421,7 @@ function unhide(divID) {
 		</p>
 	</div>	
 
-	<p class="hang_indent">November 7 - <strong> PIRE undergraduate presentations</strong>
+	<p class="hang_indent">November 7 - <strong> PIRE undergraduate presentations</strong> - Foster Auditorium
 		<br /><br />
     </p>		
 
