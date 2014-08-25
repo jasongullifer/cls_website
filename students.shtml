@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -357,6 +357,14 @@ Language variation and change; First language acquisition; Dialectology; Syntact
      Linguistics; Psycholinguistics (Sentence Processing); Syntax and Syntactic Theory
 	 </div><div class="clearright"></div>
 
+    <div class="person"><img align="left" src="people/pics/" border="1" alt="Nora Hellmold" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name="H" class="name" >Nora Hellmold</a><br /> 
+     <strong>Graduate Student, German Linguistics</strong><br />
+     Email: <a href="mailto:nxh924@psu.edu">nxh924 [at] psu.edu</a> <br />
+     <em>Research Interests:</em> <br />
+     dialectology and the effects of language contact
+	 </div><div class="clearright"></div>
+
 	<!--<div class="person"><img align="left" src="people/pics/khan_kiren.jpg" border="1" alt="Kiren Khan" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
 	 <a name="K" class="name">Kiren Khan</a><br />
      <strong>Graduate Student, Psychology</strong><br />
@@ -367,7 +375,7 @@ Language variation and change; First language acquisition; Dialectology; Syntact
 	 </div><div class="clearright"></div>-->
 	
     <div class="person"><img align="left" src="people/pics/Henry_Nick.jpg" border="1" alt="Nick Henry" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
-      <a name="H" class="name" href="http://personal.psu.edu/nah5157/">Nick Henry</a><br /> 
+      <a class="name" href="http://personal.psu.edu/nah5157/">Nick Henry</a><br /> 
      <strong>Graduate Student, German Linguistics</strong><br />
      Email: <a href="mailto:nah5157@psu.edu">nah5157 [at] psu.edu</a> <br />
      <em>Research Interests:</em> <br />
