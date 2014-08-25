@@ -1,0 +1,6 @@
+AuthUserFile /pass/services/www/dept/cls/PIRE/protected/.htpasswd
+AuthGroupFile /pass/services/www/dept/cls/PIRE/protected/.htgroup
+AuthName "private directory"
+AuthType Basic
+Require group allowed
+
