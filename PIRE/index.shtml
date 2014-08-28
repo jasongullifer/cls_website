@@ -51,13 +51,15 @@
 <br/>
 <p align="center">
 <img id="news_banner" src="images/news_banner.png" alt="News, Events, and Opportunities" />
-
+<div id="left">
+<!--#include virtual="/includes/announcements.ssi" -->
+</div>
 <table border="0" align="center">
 <col width="25%" />
 <col width="50%" />
 <col width="25%" />
 <tr>
-<td align="center"><!--#include virtual="/includes/announcements.ssi" --> </td>
+
 	<td align="center"><p>Meet the <a href="http://cls.psu.edu/PIRE/pire_people.html#gradstudents_2013_2014">Summer 2014 PIRE graduate and undergraduates</a>!</p>
 		<p>Check out the <a href="http://cls.psu.edu/PIRE/pire_blogs.html/">PIRE students' blog!</a></p>
 	</td>
