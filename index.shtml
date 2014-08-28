@@ -228,28 +228,7 @@ setInterval(function() {
 </font>
 
 
-     <h3 class="text_block" style="text-align:center">Announcing the Adele Miccio Memorial Travel Award for 2014-2015</h3>
-     <p style="text-align:center"></p>
-	 
-	 <p>Our late colleague, Professor Adele Miccio, loved to travel and cared deeply for students.  In her honor, the Center for Language Science sponsors a student travel award for graduate students. The purpose of the award is to provide a means for students to network with senior scientists.</p>
-	 
-	 <p>See the <a href="files/miccio_award_flyer.pdf">announcement flyer</a> for more information.</p>
-
-
-     <h3 class="text_block" style="text-align:center">Announcing International Research Opportunities Undergraduates in Summer 2015  </h3>
-     <p>With the generous support from the National Science Foundation program Partnerships for International Research and Education (PIRE), the CLS will sponsor undergraduate students to conduct research on the science of bilingualism at international sites. Funding will cover airfare, housing and meals, tuition, and some incidentals and research expenses.</p>
-	 
-	 <p>To be eligible, students must be enrolled in research with a CLS faculty member for Fall 2014, Spring 2015, and must be returning to campus in the Fall 2015. See http://cls.psu.edu/PIRE for additional information and requirements. </p>
-	 
-	 <p>An informational session will be held on Wednesday August 27th, 2014 from 5:00-6:00 PM in room 127 Moore Building.</p>
-
-	 <p>See the <a href="files/PIRE flyer.pdf">announcement flyer</a> for more information.</p>
-	 
-	 <p>For more information about PIRE and the international sites, please visit <a href="http://cls.psu.edu/pire/">the PIRE website</a>. </p>
-   
-	 
-
-
+<!--#include virtual="/includes/announcements.ssi" --> 
 
 
 
