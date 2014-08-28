@@ -54,39 +54,7 @@
 <div id="left">
 <!--#include virtual="/includes/announcements.ssi" -->
 </div>
-<table border="0" align="center">
-<col width="25%" />
-<col width="50%" />
-<col width="25%" />
-<tr>
 
-	<td align="center"><p>Meet the <a href="http://cls.psu.edu/PIRE/pire_people.html#gradstudents_2013_2014">Summer 2014 PIRE graduate and undergraduates</a>!</p>
-		<p>Check out the <a href="http://cls.psu.edu/PIRE/pire_blogs.html/">PIRE students' blog!</a></p>
-	</td>
-	<!--<td align="center"><p>The 2013 Young Scholar Speaker Series (March 14-15) invited Dr. Susanne Gahl (University of California, Berkeley) to 
-		give a research talk, attend a CLS student poster session, and advise language science students on various issues of professional development.</p>
-		<p><a href="../PIRE/ysss_2013.shtml">Click here for more information on the 2013 Young Scholar Speaker Series!</a></p>
-	</td>-->
-	<!--<td align="center"><p><b>Postdoc Position:</b></p>
-		<p>The Center for Language Science at The Pennsylvania State University invites applications for a postdoctoral position. We will begin to review applications by <b>March 15, 2014</b>. For more information, please see <a href="http://cls.psu.edu/PIRE/files/Postdoc Center for Language Science.pdf">the position announcement.</a></p>
-	</td>-->
-
-	<td align="center">
-	<p><a href="">Click here for a slideshow from the 2014 Young Scholar Speaker Series poster session, with invited speaker Dr. Krista Byers-Heinlein (Concordia University)!</a></p>
-	<p><a href="http://cls.psu.edu/PIRE/files/Poster Session Electronic Program.pdf">Click here for a list of student presenters and posters from the 2014 Young Scholar Speaker Series! </a></p>
-	</td>
-	<!--<p>Please join us in welcoming our new post-doctoral research associates for Fall 2012!</p>
-	<p>
-<ul>
-    <li><a href="http://cls.psu.edu/PIRE/people/Roman.html">Patricia Román</a></br>(Ph.D., University of Granada, Spain)</li>
-    <li><a href="http://cls.psu.edu/PIRE/people/Cruz.html">María Cruz Martín García</a></br>(Ph.D., University of Granada, Spain)</li>
-    <li><a href="http://cls.psu.edu/PIRE/people/Zirnstein.html">Megan Zirnstein</a></br>(Ph.D., University of California, Davis)</li>
-	<li><a href="http://cls.psu.edu/PIRE/people/Contemori.html">Carla Contemori</a></br>(Ph.D., University of Siena, Italy)</li>
-	</p>
-</ul>		
-	</td>-->
-</tr>
-</table>
 </p>
 
     <div id="left">
