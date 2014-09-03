@@ -204,43 +204,67 @@
     <center><a href="images/psuworld.jpg"><img src="images/psuworld.jpg" style="border-style:none" alt="psu_map" width="469" height="232" /></a>
     </center>
     
-    <p class="text_block">Researchers at the Center for Language Science maintain an active set of world-wide collaborations. The CLS includes members from multiple departments within Penn State University as well as faculty from other universities. The Center also has one direct affiliation with Gallaudet University's <a href="http://vl2.gallaudet.edu/">VL2 Center</a>.</p>
+    <p class="text_block">Researchers at the Center for Language Science maintain an active set of world-wide collaborations. The CLS includes members from multiple departments within Penn State University as well as faculty from other international and national universities. The CLS has been awarded a <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0968369">PIRE grant from the National Science Foundation</a>. For more information about PIRE and PIRE partners, see the PIRE <a href="http://cls.psu.edu/PIRE">web-page</a>.
 
     
-    <h4>Affiliations</h4>
+    <h4>International Partners</h4>
     <ul>
-    <li><a href="http://vl2.gallaudet.edu/">VL2 Center at Gallaudet University</a></li>  
-    </ul>
+      <li><strong>China</strong> (Beijing Normal University; University of Hong Kong)</a>
+    <ul>
+	<li><a href="PIRE/pire_partners_statekeylab_hongkong.html">The State Key Laboratory of Brain and Cognitive Sciences, University of Hong Kong, Hong Kong</a></li>
+	<li><a href="PIRE/pire_partners_statekeylab_beijing.html">The State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, China</a></li>
+    </ul></li>
+
+  <li><strong>Germany </strong>(University of Manheim)
+    <ul>
+      <li><a href="http://master.phil.uni-mannheim.de/english/master_programmes/master_of_arts_language_and_communication/experimental_laboratory_and_mai_lab_mannheim_eye_lab/index.html">Mannheim Eye Lab</a></li>
+    </ul></li>
+    
+  <li><strong>The Netherlands</strong> (Radboud University Nijmegen)
+    <ul>
+      <li><A href="http://www.ru.nl/bsi/">Behavioural Science Institute</a></li>
+    </ul></li>
+
+  <li><strong>Spain</strong> (University of Granada; University of Tarragona)
+    <ul>
+      <li><a href="PIRE/pire_partners_mlrg_spain.html">Memory &amp; Language Research Group, University of Granada, Spain</a></li>
+      <li><a href="http://www.urv.cat/en_index.html" target="_new">Universitat Rovira i Virgili: The Public University of Tarragona</a></li>
+    </ul></li>
+
+  <li><strong>Sweden</strong> (Lund University)
+    <ul>
+      <li><a href="http://www.humlab.lu.se/en/home">Lund Humanities Lab</a></li>
+    </ul></li>
+
+  <li><strong>U.K. </strong>(Bangor University)
+    <ul>
+      <li><a href="pire_partners_esrc_uk.html">ESRC Centre for Research on Bilingualism in Theory and Practice, Bangor University, Wales</a></li>
+  </ul></li>
+  
+</ul>
+
+
+    <h4>Domestic Partners</h4>
+    <ul>
+      <li><a href="PIRE/pire_partners_haskins_lab.html">Haskins Lab, University of Connecticut &amp; Yale University, USA</a>
+      <li><a href="PIRE/pire_partners_vl2_gallaudet.html">Science of Learning Center on Visual Language and Visual Learning (VL2), Gallaudet University, USA</a><br />
+      <li><a href="http://www.pitt.edu/~plumlab/">PLUM Lab at Pitt</a></li>
+      <li><a href="http://www.lrdc.pitt.edu/readlab/">Reading and Language Group at Pitt</a></li>
+      <li><a href="http://www.ru.nl/socialewetenschappen/bsi/">Behavioural Science Institute at Radboud Universiteit Nijmegen</a></li>
+      
+      </ul>
         
-    <h4>Internal Links (within Penn State)</h4>
-    <h5>Departments</h5>
+    <h4>Departments within Penn State</h4>
     <ul>
-    <li><a href="http://lals.la.psu.edu/index.php/">Department of Applied Linguistics</a></li>  
+    <li><a href="http://aplng.la.psu.edu/">Department of Applied Linguistics</a></li>  
     <li><a href="http://csd.hhdev.psu.edu/">Department of Communication Sciences and Disorders</a></li>
     <li><a href="http://www.french.psu.edu/">Department of French and Francophone Studies</a></li>
-    <li><a href="http://german.la.psu.edu/index.html">Department of Germanic and Slavic Languages</a></li>
+    <li><a href="http://german.la.psu.edu/">Department of Germanic and Slavic Languages</a></li>
     <li><a href="http://psych.la.psu.edu/">Department of Psychology</a></li>
     <li><a href="http://sip.la.psu.edu">Department of Spanish, Italian, and Portuguese</a></li>
     </ul>
-	<h5>Programs</h5>
-    <ul>
-    <li><a href="http://linguistics.psu.edu/welcome.htm">Program in Linguistics</a></li>
-    </ul>
-    
-    <h5>Labs</h5>
-    <ul>
-    
-    <li><a href="http://bild.la.psu.edu/">Bilingualism and Language Development (BiLD) Lab</a></li>
-    <li><a href="http://cogsci.psu.edu">Brain, Language, and Computation Lab</a></li>
-    <li><a href="http://psych.la.psu.edu/research/WeissLab/index.html"> The Comparative Communication Lab</a></li>
-    <li><a href="http://lsrg.psu.edu/purplelab/">The Purple Lab</a></li>
-    </ul>
-    <h4>External Links (outside of Penn State)</h4>
-    <ul>
-    <li><a href="   http://www.pitt.edu/~plumlab/">PLUM Lab at Pitt</a></li>
-    <li><a href="http://www.lrdc.pitt.edu/readlab/">Reading and Language Group at Pitt</a></li>
-    <li><a href="http://www.ru.nl/socialewetenschappen/bsi/">Behavioural Science Institute at Radboud Universiteit Nijmegen</a></li>
-    </ul>
+
+
      <!-- InstanceEndEditable -->
     <!-- end #mainContent -->
 
