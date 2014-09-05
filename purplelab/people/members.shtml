@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/purple_lab.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Lab Members - The Purple Lab (Language and Cognition Laboratory) at Penn State</title>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../common/styles/purple_lab.css" rel="stylesheet" type="text/css" />
+<!-- InstanceParam name="title" type="boolean" value="false" -->
+<script src="../common/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../common/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<!-- InstanceParam name="optional_subtitle" type="boolean" value="true" -->
+</head>
+
+<body class="oneColElsCtr">
+
+<div id="container"> 
+<div id="mainContent">
+
+
+<div id="psu_logo">
+<a href="http://www.psu.edu"><img src="../common/images/banners/Shrt_Pc_Blk.287.png" alt="psu mark" width="130" /></a>
+</div>
+
+<div id="purple_lab_title">
+<span class="no_display">The Purple Lab</span>
+</div>
+
+
+
+<div id="optional_subtitle"><h3><!-- InstanceBeginEditable name="subtitle" -->
+Lab Members
+<!-- InstanceEndEditable --></h3></div>
+
+<div id="Menu" class="horizontal-rule">  
+ 
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../index.shtml">Home<br /> 
+        </a>        </li>
+        <li><a href="../research/research.shtml" class="MenuBarItemSubmenu" style="texcenter">Research<br />
+        </a>
+          <ul>
+            <li><a href="../research/research.shtml">Research Overview</a></li>
+            <li><a href="../research/facilities.shtml">Lab Facilities</a></li>
+          </ul>
+        </li>
+        <li><a href="members.shtml">Lab Members</a>        </li>
+        <li><a href="../opportunities/opportunities.shtml" class="MenuBarItemSubmenu">Opportunities</a>
+          <ul>
+            <li><a href="../opportunities/participation.shtml">Experiment Participation</a></li>
+            <li><a href="../opportunities/research_ops.shtml">Research Opportunities</a></li>
+          </ul>
+        </li>
+      </ul> 
+
+</div> 
+    <!-- end #Menu -->
+<!-- InstanceBeginEditable name="main content" -->
+<div id="main">
+
+<div class="people">
+
+<h4>Lab Director</h4>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+	    <img src="../common/images/people/kroll_judith.jpg" alt="judith kroll" width="140" height="162" />
+        <!--make sure to add a <hr> before the end of the DIV so the box will stretch around the image-->
+
+		<ul>	
+		<li><strong><a href="http://lsrg.psu.edu/people/faculty/kroll_judith.shtml">Dr. Judith Kroll</a> (<a href="mailto:jfk7@psu.edu">e-mail</a>)</strong>
+			<ul>
+			<li><em>Distinguished Professor of Psychology, Linguistics, and Women’s Studies</em></li>
+			<li>I am a cognitive psychologist interested in language and memory. My particular interest is in the psycholinguistics of bilingualism and my research examines both early stages of second language acquisition and proficient bilingual performance. </li>
+            <li>In the acquisition work, my students and I have been asking why it appears to be easier for some people to acquire a second language than others and what contexts of acquisition facilitate conceptual understanding of words in the second language.</li>
+            <li> In the work on language processing in proficient bilinguals we have been especially interested in how bilinguals juggle the mental competition between the words available in each of their two languages to produce words in the language in which they intend to speak. In many respects this is an extraordinary cognitive feat.</li>
+            <li> My students and I pursue this research in our laboratory at Penn State and also in collaboration with colleagues in The Netherlands, Spain, and the UK.</li>
+			</ul>
+		</li></ul>
+     </div>
+     <div class="rbbot"><div></div></div></div>        
+</div>
+
+
+<h4>Graduate Students</h4>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+      <img src="../common/images/people/bogulski_cari.jpg" alt="cari bogulski" width="140" height="186" />
+        <!--make sure to add a <hr> before the end of the DIV so the box will stretch around the image-->
+        <ul>
+        	<li><strong>Cari Bogulski (<a href="mailto:cari.bogulski@gmail.com">e-mail</a>)</strong>
+        		<ul>
+        		<li>My research interests include bilingualism, second language acquisition, lexical processing, and codeswitching</li>
+        		</ul>
+            </li>
+        </ul>
+        <hr />
+    </div>
+    <div class="rbbot"><div></div></div></div>  
+</div>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent"><img src="../common/images/people/mcclain_rhonda.jpg" alt="rhonda mcclain" width="140" height="206"/>
+        <ul>
+        <li><strong>Rhonda McClain  (<a href="mailto:rxm390@psu.edu">e-mail</a>)</strong></li>
+        <li>My research interests include bilingual lexical processing and representation, the neural mechanisms underlying bilingual language processing, and the relationship between automaticity and control in skilled language production.</li>
+
+<li>One topic that I am particularly interested in is the interface between phonology and semantics. I am currently planning a project with Dr. Kroll that links this concept with some of our combined interests. The goal is to examine the extent to which bilinguals experience interference in producing words due to the presence of phonological competitors across their two languages. On one hand, exploiting similarities between L1 and L2 phonology at the lexical level may facilitate bilingual language processing. Research has shown that bilinguals experience more lexical retrieval failures than their monolingual counterparts (Gollan & Acenas, 2004). Perhaps connections between lexical forms and their semantics are strengthened by exploiting shared phonological features between words in the L1 and the L2. In this case, one might expect that words that overlap in phonological form are produced faster than unrelated words. This is precisely the result when bilinguals produce cognate words. However, cognates also overlap in semantics. The goal of our project is to examine the consequences of producing words that are related in phonology, but lack semantic overlap.</li></ul>
+
+
+    </div>
+    <div class="rbbot"><div></div></div></div>  
+</div>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+      <img src="../common/images/people/gullifer_jason.jpg" alt="Jason Gullifer" width="125" height="150" />
+        <!--make sure to add a <hr> before the end of the DIV so the box will stretch around the image-->
+        <ul>
+        	<li><strong>Jason Gullifer (<a href="mailto:jwg20@psu.edu">e-mail</a>)</strong>
+        		<ul>
+        		<li></li>
+        		</ul>
+            </li>
+        </ul>
+        <hr />
+    </div>
+    <div class="rbbot"><div></div></div></div>  
+</div>
+
+<h4>Postdoctoral Scholars</h4>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+    <img src="../common/images/people/rossi_eleonora.jpg" alt="eleonora rossi" width="140" height="105" />
+        <!--make sure to add a <hr> before the end of the DIV so the box will stretch around the image-->
+        <ul>
+            <li><strong><a href="http://lsrg.psu.edu/people/affiliated/rossi_eleonora.shtml">Dr. Eleonora Rossi</a> (<a href="mailto:exr22@psu.edu">e-mail</a>)</strong>
+        
+                <ul>
+                
+                <li>Ph.D. University of Groningen, The Netherlands</li>
+                <li></li>	
+                <li><em>De Vincenzi Postdoctoral Fellow, Dussias/Kroll Lab</em></li>
+                <li>My research interests include bilingualism, second language acquisition, aphasiology, agrammatism, bilingual aphasia, sentence processing.</li>
+                <li> In the next year the focus of my research will be second language acquisition in adult English learners of Spanish and Italian. Specifically, I will try to understand how a special class of romance pronouns is acquired and processed in adult second language learners. This will be done using two methodologies: ERP and Eye-tracking. </li>
+                </ul>
+        </li>
+        </ul>
+	<hr/> <!--makes the div box clear the picture-->
+    </div>
+
+    <div class="rbbot"><div></div></div></div>  
+
+</div>
+<h4>Lab Manager/Research Assistants</h4>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+<ul>
+<li>Peiyao Chen (<a href="mailto:puc15@psu.edu">e-mail</a>)</li>
+</ul>
+    </div>
+    <div class="rbbot"><div></div></div></div>
+</div>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+<ul>
+<li>Bobby Marker (<a href="mailto:rjm35@psu.edu">e-mail</a>)</li>
+</ul>
+    </div>
+    <div class="rbbot"><div></div></div></div>
+</div>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+<ul>
+<li>Nick Ray (<a href="mailto:nrr5025@psu.edu">e-mail</a>)</li>
+</ul>
+    </div>
+    <div class="rbbot"><div></div></div></div>
+</div>
+
+
+
+<h4>Undergraduate Research Assistants</h4>
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+<ul>
+<li>Paige Arthur (<a href="mailto:paa5031@psu.edu">e-mail</a>)</li>
+<li>Leah Pappas (<a href="mailto:ljp5110@psu.edu">e-mail</a>)</li>
+<li>Parthvi Shah (<a href="mailto:pzs5161@psu.edu">e-mail</a>)</li>
+
+</ul>
+    </div>
+    <div class="rbbot"><div></div></div></div>
+</div>
+
+
+<h4>Previous Graduate Students</h4>
+
+<div class="person">
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+    <div class="rbcontent">
+<ul>
+<li>Jared Linck</li>
+<li>Susan Bobb</li>
+<li>Noriko Hoshino</li>
+<li>Natasha Tokowicz</li>
+<li>Ana Schwartz</li>
+</ul>
+    </div>
+    <div class="rbbot"><div></div></div></div>
+</div>
+
+</div>
+
+
+  </div>   <!-- end #main -->
+  <!-- InstanceEndEditable -->
+  <!-- end #mainContent -->
+</div>
+<!-- end #container --></div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+<!-- InstanceEnd --></html>

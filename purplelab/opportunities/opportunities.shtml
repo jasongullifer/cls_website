@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/purple_lab.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Opportunities - The Purple Lab (Language and Cognition Laboratory) at Penn State</title>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../common/styles/purple_lab.css" rel="stylesheet" type="text/css" />
+<!-- InstanceParam name="title" type="boolean" value="false" -->
+<script src="../common/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../common/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<!-- InstanceParam name="optional_subtitle" type="boolean" value="true" -->
+</head>
+
+<body class="oneColElsCtr">
+
+<div id="container"> 
+<div id="mainContent">
+
+
+<div id="psu_logo">
+<a href="http://www.psu.edu"><img src="../common/images/banners/Shrt_Pc_Blk.287.png" alt="psu mark" width="130" /></a>
+</div>
+
+<div id="purple_lab_title">
+<span class="no_display">The Purple Lab</span>
+</div>
+
+
+
+<div id="optional_subtitle"><h3><!-- InstanceBeginEditable name="subtitle" -->Opportunities<!-- InstanceEndEditable --></h3></div>
+
+<div id="Menu" class="horizontal-rule">  
+ 
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../index.shtml">Home<br /> 
+        </a>        </li>
+        <li><a href="../research/research.shtml" class="MenuBarItemSubmenu" style="texcenter">Research<br />
+        </a>
+          <ul>
+            <li><a href="../research/research.shtml">Research Overview</a></li>
+            <li><a href="../research/facilities.shtml">Lab Facilities</a></li>
+          </ul>
+        </li>
+        <li><a href="../people/members.shtml">Lab Members</a>        </li>
+        <li><a href="opportunities.shtml" class="MenuBarItemSubmenu">Opportunities</a>
+          <ul>
+            <li><a href="participation.shtml">Experiment Participation</a></li>
+            <li><a href="research_ops.shtml">Research Opportunities</a></li>
+          </ul>
+        </li>
+      </ul> 
+
+</div> 
+    <!-- end #Menu -->
+<!-- InstanceBeginEditable name="main content" -->
+<div id="main">
+ <div class="block">
+	<div class="rbroundbox">
+		<div class="rbtop"><div></div></div>
+
+    	<div class="rbcontent">
+        <h5>Interested in helping our lab out?</h5>
+        <p>There are a couple ways in which we need help in our lab. We are <em>always</em> looking for people to participate in our language studies. Also, at the beginning of each semester, we typically recruit a handful of research assistants to help out in our lab. </p>
+</div><!-- /rbcontent -->
+	
+    	<div class="rbbot"><div></div></div></div>
+</div>
+
+<div class="left block">
+	<div class="rbroundbox">
+		<div class="rbtop"><div></div></div>
+
+    	<div class="rbcontent">
+        	<h5>Experiment Participation</h5>
+            
+         <p>If you are interested in participating in an experiment. Check out the <a href="participation.shtml">experiment participation page</a> for more information. Or simply contact one of our <a href="../people/members.shtml">lab members</a>.</p>
+    	</div><!-- /rbcontent -->
+	
+    	<div class="rbbot"><div></div></div></div>
+</div>
+
+<div class="right block">
+
+	<div class="rbroundbox">
+	<div class="rbtop"><div></div></div>
+
+   	<div class="rbcontent">
+   	 <h5>Research Assistants</h5>
+<p>Want to become a research assistant in our lab? Go to the <a href="research_ops.shtml">research opportunities page</a> for more information.
+	    </div><!-- /rbcontent -->
+	
+    <div class="rbbot"><div></div></div></div>
+
+</div>
+<!-- end #main -->
+  <!-- InstanceEndEditable -->
+  <!-- end #mainContent -->
+</div>
+<!-- end #container --></div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+<!-- InstanceEnd --></html>

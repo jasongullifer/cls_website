@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Penn State : Center for Language Science : People : Selected Publications</title>
+<link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="styles/twoColHybLtHdr.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */ 
+.twoColHybLtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]-->
+</head>
+
+<body class="twoColHybLtHdr">
+
+
+<div id="container">
+  <div id="header">
+    <div class="logo"> 
+     <a style="border:none" href="http://www.psu.edu">
+     <img src="images/white-border10.png" width="130" height="70" hspace="0" vspace="0" align="top" style="border-style:none" alt="penn state mark"/>
+     </a>
+    </div>  
+   <div class="cls_banner_div">
+   <span class="cls_banner_div">Center for Language Science</span>
+         <br class="clearfloat" /> 
+    </div>
+  <!-- end #header --></div>
+  <div id="sidebar1">  
+
+<!--#include virtual="/includes/menu.ssi" --> 
+        <div id="events">
+    <h1><a href="upcoming.shtml">Upcoming Events</a></h1>       
+       
+      <!--#include virtual="/includes/schedule.ssi" --> 
+      </div>
+    
+    <div class="lalogo">
+    <a style="border-style:none" href="http://www.la.psu.edu"><img src="images/lalogo.jpg" alt="liberal arts logo" style="border-style:none" /></a></div>
+  <!-- end #sidebar1 --></div> 
+  
+          <div id="search">
+		  <script type="text/javascript">
+							//<![CDATA[
+							/** 
+							 * Props to Jason Tremblay for starting this multisearch thing.
+							 *
+							 * @author Jeremiah Fisher
+							 */
+							 
+							
+							/**
+							 * Cross-browser friendly (I hope) getElement function
+							 */
+							function getElement( id) {
+								if ( document.getElementById) {
+									return document.getElementById( id);
+									
+								} else {
+									return document.all[id];
+									
+								}
+							}
+							
+							
+							/**
+							 * Allow multiple search destinations
+							 *
+							 * @return	boolean	True if we're searching the default form, false if not (should never get to return in this case)
+							 */
+							function doMultiSearch() {
+								searchRealmList = getElement( 'searchRealm');
+								searchRealm = searchRealmList.options[searchRealmList.options.selectedIndex].value;
+								searchQuery = getElement( 'searchQuery').value;
+								
+								switch ( searchRealm) {
+									case "web":
+										/* Search the web with google */
+										getElement( 'webSearchQuery').value = searchQuery;
+										getElement( 'webSearchForm').submit();
+										return false;
+										break;
+										
+									case "psu":
+										/* Search PSU using the google appliance */
+										getElement( 'psuSearchQuery').value = searchQuery;
+										getElement( 'psuSearchForm').submit();
+										return false;
+										break;
+									
+									case "people":
+										/* Search for people using the LDAP CGI */
+										getElement( 'peopleSearchQuery').value = '(|(cn=' + searchQuery + ')(cn=*' + searchQuery + '*)(cn=' + searchQuery + ')(cn=*' + searchQuery + ')(edupersonnickname=' + searchQuery + ')(uid=' + searchQuery + '))';
+										getElement( 'peopleSearchForm').submit();
+										return false;
+										break;
+										
+									case "dept":
+										/* Search for departments, also using the LDAP CGI */
+										getElement( 'deptSearchQuery').value = '(&(EDUPERSONPRIMARYAFFILIATION=DEPT)(|(PSDEPARTMENT=' + searchQuery + ')(PSDEPARTMENT=*' + searchQuery + '*)(PSDEPARTMENT=' + searchQuery + '*)(PSDEPARTMENT=*' + searchQuery + ')))';
+										getElement( 'deptSearchForm').submit();
+										return false;
+										break;
+										
+									case "forum":
+										/* Search the WSG forum */
+										getElement( 'forumSearchQuery').value = searchQuery;
+										getElement( 'forumSearchForm').submit();
+										return false;
+										break;
+										
+									case "this":
+									default:
+										/* Search the web style guide, using the google appliance */
+										//getElement( 'thisSearchForm').submit();
+										return true;
+										break;
+										
+								}
+								
+							}
+							//]]>
+						</script>
+						
+						<!-- Search the web with google -->
+						<form id="webSearchForm" action="http://www.google.com/search" method="get" name="webSearchForm" style="display: none;">
+							<input type="hidden" name="q" value="" id="webSearchQuery" />
+
+						</form>
+						
+						<!-- Search PSU using the google appliance -->
+						<form method="get" action="http://search-results.aset.psu.edu/search" id="psuSearchForm" name="psuSearchForm" style="display: none;">
+
+							<input type="hidden" name="q" value="" id="psuSearchQuery" />
+							<input type="hidden" name="client" value="PennState" />
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+
+							
+						</form>
+						
+						<!-- Search for people using the LDAP CGI -->
+						<form id="peopleSearchForm" action="http://www.psu.edu/cgi-bin/ldap/ldap_query.cgi" method="post" name="peopleSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="peopleSearchQuery" />
+
+						</form>
+						
+						<!-- Search for departments, also using the LDAP CGI -->
+						<form id="deptSearchForm" action="http://www.psu.edu/cgi-bin/ldap/dept_query.cgi" method="post" name="deptSearchForm" style="display: none;">
+							<input type="hidden" name="qry_str" value="" id="deptSearchQuery" />
+
+						</form>
+						
+								 				
+						<!-- Search the web style guide, using the google appliance (default, only option available sans-JavaScript) -->
+						<form id="thisSearchForm" action="http://search-results.aset.psu.edu/search" method="get" name="thisSearchForm" onsubmit= "return doMultiSearch();">
+					    <input type="hidden" name="client" value="PennState" />
+
+							<input type="hidden" name="proxystylesheet" value="PennState" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="site" value="PennState" />
+							<input type="hidden" name="as_sitesearch" value="http://cls.psu.edu" />
+
+												
+							<!-- Label for Section 508 compliance only -->
+				      <label for="searchQuery" style="display: none;">Search Query: </label>
+							<input class="enter" type="text" name="q" value="Search" id="searchQuery" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;"/>  
+							<script type="text/javascript">
+								//<![CDATA[
+								/* Generate the select element with JavaScript, so that
+								 * clients without scripting don't see the option of changing
+								 * the search realm.
+								 */
+								document.writeln('<select name="searchRealm" id="searchRealm">');
+								document.writeln('<option class="dropdown" value="this" selected>The Center for Language Science</option>');
+								document.writeln('<option value="psu">Penn State</option>');
+								document.writeln('<option value="people">Penn State People</option>');
+								document.writeln('<option value="dept">Penn State Departments</option>');
+								document.writeln('<option value="web">The Web</option>');
+								document.writeln('</select>');
+								//]]>
+							</script>
+
+							
+							<input class="submit_button" type="submit" name="doSearch" id="doSearch" value="Search" />
+						</form>
+
+</div>
+ 
+<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+    <p class="pagetitle"><a href="./index.html">Home</a><a> / </a>Selected Publications</p> 
+     <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+	 <h4>First Language Acquisition</h4>
+     <p class="pubs">Miller, C.A. (2006). <a href="pubs/pubs/Miller_06_offprint.pdf">Developmental relationships between language and
+theory of mind.</a> American Journal of Speech-Language Pathology, 15, 142-154     </p>
+     
+<p class="pubs">Weiss, D.J. &amp; Newport E. (2006) <a href="pubs/pubs/weiss_newport2006.pdf">Mechanisms Underlying Language Acquisition: Benefits From a Comparative Approach.</a> Infancy 9(2), 241-257.</p>
+
+
+<br />
+<h4>Psycholinguistics and Second Language Acquisition</h4>
+
+<p class="pubs">Carlson, M. T. (2006). The development of fine-grained phonological knowledge in adult second language learners of Spanish. The Southwest Journal of Linguistics, 25(2), 75-105.</p>
+
+
+<p class="pubs">Dussias, P. E., &amp; Piñar, P. (in press). <a href="pubs/pubs/Dussias-Pinar (in press).pdf">Effects of reading span and plausibility in the 	 	reanalysis of wh-gaps by Chinese-English.</a> Second Language Research. </p>
+<p class="pubs">Dussias, P. E., &amp; Cramer Scaltz, T. R. (2008). <a href="pubs/pubs/Dussias_Cramer Scaltz (in press).pdf">Spanish-English L2 speakers’ use of 	subcategorization bias information in the resolution of temporary ambiguity during 	second language reading.</a> Acta Psychologica. </p>
+
+<p class="pubs">Dussias, P. E., &amp; Sagarra, N. (2007). <a href="pubs/pubs/Dussias_Sagarra 2007.pdf">The effect of exposure on syntactic parsing in 	 	Spanish-English bilinguals.</a> Bilingualism: Language and Cognition, 10, 101-116. </p>
+
+
+
+<p class="pubs">Kroll, J.F., Bobb, S.C., &amp; Wodniecka, Z. (2006). Language selectivity is the exception, not the rule: Arguments against a fixed locus of language selection in bilingual speech.  Bilingualism: Language and Cognition 9, 119-135.</p>
+
+<p class="pubs">Jackson, C.N., & Bobb, S.C. (2009). <a href="http://www.personal.psu.edu/cnj1/JacksonBobb_AppPsych.pdf">The processing and comprehension of wh-questions among second language speakers of German.</a> Applied Psycholinguistics, 30 , 603-636.</p>
+
+<p class="pubs">Jackson, C.N., & Dussias, P.E. (2009). <a href="http://www.personal.psu.edu/cnj1/JacksonDussias_Bilingualism.pdf">Cross-linguistic differences and their impact on L2 sentence processing.</a> Bilingualism: Language and Cognition, 12(1), 65-82.</p>
+
+<p class="pubs">Linck, J. A., Kroll, J. F., and Sunderman, G. (2009). Losing  access to the native language while immersed in a second language: Evidence for  the role of inhibition in second language learning. Psychological Science, 20,  1507-1515.</p>
+<p class="pubs">Linck, J. A., Hoshino, N., &amp; Kroll, J. F. (2008).  Cross-language lexical processes and inhibitory control. Mental Lexicon, 3,  349-374. </p>
+<p class="pubs">Linck, J. A., &amp; Weiss, D. J. (in press). Working memory  predicts the acquisition of explicit L2 knowledge. Proceedings of the  Georgetown University Round Table on Languages and Linguistics.</p>
+<p class="pubs">Sagarra, N. (Forthcoming). Working memory and L2 processing of redundant grammatical forms. In Z. Han (Ed.), Second Language Processing and Instruction: Broadening the Scope of Inquiry. (Manuscript length: 27 pp.). Clevedon, UK: Multilingual Matters.</p>
+<p class="pubs">Schwartz, A. I., Kroll, J.F. (2006). Bilingual lexical activation in sentence context.  Journal of Memory and Language, 55, 197-212.</p>
+
+<p class="pubs">Tokowicz, N., &amp; Kroll, J. F. (2007). <a href="pubs/pubs/Tokowicz&KrollinpressLCP.pdf">Number of meanings and concreteness: Consequences of ambiguity within and across languages.</a> Language and Cognitive Processes.</p>
+<p class="pubs">Weiss, D.J., Gerfen, C. & Mitchel, A.D. (2009). <a href="pubs/pubs/weiss_gerfen_mitchel_2009.pdf"> Speech segmentation in a simulated bilingual environment: A challenge for statistical learning?</a> Language Learning and Development 5, 30-49.</p>
+
+
+<p class="pubs">van Hell, J. G. &amp; Dijkstra, T. (2002). Foreign language knowledge can influence native language performance in exclusively native contexts. Psychonomic Bulletin and Review, 9, 780-789. </p> 
+
+<br />
+<h4>Linguistics</h4>
+<p class="pubs">Authier, M. (2005).  <a href="pubs/pubs/Whsquib.pdf">The Diverse Nature of Non-interrogative WH.</a>  Linguistic Inquiry, 34, 635-647.</p>
+<p class="pubs">Baldi, P. &amp; Page, R. (2006). <a href="pubs/pubs/LINGUA1158.pdf">Europa Vasconica-Europa Semitica Theo Vennemann, Gen. Nierfeld.</a>  Lingua, 116, 2183-2220.</p>
+<p class="pubs">Dussias, P. E. (2003). <a href="pubs/pubs/Dussias 2003.pdf">Spanish-English code-mixing at the auxiliary phrase: Evidence 	from eye-movements. </a>Revista Internacional de Lingüística Iberoamerican, 2, 7-34.</p>
+
+<p class="pubs">Gerfen, C., &amp; Baker, K. (2005). Production and perception of laryngealized vowels in Coatzospan Mixtec. Journal of Phonetics, 33(3). 311-334.</p>
+
+<p class="pubs">Gross, J. &amp; Mark, V. (2001).  <a href="pubs/pubs/VMark%20article.pdf">Regionalist accents of global music: the Occitan rap of “Les Fabulous Trobadors.” </a>  French Cultural Studies, 12, 77-94.</p>
+
+<p class="pubs">Reed, L. (1999).  <a href="pubs/pubs/ReedPublication.pdf">Necessary versus probable causes.</a>  Journal of Philosophical Logic, 28, 289-326.</p>
+<p class="pubs">Schrauf, R. W., Weintraub, S., &amp; Navarro, E. (2006). Is a validation of the Word Accentuation Test (WAT) of premorbid intelligence necessary for use among older, Spanish-speaking immigrants in the United States? Journal of the International Neuropsychological Society, 12, 391-399.</p>
+
+<br />
+<h4>Atypical Populations</h4>
+
+<p class="pubs">Mainela-Arnold, E., Evans, J. &amp; Alibali, M. (2006) <a href="pubs/pubs/ArnoldEvansAlibali.pdf">Understanding conservation delays in children with SLI: Task representations revealed in speech and gesture.</a> Journal of Speech, Language, and Hearing Research, 49, 1267-1279.</p>
+
+<p class="pubs">Miccio, A.W., &amp; Ingrisano, D.R.  (2000).  The acquisition of fricatives and affricates: Evidence from a disordered phonological system.  American Journal of Speech-Language Pathology, 9, 214-229.</p>
+
+<p class="pubs">Poll, G., Betz, S., & Miller, C.  (in press).  Identification of clinical markers of specific language impairment in adults.  Journal of Speech, Language, and Hearing Research.</p>
+ 
+<p class="pubs">Miller, C.A., & Poll, G.H.  (2009).  Response time in adults with a history of language difficulties.  Journal of Communication Disorders, 42, 365-379. </p>
+
+<p class="pubs">Miller, C.A., Leonard, L.B., Kail, R.V., Zhang, X., Tomblin, J.B., and Francis, D. (2006).  <a href="pubs/pubs/Miller_etal_2006.pdf">Response time in fourteen-year-olds with language impairment.</a>  Journal of Speech, Language, and Hearing Research, 49(4), 712-728.</p>
+
+
+
+<br />
+<h4>Methodology</h4>
+
+<p class="pubs">Kroll, J. F., Gerfen, C., &amp; Dussias, P. (2008). <a href="pubs/pubs/Lab%20Methods%20Chapt%203-2.pdf">Laboratory designs and paradigms in psycholinguistics.</a> In L. Wei &amp; M. Moyer (Eds.), The Blackwell guide to research methods in bilingualism. Cambridge, MA: Blackwell Publishers.</p>
+
+<p class="pubs">Misra, M., &amp; Holcomb, P. J. (2003). Event-related potential indices of masked repetition priming. Psychophysiology, 40, 115-130.</p>
+
+	 
+	 
+	 <!-- InstanceEndEditable -->
+    <!-- end #mainContent -->
+
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+
+
+        </div>    
+	<br class="clearfloat" />
+	<div id="footer" >
+          <!--#include virtual="/includes/footer.ssi" --> 
+	</div>  
+
+<!-- end #container --></div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"}); 
+//--> 
+</script>
+
+
+<!-- Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7448956-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+<!-- InstanceEnd --></html>

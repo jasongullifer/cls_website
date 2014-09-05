@@ -1,0 +1,9 @@
+AuthUserFile /.../dce.psu.edu/fs/services/www/dept/lsrg/podcasts/.htpasswd
+
+AuthGroupFile /.../dce.psu.edu/fs/services/www/dept/lsrg/podcasts/.htgroup
+
+AuthName "private directory"
+
+AuthType Basic
+
+Require group allowed

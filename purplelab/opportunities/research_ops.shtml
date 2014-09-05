@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/purple_lab.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Research Opportunities - The Purple Lab (Language and Cognition Laboratory) at Penn State</title>
+<meta name="Keywords" content="purple lab, language and cognition laboratory, cognitive psychology, psycholinguistics, psychology, bilingualism, Penn State,  experimental linguistics, experimental psychology, cognitive neuroscience, language acquisition, second language acquisition, Judith Kroll, research opportunities for undergrads, undergraduate reseach, linguistics research, psychology research, language research"/>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../common/styles/purple_lab.css" rel="stylesheet" type="text/css" />
+<!-- InstanceParam name="title" type="boolean" value="false" -->
+<script src="../common/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../common/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<!-- InstanceParam name="optional_subtitle" type="boolean" value="true" -->
+</head>
+
+<body class="oneColElsCtr">
+
+<div id="container"> 
+<div id="mainContent">
+
+
+<div id="psu_logo">
+<a href="http://www.psu.edu"><img src="../common/images/banners/Shrt_Pc_Blk.287.png" alt="psu mark" width="130" /></a>
+</div>
+
+<div id="purple_lab_title">
+<span class="no_display">The Purple Lab</span>
+</div>
+
+
+
+<div id="optional_subtitle"><h3><!-- InstanceBeginEditable name="subtitle" -->
+Research Opportunities
+<!-- InstanceEndEditable --></h3></div>
+
+<div id="Menu" class="horizontal-rule">  
+ 
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../index.shtml">Home<br /> 
+        </a>        </li>
+        <li><a href="../research/research.shtml" class="MenuBarItemSubmenu" style="texcenter">Research<br />
+        </a>
+          <ul>
+            <li><a href="../research/research.shtml">Research Overview</a></li>
+            <li><a href="../research/facilities.shtml">Lab Facilities</a></li>
+          </ul>
+        </li>
+        <li><a href="../people/members.shtml">Lab Members</a>        </li>
+        <li><a href="opportunities.shtml" class="MenuBarItemSubmenu">Opportunities</a>
+          <ul>
+            <li><a href="participation.shtml">Experiment Participation</a></li>
+            <li><a href="research_ops.shtml">Research Opportunities</a></li>
+          </ul>
+        </li>
+      </ul> 
+
+</div> 
+    <!-- end #Menu -->
+<!-- InstanceBeginEditable name="main content" -->
+<div id="main">
+
+  <div class="block">
+	<div class="rbroundbox">
+		<div class="rbtop"><div></div></div>
+
+    	<div class="rbcontent">
+<h5>Working in the Lab</h5>
+<p>At the beginning of each semester, we have openings for Independent study (Psychology 494 or Linguistics 496) and work study positions. <strong>Note that the only positions for pay are for undergraduates with work study awards.</strong> </p>
+<p>If you are interested in applying, please notify one of our lab members. The best time to apply is after the end of the semester. </p>
+    	</div>
+	
+    	<div class="rbbot"><div></div></div></div>
+</div>
+
+
+  <div class="block">
+	<div class="rbroundbox">
+		<div class="rbtop"><div></div></div>
+
+    	<div class="rbcontent">
+        <h5>Requirements?</h5>
+<p>We are looking for a few enthusiastic undergraduates who would like to work in the lab with us on new projects.</p>
+<p>Our lab conducts research on the cognitive processes that support the acquisition and proficient use of a second language. (for more information see our <a href="../research/research.shtml">research page</a>.) <em>However</em>, there is no requirement to speak a second language yourself. The only requirement is to be interested in gaining research skills and in being part of an interactive lab group. </p>
+<p>We are associated with <a href="http://lsrg.psu.edu">The Center for Language Science</a> (CLS) and there are many opportunities for research for students that are interested in particular languages (e.g., Spanish, German, Chinese, American Sign Language), in particular research topics, and in learning to use a range of behavioral and neurocognitive methods. See the <a href="http://lsrg.psu.edu">CLS website</a> for additional information (department contact information, faculty members involved in CLS, etc.). </p>
+    	</div><!-- /rbcontent -->
+	
+    	<div class="rbbot"><div></div></div></div>
+</div>
+
+  <div class="block">
+	<div class="rbroundbox">
+		<div class="rbtop"><div></div></div>
+
+    	<div class="rbcontent">  
+  <h4 class="center">If you are interested in helping out, please contact one of our  <a href="../people/members.shtml">lab members</a>.</h4>
+       	</div><!-- /rbcontent -->
+	
+    	<div class="rbbot"><div></div></div></div>
+</div>
+
+  <div class="block">
+	<div class="rbroundbox">
+		<div class="rbtop"><div></div></div>
+
+    	<div class="rbcontent">
+        <h5>Get in Touch</h5>
+<p>Our lab is located in Room 623 in the Moore Building.</p>
+<p>Our phone number is 863-7392.</p>
+<p>Please feel free to contact any of our <a href="../people/members.shtml">lab members</a> for more information.</p>
+           	</div><!-- /rbcontent -->
+	
+    	<div class="rbbot"><div></div></div></div>
+</div>
+
+
+
+</div>   
+<!-- end #main -->
+  <!-- InstanceEndEditable -->
+  <!-- end #mainContent -->
+</div>
+<!-- end #container --></div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+<!-- InstanceEnd --></html>

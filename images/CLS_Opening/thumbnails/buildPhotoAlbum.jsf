@@ -1,0 +1,100 @@
+App.progressCountTotal = 12;
+App.progressCountCurrent = 0;
+fw.dismissBatchDialogWhenDone = true;
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/231607644-M.jpg');
+App.progressCountCurrent = 1;
+App.batchStatusString = '231607644-M.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/231607644-M_jpg.jpg') || confirm('file:///H|/CLS/images/images/231607644-M_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/231607644-M_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/231607644-M_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/231607644-M_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/231607644-M_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/231609212-M-1.jpg');
+App.progressCountCurrent = 2;
+App.batchStatusString = '231609212-M-1.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/231609212-M-1_jpg.jpg') || confirm('file:///H|/CLS/images/images/231609212-M-1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/231609212-M-1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/231609212-M-1_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/231609212-M-1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/231609212-M-1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/fulllhouse.jpg');
+App.progressCountCurrent = 3;
+App.batchStatusString = 'fulllhouse.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/fulllhouse_jpg.jpg') || confirm('file:///H|/CLS/images/images/fulllhouse_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/fulllhouse_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/fulllhouse_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/fulllhouse_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/fulllhouse_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0352.jpg');
+App.progressCountCurrent = 4;
+App.batchStatusString = 'IMG_0352.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0352_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0352_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0352_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0352_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0352_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0352_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0354.jpg');
+App.progressCountCurrent = 5;
+App.batchStatusString = 'IMG_0354.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0354_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0354_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0354_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0354_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0354_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0354_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0356.jpg');
+App.progressCountCurrent = 6;
+App.batchStatusString = 'IMG_0356.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0356_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0356_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0356_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0356_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0356_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0356_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0357.jpg');
+App.progressCountCurrent = 7;
+App.batchStatusString = 'IMG_0357.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0357_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0357_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0357_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0357_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0357_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0357_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0358.jpg');
+App.progressCountCurrent = 8;
+App.batchStatusString = 'IMG_0358.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0358_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0358_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0358_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0358_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0358_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0358_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0359.jpg');
+App.progressCountCurrent = 9;
+App.batchStatusString = 'IMG_0359.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0359_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0359_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0359_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0359_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0359_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0359_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0360.jpg');
+App.progressCountCurrent = 10;
+App.batchStatusString = 'IMG_0360.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0360_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0360_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0360_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0360_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0360_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0360_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/IMG_0361.jpg');
+App.progressCountCurrent = 11;
+App.batchStatusString = 'IMG_0361.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/IMG_0361_jpg.jpg') || confirm('file:///H|/CLS/images/images/IMG_0361_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/IMG_0361_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/IMG_0361_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/IMG_0361_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/IMG_0361_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///H|/CLS/images/CLS_Opening/trueswell_kroll.jpg');
+App.progressCountCurrent = 12;
+App.batchStatusString = 'trueswell_kroll.jpg';
+if (!Files.exists('file:///H|/CLS/images/images/trueswell_kroll_jpg.jpg') || confirm('file:///H|/CLS/images/images/trueswell_kroll_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/images/trueswell_kroll_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///H|/CLS/images/thumbnails/trueswell_kroll_jpg.jpg') || confirm('file:///H|/CLS/images/thumbnails/trueswell_kroll_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///H|/CLS/images/thumbnails/trueswell_kroll_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-200, ySize:-200}));
+fw.closeDocument(doc);
+'done';

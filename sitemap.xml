@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://lsrg.psu.edu/</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/index.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<!--<url>
+  <loc>http://lsrg.psu.edu/labsched1.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>!-->
+<url>
+  <loc>http://lsrg.psu.edu/podcasts.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/faculty.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/staff.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/alumni.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/students.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/affiliates.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/ops.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/upcoming.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/conferences.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/news.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/contact.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/links.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/about.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/li_ping.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/pinar_pilar.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/vanhell_janet.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/baldi_philip.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/bullock_barbara.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/dussias_giuli.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/gerfen_chip.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/hammer_carol.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/jackson_carrie.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/kroll_judith.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/arnold_elina.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/miccio_adele.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/miller_carol.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/misra_maya.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/page_richard.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/sagarra_nuria.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/schrauf_robert.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/toribio_almeida.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/faculty/weiss_daniel.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/psych_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/csd_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/alumni/scaltz_tracy.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/schwartz_ana.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/sunderman_gretchen.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/tokowicz_natasha.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/authier_marc.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/buckalew_ronald.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/mark_vera.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/reed_lisa.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/rosenbaum_david.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/bajo_teresa.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/bialystok_ellen.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/carreiras_manuel.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/clahson_harald.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/costa_albert.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/dijkstra_ton.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/emmorey_karen.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/escobar_anna.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/gollan_tamar.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/green_david.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/myers-scotton_carol.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/sanz_cristina.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/schwegler_armin.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/valian_virginia.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/christoffels_ingrid.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/prior_anat.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/insausti_mikel.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/affiliated/wodniecka_zofia.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/allresearch.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/apling_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/ger_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/sip_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/fla_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/sla_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/ling_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/research_groups/atyp_research.shtml</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/weiss_newport2006.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Miller_06_offprint.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Dussias_Sagarra 2007.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Dussias_Cramer Scaltz (in press).pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Dussias-Pinar (in press).pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/bullock_gasla.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Tokowicz&amp;KrollinpressLCP.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Dussias 2003.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/LINGUA1158.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Whsquib.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/VMark%20article.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/ReedPublication.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/ArnoldEvansAlibali.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Miller_etal_2006.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/pubs/Lab%20Methods%20Chapt%203-2.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/files/faculty/baldi_philip_cv.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/people/files/faculty/dussias_giuli_cv.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/faculty/hammer/Hammer, Lawrence, Miccio 2007.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/faculty/hammer/Hammer, Rodriguez, Lawrence, Miccio 2007.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2005directObject.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2006yngChiPrePast.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2005whenOpportunity.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2003YoungChiAcqWhQtns.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2002StudyRelClWilliams.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2006WomenAtTheTopInScience.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2005BeyoundGender.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2000AdvancementWom.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/valian/2000sexSexDifferences.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/prior/PriorBentin2007.doc</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/prior/PriorBentin2006.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://lsrg.psu.edu/pubs/affiliated/prior/Prior&amp;Bentin_2003.pdf</loc>
+  <priority>0.5</priority>
+  <lastmod>2008-06-25T02:52:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>
