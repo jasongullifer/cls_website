@@ -235,13 +235,17 @@ function unhide(divID) {
 		<div class="TabbedPanelsContent">
 		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
 		  
-		  <p class="hang_indent">January 16, 2015 - <strong> Marc Authier (Penn State University)</strong> - <em>Intransitive prepositions with transitive meaning: Lexicon or syntax?</em> - <strong><em>Meeting begins at 8:30 am</em></strong><br />
+		  <p class="hang_indent">January 16, 2015 - <strong> Marc Authier (Penn State University)</strong> - <strong><em>Meeting begins at 8:30 am</em></strong><br />
 		    <br />
 		  
 		  <a href="javascript:unhide('Authier_abstract');"><strong>Show Abstract</strong></a>
 		  </p>    
 		      <div id="Authier_abstract" class="hidden">
-			<p class="indent">I will argue, contra Cervoni (1991), Olivier (2007) and others, that French does
+			<p class="indent">
+			<b>Title:</b> Intransitive prepositions with transitive meaning: Lexicon or syntax?
+			<br></br>
+			<b>Abstract:</b>
+			I will argue, contra Cervoni (1991), Olivier (2007) and others, that French does
 have prepositions without an overt complement that are syntactically transitive. That is, these
 prepositions take a syntactically projected, phonologically unrealized pronominal
 complement, as first hypothesized by Zribi-Hertz (1984), who coined them “orphan
