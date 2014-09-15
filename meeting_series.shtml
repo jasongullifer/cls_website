@@ -237,9 +237,9 @@ function unhide(divID) {
 		  
 		  <p class="hang_indent">January 16, 2015 - <strong> Marc Authier (Penn State University)</strong> - <em>Intransitive prepositions with transitive meaning: Lexicon or syntax?</em> - <strong><em>Meeting begins at 8:30 am</em></strong><br />
 		    <br />
-		  </p>
+		  
 		  <a href="javascript:unhide('Authier_abstract');"><strong>Show Abstract</strong></a>
-		      
+		  </p>    
 		      <div id="Authier_abstract" class="hidden">
 			<p class="indent">I will argue, contra Cervoni (1991), Olivier (2007) and others, that French does
 have prepositions without an overt complement that are syntactically transitive. That is, these
@@ -368,17 +368,18 @@ Olivier (2007).	</p>
 		<div class="TabbedPanelsContent">
 		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
 		  
-		  <p class="hang_indent">August 29 - <strong> Courtney Johnson-Fowler (Penn State, German and Linguistics) <em></em><br />
-		      <br />
-		      <a href="javascript:unhide('Johnson-Fowler_abstract');"><strong>Show Abstract</strong></a>
-		    </p>
-		    <div id="Johnson-Fowler_abstract" class="hidden">
-		      <p class="indent">
-			<b>Title:</b> Miccio Travel Award
-			<br></br>
-			<b>Abstract: </b>First presented in 2010, the Adele Miccio Memorial Travel Award was established as an opportunity for CLS graduate students to begin building a professional relationship with a senior scientist, through a lab visit or meetings at a conference. In this talk, Courtney Johnson Fowler will discuss her experiences as a Miccio Travel Award winner. In March 2014 Courtney travelled to Spain to visit Dr. Daniela Paolieri and the Language and Memory Group in the Department of Experimental Psychology at the University of Granada. As part of her talk she will outline her dissertation research, explain why she chose to visit Dr. Paolieri, and detail how the travel award benefitted her as a researcher. </p>
-		    </div>	
-		    
+		  <p class="hang_indent">August 29 - <strong> Courtney Johnson-Fowler (Penn State, German and Linguistics) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Johnson-Fowler_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  
+		  <div id="Johnson-Fowler_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title:</b> Miccio Travel Award
+		      <br></br>
+		      <b>Abstract: </b>First presented in 2010, the Adele Miccio Memorial Travel Award was established as an opportunity for CLS graduate students to begin building a professional relationship with a senior scientist, through a lab visit or meetings at a conference. In this talk, Courtney Johnson Fowler will discuss her experiences as a Miccio Travel Award winner. In March 2014 Courtney travelled to Spain to visit Dr. Daniela Paolieri and the Language and Memory Group in the Department of Experimental Psychology at the University of Granada. As part of her talk she will outline her dissertation research, explain why she chose to visit Dr. Paolieri, and detail how the travel award benefitted her as a researcher. </p>
+		  </div>	
+		  
 		  <p class="hang_indent">September 5 - <strong> Rhonda McClain (Penn State, Psychology) </strong><em></em><br />
 		    <br />
 		    <a href="javascript:unhide('McClain_abstract');"><strong>Show Abstract</strong></a>
@@ -405,13 +406,13 @@ Olivier (2007).	</p>
 		      
 		      monolinguals comes from ERP studies that have examined the time 
 		      
-course of speech planning. These studies suggest that the L1 may be 
+		      course of speech planning. These studies suggest that the L1 may be 
 		      
 		      suppressed when bilinguals speak the L1 after speaking the L2. Critically, 
 		      
 		      the time course over which suppression is observed is long, suggesting 
 		      
-the presence of a global mechanism of inhibitory control. If bilinguals 
+		      the presence of a global mechanism of inhibitory control. If bilinguals 
 		      
 		      repeatedly inhibit the L1 to enable production in the L2, there may be 
 		      
@@ -419,512 +420,514 @@ the presence of a global mechanism of inhibitory control. If bilinguals
 		      
 		      this talk, I report a set of experiments that use ERPs to investigate the 
 		      
-differences in the earliest stages of speech planning in the L1. These 
+		      differences in the earliest stages of speech planning in the L1. These 
 		      
 		      experiments ask three questions about speech planning: 1. Do L2 
 		      
 		      speakers and monolinguals differ in planning L1?; 2. Do L2 learners who 
 		      
 		      are less proficient in the L2 and highly dominant in the L1 reveal the same 
-
+		      
 		      differences that have been observed for proficient bilinguals?; and 3. 
 		      
 		      When L2 speakers are required to produce L2 and then revert to L1, how 
 		      
 		      extended are the consequences of L2 on L1 speech?
-		</p>
-	</div>
-	
-	<p class="hang_indent">September 12 - <strong> Federica Bulgarelli (Penn State, Psychology) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Bulgarelli_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Bulgarelli_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title: </b>Tracking multiple structures: an investigation of the primacy effect
-		  <br></br>
-		  <b>Abstract: </b>A fundamental challenge of statistical learning is to determine whether variance observed in the input signals a change in the underlying structure. Interestingly, when learners encounter two consecutive inputs, they only learn the first structure unless exposure to the second is tripled or a contextual cue correlates with the change (Gebhart, Aslin, & Newport, 2009). In two experiments, we explored the conditions under which both structures can be acquired. We found that learners who switch to the second input immediately after mastering the first are more likely to learn both, whereas those who continue to receive input in the first structure are more likely to remain entrenched, exhibiting the primacy effect.  Further, the ability to learn both structures correlates with performance on a Flanker task, suggesting that the first input may need to be inhibited to acquire the second structure.  We relate our findings to real world learning and bilingualism.
-		</p>
-	</div>	
-	
-	<p class="hang_indent">September 19  - <strong> Noriko Hoshino (Kobe City University of Foreign Studies) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Hoshino_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Hoshino_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title: </b>Time course of language selection in bilingual language production
-		</p>
-	</div>		
-	
-	<p class="hang_indent">September 26  - <strong> Patricia Román (Penn State, Psychology) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Román_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Román_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title:</b> What does sentence comprehension tell us about bilingualism?: Evidence from fMRI and ERPs
-		</p>
-	</div>	
-
-	<p class="hang_indent">October 3  - <strong> Rosa Guzzardo Tamargo (University of Puerto Rico) & John M. Lipski (Penn State) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Tamargo_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Tamargo_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-
-	<p class="hang_indent">October 10 - <strong> Nick Henry (Penn State, German and Linguistics) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Henry_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Henry_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title:</b> Morphosyntactic Processing, Cue Interaction, and the Effects of Instruction: An Investigation of Processing Instruction and the Acquisition of Case Markings in L2 German
-		</p>
-	</div>	
-
-	<p class="hang_indent">October 17 - <strong> Carrie Jackson (Penn State, German and Linguistics) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Jackson_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Jackson_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-
-	<p class="hang_indent">October 24 - <strong> Dick Aslin (University of Rochester) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Aslin_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Aslin_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title:</b> Distributional language learning:  Mechanisms of category formation
-		  <br></br>
-		  <B>Abstract:</B> In the past 15 years, a substantial body of evidence has confirmed that a powerful distributional learning mechanism is present in infants, children, adults and (at least to some degree) in non-human animals as well.  I will briefly review this literature and then discuss some of the fundamental questions that must be addressed for any distributional learning mechanism to operate effectively within the linguistic domain.  In particular, how does a naive learner determine the number of categories that are present in a corpus of linguistic input, and what distributional cues enable the learner to assign individual lexical items to those categories?  Contrary to the hypothesis that distributional learning and category (or rule) learning are separate mechanisms, I will argue that these two seemingly different processes — acquiring specific structure from linguistic input and generalizing beyond that input to novel exemplars — actually represent a single mechanism.  Evidence in support of this single-mechanism hypothesis comes from a series of artificial grammar-learning studies that not only demonstrate that adults can learn grammatical categories from distributional information alone, but that the specific patterning of distributional information among attested utterances in the learning corpus enables adults to generalize to novel utterances or to restrict generalization when unattested utterances are consistently absent from the learning corpus.  Finally, I will discuss some recent findings on the neural correlates of statistical learning and the prospects that such fMRI and fNIRS data will clarify the mechanisms of language learning.
-		</p>
-	</div>	
-
-	<p class="hang_indent">October 31 - <strong> Marianna Nadeu (Penn State, Spanish Linguistics) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Nadeu_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Nadeu_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-
-	<p class="hang_indent">November 7 - <strong> PIRE undergraduate presentations</strong> - Foster Auditorium
-		<br /><br />
-    </p>		
-
-	<p class="hang_indent">November 14 - <strong>  No CLS-Hispanic Linguistics Symposium</strong>
-		<br /><br />
-    </p>
-
-	<p class="hang_indent">November 21 - <strong>  No CLS-Psychonomics</strong>
-		<br /><br />
-    </p>
-
-	<p class="hang_indent">November 28 - <strong>No CLS-Thanksgiving break</strong>
-		<br /><br />
-    </p>
-    
-	<p class="hang_indent">December 5 - <strong> Gerry Altmann (UConn) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Altmann_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Altmann_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title: </b>Representing objects across time: language-mediated event representation.
-		  <br></br>
-		  <b>Abstract: </b>Language is often used to describe the changes that occur around us – changes in either state (“I cracked the glass…”) or location (“I moved the glass onto the table…”). To fully comprehend such events requires that we represent the ‘before’ and ‘after’ states of the object. But how do we represent these mutually exclusive states of a single object at the same time? I shall summarise a series of studies, primarily from fMRI, which show that we do represent such alternative states, and that these alternative states compete with one another in much the same way as alternative interpretations of an ambiguous word might compete. These studies also show that whereas the representations of distinct but similar objects (e.g. a glass and a cup) interfere with one another in proportion to their similarity, representations of the distinct states of the same object interfere in proportion to their dissimilarity. This interference, or competition, manifests in a part of the brain that has been implicated in resolving competition. Furthermore, activity in this area is predicted by the dissimilarity, elsewhere in the brain, between sensorimotor instantiations of the described object’s distinct states. I shall end with new data (still too hot to touch) whose interpretation is a first step towards a brain mechanism for distinguishing between object types, tokens, and token-states.
-		  <br></br>
-		  [Prior knowledge of the brain is neither presumed, required, nor advantageous].
-		</p>
-	</div>	
-	
-	<p class="hang_indent">December 12 - <strong> Antonella Sorace (University of Edinburgh) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('Sorace_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Sorace_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-	    
-</div>      
-<div class="TabbedPanelsContent">
-	<p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
-
-	<p class="hang_indent">January 17 - <strong> Richard Page & Mike Putnam (Penn State, Department of German and Slavic Languages and Literatures)  </strong>: <em> The grammaticalization of the griege-passive in Pennsylvania German</em><br />
-		<br />
-		<a href="javascript:unhide('Page_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Page_abstract" class="hidden">
-		<p class="indent">
-        In this study, we investigate the degree of grammaticalization of the griege-passive in Pennsylvania German as spoken by Anabaptists in Ohio. Parallel to the development of recipient passives in Continental German and English, Pennsylvania German is developing a passive construction using the verb griege ‘to get, receive’ as an auxiliary (Burridge 2006: 186-187). Examples taken from Burridge (2006: 186) are given in (1) and (2). 
-        <br /><br /> 
-        (1) Ich hab e Buch gewwe griegt. 
-        <br /><br />
-        I have a book given got
-        <br /><br />
-        ‘I got given a book’ 
-        <br /><br /><br />
-        (2) Mir griege gesaagt. 
-        <br /><br />
-        we get told 
-        <br /><br />
-        ‘We get told’
-        <br /><br />
-        As illustrated in (1) and (2), the degree of grammaticalization varies. In (1), the sentence licenses the object Buch which is assigned the role of patient as would be expected with the lexical variant of griege and illustrated by the sentence Ich hab e Buch griegt ‘I got a book’, (cf. German Ich habe ein Buch geschenkt bekommen "I got given a book" versus Ich habe ein Buch bekommen "I got a book"). In contrast, (2) shows a greater degree of grammaticalization due to the absence of an overt object. Similarly, the lexical verb griege assigns the role of recipient to the subject, but this is not always the case for subjects in griege passive constructions as illustrated in (3) (example from Burridge 2006: 186): 
-        <br /><br />
-        (3) Er hat sei Lewwe genumme griegt.
-        <br /><br />
-        he has his life taken got 
-        <br /><br />
-        ‘He got his life taken/He was killed.’ 
-        <br /><br />
-        Once again, a parallel structure can be found in German in sentences like Sie haben den Ball weggenommen gekriegt ‘They got the ball taken away (from them)’ (Burridge 2006: 186). The forms in (2) and (3) can be taken as examples of semantic bleaching (desemanticization) and extension (i.e., the rise of new grammatical meanings via context-induced reinterpretation) that are hallmarks of grammaticalization (see discussion in Heine and Kuteva 2005). We note that in English it is possible for the subject of get-passive sentences to actually be assigned the role of patient whereas this is not grammatical in standard German, as shown in (4): 
-        <br /><br />
-        (4) English: The ball got taken away. 
-        <br /><br />
-        German: *Der Ball hat weggenommen gekriegt. 
-        <br /><br />
-        The ball has away-taken gotten 
-        <br /><br />
-        'The ball got taken away' 
-        <br /><br />
-        The grammaticality of sentences such as (4) in Pennsylvania German has not been previously investigated to the best of our knowledge. In this study, we will systematically examine the grammatialization of griege-passives in Pennsylvania German along a cline illustrated by the sentences in (1) – (4). Reference Burridge, Kate. 2006. Language contact and convergence in Pennsylvania German. Grammars in contact, ed. by A. Y. Aihenvald and R.M.W. Dixon, 179-200. Oxford UP: Oxford and New York. Heine, Bernd and Tania Kuteva. 2005. Language contact and grammatical change. Cambridge UP: Cambridge. 
-		</p>
-	</div>
-			
-	<p class="hang_indent">January 24 - <strong> Giuli Dussias (Penn State, Department of Italian, Spanish and Portuguese)  </strong>: <em> Effects of the second language on syntactic processing in the first language </em><br />
-		<br />
-		<a href="javascript:unhide('Dussias_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Dussias_abstract" class="hidden">
-		<p class="indent">
-        Past research has shown that adult native speakers of Spanish immersed in an English-speaking environment adopt processing routines of their second language (L2) when processing their first language (L1). Here we ask whether changes in processing routines can be triggered by overexposing bilingual speakers to particular structures so that bilinguals who have undergone changes when processing in their L1 ‘move back.’ We hypothesized that if the parser’s configuration is related to language exposure (e.g., MacDonald & Seidenberg, 2006), bilinguals’ parsing preferences are expected to change as a function of the frequency with which the relevant structure appears in an experimental session. We investigated this in the context of temporarily ambiguous relative clauses as in Arrestaron a la hermana del hombre que estaba enferma (Someone arrested the sisterFEM of the man who was illFEM). Here, the relative clause que estaba enferma (who was ill) can attach to the higher noun (hermana/sister) or the lower noun (hombre/man) in the complex noun phrase. Because the adjective enferma (ill) is marked with feminine grammatical gender, the correct interpretation is one where the relative clause attaches to hermana (also marked with feminine gender). Spanish-English bilingual speakers living in an English-speaking (US bilinguals) or a Spanish-speaking (Spain bilinguals) environment were recruited. 
-        <br /><br />
-        The study involved three phases. In phase 1, we carried out an eye-tracking study to determine the participants’ initial attachment preferences in their L1 (Spanish for both groups of speakers). In Phase 2, they participated in an ‘intervention’ study that exposed them to a biased sample of 120 relative clause constructions in their second language (English) over a 5-day period. Participants who showed initial attachment preferences in Spanish that favored low attachment received a biased sample of high attachment sentences; those whose initial attachment preferences favored high attachment received a low attachment treatment. In phase 3, eye-movement records were again collected to determine participants’ attachment preferences after the intervention study. The Spain bilinguals were tested two days after the intervention study had ended. The US bilinguals were, in addition, tested a week later to assess non-immediate effects of exposure. At pre-test, all participants were also administered the AX-CPT task (to measure sustained attention) as well as the Raven’s matrices and a standardized English language test (to match the US and Spain bilinguals).
-        <br /><br />
-        Preliminary results reveal the following: (1) Changes in attachment preference occurred in both groups of speakers but were modulated by performance in the AX-CPT task; (2) “High attachers” showed evidence of low attachment preferences at post-test 1 and at post-test 2 despite the fact that the input in the intervention study was in their L2, and even when they were immersed in an entirely Spanish-speaking environment. This provides evidence for a high level of permeability between the bilinguals’ two linguistic systems; and (3) “Low attachers” showed evidence of a high attachment preference only at post-test 2, suggesting that learning to attach high requires consolidation of information. The findings will be discussed in terms of the role of statistical learning in sentence comprehension processes (e.g., Gennari & MacDonald, 2009; Wells et al., 2009) and the implications of the results for theories of cognitive control.
-		</p>
-	</div>
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">September 12 - <strong> Federica Bulgarelli (Penn State, Psychology) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Bulgarelli_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Bulgarelli_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title: </b>Tracking multiple structures: an investigation of the primacy effect
+		      <br></br>
+		      <b>Abstract: </b>A fundamental challenge of statistical learning is to determine whether variance observed in the input signals a change in the underlying structure. Interestingly, when learners encounter two consecutive inputs, they only learn the first structure unless exposure to the second is tripled or a contextual cue correlates with the change (Gebhart, Aslin, & Newport, 2009). In two experiments, we explored the conditions under which both structures can be acquired. We found that learners who switch to the second input immediately after mastering the first are more likely to learn both, whereas those who continue to receive input in the first structure are more likely to remain entrenched, exhibiting the primacy effect.  Further, the ability to learn both structures correlates with performance on a Flanker task, suggesting that the first input may need to be inhibited to acquire the second structure.  We relate our findings to real world learning and bilingualism.
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">September 19  - <strong> Noriko Hoshino (Kobe City University of Foreign Studies) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Hoshino_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Hoshino_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title: </b>Time course of language selection in bilingual language production
+		    </p>
+		  </div>		
+		  
+		  <p class="hang_indent">September 26  - <strong> Patricia Román (Penn State, Psychology) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Román_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Román_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title:</b> What does sentence comprehension tell us about bilingualism?: Evidence from fMRI and ERPs
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">October 3  - <strong> Rosa Guzzardo Tamargo (University of Puerto Rico) & John M. Lipski (Penn State) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Tamargo_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Tamargo_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">October 10 - <strong> Nick Henry (Penn State, German and Linguistics) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Henry_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Henry_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title:</b> Morphosyntactic Processing, Cue Interaction, and the Effects of Instruction: An Investigation of Processing Instruction and the Acquisition of Case Markings in L2 German
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">October 17 - <strong> Carrie Jackson (Penn State, German and Linguistics) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Jackson_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Jackson_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">October 24 - <strong> Dick Aslin (University of Rochester) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Aslin_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Aslin_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title:</b> Distributional language learning:  Mechanisms of category formation
+		      <br></br>
+		      <B>Abstract:</B> In the past 15 years, a substantial body of evidence has confirmed that a powerful distributional learning mechanism is present in infants, children, adults and (at least to some degree) in non-human animals as well.  I will briefly review this literature and then discuss some of the fundamental questions that must be addressed for any distributional learning mechanism to operate effectively within the linguistic domain.  In particular, how does a naive learner determine the number of categories that are present in a corpus of linguistic input, and what distributional cues enable the learner to assign individual lexical items to those categories?  Contrary to the hypothesis that distributional learning and category (or rule) learning are separate mechanisms, I will argue that these two seemingly different processes — acquiring specific structure from linguistic input and generalizing beyond that input to novel exemplars — actually represent a single mechanism.  Evidence in support of this single-mechanism hypothesis comes from a series of artificial grammar-learning studies that not only demonstrate that adults can learn grammatical categories from distributional information alone, but that the specific patterning of distributional information among attested utterances in the learning corpus enables adults to generalize to novel utterances or to restrict generalization when unattested utterances are consistently absent from the learning corpus.  Finally, I will discuss some recent findings on the neural correlates of statistical learning and the prospects that such fMRI and fNIRS data will clarify the mechanisms of language learning.
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">October 31 - <strong> Marianna Nadeu (Penn State, Spanish Linguistics) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Nadeu_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Nadeu_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">November 7 - <strong> PIRE undergraduate presentations</strong> - Foster Auditorium
+		    <br /><br />
+		  </p>		
+		  
+		  <p class="hang_indent">November 14 - <strong>  No CLS-Hispanic Linguistics Symposium</strong>
+		    <br /><br />
+		  </p>
+		  
+		  <p class="hang_indent">November 21 - <strong>  No CLS-Psychonomics</strong>
+		    <br /><br />
+		  </p>
+		  
+		  <p class="hang_indent">November 28 - <strong>No CLS-Thanksgiving break</strong>
+		    <br /><br />
+		  </p>
+		  
+		  <p class="hang_indent">December 5 - <strong> Gerry Altmann (UConn) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Altmann_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Altmann_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title: </b>Representing objects across time: language-mediated event representation.
+		      <br></br>
+		      <b>Abstract: </b>Language is often used to describe the changes that occur around us – changes in either state (“I cracked the glass…”) or location (“I moved the glass onto the table…”). To fully comprehend such events requires that we represent the ‘before’ and ‘after’ states of the object. But how do we represent these mutually exclusive states of a single object at the same time? I shall summarise a series of studies, primarily from fMRI, which show that we do represent such alternative states, and that these alternative states compete with one another in much the same way as alternative interpretations of an ambiguous word might compete. These studies also show that whereas the representations of distinct but similar objects (e.g. a glass and a cup) interfere with one another in proportion to their similarity, representations of the distinct states of the same object interfere in proportion to their dissimilarity. This interference, or competition, manifests in a part of the brain that has been implicated in resolving competition. Furthermore, activity in this area is predicted by the dissimilarity, elsewhere in the brain, between sensorimotor instantiations of the described object’s distinct states. I shall end with new data (still too hot to touch) whose interpretation is a first step towards a brain mechanism for distinguishing between object types, tokens, and token-states.
+		      <br></br>
+		      [Prior knowledge of the brain is neither presumed, required, nor advantageous].
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">December 12 - <strong> Antonella Sorace (University of Edinburgh) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('Sorace_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Sorace_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		</div>      
 		
-	<p class="hang_indent">January 31 - <strong> Kaitlyn Litcofsky (Penn State, Psychology) </strong>: <em> A behavioral and neurocognitive study of sentential codeswitching in Spanish-English bilinguals</em><br />
-		<br />
-		<a href="javascript:unhide('Litcofsky_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Litcofsky_abstract" class="hidden">
-		<p class="indent">
-        A characteristic of bilingual speech is the occurrence of sentences that contain words of both languages. These codeswitches provide a window into how a bilingual’s two languages interact in conversation. The current project examines bilinguals’ online processing during comprehension of sentences that contain codeswitches. Previous psycholinguistic and neurocognitive research has shown that switching between isolated items incurs an asymmetrical processing cost where it is harder to switch into the dominant language than into the weaker language. This cost is thought to be related to the inhibition of the dominant language. In contrast, relatively little is known about the processing of codeswitches in a meaningful sentence context. In three experiments, sentential codeswitching was examined using a self-paced reading task and event-related potentials (ERPs) in two groups of Spanish-English bilinguals: those immersed in L2 English who codeswitch frequently in their daily life, and those immersed in L1 Spanish who do not codeswitch. Stimuli were 160 sentences that began in Spanish or English and either contained a codeswitch into the other language or not. Sentences that contained codeswitches were read more slowly than those without switches, but only when the sentences switched from the dominant to the weak language, not from the weak to the dominant language. Additionally, ERPs for both habitual and non-habitual codeswitchers showed a late positivity in response to codeswitched words as compared to non-codeswitched words, but again only when switching from the dominant to the weaker language. No effect of codeswitching occurred when switching into the dominant language. These results are in contrast to the language switching studies, and indicate that codeswitching in a meaningful sentential context requires different processing mechanisms. Given the appearance of the late positivity and consistency across habitual and non-habitual codeswitchers, it appears that the processing of sentential codeswitching may rely on fundamental sentence-level integration mechanisms related to activation of the weaker language. 
-		</p>
-	</div>
-	
-	<p class="hang_indent">February 7 - <strong> Dr. Krista Byers-Heinlein (Concordia University, Psychology) </strong>: <em> Baby you're bilingual: Acquiring two languages in infancy</em><br />
-		<br />
-		<a href="javascript:unhide('Byers-Heinlein_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Byers-Heinlein_abstract" class="hidden">
-		<p class="indent">
-        Infants growing up in bilingual environments must build a language system that accommodates two languages.  An important task for these infants is to discriminate and differentiate their languages.  While it is easy to imagine an early bilingual environment that neatly packages the two languages in a way that facilitates this task (e.g. one-parent-one-language), most bilingual infants do not encounter their languages in this way. This talk will present evidence that bilingual infants typically hear their two languages in bilingual contexts: spoken by the same person, in the same situation, and/or within the same sentence.  Experimental work is beginning to reveal how bilingual infants cope with the bilingual nature of their input, including language discrimination and the processing of code switched speech.  These findings will be discussed in the context of the PRIMIR framework of infant speech perception and word learning.
-		</p>
-	</div>
-	
-	<p class="hang_indent">February 14 - <strong> Jason Gullifer(Penn State, Psychology) </strong>: <em> Identifying the role of language-specific syntax in bilingual word recognition: A two-pronged approach.</em><br />
-		<br />
-		<a href="javascript:unhide('Gullifer_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Gullifer_abstract" class="hidden">
-		<p class="indent">
-        Bilinguals activate both of their languages in parallel despite the intention to read or speak in a single language. Yet bilinguals are apparently able to use one of their two languages without overt interference from the unintended language. A fundamental question in recent psycholinguistic research has been to determine the mechanisms that allow for successful language selection. One potential linguistic mechanism is the language cue. Languages differ in many respects (e.g., orthography, phonology, and syntax) and environments differ in the requirement of which language(s) may be in use. These differences could theoretically allow bilinguals to access one language selectively. This talk will explore the role of syntactic differences between Spanish and English in negotiating parallel activation. The approach exploits evidence from two methodologies to examine the role structure during word recognition. First, word naming during sentence reading will be used to measure the degree of parallel activation within various syntactic structures (specifically: active, passive, and dative structures). If certain structures function as a language cue, evidence for parallel activation should be reduced or absent for words read within those structures. Second, cross-language syntactic priming will be used to confirm whether the chosen syntactic structures are in fact represented in a language independent manner. 
-		</p>
-	</div>
-	
-	<p class="hang_indent">February 21 - <strong> Matthew Carlson (Penn State, Department of Italian, Spanish and Portuguese) </strong>: <em> Did I just hear what I thought I heard? Effects of language-specific phonotactic constraints in bilinguals’ speech perception</em><br />
-		<br />
-		<a href="javascript:unhide('Carlson_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Carlson_abstract" class="hidden">
-		<p class="indent">
-        Listeners utilize the structural properties of their language to help them interpret speech, leading to misperception of non-native sounds and sound sequences. For example, Spanish contains no words with initial sCV sequences, a phonotactic restriction well-known to influence cross-language borrowings. Words like snob are “repaired” by prepending an initial /e/ (esnob). Interestingly, similar repairs are apparent in on-line speech perception tasks. Native Spanish speakers confronted with a spoken token of snob report hearing esnob, even though the stimulus lacks the initial vowel, whereas speakers of languages that allow sCV sequences (e.g. French) do not (Cuetos et al., 2011; Hallé et al., 2008; to appear).  
-		<br/><br/>
-        How does bilingual perception relate to these monolingual extremes? Second language users can develop native-like perception of sCV sequences—even when this conflicts with their first language (Parlato-Oliveira et al., 2010). However, the perceptual consequences of possessing conflicting phonotactic constraints are unclear. Does acquiring a language that allows sCV structures eliminate misperceptions, even in the more phonotactically restrictive language? If not, how does bilinguals’ speech perception shift in response to changes in linguistic context? We investigated these possibilities in bilinguals fluent in both Spanish and English via a vowel detection task (Cuetos et al., 2011) and an AX discrimination task using a pretest-posttest design. The pretests were conducted in a monolingual Spanish experimental enviromnent, after which half the participants then performed an English picture-naming task before repeating the Spanish vowel task. The performance of this group was compared to a group that performed the picture-naming task in Spanish. A monolingual English control group was included for comparison. The bilinguals’ pretest performance reflected the influence of Spanish phonotactics, but this varied with language dominance in ways consistent with influence from English phonotactics. Intriguingly, changes in performance at posttest depended on the language of the intervening task, again modulated by language dominance. This suggests that bilinguals can deploy distinct phonotactic constraints dynamically depending on shifting linguistic context.
-		</p>
-	</div>
-	
-	<p class="hang_indent">February 28- <strong> Pablo Requena (Penn State, Department of Italian, Spanish and Portuguese) & Ji Sook Park (Penn State, Communication Sciences and Disorders) </strong>: <em> Accessing meaning of L2 Words in beginning and advanced learners: An electrophysiological and behavioral investigation</em><br />
-		<br />
-		<a href="javascript:unhide('Park_abstract');"><strong></strong></a>
-	</p>
-	<div id="Park_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>
-	<p class="hang_indent">March 7 - <strong> No CLS Meeting</strong>
-		<br /><br />
-	</p>
-	<p class="hang_indent">March 14 - <strong> No CLS Meeting</strong>
-		<br /><br />
-	</p>
-	<p class="hang_indent">March 21 - <strong>Alison Eisel Hendricks (Penn State, Department of Germanic & Slavic Languages and Literatures) </strong> <em> </em><br />
-		<br />
-		<a href="javascript:unhide('Hendricks_abstract');"><strong></strong></a>
-	</p>
-	<div id="Hendricks_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
 		
-	<p class="hang_indent">March 28 - <strong>Colleen Balukas (Penn State, Department of Italian, Spanish and Portuguese) </strong> <em> </em><br />
-		<br />
-		<a href="javascript:unhide('Balukas_abstract');"><strong></strong></a>
-	</p>
-	<div id="Balukas_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-	
-	<p class="hang_indent">April 4 - <strong> Miguel Rámos  (Penn State, Department of Italian, Spanish and Portuguese) </strong> <em> </em><br />
-		<br />
-		<a href="javascript:unhide('Ramos_abstract');"><strong></strong></a>
-	</p>
-	<div id="Ramos_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-	<p class="hang_indent">April 11 - <strong> No CLS Meeting</strong>
-		<br /><br />
-	</p>		
-	<p class="hang_indent">April 18 - <strong> Fengyang Ma (Penn State) </strong>: <em> Accessing meaning of L2 Words in beginning and advanced learners: An electrophysiological and behavioral investigation</em><br />
-		<br />
-		<a href="javascript:unhide('Ma_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Ma_abstract" class="hidden">
-		<p class="indent">
-		According to the Revised Hierarchical Model (Kroll & Stewart, 1994), second language (L2) learners initially access meaning of L2 words via the L1 whereas advanced learners access meaning directly. We tested this hypothesis with English learners of Spanish in a translation recognition task, in which participants were asked to judge whether English words were the correct translations of Spanish words. In each case, we gathered data on behavior and on the earliest time course of processing using ERPs. The critical conditions compared the ability of learners to reject distractors that were related to the translation in form or meaning when a long (750 ms) or short (300 ms) SOA separated the two words. For advanced learners, there were effects for semantic and form distractors in both measures at the long SOA, but at the short SOA, there were behavioral effects but only an N400 effect in the ERP record for semantic distractors. These results replicate Guo et al. (2012), suggesting that relatively proficient L2 speakers access the meaning of L2 words directly. For beginning learners, at the long SOA, there were semantic and form effects in both measures. At the short SOA, behavioral data were sensitive to distractor type, but the ERPs only revealed larger N400 and smaller LPC for translation distractors and no effect for semantic distractors. Overall, these data suggest that at early stages of L2 learning there is reliance on the L1 translation equivalent. Once proficient, they are able to retrieve the meanings of the words directly. 
-		</p>
-	</div>
-	
-	<p class="hang_indent">April 25 - <strong> Álvaro Villegas  (Penn State, Department of Italian, Spanish and Portuguese) </strong> <em> </em><br />
-		<br />
-		<a href="javascript:unhide('Villegas_abstract');"><strong></strong></a>
-	</p>
-	<div id="Villegas_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>	
-	
-	<p class="hang_indent">May 2 - <strong> María C. Martín  (Penn State, Psychology) </strong>: <em> Different mechanisms of inhibitory control in bilingual lexical production</em><br />
-		<br />
-		<a href="javascript:unhide('Martín_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Martín_abstract" class="hidden">
-		<p class="indent">
-        Past research shows that lexical access is non-selective with respect to language, allowing cross-languages interactions to occur in both comprehension and production (Dijkstra, 2005; Guo, Liu, Misra, & Kroll, 2011). A key question in bilingual research has been to understand the control mechanisms that allow bilinguals to select the language they intend to use. Language comprehension and production potentially differ in the way in which bilinguals achieve control of their two languages, e.g., in the time course of inhibition. 
-        <br/><br/>
-        In past research, we have shown that cross-language inhibition in comprehension seems to be relatively short-lived (Martín, Macizo, & Bajo, 2010). In contrast, studies of lexical production have shown that inhibition of the language not in use can be long lasting (e.g., Misra, Guo, Bobb, & Kroll, 2012), suggesting that there are multiple mechanisms of control. 
-        <br/><br />
-        The present study explored the nature of the control mechanisms that underlie language selection in bilingual production and specifically whether there is evidence for both automatic and controlled selection processes. Relatively proficient Chinese-English bilinguals performed a picture naming task in language blocked or language mixed conditions (Guo et al., 2011). In one condition, they were instructed to name the picture, in another they also had to perform a concurrent updating task. 
-        <br/><br />
-         Results showed that the concurrent task affected performance differentially in the blocked and mixed conditions. Under mixed conditions that included the demanding updating task, bilinguals who were strongly L1 dominant were as slow to speak the L1 as the L2. The updating task did not eliminate the inhibition of L1 under mixed conditions. In contrast, introducing the updating task in the blocked conditions appeared to eliminate the inhibitory effect of L1 when it followed L2.  Findings will be discussed in the context of models of bilingual control.
-		</p>
-	</div>
-</div>
-
-<div class="TabbedPanelsContent">
-	<p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
-
-	<p class="hang_indent">August 30 - <strong> No CLS Meeting</strong>
-		<br /><br />
-	</p>
-	
-    <p class="hang_indent">September 6 - <strong> Melinda Fricke (UC Berkeley, Department of Linguistics) </strong>: <em> Language in Time: Phonetic Duration and the Sequential Nature of Phonological Encoding</em><br />
-		<br />
-		<a href="javascript:unhide('Fricke_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Fricke_abstract" class="hidden">
-		<p class="indent">
-        Many studies have shown that word duration is reliably correlated with contextual probability in conversational speech (Jurafsky et al., 2001; Bell et al., 2003, 2009; Aylett & Turk, 2004, among others). Most explanations of this correlation focus on the lexical level of representation; the predictability of a word in a given context is typically hypothesized to affect its phonetic realization, either through listener-driven or speaker-driven processes. Listener-driven accounts focus on the amount of phonetic detail needed to recognize a word in its context, while speaker-driven accounts posit that the speed of lexical access has consequences for a word’s phonetic realization. 
-        <br /><br />
-        It seems intuitive that faster lexical access would be related to shorter word duration, but one aspect missing from existing speaker-driven accounts is an explicit mechanism linking higher contextual predictability to shorter articulatory duration. In this talk, I present three studies that help to lay the groundwork for such a mechanism. Results from a word-learning study with children indicate that difficulty in phonological encoding is reliably associated with longer articulatory duration, and results from studies of adult single-word production and conversational, connected speech are consistent with a model of language production that incorporates both lexical-phonological feedback and sequential encoding of segments (e.g. Sevald & Dell, 1994). I argue that the speed of phonological encoding, combined with the fact that encoding proceeds from left to right, can account for the present results and may provide the link between contextual predictability and articulatory duration. 
-		</p>
-	</div>
-	
-    <p class="hang_indent">September 13 - <strong> Ashley Roccamo (Penn State, Department of German) </strong>: <em> Is Earlier Really Better? Comparing the Effectiveness of Pronunciation Training for Beginner and Intermediate Learners</em><br />
-		<br />
-		<a href="javascript:unhide('Roccamo_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Roccamo_abstract" class="hidden">
-		<p class="indent">
-        Pronunciation in a second language (L2) is notoriously difficult to acquire. Even advanced L2 speakers often cannot acquire accurate pronunciation on their own (Grosser, 1997; Jilka, 1999; Munro & Derwing, 2008; Trofimovich & Baker, 2006). Despite its consequences for communication, however, L2 learners and teachers alike frequently ignore pronunciation during the stages of L2 acquisition. Yet pronunciation is a skill that can improve with focused training, as has been reported in a number of studies (Derwing, Munro & Wiebe, 1998; Elliott, 1997; Flege, 1989; Hardison, 2004; Saito & Lyster, 2011). Most of these training programs are introduced in more advanced stages of L2 proficiency (e.g., Counselman, 2010; Elliott, 1995, 1997; Lord, 2008), although a number of researchers have recently been calling for pronunciation training to begin as early as possible (e.g., Counselman, 2010; Derwing & Munro, 2013; Elliott, 1995, 1997; Eskenazi, 1999; Hardison, 2004; Neufeld & Schneiderman, 1980). Thus the question remains, at which stage in L2 acquisition a focus on pronunciation should begin. 
-        <br /><br />
-        The current study examines this issue further and tests whether an eight-week pronunciation training unit designed as a supplement to German language classrooms is more effective when implemented in the first or fourth semester. Training for the two experimental groups was divided into four two-week modules, each training a specific area of German pronunciation for just 10 minutes a day. Target areas were chosen both for their difficulty for L2 learners as well as their importance for communicating meaning, and included lexical stress, palatal and velar fricatives ([ç] and [x]), fricative and vocalized /r/, and the monophthongization of [e] and [o]. Identical pre- and post-tests were administered for all groups before and immediately after training. Randomly selected, matched samples from each participant’s pre- and posttests were rated by native-speaker listeners for accentedness and comprehensibility. Pre- and posttest ratings from the experimental and control groups are compared in order to compare the effectiveness of pronunciation training in early and intermediate semesters of German L2 learning. The results of these analyses will ascertain whether pronunciation training truly is more effective for beginner learners in the earliest stages of L2 acquisition. 
-		</p>
-	</div>
-	
-    <p class="hang_indent">September 20 - <strong> 	Merel Keijzer (University of Utrecht) </strong>: <em> Cognitive and Language Control in Aging Dutch-English Late Bilinguals and Dutch Bilectals</em><br />
-		<br />
-		<a href="javascript:unhide('Keijzer_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Keijzer_abstract" class="hidden">
-		<p class="indent">
-        Following the seminal work by Ellen Bialystok, the last decade has seen a host of studies on cognitive advantages as a result of early bilingualism in which early bilinguals are consistently reported as having enhanced cognitive control, notably inhibitory control (Fiszer, 2008). More recent work has sought to extend this effect to late bilinguals (cf. Fiszer, 2008; Tao et al., 2011; Luk et al., 2011), but with mixed results. This may be partly due to the large variability in exposure time to the L2, and, related to that, the lack of L1 and L2 proficiency measures. At the same time, the variable results are also – partially – ascribed to a difference in typological proximity of a bilingual’s languages under investigation. In that vein, questions have been raised concerning bilectals and whether the cognitive control advantage in these speakers is likely to be greater (due to increased demands on cognitive control with two closely related languages that have to be juggled) or smaller (due perhaps to the dialect not being perceived as a separate language cognitively). 
-        <br /><br />
-        The very few studies that have been done on the language and cognitive control of bilectals (cf. Kirk, 2012) have not been able to shed light on this matter. The aim of this study is to add to the growing research tradition of examining language and cognitive control in late bilinguals and well as bilectals. In order to do that four groups of speakers were examined: 1) Late bilinguals (L1 Dutch; L2 English) who were at least 15 when they started acquiring their L2. At the time of testing they had been immersed in an Anglophone environment for 42,6 years on average (n=69). 2) Bilectals (standard Dutch – Nedersaksisch, which is an eastern Dutch dialect spoken close to the German border)) (n=20). 3) Monolingual Dutch speakers were recruited to serve as controls (n = 60). 4) Since it has been pointed out that no true Dutch monolinguals exist with all Netherlands-based subjects having at least a basic command of foreign languages, an additional group of monolingual English speakers in Australia was recruited (n=60). 
-        <br /><br />
-        All participants were roughly subdivided over three age categories: a baseline group of middle-aged subjects (40-50), a ‘youngest old’ category (60-70) and an ‘oldest old’ group (71+). One exception was the bilectal group, which was solely made up of oldest old participants, i.e. aged 71 and older. Furthermore, participants in all groups were asked to fill in a (language) background and lifestyle questionnaire, and were subjected to various executive functioning (EF) and working memory (WM) measures in addition to standard processing speed and fluid IQ tests. Crucially, they completed various language proficiency tests in both their L1 and L2, varying from overall proficiency measures to a grammaticality judgment and receptive as well as productive vocabulary tests. 
-        <br /><br />
-        The results indicate a very large degree of variability in both cognitive and bilingual language control, in line with previous findings (Bedard et al., 2002; Borella et al., 2008). In addition, language and cognitive measures were correlated but this did not apply to all tests included in the battery. Predictor variables of success in control on both sides were L1 and L2 proficiency and educational level. Finally, on many occasions, the oldest old participants outperformed their younger old peers. Comparing the bilinguals and the bilectals, the two groups were found to be very distinct: the bilinguals were found to have a cognitive advantage (on some but not all the tasks of the test battery), whereas the bilectals performed very similar to the monolingual Dutch speakers with no cognitive advantage presenting itself. This itself leads to interesting questions regarding the cognitive status of a dialect. The results of a recently initiated continuous analysis, abandoning the idea of groups, but rather include all data in one larger regression model, will also be presented. 
-		</p>
-	</div>
-	
-    <p class="hang_indent">September 27 - <strong> Adele Goldberg (Princeton, Psychology) </strong>: <em> Explain me something: how we learn what not to say</em><br />
+		<div class="TabbedPanelsContent">
+		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		  
+		  <p class="hang_indent">January 17 - <strong> Richard Page & Mike Putnam (Penn State, Department of German and Slavic Languages and Literatures)  </strong>: <em> The grammaticalization of the griege-passive in Pennsylvania German</em><br />
+		    <br />
+		    <a href="javascript:unhide('Page_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Page_abstract" class="hidden">
+		    <p class="indent">
+		      In this study, we investigate the degree of grammaticalization of the griege-passive in Pennsylvania German as spoken by Anabaptists in Ohio. Parallel to the development of recipient passives in Continental German and English, Pennsylvania German is developing a passive construction using the verb griege ‘to get, receive’ as an auxiliary (Burridge 2006: 186-187). Examples taken from Burridge (2006: 186) are given in (1) and (2). 
+		      <br /><br /> 
+		      (1) Ich hab e Buch gewwe griegt. 
+		      <br /><br />
+		      I have a book given got
+		      <br /><br />
+		      ‘I got given a book’ 
+		      <br /><br /><br />
+		      (2) Mir griege gesaagt. 
+		      <br /><br />
+		      we get told 
+		      <br /><br />
+		      ‘We get told’
+		      <br /><br />
+		      As illustrated in (1) and (2), the degree of grammaticalization varies. In (1), the sentence licenses the object Buch which is assigned the role of patient as would be expected with the lexical variant of griege and illustrated by the sentence Ich hab e Buch griegt ‘I got a book’, (cf. German Ich habe ein Buch geschenkt bekommen "I got given a book" versus Ich habe ein Buch bekommen "I got a book"). In contrast, (2) shows a greater degree of grammaticalization due to the absence of an overt object. Similarly, the lexical verb griege assigns the role of recipient to the subject, but this is not always the case for subjects in griege passive constructions as illustrated in (3) (example from Burridge 2006: 186): 
+		      <br /><br />
+		      (3) Er hat sei Lewwe genumme griegt.
+		      <br /><br />
+		      he has his life taken got 
+		      <br /><br />
+		      ‘He got his life taken/He was killed.’ 
+		      <br /><br />
+		      Once again, a parallel structure can be found in German in sentences like Sie haben den Ball weggenommen gekriegt ‘They got the ball taken away (from them)’ (Burridge 2006: 186). The forms in (2) and (3) can be taken as examples of semantic bleaching (desemanticization) and extension (i.e., the rise of new grammatical meanings via context-induced reinterpretation) that are hallmarks of grammaticalization (see discussion in Heine and Kuteva 2005). We note that in English it is possible for the subject of get-passive sentences to actually be assigned the role of patient whereas this is not grammatical in standard German, as shown in (4): 
+		      <br /><br />
+		      (4) English: The ball got taken away. 
+		      <br /><br />
+		      German: *Der Ball hat weggenommen gekriegt. 
+		      <br /><br />
+		      The ball has away-taken gotten 
+		      <br /><br />
+		      'The ball got taken away' 
+		      <br /><br />
+		      The grammaticality of sentences such as (4) in Pennsylvania German has not been previously investigated to the best of our knowledge. In this study, we will systematically examine the grammatialization of griege-passives in Pennsylvania German along a cline illustrated by the sentences in (1) – (4). Reference Burridge, Kate. 2006. Language contact and convergence in Pennsylvania German. Grammars in contact, ed. by A. Y. Aihenvald and R.M.W. Dixon, 179-200. Oxford UP: Oxford and New York. Heine, Bernd and Tania Kuteva. 2005. Language contact and grammatical change. Cambridge UP: Cambridge. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">January 24 - <strong> Giuli Dussias (Penn State, Department of Italian, Spanish and Portuguese)  </strong>: <em> Effects of the second language on syntactic processing in the first language </em><br />
+		    <br />
+		    <a href="javascript:unhide('Dussias_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Dussias_abstract" class="hidden">
+		    <p class="indent">
+		      Past research has shown that adult native speakers of Spanish immersed in an English-speaking environment adopt processing routines of their second language (L2) when processing their first language (L1). Here we ask whether changes in processing routines can be triggered by overexposing bilingual speakers to particular structures so that bilinguals who have undergone changes when processing in their L1 ‘move back.’ We hypothesized that if the parser’s configuration is related to language exposure (e.g., MacDonald & Seidenberg, 2006), bilinguals’ parsing preferences are expected to change as a function of the frequency with which the relevant structure appears in an experimental session. We investigated this in the context of temporarily ambiguous relative clauses as in Arrestaron a la hermana del hombre que estaba enferma (Someone arrested the sisterFEM of the man who was illFEM). Here, the relative clause que estaba enferma (who was ill) can attach to the higher noun (hermana/sister) or the lower noun (hombre/man) in the complex noun phrase. Because the adjective enferma (ill) is marked with feminine grammatical gender, the correct interpretation is one where the relative clause attaches to hermana (also marked with feminine gender). Spanish-English bilingual speakers living in an English-speaking (US bilinguals) or a Spanish-speaking (Spain bilinguals) environment were recruited. 
+		      <br /><br />
+		      The study involved three phases. In phase 1, we carried out an eye-tracking study to determine the participants’ initial attachment preferences in their L1 (Spanish for both groups of speakers). In Phase 2, they participated in an ‘intervention’ study that exposed them to a biased sample of 120 relative clause constructions in their second language (English) over a 5-day period. Participants who showed initial attachment preferences in Spanish that favored low attachment received a biased sample of high attachment sentences; those whose initial attachment preferences favored high attachment received a low attachment treatment. In phase 3, eye-movement records were again collected to determine participants’ attachment preferences after the intervention study. The Spain bilinguals were tested two days after the intervention study had ended. The US bilinguals were, in addition, tested a week later to assess non-immediate effects of exposure. At pre-test, all participants were also administered the AX-CPT task (to measure sustained attention) as well as the Raven’s matrices and a standardized English language test (to match the US and Spain bilinguals).
+		      <br /><br />
+		      Preliminary results reveal the following: (1) Changes in attachment preference occurred in both groups of speakers but were modulated by performance in the AX-CPT task; (2) “High attachers” showed evidence of low attachment preferences at post-test 1 and at post-test 2 despite the fact that the input in the intervention study was in their L2, and even when they were immersed in an entirely Spanish-speaking environment. This provides evidence for a high level of permeability between the bilinguals’ two linguistic systems; and (3) “Low attachers” showed evidence of a high attachment preference only at post-test 2, suggesting that learning to attach high requires consolidation of information. The findings will be discussed in terms of the role of statistical learning in sentence comprehension processes (e.g., Gennari & MacDonald, 2009; Wells et al., 2009) and the implications of the results for theories of cognitive control.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">January 31 - <strong> Kaitlyn Litcofsky (Penn State, Psychology) </strong>: <em> A behavioral and neurocognitive study of sentential codeswitching in Spanish-English bilinguals</em><br />
+		    <br />
+		    <a href="javascript:unhide('Litcofsky_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Litcofsky_abstract" class="hidden">
+		    <p class="indent">
+		      A characteristic of bilingual speech is the occurrence of sentences that contain words of both languages. These codeswitches provide a window into how a bilingual’s two languages interact in conversation. The current project examines bilinguals’ online processing during comprehension of sentences that contain codeswitches. Previous psycholinguistic and neurocognitive research has shown that switching between isolated items incurs an asymmetrical processing cost where it is harder to switch into the dominant language than into the weaker language. This cost is thought to be related to the inhibition of the dominant language. In contrast, relatively little is known about the processing of codeswitches in a meaningful sentence context. In three experiments, sentential codeswitching was examined using a self-paced reading task and event-related potentials (ERPs) in two groups of Spanish-English bilinguals: those immersed in L2 English who codeswitch frequently in their daily life, and those immersed in L1 Spanish who do not codeswitch. Stimuli were 160 sentences that began in Spanish or English and either contained a codeswitch into the other language or not. Sentences that contained codeswitches were read more slowly than those without switches, but only when the sentences switched from the dominant to the weak language, not from the weak to the dominant language. Additionally, ERPs for both habitual and non-habitual codeswitchers showed a late positivity in response to codeswitched words as compared to non-codeswitched words, but again only when switching from the dominant to the weaker language. No effect of codeswitching occurred when switching into the dominant language. These results are in contrast to the language switching studies, and indicate that codeswitching in a meaningful sentential context requires different processing mechanisms. Given the appearance of the late positivity and consistency across habitual and non-habitual codeswitchers, it appears that the processing of sentential codeswitching may rely on fundamental sentence-level integration mechanisms related to activation of the weaker language. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">February 7 - <strong> Dr. Krista Byers-Heinlein (Concordia University, Psychology) </strong>: <em> Baby you're bilingual: Acquiring two languages in infancy</em><br />
+		    <br />
+		    <a href="javascript:unhide('Byers-Heinlein_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Byers-Heinlein_abstract" class="hidden">
+		    <p class="indent">
+		      Infants growing up in bilingual environments must build a language system that accommodates two languages.  An important task for these infants is to discriminate and differentiate their languages.  While it is easy to imagine an early bilingual environment that neatly packages the two languages in a way that facilitates this task (e.g. one-parent-one-language), most bilingual infants do not encounter their languages in this way. This talk will present evidence that bilingual infants typically hear their two languages in bilingual contexts: spoken by the same person, in the same situation, and/or within the same sentence.  Experimental work is beginning to reveal how bilingual infants cope with the bilingual nature of their input, including language discrimination and the processing of code switched speech.  These findings will be discussed in the context of the PRIMIR framework of infant speech perception and word learning.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">February 14 - <strong> Jason Gullifer(Penn State, Psychology) </strong>: <em> Identifying the role of language-specific syntax in bilingual word recognition: A two-pronged approach.</em><br />
+		    <br />
+		    <a href="javascript:unhide('Gullifer_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Gullifer_abstract" class="hidden">
+		    <p class="indent">
+		      Bilinguals activate both of their languages in parallel despite the intention to read or speak in a single language. Yet bilinguals are apparently able to use one of their two languages without overt interference from the unintended language. A fundamental question in recent psycholinguistic research has been to determine the mechanisms that allow for successful language selection. One potential linguistic mechanism is the language cue. Languages differ in many respects (e.g., orthography, phonology, and syntax) and environments differ in the requirement of which language(s) may be in use. These differences could theoretically allow bilinguals to access one language selectively. This talk will explore the role of syntactic differences between Spanish and English in negotiating parallel activation. The approach exploits evidence from two methodologies to examine the role structure during word recognition. First, word naming during sentence reading will be used to measure the degree of parallel activation within various syntactic structures (specifically: active, passive, and dative structures). If certain structures function as a language cue, evidence for parallel activation should be reduced or absent for words read within those structures. Second, cross-language syntactic priming will be used to confirm whether the chosen syntactic structures are in fact represented in a language independent manner. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">February 21 - <strong> Matthew Carlson (Penn State, Department of Italian, Spanish and Portuguese) </strong>: <em> Did I just hear what I thought I heard? Effects of language-specific phonotactic constraints in bilinguals’ speech perception</em><br />
+		    <br />
+		    <a href="javascript:unhide('Carlson_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Carlson_abstract" class="hidden">
+		    <p class="indent">
+		      Listeners utilize the structural properties of their language to help them interpret speech, leading to misperception of non-native sounds and sound sequences. For example, Spanish contains no words with initial sCV sequences, a phonotactic restriction well-known to influence cross-language borrowings. Words like snob are “repaired” by prepending an initial /e/ (esnob). Interestingly, similar repairs are apparent in on-line speech perception tasks. Native Spanish speakers confronted with a spoken token of snob report hearing esnob, even though the stimulus lacks the initial vowel, whereas speakers of languages that allow sCV sequences (e.g. French) do not (Cuetos et al., 2011; Hallé et al., 2008; to appear).  
+		      <br/><br/>
+		      How does bilingual perception relate to these monolingual extremes? Second language users can develop native-like perception of sCV sequences—even when this conflicts with their first language (Parlato-Oliveira et al., 2010). However, the perceptual consequences of possessing conflicting phonotactic constraints are unclear. Does acquiring a language that allows sCV structures eliminate misperceptions, even in the more phonotactically restrictive language? If not, how does bilinguals’ speech perception shift in response to changes in linguistic context? We investigated these possibilities in bilinguals fluent in both Spanish and English via a vowel detection task (Cuetos et al., 2011) and an AX discrimination task using a pretest-posttest design. The pretests were conducted in a monolingual Spanish experimental enviromnent, after which half the participants then performed an English picture-naming task before repeating the Spanish vowel task. The performance of this group was compared to a group that performed the picture-naming task in Spanish. A monolingual English control group was included for comparison. The bilinguals’ pretest performance reflected the influence of Spanish phonotactics, but this varied with language dominance in ways consistent with influence from English phonotactics. Intriguingly, changes in performance at posttest depended on the language of the intervening task, again modulated by language dominance. This suggests that bilinguals can deploy distinct phonotactic constraints dynamically depending on shifting linguistic context.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">February 28- <strong> Pablo Requena (Penn State, Department of Italian, Spanish and Portuguese) & Ji Sook Park (Penn State, Communication Sciences and Disorders) </strong>: <em> Accessing meaning of L2 Words in beginning and advanced learners: An electrophysiological and behavioral investigation</em><br />
+		    <br />
+		    <a href="javascript:unhide('Park_abstract');"><strong></strong></a>
+		  </p>
+		  <div id="Park_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>
+		  <p class="hang_indent">March 7 - <strong> No CLS Meeting</strong>
+		    <br /><br />
+		  </p>
+		  <p class="hang_indent">March 14 - <strong> No CLS Meeting</strong>
+		    <br /><br />
+		  </p>
+		  <p class="hang_indent">March 21 - <strong>Alison Eisel Hendricks (Penn State, Department of Germanic & Slavic Languages and Literatures) </strong> <em> </em><br />
+		    <br />
+		    <a href="javascript:unhide('Hendricks_abstract');"><strong></strong></a>
+		  </p>
+		  <div id="Hendricks_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">March 28 - <strong>Colleen Balukas (Penn State, Department of Italian, Spanish and Portuguese) </strong> <em> </em><br />
+		    <br />
+		    <a href="javascript:unhide('Balukas_abstract');"><strong></strong></a>
+		  </p>
+		  <div id="Balukas_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">April 4 - <strong> Miguel Rámos  (Penn State, Department of Italian, Spanish and Portuguese) </strong> <em> </em><br />
+		    <br />
+		    <a href="javascript:unhide('Ramos_abstract');"><strong></strong></a>
+		  </p>
+		  <div id="Ramos_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  <p class="hang_indent">April 11 - <strong> No CLS Meeting</strong>
+		    <br /><br />
+		  </p>		
+		  <p class="hang_indent">April 18 - <strong> Fengyang Ma (Penn State) </strong>: <em> Accessing meaning of L2 Words in beginning and advanced learners: An electrophysiological and behavioral investigation</em><br />
+		    <br />
+		    <a href="javascript:unhide('Ma_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Ma_abstract" class="hidden">
+		    <p class="indent">
+		      According to the Revised Hierarchical Model (Kroll & Stewart, 1994), second language (L2) learners initially access meaning of L2 words via the L1 whereas advanced learners access meaning directly. We tested this hypothesis with English learners of Spanish in a translation recognition task, in which participants were asked to judge whether English words were the correct translations of Spanish words. In each case, we gathered data on behavior and on the earliest time course of processing using ERPs. The critical conditions compared the ability of learners to reject distractors that were related to the translation in form or meaning when a long (750 ms) or short (300 ms) SOA separated the two words. For advanced learners, there were effects for semantic and form distractors in both measures at the long SOA, but at the short SOA, there were behavioral effects but only an N400 effect in the ERP record for semantic distractors. These results replicate Guo et al. (2012), suggesting that relatively proficient L2 speakers access the meaning of L2 words directly. For beginning learners, at the long SOA, there were semantic and form effects in both measures. At the short SOA, behavioral data were sensitive to distractor type, but the ERPs only revealed larger N400 and smaller LPC for translation distractors and no effect for semantic distractors. Overall, these data suggest that at early stages of L2 learning there is reliance on the L1 translation equivalent. Once proficient, they are able to retrieve the meanings of the words directly. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">April 25 - <strong> Álvaro Villegas  (Penn State, Department of Italian, Spanish and Portuguese) </strong> <em> </em><br />
+		    <br />
+		    <a href="javascript:unhide('Villegas_abstract');"><strong></strong></a>
+		  </p>
+		  <div id="Villegas_abstract" class="hidden">
+		    <p class="indent">
+		    </p>
+		  </div>	
+		  
+		  <p class="hang_indent">May 2 - <strong> María C. Martín  (Penn State, Psychology) </strong>: <em> Different mechanisms of inhibitory control in bilingual lexical production</em><br />
+		    <br />
+		    <a href="javascript:unhide('Martín_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Martín_abstract" class="hidden">
+		    <p class="indent">
+		      Past research shows that lexical access is non-selective with respect to language, allowing cross-languages interactions to occur in both comprehension and production (Dijkstra, 2005; Guo, Liu, Misra, & Kroll, 2011). A key question in bilingual research has been to understand the control mechanisms that allow bilinguals to select the language they intend to use. Language comprehension and production potentially differ in the way in which bilinguals achieve control of their two languages, e.g., in the time course of inhibition. 
+		      <br/><br/>
+		      In past research, we have shown that cross-language inhibition in comprehension seems to be relatively short-lived (Martín, Macizo, & Bajo, 2010). In contrast, studies of lexical production have shown that inhibition of the language not in use can be long lasting (e.g., Misra, Guo, Bobb, & Kroll, 2012), suggesting that there are multiple mechanisms of control. 
+		      <br/><br />
+		      The present study explored the nature of the control mechanisms that underlie language selection in bilingual production and specifically whether there is evidence for both automatic and controlled selection processes. Relatively proficient Chinese-English bilinguals performed a picture naming task in language blocked or language mixed conditions (Guo et al., 2011). In one condition, they were instructed to name the picture, in another they also had to perform a concurrent updating task. 
+		      <br/><br />
+		      Results showed that the concurrent task affected performance differentially in the blocked and mixed conditions. Under mixed conditions that included the demanding updating task, bilinguals who were strongly L1 dominant were as slow to speak the L1 as the L2. The updating task did not eliminate the inhibition of L1 under mixed conditions. In contrast, introducing the updating task in the blocked conditions appeared to eliminate the inhibitory effect of L1 when it followed L2.  Findings will be discussed in the context of models of bilingual control.
+		    </p>
+		  </div>
+		</div>
+		
+		<div class="TabbedPanelsContent">
+		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		  
+		  <p class="hang_indent">August 30 - <strong> No CLS Meeting</strong>
+		    <br /><br />
+		  </p>
+		  
+		  <p class="hang_indent">September 6 - <strong> Melinda Fricke (UC Berkeley, Department of Linguistics) </strong>: <em> Language in Time: Phonetic Duration and the Sequential Nature of Phonological Encoding</em><br />
+		    <br />
+		    <a href="javascript:unhide('Fricke_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Fricke_abstract" class="hidden">
+		    <p class="indent">
+		      Many studies have shown that word duration is reliably correlated with contextual probability in conversational speech (Jurafsky et al., 2001; Bell et al., 2003, 2009; Aylett & Turk, 2004, among others). Most explanations of this correlation focus on the lexical level of representation; the predictability of a word in a given context is typically hypothesized to affect its phonetic realization, either through listener-driven or speaker-driven processes. Listener-driven accounts focus on the amount of phonetic detail needed to recognize a word in its context, while speaker-driven accounts posit that the speed of lexical access has consequences for a word’s phonetic realization. 
+		      <br /><br />
+		      It seems intuitive that faster lexical access would be related to shorter word duration, but one aspect missing from existing speaker-driven accounts is an explicit mechanism linking higher contextual predictability to shorter articulatory duration. In this talk, I present three studies that help to lay the groundwork for such a mechanism. Results from a word-learning study with children indicate that difficulty in phonological encoding is reliably associated with longer articulatory duration, and results from studies of adult single-word production and conversational, connected speech are consistent with a model of language production that incorporates both lexical-phonological feedback and sequential encoding of segments (e.g. Sevald & Dell, 1994). I argue that the speed of phonological encoding, combined with the fact that encoding proceeds from left to right, can account for the present results and may provide the link between contextual predictability and articulatory duration. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">September 13 - <strong> Ashley Roccamo (Penn State, Department of German) </strong>: <em> Is Earlier Really Better? Comparing the Effectiveness of Pronunciation Training for Beginner and Intermediate Learners</em><br />
+		    <br />
+		    <a href="javascript:unhide('Roccamo_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Roccamo_abstract" class="hidden">
+		    <p class="indent">
+		      Pronunciation in a second language (L2) is notoriously difficult to acquire. Even advanced L2 speakers often cannot acquire accurate pronunciation on their own (Grosser, 1997; Jilka, 1999; Munro & Derwing, 2008; Trofimovich & Baker, 2006). Despite its consequences for communication, however, L2 learners and teachers alike frequently ignore pronunciation during the stages of L2 acquisition. Yet pronunciation is a skill that can improve with focused training, as has been reported in a number of studies (Derwing, Munro & Wiebe, 1998; Elliott, 1997; Flege, 1989; Hardison, 2004; Saito & Lyster, 2011). Most of these training programs are introduced in more advanced stages of L2 proficiency (e.g., Counselman, 2010; Elliott, 1995, 1997; Lord, 2008), although a number of researchers have recently been calling for pronunciation training to begin as early as possible (e.g., Counselman, 2010; Derwing & Munro, 2013; Elliott, 1995, 1997; Eskenazi, 1999; Hardison, 2004; Neufeld & Schneiderman, 1980). Thus the question remains, at which stage in L2 acquisition a focus on pronunciation should begin. 
+		      <br /><br />
+		      The current study examines this issue further and tests whether an eight-week pronunciation training unit designed as a supplement to German language classrooms is more effective when implemented in the first or fourth semester. Training for the two experimental groups was divided into four two-week modules, each training a specific area of German pronunciation for just 10 minutes a day. Target areas were chosen both for their difficulty for L2 learners as well as their importance for communicating meaning, and included lexical stress, palatal and velar fricatives ([ç] and [x]), fricative and vocalized /r/, and the monophthongization of [e] and [o]. Identical pre- and post-tests were administered for all groups before and immediately after training. Randomly selected, matched samples from each participant’s pre- and posttests were rated by native-speaker listeners for accentedness and comprehensibility. Pre- and posttest ratings from the experimental and control groups are compared in order to compare the effectiveness of pronunciation training in early and intermediate semesters of German L2 learning. The results of these analyses will ascertain whether pronunciation training truly is more effective for beginner learners in the earliest stages of L2 acquisition. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">September 20 - <strong> 	Merel Keijzer (University of Utrecht) </strong>: <em> Cognitive and Language Control in Aging Dutch-English Late Bilinguals and Dutch Bilectals</em><br />
+		    <br />
+		    <a href="javascript:unhide('Keijzer_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Keijzer_abstract" class="hidden">
+		    <p class="indent">
+		      Following the seminal work by Ellen Bialystok, the last decade has seen a host of studies on cognitive advantages as a result of early bilingualism in which early bilinguals are consistently reported as having enhanced cognitive control, notably inhibitory control (Fiszer, 2008). More recent work has sought to extend this effect to late bilinguals (cf. Fiszer, 2008; Tao et al., 2011; Luk et al., 2011), but with mixed results. This may be partly due to the large variability in exposure time to the L2, and, related to that, the lack of L1 and L2 proficiency measures. At the same time, the variable results are also – partially – ascribed to a difference in typological proximity of a bilingual’s languages under investigation. In that vein, questions have been raised concerning bilectals and whether the cognitive control advantage in these speakers is likely to be greater (due to increased demands on cognitive control with two closely related languages that have to be juggled) or smaller (due perhaps to the dialect not being perceived as a separate language cognitively). 
+		      <br /><br />
+		      The very few studies that have been done on the language and cognitive control of bilectals (cf. Kirk, 2012) have not been able to shed light on this matter. The aim of this study is to add to the growing research tradition of examining language and cognitive control in late bilinguals and well as bilectals. In order to do that four groups of speakers were examined: 1) Late bilinguals (L1 Dutch; L2 English) who were at least 15 when they started acquiring their L2. At the time of testing they had been immersed in an Anglophone environment for 42,6 years on average (n=69). 2) Bilectals (standard Dutch – Nedersaksisch, which is an eastern Dutch dialect spoken close to the German border)) (n=20). 3) Monolingual Dutch speakers were recruited to serve as controls (n = 60). 4) Since it has been pointed out that no true Dutch monolinguals exist with all Netherlands-based subjects having at least a basic command of foreign languages, an additional group of monolingual English speakers in Australia was recruited (n=60). 
+		      <br /><br />
+		      All participants were roughly subdivided over three age categories: a baseline group of middle-aged subjects (40-50), a ‘youngest old’ category (60-70) and an ‘oldest old’ group (71+). One exception was the bilectal group, which was solely made up of oldest old participants, i.e. aged 71 and older. Furthermore, participants in all groups were asked to fill in a (language) background and lifestyle questionnaire, and were subjected to various executive functioning (EF) and working memory (WM) measures in addition to standard processing speed and fluid IQ tests. Crucially, they completed various language proficiency tests in both their L1 and L2, varying from overall proficiency measures to a grammaticality judgment and receptive as well as productive vocabulary tests. 
+		      <br /><br />
+		      The results indicate a very large degree of variability in both cognitive and bilingual language control, in line with previous findings (Bedard et al., 2002; Borella et al., 2008). In addition, language and cognitive measures were correlated but this did not apply to all tests included in the battery. Predictor variables of success in control on both sides were L1 and L2 proficiency and educational level. Finally, on many occasions, the oldest old participants outperformed their younger old peers. Comparing the bilinguals and the bilectals, the two groups were found to be very distinct: the bilinguals were found to have a cognitive advantage (on some but not all the tasks of the test battery), whereas the bilectals performed very similar to the monolingual Dutch speakers with no cognitive advantage presenting itself. This itself leads to interesting questions regarding the cognitive status of a dialect. The results of a recently initiated continuous analysis, abandoning the idea of groups, but rather include all data in one larger regression model, will also be presented. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">September 27 - <strong> Adele Goldberg (Princeton, Psychology) </strong>: <em> Explain me something: how we learn what not to say</em><br />
 		<br />
 		<a href="javascript:unhide('Goldberg_abstract');"><strong>Show Abstract</strong></a>
 	</p>
-	<div id="Goldberg_abstract" class="hidden">
-		<p class="indent">
-        Although many constraints are motivated by general semantic or syntactic facts, in certain cases, formulations are semantically sensible and syntactically well-formed, and yet noticeably dispreferred (e.g., ??She explained me something; ??the afraid boy). Results from several experiments are reviewed that suggest that competition in context—statistical preemption--plays a key role in learning what not to say in these cases.  I will also suggest a domain-general mechanism that may well underlie this process, and offer a speculative proposal as to why L2 learners may have more trouble avoiding these dispreferred utterances.
-		</p>
-	</div>
-	
-    <p class="hang_indent">October 4 - <strong> MaryEllen MacDonald (UW-Madison, Psychology) </strong>: <em> We Reap What We Sow:  The Cascading Effects of Language Production on the Nature of Language and its Comprehension</em><br />
-		<br />
-		<a href="javascript:unhide('MacDonald_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	
-	<div id="MacDonald_abstract" class="hidden">
-		<p class="indent">
-        Two critical questions in language research concerns why languages have the form that they have, which typically is a concern of language typologists and other linguists, and and why language comprehension works the way that it does, a major concern of psycholinguists. I will argue that we can find some important answers to both of these questions by investigating the central question of language production researchers: why people say things in certain ways and not others. Language production processes involve the conversion of communicative intents into spoken, signed, or written utterances, and this conversion requires an intricate interplay of attention, retrieval from long term memory, motor planning and temporary maintenance of an utterance plan. I'll present evidence that the nature of these processes (many of which are not language-specific) yield biases in production planning for certain kinds of word orders over others. These biases to produce certain utterance forms over other viable alternatives have downstream consequences for language statistics, language typology, and language comprehension processes. I'll trace these cascading effects from production biases and argue that a full account of comprehension and language typology will have to incorporate insights from language production.
-		</p>
-	</div>
-	
-    <p class="hang_indent">October 11 - <strong> David Green (University College London, Division of Psychology and Language Sciences) </strong>: <em> Language control</em><br />
-		<br />
-		<a href="javascript:unhide('Green_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Green_abstract" class="hidden">
-		<p class="indent">
-        Communities differ in the way they use the languages at their disposal.  In some, speakers code-switch between their languages within a conversational turn whereas in others they do not. Instead different languages are used in different realms of life.  Might these different conversational demands shape the processes of language control within the individual speaker? I will explore and evaluate this possibility. Understanding the dynamics of language control contributes to our understanding of the mind as a control system, to our understanding of individual differences in executive control and to our understanding the patterns of speech recovery post-stroke.
-		</p>
-	</div>
-			
-		<p class="hang_indent">October 18 - <strong> Fred Genesee (McGill University, Psychology) </strong>: <em> Myths and Misunderstandings about Dual Language Acquisition in Young Learners</em><br />
-		<br />
-		<a href="javascript:unhide('Genesee_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Genesee_abstract" class="hidden">
-		<p class="indent">
-        There has been growing interest in children who learn language in diverse contexts and under diverse circumstances. In particular, dual language acquisition has become the focus of much research attention, arguably as a reflection of the growing awareness that dual language learning is common in children.  A deeper understanding of dual language learning under different circumstances is important to ensure the formulation of theories of language learning that encompass all language learners and to provide critical information for clinical and other practical decisions that touch the lives of all language learners. This talk will review research findings on dual language learning in both school and non-school settings, among simultaneous and sequential bilinguals, and in typically-developing learners and those with an impaired capacity for language learning. Key findings with respect to common myths and misunderstandings that surround dual language acquisition in young learners will be reviewed and discussed and their implications for both theoretical and practical matters will be considered.  
-		</p>
-	</div>
-	
-		<p class="hang_indent">October 25 - <strong> Ben Zinszer (Penn State, Psychology) </strong>: <em> Age of L2 Onset and Left MTG Specialization for L1 Lexical Tones</em><br />
-		<br />
-		<a href="javascript:unhide('Zinszer_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Zinszer_abstract" class="hidden">
-		<p class="indent">
-        Recent neuroimaging studies have revealed distinct functional roles of left and right temporal lobe structures in the processing of lexical tones in Chinese. In an evoked response potential paradigm, Xi et al (2010) elicited a greater mis-match negativity (MMN) to acoustically varying sets of intonated Chinese syllables when tone variants represented linguistically salient contrasts. Zhang et al (2011) further localized processing of Chinese lexical tones to the left middle temporal gyrus (lMTG) for linguistic processing and the right superior temporal gyrus (rSTG) for acoustic processing of tonal contrasts for native Chinese speakers. In the present study, we ask whether knowledge of a second language (English) modulates this pattern of activation in the perception of tonal contrasts. Twenty-five native Chinese speakers were recruited from undergraduate and graduate students at Beijing Normal University, China. Participants watched a silent film and listened to blocks of computationally manipulated /ba/ syllables which were varied to form within- and between-category deviants at equal acoustic intervals from a standard tone. Oxygenated hemoglobin levels in participants' temporal cortices were measured by functional near-infrared spectroscopy (fNIRS). Three block conditions were presented: standard falling tones, standard falling tones randomly ordered with deviant falling tones (Within Category), and standard falling tones randomly ordered with rising tones (Across Category). Deviant blocks were alternated 10 times each with standard blocks and rest periods of equal duration. Blocks were analyzed for peak oxygenated hemoglobin levels, and a mixed-effects model was fit to these data, including effects of Category (Standard, Within, or Across), age of earliest exposure to English (spoken), and proficiency in English. Functional changes in oxygenated hemoglobin levels indicated a significantly greater response to Within Category contrasts in right STG, consistent with previous findings. However, the effect of Category in left MTG was significantly modulated by the age of participants' earliest English exposure: Across Category activation exceeded Within Category activation only for participants exposed to English after 13 years of age. While previous research has established the importance of left MTG in the categorical perception of lexical tones, our findings suggest that the functional specialization of this region is sensitive to second language experience, even in the processing of native language. 
-		</p>
-	</div>
-	
-	<p class="hang_indent">November 1 - <strong> PIRE undergraduate presentations</strong>
-		<br /><br />
-	</p>		
-		<p class="hang_indent">November 8 - <strong> Greg Guy (NYU, Linguistics) </strong>: <em> The Role of Lexical Frequency in Linguistic Variation</em><br />
-		<br />
-		<a href="javascript:unhide('Guy_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Guy_abstract" class="hidden">
-		<p class="indent">
-        Lexical frequency has been argued (by, for example, Bybee 2007, Pierrehumbert 2001) to be a significant factor in the organization of linguistic structure and the operation of phonological processes, such that words that are used a lot are expected to behave differently in certain respects from those that occur more rarely. Variable processes in language are especially implicated in such models. This paper considers empirical evidence from a number of studies of linguistic variation that have looked at lexical frequency as a potential predictor, to investigate the validity and extent of frequency effects. The results are mixed: frequency does appear to affect some variable lenition processes, like -t,d deletion in English, but is unreliable in others, e.g. –s deletion in Spanish. It interacts significantly with morphological constraints: -t,d deletion increases with frequency in monomorphemes, but not in derived forms (regular past tense forms). And frequency effects can be found beyond the phonology: in morphological variation, for example, synthetic comparatives and superlatives in English are favored with frequent adjectival roots. In syntax, Spanish pro-drop shows no general frequency effect, but frequency systematically interacts with all other constraints on the process, magnifying them in high-frequency forms and attenuating them in low frequency forms. And there are cases where frequency fails to have any significant effect, or makes the wrong predictions. The data therefore suggest that frequency is a characteristic of entries in the mental lexicon that is available to speakers for constructing generalizations about linguistic operations, but frequency does not regularly predict or entail specific linguistic outcomes. This has implications for formal linguistic theories as well as for usage-based theories that emphasize frequency as an explanatory factor. 
-		</p>
-	</div>
+		  <div id="Goldberg_abstract" class="hidden">
+		    <p class="indent">
+		      Although many constraints are motivated by general semantic or syntactic facts, in certain cases, formulations are semantically sensible and syntactically well-formed, and yet noticeably dispreferred (e.g., ??She explained me something; ??the afraid boy). Results from several experiments are reviewed that suggest that competition in context—statistical preemption--plays a key role in learning what not to say in these cases.  I will also suggest a domain-general mechanism that may well underlie this process, and offer a speculative proposal as to why L2 learners may have more trouble avoiding these dispreferred utterances.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">October 4 - <strong> MaryEllen MacDonald (UW-Madison, Psychology) </strong>: <em> We Reap What We Sow:  The Cascading Effects of Language Production on the Nature of Language and its Comprehension</em><br />
+		    <br />
+		    <a href="javascript:unhide('MacDonald_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  
+		  <div id="MacDonald_abstract" class="hidden">
+		    <p class="indent">
+		      Two critical questions in language research concerns why languages have the form that they have, which typically is a concern of language typologists and other linguists, and and why language comprehension works the way that it does, a major concern of psycholinguists. I will argue that we can find some important answers to both of these questions by investigating the central question of language production researchers: why people say things in certain ways and not others. Language production processes involve the conversion of communicative intents into spoken, signed, or written utterances, and this conversion requires an intricate interplay of attention, retrieval from long term memory, motor planning and temporary maintenance of an utterance plan. I'll present evidence that the nature of these processes (many of which are not language-specific) yield biases in production planning for certain kinds of word orders over others. These biases to produce certain utterance forms over other viable alternatives have downstream consequences for language statistics, language typology, and language comprehension processes. I'll trace these cascading effects from production biases and argue that a full account of comprehension and language typology will have to incorporate insights from language production.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">October 11 - <strong> David Green (University College London, Division of Psychology and Language Sciences) </strong>: <em> Language control</em><br />
+		    <br />
+		    <a href="javascript:unhide('Green_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Green_abstract" class="hidden">
+		    <p class="indent">
+		      Communities differ in the way they use the languages at their disposal.  In some, speakers code-switch between their languages within a conversational turn whereas in others they do not. Instead different languages are used in different realms of life.  Might these different conversational demands shape the processes of language control within the individual speaker? I will explore and evaluate this possibility. Understanding the dynamics of language control contributes to our understanding of the mind as a control system, to our understanding of individual differences in executive control and to our understanding the patterns of speech recovery post-stroke.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">October 18 - <strong> Fred Genesee (McGill University, Psychology) </strong>: <em> Myths and Misunderstandings about Dual Language Acquisition in Young Learners</em><br />
+		    <br />
+		    <a href="javascript:unhide('Genesee_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Genesee_abstract" class="hidden">
+		    <p class="indent">
+		      There has been growing interest in children who learn language in diverse contexts and under diverse circumstances. In particular, dual language acquisition has become the focus of much research attention, arguably as a reflection of the growing awareness that dual language learning is common in children.  A deeper understanding of dual language learning under different circumstances is important to ensure the formulation of theories of language learning that encompass all language learners and to provide critical information for clinical and other practical decisions that touch the lives of all language learners. This talk will review research findings on dual language learning in both school and non-school settings, among simultaneous and sequential bilinguals, and in typically-developing learners and those with an impaired capacity for language learning. Key findings with respect to common myths and misunderstandings that surround dual language acquisition in young learners will be reviewed and discussed and their implications for both theoretical and practical matters will be considered.  
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">October 25 - <strong> Ben Zinszer (Penn State, Psychology) </strong>: <em> Age of L2 Onset and Left MTG Specialization for L1 Lexical Tones</em><br />
+		    <br />
+		    <a href="javascript:unhide('Zinszer_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Zinszer_abstract" class="hidden">
+		    <p class="indent">
+		      Recent neuroimaging studies have revealed distinct functional roles of left and right temporal lobe structures in the processing of lexical tones in Chinese. In an evoked response potential paradigm, Xi et al (2010) elicited a greater mis-match negativity (MMN) to acoustically varying sets of intonated Chinese syllables when tone variants represented linguistically salient contrasts. Zhang et al (2011) further localized processing of Chinese lexical tones to the left middle temporal gyrus (lMTG) for linguistic processing and the right superior temporal gyrus (rSTG) for acoustic processing of tonal contrasts for native Chinese speakers. In the present study, we ask whether knowledge of a second language (English) modulates this pattern of activation in the perception of tonal contrasts. Twenty-five native Chinese speakers were recruited from undergraduate and graduate students at Beijing Normal University, China. Participants watched a silent film and listened to blocks of computationally manipulated /ba/ syllables which were varied to form within- and between-category deviants at equal acoustic intervals from a standard tone. Oxygenated hemoglobin levels in participants' temporal cortices were measured by functional near-infrared spectroscopy (fNIRS). Three block conditions were presented: standard falling tones, standard falling tones randomly ordered with deviant falling tones (Within Category), and standard falling tones randomly ordered with rising tones (Across Category). Deviant blocks were alternated 10 times each with standard blocks and rest periods of equal duration. Blocks were analyzed for peak oxygenated hemoglobin levels, and a mixed-effects model was fit to these data, including effects of Category (Standard, Within, or Across), age of earliest exposure to English (spoken), and proficiency in English. Functional changes in oxygenated hemoglobin levels indicated a significantly greater response to Within Category contrasts in right STG, consistent with previous findings. However, the effect of Category in left MTG was significantly modulated by the age of participants' earliest English exposure: Across Category activation exceeded Within Category activation only for participants exposed to English after 13 years of age. While previous research has established the importance of left MTG in the categorical perception of lexical tones, our findings suggest that the functional specialization of this region is sensitive to second language experience, even in the processing of native language. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">November 1 - <strong> PIRE undergraduate presentations</strong>
+		    <br /><br />
+		  </p>		
+		  <p class="hang_indent">November 8 - <strong> Greg Guy (NYU, Linguistics) </strong>: <em> The Role of Lexical Frequency in Linguistic Variation</em><br />
+		    <br />
+		    <a href="javascript:unhide('Guy_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Guy_abstract" class="hidden">
+		    <p class="indent">
+		      Lexical frequency has been argued (by, for example, Bybee 2007, Pierrehumbert 2001) to be a significant factor in the organization of linguistic structure and the operation of phonological processes, such that words that are used a lot are expected to behave differently in certain respects from those that occur more rarely. Variable processes in language are especially implicated in such models. This paper considers empirical evidence from a number of studies of linguistic variation that have looked at lexical frequency as a potential predictor, to investigate the validity and extent of frequency effects. The results are mixed: frequency does appear to affect some variable lenition processes, like -t,d deletion in English, but is unreliable in others, e.g. –s deletion in Spanish. It interacts significantly with morphological constraints: -t,d deletion increases with frequency in monomorphemes, but not in derived forms (regular past tense forms). And frequency effects can be found beyond the phonology: in morphological variation, for example, synthetic comparatives and superlatives in English are favored with frequent adjectival roots. In syntax, Spanish pro-drop shows no general frequency effect, but frequency systematically interacts with all other constraints on the process, magnifying them in high-frequency forms and attenuating them in low frequency forms. And there are cases where frequency fails to have any significant effect, or makes the wrong predictions. The data therefore suggest that frequency is a characteristic of entries in the mental lexicon that is available to speakers for constructing generalizations about linguistic operations, but frequency does not regularly predict or entail specific linguistic outcomes. This has implications for formal linguistic theories as well as for usage-based theories that emphasize frequency as an explanatory factor. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">November 15 - <strong> No CLS Meeting</strong>
+		    <br /><br />
+		  </p>
+		  
+		  <p class="hang_indent">November 22 - <strong> Tamara Swaab (UC Davis, Psychology) </strong>: <em> Understanding Individual Differences in Language Comprehension</em><br />
+		    <br />
+		    <a href="javascript:unhide('Swaab_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Swaab_abstract" class="hidden">
+		    <p class="indent">
+		      Spoken language comprehension involves managing a set of interrelated cognitive tasks, including activation of stored phonological and semantic representations of words, activation or construction of syntactic structure representations, determination of how newly activated words relate to previously introduced information, and ultimately the construction of a representation of the meaning of the message. Whereas the processing of individual words and syntactic structures in isolation can proceed relatively automatically, the construction of a coherent representation of the overall message may rely more on controlled processing, requiring maintenance of previous context and rapid integration of incoming input in Working Memory (WM). This is especially the case for spoken language comprehension since listeners have no control over the rate of input, nor can they ‘‘re-experience’’ parts of the speech signal. I will present evidence from healthy adults and schizophrenia patients indicating that individual differences or impairments in the controlled maintenance of context predict which kind of language information is prioritized or processed during spoken language comprehension: the meanings of individual words or the integrated representation of the language context. 
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">November 29 - <strong> No CLS Meeting</strong>
+		    <br /><br />
+		  </p>
+		  
+		  <p class="hang_indent">December 6 - <strong> Megan Zirnstein (Penn State, Psychology) </strong>: <em> Investigating Semantic Prediction in Second Language Processing</em><br />
+		    <br />
+		    <a href="javascript:unhide('Zirnstein_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Zirnstein_abstract" class="hidden">
+		    <p class="indent">
+		      The ability to predict upcoming words in a sentence or text is an important aspect of the language comprehension system. When predictions are correct, behavioral and ERP research has shown that processing load is reduced (Federmeier, 2007; Van Verkum, 2008). However, when predictions are false and do not fit with the sentence or discourse context, there are processing costs, often in the form of longer reading times (Van Berkum et al., 2005) or higher amplitude ERP effects (i.e., the N400 and a frontally-distributed positivity; Federmeier et al., 2007).  In this talk, I will present an overview of what we currently know about how readers predict in their native language, and discuss implications for processing in a second language. I will also present data from a recent ERP study investigating prediction effects when bilinguals read in their second language.
+		    </p>
+		  </div>
+		  
+		  <p class="hang_indent">December 13 - <strong> Angela Grant (Penn State, Psychology) </strong>: <em> Working hard really does pay off: An fMRI investigation of lexical access in L2 learners</em><br />
+		    <br />
+		    <a href="javascript:unhide('Grant_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Grant_abstract" class="hidden">
+		    <p class="indent">
+		      This study uses functional magnetic resonance imaging (fMRI) to investigate how the development of lexical access in second language (L2) learners may be influenced by individual differences in working memory (WM) and inhibitory control (IC). Models of bilingual processing suggest that (a) bilinguals must consistently use IC in comprehension and production and (b) highly proficient learners access concepts directly while less proficient learners access concepts only through the L1 (Green, 1998; Kroll & Stewart, 1994). The neural implication of these models is that less proficient bilinguals, compared with highly proficient bilinguals, will require more effort to inhibit their L1 in order to successfully retrieve words in the L2. 
+		      <br /><br />
+		      Our hypothesis based on the current neuroimaging literature is that lower proficiency learners will more strongly activate inhibitory control areas, such as the left inferior frontal gyrus (LIFG) and anterior cingulate cortex (ACC), in addition to areas associated with semantic retrieval, such as the left middle temporal gyrus (LMTG). Higher proficiency learners, by contrast, should utilize more efficient networks where the LMTG acts as a hub of semantic retrieval rather than in the LIPFC or ACC for cognitive control (Abutalebi, 2008; Yokoyama, 2009). Participants in our study completed measures of proficiency (TVIP; Dunn et al. 1986) WM (phonological letter number sequencing; Wechsler, 1997) and IC (flanker task; Emmorey et al. 2008) before an fMRI experiment in which participants were asked to make a language-specific lexical decision on L1 words, L2 words, and homographs (e.g.. pie, the Spanish translation of foot). 
+		      <br /><br />
+		      Behavioral results did not show any significant correlations between proficiency, WM, or IC. Although these measures did not correlate significantly with each other, when included as covariates in the fMRI data analysis, we observe a positive correlation between greater activation in our pre-specified regions of interest, working memory, and proficiency. This suggests that, contrary to our predictions, L2 learners with higher WM and proficiency are calling on the LIFG, ACC, and LMTG more when accessing L2 words, rather than less. Specifically, learners are utilizing the LIFG under high conflict conditions (when identifying homographs), and the ACC under normal conflict conditions (when identifying unambiguous Spanish words). Participants also utilized the LMTG and left precuneus more when accessing Spanish words compared with English words, areas associated with semantic and episodic retrieval, respectively. Results are discussed in the context of current neuroimaging models of second language acquisition and bilingualism. 
+		    </p>
+		  </div>
+		  <p class="hang_indent">December 20 - <strong> Weekly CLS Meeting</strong>
+		    <br /><br />
+		  </p>		
+		  <p class="hang_indent">December 27 - <strong> Weekly CLS Meeting</strong>
+		    <br /><br />
+		  </p>	
+		</div>
 		
-	<p class="hang_indent">November 15 - <strong> No CLS Meeting</strong>
-		<br /><br />
-	</p>
-		
-		<p class="hang_indent">November 22 - <strong> Tamara Swaab (UC Davis, Psychology) </strong>: <em> Understanding Individual Differences in Language Comprehension</em><br />
-		<br />
-		<a href="javascript:unhide('Swaab_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Swaab_abstract" class="hidden">
-		<p class="indent">
-        Spoken language comprehension involves managing a set of interrelated cognitive tasks, including activation of stored phonological and semantic representations of words, activation or construction of syntactic structure representations, determination of how newly activated words relate to previously introduced information, and ultimately the construction of a representation of the meaning of the message. Whereas the processing of individual words and syntactic structures in isolation can proceed relatively automatically, the construction of a coherent representation of the overall message may rely more on controlled processing, requiring maintenance of previous context and rapid integration of incoming input in Working Memory (WM). This is especially the case for spoken language comprehension since listeners have no control over the rate of input, nor can they ‘‘re-experience’’ parts of the speech signal. I will present evidence from healthy adults and schizophrenia patients indicating that individual differences or impairments in the controlled maintenance of context predict which kind of language information is prioritized or processed during spoken language comprehension: the meanings of individual words or the integrated representation of the language context. 
-		</p>
-	</div>
-	
-	<p class="hang_indent">November 29 - <strong> No CLS Meeting</strong>
-		<br /><br />
-	</p>
-	
-	<p class="hang_indent">December 6 - <strong> Megan Zirnstein (Penn State, Psychology) </strong>: <em> Investigating Semantic Prediction in Second Language Processing</em><br />
-		<br />
-		<a href="javascript:unhide('Zirnstein_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Zirnstein_abstract" class="hidden">
-		<p class="indent">
-        The ability to predict upcoming words in a sentence or text is an important aspect of the language comprehension system. When predictions are correct, behavioral and ERP research has shown that processing load is reduced (Federmeier, 2007; Van Verkum, 2008). However, when predictions are false and do not fit with the sentence or discourse context, there are processing costs, often in the form of longer reading times (Van Berkum et al., 2005) or higher amplitude ERP effects (i.e., the N400 and a frontally-distributed positivity; Federmeier et al., 2007).  In this talk, I will present an overview of what we currently know about how readers predict in their native language, and discuss implications for processing in a second language. I will also present data from a recent ERP study investigating prediction effects when bilinguals read in their second language.
-		</p>
-	</div>
-		
-	<p class="hang_indent">December 13 - <strong> Angela Grant (Penn State, Psychology) </strong>: <em> Working hard really does pay off: An fMRI investigation of lexical access in L2 learners</em><br />
-		<br />
-		<a href="javascript:unhide('Grant_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Grant_abstract" class="hidden">
-		<p class="indent">
-        This study uses functional magnetic resonance imaging (fMRI) to investigate how the development of lexical access in second language (L2) learners may be influenced by individual differences in working memory (WM) and inhibitory control (IC). Models of bilingual processing suggest that (a) bilinguals must consistently use IC in comprehension and production and (b) highly proficient learners access concepts directly while less proficient learners access concepts only through the L1 (Green, 1998; Kroll & Stewart, 1994). The neural implication of these models is that less proficient bilinguals, compared with highly proficient bilinguals, will require more effort to inhibit their L1 in order to successfully retrieve words in the L2. 
-        <br /><br />
-        Our hypothesis based on the current neuroimaging literature is that lower proficiency learners will more strongly activate inhibitory control areas, such as the left inferior frontal gyrus (LIFG) and anterior cingulate cortex (ACC), in addition to areas associated with semantic retrieval, such as the left middle temporal gyrus (LMTG). Higher proficiency learners, by contrast, should utilize more efficient networks where the LMTG acts as a hub of semantic retrieval rather than in the LIPFC or ACC for cognitive control (Abutalebi, 2008; Yokoyama, 2009). Participants in our study completed measures of proficiency (TVIP; Dunn et al. 1986) WM (phonological letter number sequencing; Wechsler, 1997) and IC (flanker task; Emmorey et al. 2008) before an fMRI experiment in which participants were asked to make a language-specific lexical decision on L1 words, L2 words, and homographs (e.g.. pie, the Spanish translation of foot). 
-        <br /><br />
-        Behavioral results did not show any significant correlations between proficiency, WM, or IC. Although these measures did not correlate significantly with each other, when included as covariates in the fMRI data analysis, we observe a positive correlation between greater activation in our pre-specified regions of interest, working memory, and proficiency. This suggests that, contrary to our predictions, L2 learners with higher WM and proficiency are calling on the LIFG, ACC, and LMTG more when accessing L2 words, rather than less. Specifically, learners are utilizing the LIFG under high conflict conditions (when identifying homographs), and the ACC under normal conflict conditions (when identifying unambiguous Spanish words). Participants also utilized the LMTG and left precuneus more when accessing Spanish words compared with English words, areas associated with semantic and episodic retrieval, respectively. Results are discussed in the context of current neuroimaging models of second language acquisition and bilingualism. 
-		</p>
-	</div>
-	<p class="hang_indent">December 20 - <strong> Weekly CLS Meeting</strong>
-		<br /><br />
-	</p>		
-	<p class="hang_indent">December 27 - <strong> Weekly CLS Meeting</strong>
-		<br /><br />
-	</p>	
-</div>
-
-<div class="TabbedPanelsContent">
-	<p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
-	
-	<p class="hang_indent">January 11 - <strong> Lisa Heimbauer (Penn State, Psychology) </strong>: <em> Investigation of Language-Related Cognitive Abilities in Non-human Primates</em><br />
-		<br />
-		<a href="javascript:unhide('Heimbauer_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Heimbauer_abstract" class="hidden">
-		<p class="indent">
-		To date, my research has focused on the evolution of language-related cognitive abilities taking a comparative approach.  Research projects investigating the speech perception abilities of a language-trained chimpanzee have shown similar performance as humans, providing evidence that speech perception abilities are rooted in general auditory mechanisms and most likely were present in a common ancestor of humans and chimpanzees. Additionally, the chimpanzee's performance has stressed the importance of early immersion in a speech-rich environment to facilitate speech perception. Results of experiments investigating the sequence learning abilities of rhesus macaques have shown rudimentary, rule-like, visual learning by the monkeys, providing evidence that these processing abilities may have been present in an early primate ancestor.
-		</p>
-	</div>
-	<p class="hang_indent">January 18 - <strong> Miccio Travel Awardees 2011-2012 (Penn State) </strong><br />
-			<br />
-			<a href="javascript:unhide('Miccio_2011_2012_abstract');"><strong>Show Abstract</strong></a>
-		</p>
-		<div id="Miccio_2011_2012_abstract" class="hidden">
-			<p class="indent">
-			Colleen Balukas, Joe Bauman, and Cari Bogulski will talk about their experiences as Miccio Travel Award winners during the 2011-2012 award cycle.</br></br>
-			Colleen Balukas Naomi Nagy at the University of Toronto and James Walker at York University. Joe Bauman visited Prof. Jessi Aaron at the University of Florida. Cari Bogulski visited Dr. Lee Osterhout at the University of Washington.</br></br>
-			More about the Adele Miccio Travel Award can be found <a href="http://cls.psu.edu/miccio.shtml">here</a>.			</p>
-	</div>
-	<p class="hang_indent">January 25 - <strong> Megan Zirnstein (Penn State, Psychology) </strong>: <em> Reading a book makes finishing it easier: Context effects of enriched composition</em><br />
-		<br />
-		<a href="javascript:unhide('Zirnstein_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Zirnstein_abstract" class="hidden">
-		<p class="indent">
-		Complement coercion, a form of enriched composition, occurs when two syntactically compatible, but semantically mismatching elements are combined in an expression (e.g., started + the book). The semantic mismatch triggers the coercion of one element from an entity into an event sense (e.g., started to read the book), resulting in processing costs when compared to control expressions. Some researchers believe that enriched composition is a primarily semantic process, and that it is the activation and selection of competing interpretations for the event (e.g., reading vs. writing the book) that cause processing delays. In addition, previous ERP work has shown that coerced nouns elicit an N400 response similar to that of semantically anomalous nouns (e.g., astonished the book; Baggio et al., 2009; Kuperberg et al., 2010). Coercion costs, then, should be sensitive to semantic manipulations inter- and intra-sententially. However, some behavioral research has shown that this may not be the case (Frisson & McElree, 2008; Traxler et al., 2005). I will present data from multiple experiments that, together, suggest that enriched composition is neither a purely semantically or syntactically driven process. In particular, these data demonstrate that event information in prior context can change the nature of the cost associated with coercion, but does not fully attenuate said cost.
+		<div class="TabbedPanelsContent">
+		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		  
+		  <p class="hang_indent">January 11 - <strong> Lisa Heimbauer (Penn State, Psychology) </strong>: <em> Investigation of Language-Related Cognitive Abilities in Non-human Primates</em><br />
+		    <br />
+		    <a href="javascript:unhide('Heimbauer_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Heimbauer_abstract" class="hidden">
+		    <p class="indent">
+		      To date, my research has focused on the evolution of language-related cognitive abilities taking a comparative approach.  Research projects investigating the speech perception abilities of a language-trained chimpanzee have shown similar performance as humans, providing evidence that speech perception abilities are rooted in general auditory mechanisms and most likely were present in a common ancestor of humans and chimpanzees. Additionally, the chimpanzee's performance has stressed the importance of early immersion in a speech-rich environment to facilitate speech perception. Results of experiments investigating the sequence learning abilities of rhesus macaques have shown rudimentary, rule-like, visual learning by the monkeys, providing evidence that these processing abilities may have been present in an early primate ancestor.
+		    </p>
+		  </div>
+		  <p class="hang_indent">January 18 - <strong> Miccio Travel Awardees 2011-2012 (Penn State) </strong><br />
+		    <br />
+		    <a href="javascript:unhide('Miccio_2011_2012_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="Miccio_2011_2012_abstract" class="hidden">
+		    <p class="indent">
+		      Colleen Balukas, Joe Bauman, and Cari Bogulski will talk about their experiences as Miccio Travel Award winners during the 2011-2012 award cycle.</br></br>
+		  Colleen Balukas Naomi Nagy at the University of Toronto and James Walker at York University. Joe Bauman visited Prof. Jessi Aaron at the University of Florida. Cari Bogulski visited Dr. Lee Osterhout at the University of Washington.</br></br>
+	      More about the Adele Miccio Travel Award can be found <a href="http://cls.psu.edu/miccio.shtml">here</a>.			</p>
+	  </div>
+  <p class="hang_indent">January 25 - <strong> Megan Zirnstein (Penn State, Psychology) </strong>: <em> Reading a book makes finishing it easier: Context effects of enriched composition</em><br />
+    <br />
+    <a href="javascript:unhide('Zirnstein_abstract');"><strong>Show Abstract</strong></a>
+  </p>
+  <div id="Zirnstein_abstract" class="hidden">
+    <p class="indent">
+      Complement coercion, a form of enriched composition, occurs when two syntactically compatible, but semantically mismatching elements are combined in an expression (e.g., started + the book). The semantic mismatch triggers the coercion of one element from an entity into an event sense (e.g., started to read the book), resulting in processing costs when compared to control expressions. Some researchers believe that enriched composition is a primarily semantic process, and that it is the activation and selection of competing interpretations for the event (e.g., reading vs. writing the book) that cause processing delays. In addition, previous ERP work has shown that coerced nouns elicit an N400 response similar to that of semantically anomalous nouns (e.g., astonished the book; Baggio et al., 2009; Kuperberg et al., 2010). Coercion costs, then, should be sensitive to semantic manipulations inter- and intra-sententially. However, some behavioral research has shown that this may not be the case (Frisson & McElree, 2008; Traxler et al., 2005). I will present data from multiple experiments that, together, suggest that enriched composition is neither a purely semantically or syntactically driven process. In particular, these data demonstrate that event information in prior context can change the nature of the cost associated with coercion, but does not fully attenuate said cost.
 		</p>
 	</div>
 	<p class="hang_indent">February 1 - <strong> Holger Hopp (University of Mannheim) </strong>: <em> Lexical effects on grammatical processing</em><br />
@@ -1030,15 +1033,17 @@ differences in the earliest stages of speech planning in the L1. These
 		<br />
 	</p>
 	<p class="hang_indent">April 26 - <strong>Cheryl Frenck-Mestre (University of Provence)</strong>: <em>Models of second language processing: Psycholinguistic and neurolinguistic perspectives</em><br />
-		<br />
-		<a href="javascript:unhide('Frenck-Mestre_abstract');"><strong>Show Abstract</strong></a>
+	  <br />
+	  <a href="javascript:unhide('Frenck-Mestre_abstract');"><strong>Show Abstract</strong></a>
 	</p>
 	<div id="Frenck-Mestre_abstract" class="hidden">
-		<p class="indent">
-		 Numerous models of second language (L2) acquisition have been proposed, from either a linguistic (Clahsen & Felser, 2005; Herschenson, 2000; Schwartz, 1998;) or neurolinguistic perspective (McLaughlin et al., 2010; Osterhout et al., 2008;  Steinhauer, White  & Drury, 2009; Ullman, 2001).  These models propose contrasting views as concerns the role of the native language in adult L2acquisition, the ultimate level of attainment that can be achieved, whether distinct neurophysiological responses are indicative of distinct stages of L2 processing capacity, and, indeed, whether the cortical areas involved in L2 processing are the same as in native language processing.  In the present talk, I will present an overview of these models and their predictions as concerns online syntactic processing.  Data from various ERP and eye-movement experiments run in my laboratory will be presented which, overall, question the idea of any strict series of neurophysiological responses linked to levels of L2 competence (Carrasco & Frenck-Mestre, in prep; Foucart & Frenck-Mestre, 2011, 2012), highlight the importance of using complementary methods to capture processing capacity (Foucart & Frenck-Mestre, 2012) and pinpoint protracted areas of processing difficulty and how they relate to the convergence of grammatical features across the L1 and L2 (Carrasco & Frenck-Mestre, in prep; Foucart & Frenck-Mestre, 2011, 2012).		</p>
+	  <p class="indent">
+	    Numerous models of second language (L2) acquisition have been proposed, from either a linguistic (Clahsen & Felser, 2005; Herschenson, 2000; Schwartz, 1998;) or neurolinguistic perspective (McLaughlin et al., 2010; Osterhout et al., 2008;  Steinhauer, White  & Drury, 2009; Ullman, 2001).  These models propose contrasting views as concerns the role of the native language in adult L2acquisition, the ultimate level of attainment that can be achieved, whether distinct neurophysiological responses are indicative of distinct stages of L2 processing capacity, and, indeed, whether the cortical areas involved in L2 processing are the same as in native language processing.  In the present talk, I will present an overview of these models and their predictions as concerns online syntactic processing.  Data from various ERP and eye-movement experiments run in my laboratory will be presented which, overall, question the idea of any strict series of neurophysiological responses linked to levels of L2 competence (Carrasco & Frenck-Mestre, in prep; Foucart & Frenck-Mestre, 2011, 2012), highlight the importance of using complementary methods to capture processing capacity (Foucart & Frenck-Mestre, 2012) and pinpoint protracted areas of processing difficulty and how they relate to the convergence of grammatical features across the L1 and L2 (Carrasco & Frenck-Mestre, in prep; Foucart & Frenck-Mestre, 2011, 2012).</p>
 	</div>
 </div>
-	  
+
+
+
 <div class="TabbedPanelsContent">
 	<p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
 		<p class="hang_indent">August 31 - <strong> Patricia Román (Penn State, Spanish and Linguistics) </strong>: <em> The Nature of Non-intentional Inhibition in Memory and Language</em><br />
@@ -2191,9 +2196,9 @@ Dr. Trueswell will present a series of eye tracking experiments that explore how
 <p class="hang_indent">April 27 - <strong>Jared Linck (Penn State) -</strong> A cognitive approach to understanding bilingual language control</p>
 
         </div>
-      </div>
-    </div>
-    <script type="text/javascript">
+
+</div>
+<script type="text/javascript">
 <!--
 var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 //-->
