@@ -207,138 +207,231 @@ function unhide(divID) {
 
 </div>
  
-<div id="mainContent"><!-- InstanceBeginEditable name="title" -->
-    <p class="pagetitle"><a href="index.shtml">Home</a> <a>/</a> <a href="news.shtml">Recent News</a><a>/</a> Language Science Meeting Series</p>
-         <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
-    
-    <div id="TabbedPanels1" class="TabbedPanels">
-      <ul class="TabbedPanelsTabGroup">
-	 <li class="TabbedPanelsTab" tabindex="0">Spring 2015</li>
-      <li class="TabbedPanelsTab" tabindex="0">Fall 2014</li>
-      <li class="TabbedPanelsTab" tabindex="0">Spring 2014</li>
-      <li class="TabbedPanelsTab" tabindex="0">Fall 2013</li>
-	  <li class="TabbedPanelsTab" tabindex="0">Spring 2013</li>
-	  <li class="TabbedPanelsTab" tabindex="0">Fall 2012</li>
-	  <li class="TabbedPanelsTab" tabindex="0">Spring 2012</li>
-	  <li class="TabbedPanelsTab" tabindex="0">Fall 2011</li>
-        <li class="TabbedPanelsTab" tabindex="0">Spring 2011</li>
-        <li class="TabbedPanelsTab" tabindex="0">Fall 2010</li>
+	  <div id="mainContent"><!-- InstanceBeginEditable name="title" -->
+	    <p class="pagetitle"><a href="index.shtml">Home</a> <a>/</a> <a href="news.shtml">Recent News</a><a>/</a> Language Science Meeting Series</p>
+            <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main" -->
+	    
+	    <div id="TabbedPanels1" class="TabbedPanels">
+	      <ul class="TabbedPanelsTabGroup">
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2015</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2014</li>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2014</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2013</li>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2013</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2012</li>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2012</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2011</li>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2011</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2010</li>
 		<li class="TabbedPanelsTab" tabindex="0">Spring 2010</li>
 		<li class="TabbedPanelsTab" tabindex="0">Fall 2009</li>
-        <li class="TabbedPanelsTab" tabindex="0">Spring 2009</li>
-        <li class="TabbedPanelsTab" tabindex="0">Fall 2008</li>
-        <li class="TabbedPanelsTab" tabindex="0">Spring 2008</li>
-        <li class="TabbedPanelsTab" tabindex="0">Fall 2007</li>
-        <li class="TabbedPanelsTab" tabindex="0">Spring 2007</li>
-      </ul>
-      <div class="TabbedPanelsContentGroup">
-	<div class="TabbedPanelsContent">
-	  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2009</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2008</li>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2008</li>
+		<li class="TabbedPanelsTab" tabindex="0">Fall 2007</li>
+		<li class="TabbedPanelsTab" tabindex="0">Spring 2007</li>
+	      </ul>
+	      <div class="TabbedPanelsContentGroup">
+		<div class="TabbedPanelsContent">
+		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		  
+		  <p class="hang_indent">January 16, 2015 - <strong> Marc Authier (Penn State University)</strong> - <em>Intransitive prepositions with transitive meaning: Lexicon or syntax?</em> - <strong><em>Meeting begins at 8:30 am</em></strong><br />
+		    <br />
+		  </p>
+		  <a href="javascript:unhide('Authier_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Authier_abstract" class="hidden">
+			<p class="indent">I will argue, contra Cervoni (1991), Olivier (2007) and others, that French does
+have prepositions without an overt complement that are syntactically transitive. That is, these
+prepositions take a syntactically projected, phonologically unrealized pronominal
+complement, as first hypothesized by Zribi-Hertz (1984), who coined them “orphan
+prepositions”. I will offer new evidence in favor of this view based on a number of tests that
+distinguish between various types of implicit arguments, among which (in)definiteness, the
+(un)availability of bound variable readings, scopal properties relative to operators such as
+negation and intensional verbs and the (un)availability of sloppy identity readings. I will also
+show that the set of French orphan prepositions turns out to be much smaller that that
+envisaged by Zribi-Hertz in that some lexical prepositions can function as orphan
+prepositions in some uses but not others and some lexical prepositions have an intransitive
+use as well. Finally, time permitting, I will lay out a number of reasons why orphan
+prepositions should not be assumed to be prepositions that have become adverbs through a
+process of grammaticalization, nor should they be assumed to be relational definite
+descriptions that pragmatically link up to an antecedent via accommodation, as suggested by
+Olivier (2007).	</p>
+		      </div>
 
-	<p class="hang_indent">January 30, 2015 - Young Scholar Speaker Series - <strong> Michael Frank (Stanford University) </strong><em></em> - Foster Auditorium<br />
-		<br />
-		</p>
-		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
-	
-	<div id="Frank_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>-->
-	<p class="hang_indent">March 20, 2015 <strong> Lisa Davidson (NYU) </strong><em></em><br />
-		<br />
-		</p>
-		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
-	
-	<div id="Frank_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>-->
-	<p class="hang_indent">April 17, 2015 <strong> Charles Yang (UPenn) </strong><em></em><br />
-		<br />
-		</p>
-		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
-	
-	<div id="Frank_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>-->
-	<p class="hang_indent">April 24, 2015 <strong> Armin Schwegler (UC Irvine) </strong><em></em><br />
-		<br />
-		</p>
-		<!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
-	
-	<div id="Frank_abstract" class="hidden">
-		<p class="indent">
-		</p>
-	</div>-->
-	</div> 
-<div class="TabbedPanelsContent">
-	<p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		  <p class="hang_indent">February 28, 2015 - <strong> Gerrit Jan Kootstra (Penn State University) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Kootstra_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Kootstra_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-	<p class="hang_indent">August 29 - <strong> Courtney Johnson-Fowler (Penn State, German and Linguistics) <em></em><br />
-		<br />
-		<a href="javascript:unhide('Johnson-Fowler_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="Johnson-Fowler_abstract" class="hidden">
-		<p class="indent">
-		<b>Title:</b> Miccio Travel Award
-		  <br></br>
-		  <b>Abstract: </b>First presented in 2010, the Adele Miccio Memorial Travel Award was established as an opportunity for CLS graduate students to begin building a professional relationship with a senior scientist, through a lab visit or meetings at a conference. In this talk, Courtney Johnson Fowler will discuss her experiences as a Miccio Travel Award winner. In March 2014 Courtney travelled to Spain to visit Dr. Daniela Paolieri and the Language and Memory Group in the Department of Experimental Psychology at the University of Granada. As part of her talk she will outline her dissertation research, explain why she chose to visit Dr. Paolieri, and detail how the travel award benefitted her as a researcher. </p>
-	</div>	
-			
-	<p class="hang_indent">September 5 - <strong> Rhonda McClain (Penn State, Psychology) </strong><em></em><br />
-		<br />
-		<a href="javascript:unhide('McClain_abstract');"><strong>Show Abstract</strong></a>
-	</p>
-	<div id="McClain_abstract" class="hidden">
-		<p class="indent">
-		  <b>Title:</b> Using ERPs to investigate the scope and time course of inhibition in bilingual speech.
-		  <br></br>
-		  <b>Abstract: </b>Bilingualism has been hypothesized to place heightened demands
 
-on speech production. Speaking a second language (L2) is often 
+		  <p class="hang_indent">January 30, 2015 - <strong> Michael Frank (Stanford University) </strong><em></em> - Foster Auditorium<br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Frank_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-effortful and thought to reflect the competition arising from the more 
+		  <p class="hang_indent">March 6, 2015 - <strong> Nate George (Penn State University) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('George_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="George_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-dominant first language (L1). To date, very little research has directly 
+		  <p class="hang_indent">March 20, 2015 - <strong> Lisa Davidson (NYU) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Frank_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-examined the consequences of bilingualism for speech planning in the 
+		  <p class="hang_indent">March 27, 2015 - <strong> Michele Diaz (Penn State University) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Diaz_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Diaz_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-L1, although recent fMRI studies suggest that the neural substrates of 
 
-speech production in the L1 may differ for bilinguals and monolinguals. 
+		  <p class="hang_indent">April 3, 2015 - <strong> Elizabeth Stine-Morrow (University of Illinois, Urbana-Champaign) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Stine-Morrow_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Stine-Morrow_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-One hypothesis about the source of L1 differences for bilinguals and 
+		  <p class="hang_indent">April 3, 2015 - <strong> Lisa Reed (Penn State University) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Reed_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Reed_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
-monolinguals comes from ERP studies that have examined the time 
+		  <p class="hang_indent">April 17, 2015 - <strong> Charles Yang (UPenn) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Yang_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Yang_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
 
+		  <p class="hang_indent">April 24, 2015 - <strong> Armin Schwegler (UC Irvine) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Schwegler_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Schwegler_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
+
+		  <p class="hang_indent">May 1, 2015 - <strong> Zofia Wodniecka (Uniwersytet Jagielloński) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Wodniecka_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Wodniecka_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
+
+		</div> 
+
+
+
+		<div class="TabbedPanelsContent">
+		  <p><em>All meetings will be held at Fridays 9-10:30am in Moore Building, room 127 unless otherwise noted.</em></p>
+		  
+		  <p class="hang_indent">August 29 - <strong> Courtney Johnson-Fowler (Penn State, German and Linguistics) <em></em><br />
+		      <br />
+		      <a href="javascript:unhide('Johnson-Fowler_abstract');"><strong>Show Abstract</strong></a>
+		    </p>
+		    <div id="Johnson-Fowler_abstract" class="hidden">
+		      <p class="indent">
+			<b>Title:</b> Miccio Travel Award
+			<br></br>
+			<b>Abstract: </b>First presented in 2010, the Adele Miccio Memorial Travel Award was established as an opportunity for CLS graduate students to begin building a professional relationship with a senior scientist, through a lab visit or meetings at a conference. In this talk, Courtney Johnson Fowler will discuss her experiences as a Miccio Travel Award winner. In March 2014 Courtney travelled to Spain to visit Dr. Daniela Paolieri and the Language and Memory Group in the Department of Experimental Psychology at the University of Granada. As part of her talk she will outline her dissertation research, explain why she chose to visit Dr. Paolieri, and detail how the travel award benefitted her as a researcher. </p>
+		    </div>	
+		    
+		  <p class="hang_indent">September 5 - <strong> Rhonda McClain (Penn State, Psychology) </strong><em></em><br />
+		    <br />
+		    <a href="javascript:unhide('McClain_abstract');"><strong>Show Abstract</strong></a>
+		  </p>
+		  <div id="McClain_abstract" class="hidden">
+		    <p class="indent">
+		      <b>Title:</b> Using ERPs to investigate the scope and time course of inhibition in bilingual speech.
+		      <br></br>
+		      <b>Abstract: </b>Bilingualism has been hypothesized to place heightened demands
+		      
+		      on speech production. Speaking a second language (L2) is often 
+		      
+		      effortful and thought to reflect the competition arising from the more 
+		      
+		      dominant first language (L1). To date, very little research has directly 
+		      
+		      examined the consequences of bilingualism for speech planning in the 
+		      
+		      L1, although recent fMRI studies suggest that the neural substrates of 
+		      
+		      speech production in the L1 may differ for bilinguals and monolinguals. 
+		      
+		      One hypothesis about the source of L1 differences for bilinguals and 
+		      
+		      monolinguals comes from ERP studies that have examined the time 
+		      
 course of speech planning. These studies suggest that the L1 may be 
-
-suppressed when bilinguals speak the L1 after speaking the L2. Critically, 
-
-the time course over which suppression is observed is long, suggesting 
-
+		      
+		      suppressed when bilinguals speak the L1 after speaking the L2. Critically, 
+		      
+		      the time course over which suppression is observed is long, suggesting 
+		      
 the presence of a global mechanism of inhibitory control. If bilinguals 
-
-repeatedly inhibit the L1 to enable production in the L2, there may be 
-
-consequences that then account for the observed fMRI differences. In 
-
-this talk, I report a set of experiments that use ERPs to investigate the 
-
+		      
+		      repeatedly inhibit the L1 to enable production in the L2, there may be 
+		      
+		      consequences that then account for the observed fMRI differences. In 
+		      
+		      this talk, I report a set of experiments that use ERPs to investigate the 
+		      
 differences in the earliest stages of speech planning in the L1. These 
+		      
+		      experiments ask three questions about speech planning: 1. Do L2 
+		      
+		      speakers and monolinguals differ in planning L1?; 2. Do L2 learners who 
+		      
+		      are less proficient in the L2 and highly dominant in the L1 reveal the same 
 
-experiments ask three questions about speech planning: 1. Do L2 
-
-speakers and monolinguals differ in planning L1?; 2. Do L2 learners who 
-
-are less proficient in the L2 and highly dominant in the L1 reveal the same 
-
-differences that have been observed for proficient bilinguals?; and 3. 
-
-When L2 speakers are required to produce L2 and then revert to L1, how 
-
-extended are the consequences of L2 on L1 speech?
+		      differences that have been observed for proficient bilinguals?; and 3. 
+		      
+		      When L2 speakers are required to produce L2 and then revert to L1, how 
+		      
+		      extended are the consequences of L2 on L1 speech?
 		</p>
 	</div>
 	
@@ -486,7 +579,7 @@ extended are the consequences of L2 on L1 speech?
         <br /><br />
         ‘We get told’
         <br /><br />
-        As illustrated in (1) and (2), the degree of grammaticalization varies. In (1), the sentence licenses the object Buch which is assigned the role of patient as would be expected with the lexical variant of griege and illustrated by the sentence Ich hab e Buch griegt ‘I got a book’, (cf. German Ich habe ein Buch geschenkt bekommen "I got given a book" versus Ich habe ein Buch bekommen "I got a book'). In contrast, (2) shows a greater degree of grammaticalization due to the absence of an overt object. Similarly, the lexical verb griege assigns the role of recipient to the subject, but this is not always the case for subjects in griege passive constructions as illustrated in (3) (example from Burridge 2006: 186): 
+        As illustrated in (1) and (2), the degree of grammaticalization varies. In (1), the sentence licenses the object Buch which is assigned the role of patient as would be expected with the lexical variant of griege and illustrated by the sentence Ich hab e Buch griegt ‘I got a book’, (cf. German Ich habe ein Buch geschenkt bekommen "I got given a book" versus Ich habe ein Buch bekommen "I got a book"). In contrast, (2) shows a greater degree of grammaticalization due to the absence of an overt object. Similarly, the lexical verb griege assigns the role of recipient to the subject, but this is not always the case for subjects in griege passive constructions as illustrated in (3) (example from Burridge 2006: 186): 
         <br /><br />
         (3) Er hat sei Lewwe genumme griegt.
         <br /><br />
@@ -1823,7 +1916,7 @@ Despite the broadly structural nature of these changes, we will demonstrate that
 Speech Rate and Oral Exams</em></p>
             <p class="hang_indent"> Oct 16 - <strong>Rena Torres Cacoullos (Penn State)</strong> - <em>Yo and I in New Mexico: Accounting for variation in evaluating convergence via code-switching</em></p>
             <p class="hang_indent"> Oct 23 - <strong>Trace Poll (Penn State)</strong> - <em>Precursors to Specific Language Impairment:  Late and Typical Language Emergence</em></p>
-            <p class="hang_indent"> Oct 30 - <strong>John M. Lipski (Penn State) </strong> - <em> "Re-mixing a mixed language: the emergence of a new pronominal system in Chabacano (Philippine Creole Spanish) </em></p> 
+            <p class="hang_indent"> Oct 30 - <strong>John M. Lipski (Penn State) </strong> - <em> "Re-mixing a mixed language: the emergence of a new pronominal system in Chabacano (Philippine Creole Spanish)" </em></p> 
             <p class="hang_indent"> Nov 6 - <strong>Giuli Dussias (Penn State)</strong> - <em>Usage frequencies of complement-taking verbs in Spanish and English: Data from Spanish monolinguals and Spanish-English L2 speakers</em></p>
             <p class="hang_indent"> Nov 13 - <strong>David Counselman (Penn State) </strong> - <em> Perception or Production?  Improving Students’ Spanish Pronunciation in the L2 Classroom </em></p>
             <p class="hang_indent"> Nov 20 - <strong>Evelyn Duran Urrea (Penn State) </strong> - <em>The syntax and prosody of code-switching in New Mexican Spanish-English Discourse </em></p>
