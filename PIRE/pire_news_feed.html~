@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Penn State | National Science Foundation PIRE PROGRAM |  Bilingual Mind &amp; Brain</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="main.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./main.css" />
+<meta name="keywords" content="Penn State, PIRE project, National Science Foundation, Brain research, bilingual mind and brain, bilingualism, study of bilingualism, speaking multiple languages, multi-lingual, multilingual, research collaboration on bilingualism" />
+<meta name="robots" content="index,follow" />
+<meta name="classification" content="PENN STATE PIRE RESEARCH PROJECT - UNDERSTANDING THE BILINGUAL MIND &amp; BRAIN" />
+<meta name="revisit-after" content="30 days" />
+<meta name="author" content="The Artemis Group" />
+<meta name="identifier-url" content="http://www.pire.psu.edu" />
+<meta name="distribution" content="Global" />
+<meta name="coverage" content="Worldwide" />
+<meta name="rating" content="General" />
+<meta name="language" content="English" />
+</head>
+<body>
+
+
+<div id="header">
+    <div id="header-inner">
+        <a id="psuhomelink" href="http://www.psu.edu/"><span class="hidden">Penn State Home</span></a>
+        <div id="psulinks">Search:  <a href="http://www.psu.edu/ldap/">People</a> &bull; <a href="http://www.psu.edu/ldap/dept/">Departments</a> &bull; <a href="http://www.psu.edu">Penn State</a></div>
+        <div id="sitelinks"><a href="index.html">Home</a> &bull; <a href="contact_pire.html">Contact</a> &bull; <a href="login_pire.html">Log-In</a></div>
+    </div>
+</div> <!-- end header div -->
+
+<div id="logo">
+   <div id="flash">
+<img src="home_flash/photo1.jpg" alt="Piecing together mind and brain" />
+</div>
+</div>
+
+<!--#include virtual="./includes/menu.ssi" -->
+
+
+<div id="content">
+
+    <div id="left">
+
+    <img id="partners" src="images/hd-news_events.gif" alt="Penn State PIRE Program News & Events" />
+
+
+
+<!--#include virtual="./pireblog_parse_v6.cgi"-->
+
+<h4>
+Events: </h4><ul>
+<a href="http://cls.psu.edu/meeting_series.shtml
+" target="_new">CLS Talk Schedule Spring 2011</a><Br />
+<a href="http://cls.psu.edu/meeting_series.shtml" target="_new">Language Science Meeting Series</a><Br />
+<a href="events/PIRE_meeting.pdf" target="_new">Partner and Advisory Board Meeting</a> and <a href="events/poster_session.pdf" target="_new">Poster Session</a> (Feb. 2011)<Br />
+<a href="cls_visitors.html">Visitors to the CLS</a><Br />
+ 
+
+</ul>
+</p>
+<p>
+<h4>
+Career Opportunities: </h4><ul>
+
+<a href="career_opportunities/postdoc_ad.pdf" target="_new">Postdoctoral Position</a>
+</ul>
+</p>
+<p>
+
+ </p>
+
+
+    </div>
+
+<!--    <div id="right">
+
+
+
+    <img id="contact-info" src="images/contact-info.png" alt="Contact Info" />
+
+    <p>
+    Center for Language Science<br />
+    Pennsylvania State University<br />
+    2M Thomas Building<br />
+    University Park, PA 16802
+    </p>
+<p>
+For more details, please click <a href="http://cls.psu.edu" target="_new">here</a>  
+</p>
+    </div>
+    
+    <div class="clear">
+    </div>
+
+</div> -->
+
+
+<div id="footer"> 
+<p>&copy; <a href="http://www.psu.edu/">The Pennsylvania State University</a> | <a href="#">Privacy and Legal Statements</a></p>
+<p><a href="mailto:pul8@psu.edu">pul8@psu.edu</a> </p>
+</div>
+
+</body>
+</html>

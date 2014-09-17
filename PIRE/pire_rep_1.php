@@ -1,0 +1,1 @@
+<html><body><form enctype="multipart/form-data" action="upload_file.php" method="POST" name="upload_file" target="_new" id="upload_file"><input type="hidden" name="max_file_size" value='100000'>   <label for="file">Filename:</label><input type="file" name="myfile" id="myfile"> <br/><input type="submit" name="submit" value="Submit"></form></body></html>
