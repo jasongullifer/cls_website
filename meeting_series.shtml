@@ -214,7 +214,7 @@ function unhide(divID) {
 	    <div id="TabbedPanels1" class="TabbedPanels">
 	      <ul class="TabbedPanelsTabGroup">
 		<li class="TabbedPanelsTab" tabindex="0">Spring 2015</li>
-		<li class="TabbedPanelsTab" tabindex="0">Fall 2014</li>
+		<li class="TabbedPanelsTab" tabindex="1">Fall 2014</li>
 		<li class="TabbedPanelsTab" tabindex="0">Spring 2014</li>
 		<li class="TabbedPanelsTab" tabindex="0">Fall 2013</li>
 		<li class="TabbedPanelsTab" tabindex="0">Spring 2013</li>
@@ -263,17 +263,6 @@ descriptions that pragmatically link up to an antecedent via accommodation, as s
 Olivier (2007).	</p>
 		      </div>
 
-		  <p class="hang_indent">February 28, 2015 - <strong> Gerrit Jan Kootstra (Penn State University) </strong><em></em><br />
-		    <br />
-		  </p>
-		  <!--<a href="javascript:unhide('Kootstra_abstract');"><strong>Show Abstract</strong></a>
-		      
-		      <div id="Kootstra_abstract" class="hidden">
-			<p class="indent">
-			</p>
-		      </div>-->
-
-
 		  <p class="hang_indent">January 30, 2015 - <strong> Michael Frank (Stanford University) </strong><em></em> - Foster Auditorium<br />
 		    <br />
 		  </p>
@@ -284,6 +273,31 @@ Olivier (2007).	</p>
 			</p>
 		      </div>-->
 
+		<p class="hang_indent">February 20, 2015 - <strong> Gerrit Jan Kootstra (Penn State University) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Kootstra_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Kootstra_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
+			  
+			  
+
+		<p class="hang_indent">February 27, 2015 - <strong> Cynthia Lukyanenko (Penn State University) </strong><em></em><br />
+		    <br />
+		  </p>
+		  <!--<a href="javascript:unhide('Lukyanenko_abstract');"><strong>Show Abstract</strong></a>
+		      
+		      <div id="Lukyanenko_abstract" class="hidden">
+			<p class="indent">
+			</p>
+		      </div>-->
+			  
+			  
+			  
+			  
 		  <p class="hang_indent">March 6, 2015 - <strong> Nate George (Penn State University) </strong><em></em><br />
 		    <br />
 		  </p>
@@ -459,6 +473,30 @@ Olivier (2007).	</p>
 		  <div id="Hoshino_abstract" class="hidden">
 		    <p class="indent">
 		      <b>Title: </b>Time course of language selection in bilingual language production
+			  <br/><br/>
+			  <b>Abstract: </b>When bilinguals plan to speak in a given language, both of their languages are 
+
+activated. However, cognitive control mechanisms effectively allow the target language 
+
+to be selected during speech planning. In this talk, I address the questions of when the 
+
+target language is selected and what factors influence the locus of language selection 
+
+using behavioral and electrophysiological measures. A series of behavioral experiments 
+
+with same and different script bilinguals demonstrate that script differences allow the 
+
+bilingual to select the language of production at an earlier point in speech planning 
+
+when they are perceptually available. In the next set of experiments, we have been 
+
+examining the time course of cross-language activation and language selection with 
+
+event-related potentials (ERPs). A critical result of the ERP experiments is that both 
+
+languages are activated to the phonological level at least for same script bilinguals. 
+
+These findings will be discussed in terms of models of bilingual word production.
 		    </p>
 		  </div>		
 		  
@@ -2170,7 +2208,7 @@ tongue."</p></div>
 <p class="hang_indent">Oct    5  -  <strong>Lisa Goffman (Purdue)</strong> - <em>Motor and language influences on normal and disordered speech production in
 children</em></p>
 <p class="hang_indent">Oct   12  -  <strong>Giuli Dussias (Penn State)</strong> - <em>Using the visual world to study codeswitching</em></p>
-<p class="hang_indent">Nov    2  -  <strong>Gerrit Jan Koostra (Radboud)</strong> - <em>Exploring cogntive aspects of codeswitching: an experimental approach.</em></p>
+<p class="hang_indent">Nov    2  -  <strong>Gerrit Jan Kootstra (Radboud)</strong> - <em>Exploring cogntive aspects of codeswitching: an experimental approach.</em></p>
 <p class="hang_indent">Nov    9  - <strong>Xu Xu</strong> - <em>The representaton of mental verbs</em></p>
 <p class="hang_indent">Nov  30  - <strong>Elina Mainela-Arnold (Penn State)</strong>  - <em>Cognitive Control in Children with SLI</em></p>
 <p class="hang_indent">Dec 4th  - <strong>Dr. Janet van Hell (Penn State &amp; Nijmegen) </strong>- <em>The Neurocognition of Codeswitching: Evidence from Event-related Brain Potentials</em></p>
