@@ -1,0 +1,323 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: url(images/background.png) #6e6e6e top repeat-x;
+}
+
+div#container {
+    padding: 0 0 0 0;
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 950px;
+}
+
+div#header {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+    height: 84px;
+    background: url(images/header.png) center;
+}
+
+div#header-inner {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+    width: 950px;
+    height: 84px;
+    color: #ffffff;
+}
+
+a#psuhomelink {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 120px;
+    height: 75px;
+}
+   
+.hidden {
+    display: none;
+}
+
+div#psulinks  { 
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: .7em; 
+    font-family: verdana, sans-serif;
+}
+
+div#sitelinks { 
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    font-size: .8em; 
+    font-family: verdana, sans-serif;
+}
+
+div#sitelinks a, div#psulinks a { 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div#sitelinks a:hover, div#psulinks a:hover { 
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+div#global-nav p {
+    color: #ffffff;
+}
+
+div#global-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div#global-nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+div#logo {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+    width: 950px;
+    height: 182px;
+    background: url(images/logo.png);
+}
+
+div#flash {
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    width: 497px;
+    height: 128px;
+}
+
+img#logo-image {
+    position: absolute;
+    width: 497px;
+    height: 128px;
+    left: 443px;
+    top: 24px;
+}
+
+
+div#nav {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+    width: 950px;
+    height: 30px;
+    background: #afafaf;
+}
+
+div#nav p {
+    padding: 7px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: .7em;
+    color: #464646;
+    text-align: center;
+    font-weight: bold;
+    font-family: verdana, helvetica, sans-serif;
+}
+
+div#nav a {
+    color: #464646;
+    text-decoration: none;
+    margin: 0 4px 0 4px;
+}
+
+div#nav a:hover {
+    color: #464646;
+    text-decoration: underline;
+}
+
+
+div#content {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 0 0 30px 0;
+    width: 950px;
+    background: #dbdbdb url(images/puzzle.png) top right no-repeat;
+    border-bottom: solid 10px #afafaf;
+    /* border-left: solid 1px red;
+    border-right: solid 1px red; */
+}
+
+
+div#content p {
+    font-size: .8em;
+    line-height: 1.6;
+}
+
+div#content p.regular
+{
+	line-height: 1
+}
+
+div#content ul {
+    font-size: .8em;
+    line-height: 1.6;
+}
+
+div#center {
+    width: 850px;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+div#left {
+    float: left; 
+    width: 550px;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 30px 0px 20px;
+}
+
+div#right {
+    float: left;
+    width: 300px;
+    margin: 5px 0 0 0;
+    padding: 0px 20px 0px 30px;
+}
+
+
+div#footer {
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding: 6px 0 0 0;
+    width: 950px;
+    color: #ffffff;
+}
+
+div#footer p {
+    margin: 0px 0px 0px 0px;
+    padding: 2px 0px 2px 0px;
+    font-size: .6em;
+    text-align: center;
+    font-family: Verdana, arial, helvetica, sans-serif;
+}
+
+div#footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+div#footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div.clear {
+    clear: both;
+}
+
+#slideshow { 
+	display: block;
+    margin: auto auto auto auto; 
+    position: relative; 
+    width: 600px; 
+    height: 465px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+img#welcome, img#understanding, img#latest-news, img#contact-info  img#news_banner{
+    display: block;
+}
+
+img#welcome       { margin: 0px 0px 8px 0px; }
+img#understanding { margin: 0px 0px 0px 0px; } 
+img#latest-news   { margin: 0px 0px 0px 0px; } 
+img#contact-info  { margin: 0px 0px 0px 0px; } 
+mg#news_banner{ margin: 0px 0px 0px 0px; } 
+
+img.right {
+    float: right;
+    border: 1px solid black;
+    margin: 0px 0px 0px 5px;
+}
+
+h1 { font-size: 1.4 em; color: #004cad; }
+h2 { font-size: 1.3 em; color: #004cad; }
+h3 { font-size: 1.2 em; color: #004cad; }
+h4 { font-size: 1.0 em; color: #004cad; }
+
+div.persongroup {
+    display: block;
+}
+
+div.person {
+    margin: 0px 10px 0px 0px;
+    font-size: .7em;
+    font-family: verdana, sans-serif;
+    width: 125px;
+    height: 210px;
+    display: block;
+    float: left;
+}
+
+div.person img {
+    display: block;
+}
+
+div.person span.name {
+    margin-top: 5px;
+    display: block;
+}
+
+div.person a {
+    display: block;
+}
+
+table 
+{
+
+margin-left: 15px;
+margin-right: 25px;
+padding: 0;
+}
+th
+{
+height:250px;
+}
+
+div.clear {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

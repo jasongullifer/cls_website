@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Penn State | National Science Foundation PIRE PROGRAM |  Bilingual Mind &amp; Brain</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="main.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./main.css" />
+<meta name="keywords" content="Penn State, PIRE project, National Science Foundation, Brain research, bilingual mind and brain, bilingualism, study of bilingualism, speaking multiple languages, multi-lingual, multilingual, research collaboration on bilingualism" />
+<meta name="robots" content="index,follow" />
+<meta name="classification" content="PENN STATE PIRE RESEARCH PROJECT - UNDERSTANDING THE BILINGUAL MIND &amp; BRAIN" />
+<meta name="revisit-after" content="30 days" />
+<meta name="author" content="The Artemis Group" />
+<meta name="identifier-url" content="http://www.pire.psu.edu" />
+<meta name="distribution" content="Global" />
+<meta name="coverage" content="Worldwide" />
+<meta name="rating" content="General" />
+<meta name="language" content="English" />
+</head>
+<body>
+
+
+<div id="header">
+    <div id="header-inner">
+        <a id="psuhomelink" href="http://www.psu.edu/"><span class="hidden">Penn State Home</span></a>
+        <div id="psulinks">Search:  <a href="http://www.psu.edu/ldap/">People</a> &bull; <a href="http://www.psu.edu/ldap/dept/">Departments</a> &bull; <a href="http://www.psu.edu">Penn State</a></div>
+        <div id="sitelinks"><a href="index.html">Home</a> &bull; <a href="contact_pire.html">Contact</a> &bull; <a href="login_pire.html">Log-In</a></div>
+    </div>
+</div> <!-- end header div -->
+
+<div id="logo">
+    <div id="flash">
+    <!--url's used in the movie-->
+    <!--text used in the movie-->
+    <!-- saved from url=(0013)about:internet -->
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="497" height="128" id="picturechanger" align="middle">
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="movie" value="picturechanger.swf" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#DCDCDC" />
+    <param name="FlashVars" value="xmlURL=xml/config.xml" />
+    <embed src="picturechanger.swf" FlashVars="xmlURL=xml/config.xml" quality="high" bgcolor="#DCDCDC" width="497" height="128"  name="picturechanger" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+    
+    </object></a>
+    </div>
+</div>
+
+<!--#include virtual="./includes/menu.ssi" -->
+
+
+<div id="content">
+
+    <div id="left">
+
+    <img id="welcome" src="images/welcome.png" alt="Welcome" />
+
+    <img id="understanding" src="images/understanding.png" alt="Understanding the Bilingual Mind and  Brain" />
+
+
+    <p>
+    U.S. project partners include The <A href="http://www.psu.edu">Pennsylvania State University</a>, <a href="http://vl2.gallaudet.edu/" target="_new">Gallaudet University</a> 
+    (D.C.), and <a href="http://www.haskins.yale.edu/" target="_new">Haskins Laboratories</a> at Yale University (CT). International partners include 
+    <a href="http://www.bilingualism.bangor.ac.uk/" target="_new">ESRC Centre for Research on Bilingualism in Theory and Practice</a>, Bangor University 
+    (Bangor, UK), the <a href="http://www.cbs.mpg.de/index.html" target="_new">Max Planck Institute for Human Cognitive and Brain Sciences</a> (Leipzig, 
+    Germany), <a href="http://www.ugr.es/" target="_new">Universidad de Granada</a> (Granada, Spain), <a href="http://www.urv.cat/en_index.html" target="_new">University of Tarragona</a> (Tarragona, Spain), <a href="http://www.ru.nl/bsi/" target="_new">Radboud University Nijmegen</a> (Nijmegen, The Netherlands), <a href="http://psychbrain.bnu.edu.cn/" target="_new">Beijing Normal University</a> 
+    (Beijing, China), and the <a href="http://arts.hku.hk/fmri/" target="_new">University of Hong Kong</a> (China). 
+    </p>
+    <p>
+    This project is jointly funded by the Office of International Science and Engineering 
+    and the Division of Behavioral and Cognitive Sciences at the <A href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0968369" target=_new">National Science Foundation</a> (NSF).
+    </p>
+
+    </div>
+
+    <div id="right">
+
+    <img id="latest-news" src="images/latest-news.png" alt="Latest News" />
+    
+    <p><strong>March 31, 2011</strong> - <a href="http://cls.psu.edu/PIRE/blog/2011/03/language-science-in-the-news-vl2-and-memory-and-language-research-group.html">PIRE partners in the news</a></p>
+
+    <!--<img class="right" src="images/people.jpg" alt="our people" />
+        <p><strong>Feb. 23, 2011</strong> - Welcome NSF officers for PIRE PI meeting to be held at Penn
+State.
+<Br /><br />
+
+    </p>-->
+
+    <img id="contact-info" src="images/contact-info.png" alt="Contact Info" />
+
+    <p>
+    Center for Language Science<br />
+    Pennsylvania State University<br />
+    2M Thomas Building<br />
+    University Park, PA 16802
+    </p>
+
+    </div>
+    
+    <div class="clear">
+    </div>
+
+</div>
+
+
+<div id="footer"> 
+<p>&copy; <a href="http://www.psu.edu/">The Pennsylvania State University</a> | <a href="#">Privacy and Legal Statements</a></p>
+<p><a href="mailto:pul8@psu.edu">pul8@psu.edu</a> | Most recently modified January 1, 2011</p>
+</div>
+
+</body>
+</html>
