@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Penn State : Center for Language Science : People : Faculty : Carrie Jackson</title>
+<title>Penn State : Center for Language Science : People : Faculty : Michael T. Putnam</title>
 <link href="../../styles/personal_styles.css" rel="stylesheet" type="text/css" />
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="affil" type="boolean" value="true" --><!-- InstanceParam name="cv_site" type="boolean" value="true" --><!-- InstanceParam name="pic" type="boolean" value="true" --><!-- InstanceParam name="test" type="boolean" value="true" --><!-- InstanceParam name="res_ops" type="boolean" value="true" --><!-- InstanceParam name="pubs" type="boolean" value="true" -->
@@ -203,10 +203,10 @@
      
     
     <div class="info_pic_container">
-    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/putnam_mike.jpg" alt="" name="pic" width="180" height="196" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/putnam_mike.jpg" alt="" name="pic" width="180" id="pic2" /><!-- InstanceEndEditable --></div>
     <div id="info">
     <p><strong><!-- InstanceBeginEditable name="name" -->Michael T. Putnam<!-- InstanceEndEditable --></strong><br/> 
-      <!-- InstanceBeginEditable name="title1" -->Assistant Professor of German and Linguistics<!-- InstanceEndEditable --></p>
+      <!-- InstanceBeginEditable name="title1" -->Associate Professor of German and Linguistics<!-- InstanceEndEditable --></p>
     
     <p><!-- InstanceBeginEditable name="address" --><strong><a href="http://german.la.psu.edu/index.html">Department of Germanic and Slavic Languages and Literatures</a></strong><br />
 The Pennsylvania State University<br /> 
@@ -222,18 +222,41 @@ E-mail: <a href="mailto:mike.putnam@psu.edu">mike.putnam [at] psu.edu</a> <!-- I
     
     
     <div id="view_CV_site"><!-- InstanceBeginEditable name="cvsite" -->
-      <p> <span> <a href="http://www.personal.psu.edu/mtp12/">View Personal Website</a></span> <!--<span>View CV</span>-->
+      <p> <span> <a href="http://psumikeputnam.weebly.com/">View Personal Website</a></span> <!--<span>View CV</span>-->
 	  <!--<a href="../files/faculty/CV.Torres Cacoullos.2012.07.CLS.pdf"><span>View CV</span></a>--></p>
     <!-- InstanceEndEditable --></div>
     
 
     
-    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" --><!--Second Language Acquisition Laboratory--><!-- InstanceEndEditable --></p>
-    
+    <p> <em>Lab Affiliation: </em><!-- InstanceBeginEditable name="lab_affil" --><a href="http://sites.psu.edu/kontaktdeutsch/">Kontaktdeutsch</a><!-- InstanceEndEditable --></p>
+    <p>The principal aim of the research conducted in our lab group is to explore varieties of
+
+German in multilingual speakers and communities across the lifespan. In addition to 
+
+research on heritage variants of German (also commonly referred to as Sprachinseln), we 
+
+also are interested in L1 attrition, natural L2 acquisition of German, as well as L2 
+
+attrition. Our research welcomes and engages in formal, functional, and experimental 
+
+approaches to the linguistic analysis of bi- and multilingualism and, more specifically, 
+
+German in contact with other languages and cultures.</p>
     <p>
     <em>Research Interests:</em><br /></p>
      
-<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">Bilingualism, contact linguistics, linguistic formalisms (generative linguistics), syntax, morphology, semantics, heritage linguistics, global varieties of Germanic languages, philosophy of language</p> 
+<!-- InstanceBeginEditable name="res_interests" -->     <p class="text_block">My research is interested in how the general architecture of cognition intersects with 
+
+grammatical knowledge and performance biases. I research the structure (syntax & 
+
+morphology) and meaning (semantics & pragmatics) of language and the intersection of 
+
+these two units, with an empirical focus on Germanic languages past and present. I have a 
+
+particular interest in bilingual and multilingual grammars, especially varieties of German 
+
+throughout the world in contact situations with other languages.</p>
+</p> 
 
 <!-- InstanceEndEditable -->
 <!--<p> <em>Research Opportunities:</em><br />
@@ -246,6 +269,14 @@ E-mail: <a href="mailto:mike.putnam@psu.edu">mike.putnam [at] psu.edu</a> <!-- I
 <!-- InstanceBeginEditable name="publications" -->
 <Br />
 <u>Books</u>:<Br /></p>
+<p class="pubs">Legendre, G., Putnam, M., de Swart, H., & Zaroukian, E. (Eds.) (to appear). <em>Advances in
+OT-syntax and semantics/pragmatics: From uni- to bidirectional optimization</em>. Oxford: 
+Oxford University Press. </p>
+
+<p class="pubs">Page, R.B., & Putnam, M. (Eds.) (to appear). <em>Moribund Germanic heritage languages in 
+North America: Theoretical perspectives and empirical findings</em>. London: Brill.</p>
+
+
 <p class="pubs">F&aacutebregas, A., Mateu, J., & Putnam, M. (Eds.) (to appear). <i>The linguistic handbook of parameters. </i> London: Bloomsbury.</p>
 <p class="pubs">Stroik, T. & Putnam, M. (2013) <i>The structural design of language</i>. Cambridge: Cambridge University Press.</p>
 <p class="pubs">Putnam, M. (Ed.) (2011) <i>Studies on German-language islands</i>. Amsterdam: John Benjamins. </p>
@@ -254,8 +285,26 @@ E-mail: <a href="mailto:mike.putnam@psu.edu">mike.putnam [at] psu.edu</a> <!-- I
 <p class="pubs">Putnam, M. (2007) <i>Scrambling and the Survive Principle</i>. Amsterdam: John Benjamins.</p>
 <Br />
 <p><u>Articles & Book chapters</u>:<Br /></p>
+
+<p class="pubs">Bousquette, J., Putnam, M., Frey, B., Salmons, J., & Nützel, D. (to appear) Multilingual
+grammar, dominance, and optimization. Advances in OT-syntax and semantics/pragmatics: From uni- to bidirectional optimization, G. Legendre, M. Putnam, 
+H. de Swart, & E. Zaroukian, eds., Oxford: Oxford University Press.</p>
+
 <p class="pubs">Brown, J. & Putnam, M. (to appear) Functional convergence and extension in contact: Syntactic and semantic attributes of the progressive aspect in Pennsylvania Dutch. In <i>Germanic heritage languages in North America: Acquisition and change</i>. eds. Joseph Salmons & Janne Johannessen. Amsterdam: John Benjamins.</p>
+
 <p class="pubs">Chocano, G. & Putnam, M. (to appear) Are all phases created equal? An investigation of Feature Inheritance in connection with Icelandic Quantifier Movement. <i>Linguistic Analysis </i>38.3-4: 1-42.</p>
+
+<p class="pubs">Bidese, G. & Putnam, M. (2014) The vulnerability of the C-layer: Introductory notes on 
+German complementizers in contact. <em>Sprachtypologie und Universalienforschung (STuF) </em>
+67.4: 437-443. </p>
+
+<p class="pubs">Putnam, M. & Schwarz, L. (2014) How interrogative pronouns can become relative 
+pronouns: The case of was in Misionero German. <em>Sprachtypologie und 
+Universalienforschung (STuF)</em> 67.4: 613-625.</p>
+
+<p class="pubs">Fábregas, A. & Putnam, M. (2014) The emergence of middle voice structures with and 
+without agents. <em>The Linguistic Review</em> 31.2: 193-240.</p>
+
 <p class="pubs">Putnam, M. & S&aacutenchez, L. (2013) What&apos;s so incomplete about incomplete acquisition? A prolegomenon to modeling heritage language grammars. <i>Linguistic Approaches to Bilingualism </i> 3.4: 476-506.</p>
 <p class="pubs">Putnam, M. & Salmons, J. (2013) Losing their (passive) voice: Syntactic neutralization in heritage German. <i>Linguistic Approaches to Bilingualism</i> 3.4: 476-506. </p>
 <p class="pubs">F&aacutebregas, A. & Putnam, M. (2013) Parasitic semantics (or why Swedish can&apos;t lexicalize middle voice constructions). <i>Proceedings from Penn Linguistics Collquium (PLC) </i> 36, 19.1: 51-58.</p>
