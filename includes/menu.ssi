@@ -1,5 +1,15 @@
     <ul id="MenuBar1" class="MenuBarVertical"> 
       <li><a href="/index.shtml">Home</a></li>
+      <li><a href="/people.shtml" class="MenuBarItemSubmenu">People</a>
+          <ul>
+            <li><a href="/faculty.shtml">Faculty</a></li>
+				<li><a href="/staff.shtml">Staff</a></li>
+            <li><a href="/alumni.shtml">Alumni</a></li>
+				<li><a href="/postdocs.shtml">Postdocs</a></li>
+            <li><a href="/students.shtml">Students</a></li>
+            <li><a href="/affiliates.shtml">Affiliates</a></li>
+          </ul>
+      </li>
 	   <li><a href="/upcoming.shtml">CLS Meeting and Event Calendar</a></li>
 	   <li><a href="/meeting_series.shtml">CLS Meeting Series (Current & Past Events)</a></li>	   
 	   <li><a href="/about.shtml">About the CLS</a></li>
@@ -19,16 +29,7 @@
 			<li><a href="/CLS_labs.shtml">Become a Research Assistant!</a></li>
 			</ul>	</li>
 			
-	     <li><a href="/people.shtml" class="MenuBarItemSubmenu">People</a>
-          <ul>
-            <li><a href="/faculty.shtml">Faculty</a></li>
-				<li><a href="/staff.shtml">Staff</a></li>
-            <li><a href="/alumni.shtml">Alumni</a></li>
-				<li><a href="/postdocs.shtml">Postdocs</a></li>
-            <li><a href="/students.shtml">Students</a></li>
-            <li><a href="/affiliates.shtml">Affiliates</a></li>
-          </ul>
-      </li>
+	     
  
      <li><a href="#" class="MenuBarItemSubmenu">CLS Member Resources</a>
           <ul>
