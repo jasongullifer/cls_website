@@ -249,7 +249,7 @@ margin-bottom:10px;
 	 <div class="person"><img align="left" src="people/pics/Carla_Contemori.jpg" border="1" alt="Carla Contemori" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
 	 <a name= "C" class="name" href="http://cls.psu.edu/PIRE/people/Contemori.html">Carla Contemori</a><br />
      <strong>Post-doctoral Research Associate: Penn State University</strong><br />
-	 Email: <a href="mailto:c.contemori@reading.ac.uk">cuc29 [at] psu.edu</a><br/>
+	 Email: <a href="mailto:cuc29@psu.edu">cuc29 [at] psu.edu</a><br/>
 	 <em>Research Interests:</em><br/>First language acquisition in typically developing and language impaired children, 
 	 second language acquisition in children and adults, theoretical linguistics, and in syntax, in particular. 
 	 </div><div class="clearright"></div>
@@ -265,7 +265,7 @@ margin-bottom:10px;
 	 <a name= "M" class="name" >Melinda Fricke</a><br />
      <strong>Post-doctoral Research Associate: Penn State University</strong><br />
 	 Lab Affiliation: <a href="http://cls.psu.edu/purplelab/">Cognition and Language Lab; The Purple Lab</a> & <a href="http://cls.psu.edu/PIRE/pire_partners_isi_psu.html">IS&Iacute; (I see) Eye-tracking laboratory</a><br />
-	 Email: <a href="mdf18@psu.edu">mdf18 [at] psu.edu</a><br/>
+	 Email: <a href="mailto:mdf18@psu.edu">mdf18 [at] psu.edu</a><br/>
 	 <em>Research Interests:</em><br/>Language production and speech planning; interactions between lexical and phonological processing; speech perception, especially as it concerns learning and adaptability.
 	 </div><div class="clearright"></div>
 	 
@@ -273,15 +273,23 @@ margin-bottom:10px;
 	 <a name= "M" class="name" href="people/postdoc/cruz.shtml">María Cruz Martín García</a><br />
      <strong>Post-doctoral Research Associate: Penn State University</strong><br />
 	 Lab Affiliation: <a href="http://cls.psu.edu/purplelab/">Cognition and Language Lab; The Purple Lab</a><br />
-	 Email: <a href="mum39@psu.edu">mum39 [at] psu.edu</a><br/>
+	 Email: <a href="mailto:mum39@psu.edu">mum39 [at] psu.edu</a><br/>
 	 <em>Research Interests:</em><br/>Language processing in bilinguals, executive processes on language selection.
 	 </div><div class="clearright"></div>
 	 
-	 	 	 <div class="person"><img align="left" src="people/pics/grey.jpeg" border="1" alt="María Cruz Martín García" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 	 <div class="person"><img align="left" src="people/pics/George.png" border="1" alt="Nate George" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "G" class="name" href="">Nate George</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Email: <a href="mailto:nate.r.george@gmail.com">nate.r.george [at] gmail.com</a><br/>
+	 <em>Research Interests:</em><br/>Relationship between cognitive semantics and bilingualism/L2 learning; how monolingual and bilingual children learn about how their native language(s) encodes relational information in events, and how the resulting language-specific biases can present a challenge for learning subsequent languages later in life
+	 </div><div class="clearright"></div>
+	 
+	 
+	 <div class="person"><img align="left" src="people/pics/grey.jpeg" border="1" alt="María Cruz Martín García" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
 	 <a name= "M" class="name"> Sarah Grey</a><br />
      <strong>Post-doctoral Research Associate: Penn State University</strong><br />
 	 Lab Affiliation: <a href="http://www.bild.la.psu.edu/">Bilingualism and Language Development Lab (BiLD lab)</a><br />
-	 Email: <a href="seg24@psu.edu">seg24 [at] psu.edu</a><br/>
+	 Email: <a href="mailto:seg24@psu.edu">seg24 [at] psu.edu</a><br/>
 	 <em>Research Interests:</em><br/>Neurocognition of adult additional language learning and processing; individual differences; neuropragmatics of bilingualism.
 	 </div><div class="clearright"></div>
 			 
@@ -292,7 +300,34 @@ margin-bottom:10px;
 	 Lab Affiliation: <a href="http://www.la6.psu.edu/research/WeissLab/index.html">The Comparative Communication Laboratory</a><br />
      <em>Research Interests:</em><br/>Language-related perceptual and cognitive abilities, including speech perception, statistical and rule-like learning, critical aspects of language learning, and language evolution taking a comparative approach.
 	 </div><div class="clearright"></div>
- 
+	 
+	<div class="person"><img align="left" src="people/pics/Kootstra.jpg" border="1" alt="Gerrit Jan Kootstra" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "K" class="name" href="http://gerritjankootstra.wordpress.com/">Gerrit Jan Kootstra</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+     Email: <a href="mailto:gjk17@psu.edu">gjk17 [at] psu.edu</a><br />	 
+     <em>Research Interests:</em><br/>Language acquisition, processing and use of multiple languages in multilinguals and second language learners; cross-linguistic interactions during language use and the flexibility with which multilingual language users adapt their language use to the (prior) discourse (e.g., priming) and to discourse contexts in general
+	 </div><div class="clearright"></div> 
+	 
+	 <div class="person"><img align="left" src="people/pics/Lukyanenko.jpg" border="1" alt="Cynthia Lukyanenko" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "L" class="name" href="http://www.psychology.illinois.edu/people/lukyane1">Cynthia Lukyanenko</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+     Email: <a href="mailto:cul31@psu.edu">cul31 [at] psu.edu</a><br />
+     <em>Research Interests:</em><br/>Acquisition of morphosyntactic dependencies in children; children’s knowledge of subject-verb agreement in English; development of online processing abilities
+	 </div><div class="clearright"></div>
+
+	 <div class="person"><img align="left" src="people/pics/Ma.jpg" border="1" alt="Fengyang Ma" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "L" class="name" href="http://mafengyang.com/">Fengyang Ma</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+     Email: <a href="mailto:mafengyang@gmail.com">mafengyang [at] gmail.com</a><br />
+     <em>Research Interests:</em><br/>Bilingual lexical processing; cognitive control during bilingual language production
+	 </div><div class="clearright"></div>
+
+	 <div class="person"><img align="left" src="people/pics/Rizio.jpg" border="1" alt="Avery Rizio" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
+	 <a name= "R" class="name" href="">Avery Rizio</a><br />
+     <strong>Post-doctoral Research Associate: Penn State University</strong><br />
+	 Email: <a href="mailto:avery.rizio@gmail.com">avery.rizio [at] gmail.com</a><br/>	 
+	 	 </div><div class="clearright"></div>
+	 
 	 <div class="person"><img align="left" src="people/pics/Patricia.jpg" border="1" alt="Patricia Roman" width="125" height="150" style="float:left;margin:0 5px 0 0;"/>
 	 <a name= "R" class="name" href="http://cls.psu.edu/PIRE/people/Roman.html">Patricia E. Rom&aacute;n</a><br />
      <strong>Post-doctoral Research Associate: Penn State University</strong><br />
@@ -323,7 +358,7 @@ margin-bottom:10px;
 	 <a name= "Z" class="name" href="people/postdoc/zirnstein.shtml">Megan Zirnstein</a><br />
      <strong>Post-doctoral Research Associate: Penn State University</strong><br />
 	 Lab Affiliation: <a href="http://cls.psu.edu/purplelab/">Cognition and Language Lab; The Purple Lab</a><br />
-	 Email: zirnstein [at] gmail.com<br />
+	 Email: <a href="mailto:zirnstein@gmail.com">zirnstein [at] gmail.com</a><br />
 	 <em>Research Interests:</em><br/>Sentence processing, semantic composition, syntactic priming, individual differences in reading 
 	 behavior and comprehension, bilingual language processing, ERPs, eye tracking.
 	 </div><div class="clearright"></div>
