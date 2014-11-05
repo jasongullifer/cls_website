@@ -203,7 +203,7 @@
      
     
     <div class="info_pic_container">
-    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/Carrie.jpg" alt="" name="pic" width="170" height="200" id="pic2" /><!-- InstanceEndEditable --></div>
+    <div id="pic"><!-- InstanceBeginEditable name="picture" --><img src="../pics/Carrie.jpg" alt="" name="pic" width="194" height="300" id="pic2" /><!-- InstanceEndEditable --></div>
     <div id="info">
     <p><strong><!-- InstanceBeginEditable name="name" -->Carrie Jackson<!-- InstanceEndEditable --></strong><br/> 
       <!-- InstanceBeginEditable name="title1" -->Associate Professor of German and Linguistics<!-- InstanceEndEditable --></p>
@@ -244,9 +244,9 @@ E-mail: <a href="mailto:cnj1@psu.edu">cnj1@psu.edu</a> <!-- InstanceEndEditable 
     <em>Recent Publications:</em> </p>
 <!-- InstanceBeginEditable name="publications" -->
 
+<p class="pubs">Bobb, S. C., Kroll, J. F., & Jackson, C. N. (2014). Lexical constraints in second language learning: Evidence on grammatical gender in German. <em>Bilingualism: Language and Cognition</em>.</p>
 <p class="pubs">O’Brien, M.G., Jackson, C.N., & Gardner, C.E. (2014) Cross-linguistic differences in prosodic cues to syntactic disambiguation in German and English. <em>Applied Psycholinguistics</em>, 35(1), 25-70.</p>
 <p class="pubs">O’Brien, M. G., Jackson, C. N., & Hendriks, A. K. E. (2013). Making use of cues to sentence length in L1 and L2 German. <i>Linguistic Approaches to Bilingualism. 3</i>, 446-475.</p>
-<p class="pubs">O’Brien, M. G., Jackson, C. N., & Gardner, C. E. (2012). Cross-linguistic differences in prosodic cues to syntactic disambiguation in German and English. <em>Applied Psycholinguistics</em>.</p>
 <p class="pubs">Jackson, C. N., Dussias, P. E., & Hristova, Adelina. (2012). Using eye-tracking to study on-line processing among intermediate L2 learners of German. <i>International Review of Applied Linguistics and Language Teaching</i>, <i>50</i>, 101-133.</p>
 <p class="pubs">Jackson, C. N., & van Hell, J. V. (2011). The effects of L2 proficiency on the processing of wh-questions among Dutch second language speakers of English. <em>International Review of Applied Linguistics and Language Teaching</em>, <em>49</em>, 195-219.</p>
 <p class="pubs">Jackson, C. N., O'Brien, M. G., & Gardner, Christine. E. (2011) Prosodic cues to syntactic disambiguation in L2 German. In N. Danis, K. Mesh, & H. Sung (Eds.), <i>Proceedings of the 35th annual Boston University Conference on Language Development, Volume 1 </i> (pp. 308-320). Boston, MA: Cascadilla Press.</p>
@@ -259,17 +259,27 @@ E-mail: <a href="mailto:cnj1@psu.edu">cnj1@psu.edu</a> <!-- InstanceEndEditable 
 <p class="pubs">Jackson, C. N. (2007). The use and non-use of semantic information, word order, and case markings during comprehension by L2 learners of German. <em>Modern Language Journal</em>, <em>91</em>, 418-432.</p>
 
 <p><em>Current Grants:</em> </p>
-<p class="pubs">2013-pres. Doctoral Dissertation Improvement Grant. “Inconsistent input and amount of exposure: child second
-language acquisition of Fering, a dialect of North Frisian.” From the National Science
-Foundation (Jackson: PI; K. Miller, A.E. Hendricks: co-PIs).</p>
+<p class="pubs">2014-pres.      Doctoral Dissertation Improvement Grant. “Cross-language interaction of grammatical
 
-<p class="pubs">2013-pres. Doctoral Dissertation Improvement Grant. “Online and offline investigations of the effects of prosodic
-and morphosyntactic cues on acquisition in L2 German.” From the National Science
-Foundation (Jackson: PI; Henry: co-PI).</p>
+                  gender in German-Italian bilinguals from South Tyrol: Investigating L2-to-L1
 
-<p class="pubs">2012-pres. Research Fellowship for Experienced Researchers. “The Interaction of Prosodic and
-Syntactic Information in Second Language Processing: An ERP Study”. From the
-Alexander von Humboldt Stiftung/Foundation</p>
+                  influence.” From the National Science Foundation (Jackson: PI; C.
+
+                  Fowler: co-PI).</p>
+
+<p class="pubs">2013-pres.      Doctoral Dissertation Improvement Grant. “Inconsistent input and amount of exposure:
+
+                              child second language acquisition of Fering, a dialect of North Frisian.” From the
+
+                              National Science Foundation (Jackson: PI; K. Miller, A.E. Hendricks: co-
+
+                              PIs).</p>
+
+<p class="pubs">2013-pres.      Doctoral Dissertation Improvement Grant. “Online and offline investigations of the effects
+
+                              of prosodic and morphosyntactic cues on acquisition in L2 German.” From the
+
+                              National Science Foundation (Jackson: PI; N. Henry: co-PI). </p>
 
     <!-- InstanceEndEditable --></div>
 
