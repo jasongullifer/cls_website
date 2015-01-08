@@ -279,9 +279,9 @@ Olivier (2007).	</p>
 
 		  <p class="hang_indent">January 30, 2015 - <strong> Michael Frank (Stanford University) </strong><em></em> - Foster Auditorium<br />
 		    <br />
-		  </p>
+
 		  <a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
-		      
+		      </p>
 		      <div id="Frank_abstract" class="hidden">
 			<p class="indent">
 			<b>Title:</b> Predicting pragmatic reasoning
@@ -291,7 +291,7 @@ Olivier (2007).	</p>
 
 			</p>
 		      </div>
-
+		  
 
 		<p class="hang_indent">February 6, 2015 - <strong> Lindsay Kay Butler-Trump (Penn State University) </strong><em></em><br />
 		    <br />
