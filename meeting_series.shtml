@@ -280,12 +280,17 @@ Olivier (2007).	</p>
 		  <p class="hang_indent">January 30, 2015 - <strong> Michael Frank (Stanford University) </strong><em></em> - Foster Auditorium<br />
 		    <br />
 		  </p>
-		  <!--<a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
+		  <a href="javascript:unhide('Frank_abstract');"><strong>Show Abstract</strong></a>
 		      
 		      <div id="Frank_abstract" class="hidden">
 			<p class="indent">
+			<b>Title:</b> Predicting pragmatic reasoning
+			<br></br>
+			<b>Abstract:</b>
+			A short, ambiguous message can convey a lot of information to a listener who is willing to make inferences based on assumptions about the speaker and the context of the message. Pragmatic inferences are critical in facilitating efficient human communication, and have been characterized informally using tools like Grice's conversational maxims. They may also be extremely useful for language learning. In this talk, I'll propose a probabilistic framework for referential communication in context. This framework shows good fit to adults' and children's judgements. In addition, it makes interesting novel predictions about both language acquisition and processing, some of which we have already begun to test.
+
 			</p>
-		      </div>-->
+		      </div>
 
 
 		<p class="hang_indent">February 6, 2015 - <strong> Lindsay Kay Butler-Trump (Penn State University) </strong><em></em><br />
