@@ -1,14 +1,14 @@
 <div id="nav">
 <p>
 <a href="index.html"><img class="home" border="0" src="images/home-icon.png" alt="home" /></a> &bull;
-<a href="/PIRE/pire_about.html">ABOUT</a>  &bull;
-<a href="/PIRE/pire_people.html">PEOPLE</a>  &bull;
-<a href="/PIRE/pire_research.html">RESEARCH</a>  &bull;
-<a href="/PIRE/pire_education.html">EDUCATION &amp; TRAINING</a>  &bull;
-<a href="/PIRE/pire_news_feed.shtml">NEWS &amp; EVENTS</a>  &bull;
-<a href="/PIRE/pire_partners.html">PARTNERS</a>  &bull;
-<a href="/PIRE/pire_faq.html">FOR UNDERGRADUATES</a>  &bull;
-<a href="/PIRE/pire_faq_q_a.html">FAQ</a>  &bull;
-<a href="/PIRE/pire_blogs.html">BLOGS</a>
+<a href="pire_about.html">ABOUT</a>  &bull;
+<a href="pire_people.html">PEOPLE</a>  &bull;
+<a href="pire_research.html">RESEARCH</a>  &bull;
+<a href="pire_education.html">EDUCATION &amp; TRAINING</a>  &bull;
+<a href="pire_news_feed.shtml">NEWS &amp; EVENTS</a>  &bull;
+<a href="pire_partners.html">PARTNERS</a>  &bull;
+<a href="pire_faq.html">FOR UNDERGRADUATES</a>  &bull;
+<a href="pire_faq_q_a.html">FAQ</a>  &bull;
+<a href="pire_blogs.html">BLOGS</a>
 </p>
 </div>
