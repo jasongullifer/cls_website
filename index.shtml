@@ -50,11 +50,11 @@ setInterval(function() {
   <!-- end #header --></div>
   <div id="sidebar1">  
 
-<!--#include virtual="./includes/menu.ssi" --> 
+<!--#include virtual="/PIRE/includes/menu.ssi" --> 
     <!--<div id="events">
     <h1><a href="upcoming.shtml">Upcoming Events </a></h1>-->
        
-      <!--#include virtual="./includes/schedule.ssi" -->
+      <!--#include virtual="/PIRE/includes/schedule.ssi" -->
       <!--</div>-->
     
     <div class="lalogo">
@@ -62,7 +62,7 @@ setInterval(function() {
   <!-- end #sidebar1 --></div> 
  
 	<div id="banner" >
-          <!--#include virtual="/includes/banner.ssi" -->
+          <!--#include virtual="/PIRE/includes/banner.ssi" -->
 	</div>
 	
           <div id="search">
@@ -228,7 +228,7 @@ setInterval(function() {
 </font>
 
 
-<!--#include virtual="/includes/announcements.ssi" --> 
+<!--#include virtual="/PIRE/includes/announcements.ssi" --> 
 
 
 
@@ -263,7 +263,7 @@ setInterval(function() {
         </div>    
 	<br class="clearfloat" />
 	<div id="footer" >
-          <!--#include virtual="/includes/footer.ssi" --> 
+          <!--#include virtual="/PIRE/includes/footer.ssi" --> 
 	</div>  
 
 <!-- end #container --></div>
