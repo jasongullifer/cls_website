@@ -9,7 +9,7 @@
 <meta name="robots" content="index,follow" />
 <meta name="classification" content="PENN STATE PIRE RESEARCH PROJECT - UNDERSTANDING THE BILINGUAL MIND &amp; BRAIN" />
 <meta name="revisit-after" content="30 days" />
-<meta name="author" content="The Artemis Group" />
+<meta name="author" content="Jason W. Gullifer" />
 <meta name="identifier-url" content="http://www.pire.psu.edu" />
 <meta name="distribution" content="Global" />
 <meta name="coverage" content="Worldwide" />
@@ -28,9 +28,20 @@
 </div> <!-- end header div -->
 
 <div id="logo">
-   <div id="flash">
-<img src="home_flash/photo1.jpg" alt="Piecing together mind and brain" />
-</div>
+    <div id="flash">
+    <!--url's used in the movie-->
+    <!--text used in the movie-->
+    <!-- saved from url=(0013)about:internet -->
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="497" height="128" id="picturechanger" align="middle">
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="movie" value="picturechanger.swf" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#DCDCDC" />
+    <param name="FlashVars" value="xmlURL=xml/config.xml" />
+    <embed src="picturechanger.swf" FlashVars="xmlURL=xml/config.xml" quality="high" bgcolor="#DCDCDC" width="497" height="128"  name="picturechanger" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+    
+    </object></a>
+    </div>
 </div>
 
 <!--#include virtual="./includes/menu.ssi" -->
@@ -38,136 +49,352 @@
 
 <div id="content">
 
-    <div id="left">
-
-    <img id="partners" src="images/hd-people.gif" alt="Penn State PIRE Program People" />
+<div id="left">
 
 
-<h4>Co-PIs</h4>
-		<table border="0" cellspacing="6" cellpadding="6">
-		<tr><td valign="top"><img width="100" height="124" src="people/photos/dussias_giuli.jpg" alt="Paola E. (Giuli) Dussias" /><br /><br /><font size="1" face="verdana">Paola E. (Giuli) Dussias<br /><a href="people/dussias.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/judy_kroll.png" alt="Dr. Judith Kroll" /><br /><br /><font size="1" face="verdana">Judith Kroll<br /><a href="people/kroll.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/ping_li.jpg" alt="Ping Li" /><br /><br /><font size="1" face="verdana">Ping Li<br /><a href="people/li.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/vanhell_janet.jpg" alt="Janet Van Hell" /><br /><br /><font size="1" face="verdana">Janet Van Hell<br /><a href="people/vanhell.html">Bio</a></td>
-		</tr></table>
-		<Br />
-<center><hr></center><br />
-<h4>Faculty</h4>
-		<table border="0" cellspacing="6" cellpadding="6">
-		
-		<td valign="top"><img width="100" height="124" src="people/photos/place.jpg" alt="Chip Gerfen" /><br /><br /><font size="1" face="verdana">Chip Gerfen<br /><a href="people/gerfen.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/Carrie_Jackson.jpg" alt="Carrie Jackson" /><br /><br /><font size="1" face="verdana">Carrie Jackson<br /><a href="people/jackson.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/John_Lipski.jpg" alt="John Lipski" /><br /><br /><font size="1" face="verdana">John Lipski<br /><a href="people/lipski.html">Bio</a></td>
 
 
-		<td valign="top"><img width="100" height="124" src="people/photos/place.jpg" alt="Richard Page" /><br /><br /><font size="1" face="verdana">Richard Page<br /><a href="people/page.html">Bio</a></td>
-		</tr>
-		<tr>
-<td valign="top"><img width="100" height="124" src="people/photos/place.jpg" alt="Daniel Weiss" /><br /><br /><font size="1" face="verdana">Daniel Weiss<br /><a href="people/weiss.html">Bio</a></td>
-		<tr><td colspan="4">Domestic Partners</td></tr>
-		
-		
-		<tr><td valign="top"><img width="100" height="124" src="people/photos/Thomas_Allen.jpg" alt="Dr. Thomas E. Allen" /><br /><br /><font size="1" face="verdana">Thomas E. Allen<br /><a href="people/allen.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/Jill_Morford.jpg" alt="Jill Morford" /><br /><br /><font size="1" face="verdana">Jill Morford<br /><a href="people/morford.html">Bio</a></td>
-		<td valign="top"><img width="100" height="124" src="people/photos/place.jpg" alt="Ken Pugh" /><br /><br /><font size="1" face="verdana">Ken Pugh<br /><a href="people/pugh.html">Bio</a></td>
-		<td> &nbsp; </td></tr>
-		
-			<tr><td colspan="4">Foreign Partners</td></tr>
-		
-		
-		<td valign="top"><img width="100" height="124" src="people/photos/Teresa_Bajo.jpg" alt="Dr. Teresa Bajo" /><br /><br /><font size="1" face="verdana">Teresa Bajo<br /><a href="people/bajo.html">Bio</a></td>
-		<!--<td valign="top"><img width="100" height="124" src="people/photos/place.jpg" alt="Albert Costa" /><br /><br /><font size="1" face="verdana">Albert Costa<br /><a href="people/costa.html">Bio</a></td>-->
-		<td valign="top"><img width="100" height="124" src="people/photos/place.jpg" alt="Rosa Maria S&aacute;nchez-Casas Padilla" /><br /><br /><font size="1" face="verdana">Rosa Maria S&aacute;nchez-<br>Casas Padilla<br /><a href="people/padilla.html">Bio</a></td>
-		
-		
-		<td valign="top"><img  width="100" height="124" src="people/photos/Margaret_Deuchar.jpg" alt="Dr. Margaret Deuchar" /><br /><br /><font size="1" face="verdana">Margaret Deuchar	<br /><a href="people/deuchar.html" target="_new">Bio</a></td>
-	
-			<td valign="top"><img width="100" height="124" src="people/photos/Sonja_Kotz.jpg" alt="Sonja Kotz" /><br /><br /><font size="1" face="verdana">Sonja Kotz<br /><a href="people/kotz.html">Bio</a></td>
-
-	</tr>
-		<tr>
-				<td valign="top"><img width="100" height="124" src="people/photos/Hua_Shu.jpg" alt="Hua Shu" /><br /><br /><font size="1" face="verdana">Hua Shu<br /><a href="people/shu.html">Bio</a></td>
-					<td valign="top"><img width="100" height="124" src="people/photos/Li-Hai_Tan.jpg" alt="Li Hai Tan" /><br /><br /><font size="1" face="verdana">Li Hai Tan<br /><a href="people/tan.html">Bio</a></td>
-					<td> &nbsp; </td>
-			</table>
 <br />
-<center><hr></center><br />
-  
-	<h4>Students</h4>
-	
+<img id="partners" src="images/hd-people.gif" alt="Penn State PIRE Program People" />
+
+<img id="group_photo" src="people/photos/CLS Group Photos spring2010.jpg" alt="Penn State PIRE Program People" width="550" height="370" border="1"/>
+<br /><br /><br /><br />
 
 
-		<table border="0" cellspacing="6" cellpadding="6">
-		<tr><td colspan="3">Graduate Students</th></tr>
-		<tr><td valign="top"><img width="100" height="124" src="people/photos/Jason_Gullifer.jpg" alt="Jason Gullifer" /><br /><br /><font size="1" face="verdana">Jason Gullifer<br /><a href="people/gullifer.html">Bio</a></td>
-<td valign="top"><img width="100" height="124" src="people/photos/Jorge_Valdes_Kroff.jpg" alt="Jorge Vald&eacute;s Kroff" /><br /><br /><font size="1" face="verdana">Jorge Vald&eacute;s Kroff<br /><a href="people/kroff.html">Bio</a></td>
+<a name="copis"></a>
+<h3>Co-PIs</h3>
 
-<td valign="top"><img width="100" height="124" src="people/photos/Ben_Zinszer.jpg" alt="Benjamin Zinszer" /><br /><br /><font size="1" face="verdana">Benjamin Zinszer<br /><a href="people/zinszer.html">Bio</a></td></tr>
-</table>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Giuli_Dussias.JPG" border="1" alt="Paola E. (Giuli) Dussias" /><span class="name">Paola E. (Giuli) Dussias</span><a href="people/dussias.html">Bio</a></div>
+<div class="person"><img src="people/photos/judy_kroll.png" border="1" alt="Dr. Judith Kroll" /><span class="name">Judith Kroll</span><a href="people/kroll.html">Bio</a></div>
+<div class="person"><img src="people/photos/vanhell_janet.jpg" border="1" alt="Janet Van Hell" /><span class="name">Janet Van Hell</span><a href="people/vanhell.html">Bio</a></div>
+<div class="clear"></div>
+</div>
 
-<table border="0" cellspacing="6" cellpadding="6">
-		<tr><td colspan="3">Undergraduates</th></tr>
+<hr />
+<a name="faculty"></a>
+<h3>Faculty</h3>
 
-		<tr><td valign="top"><img width="100" height="124" src="people/photos/Patrick_Clark.jpg" alt="Patrick Clark" /><br /><br /><font size="1" face="verdana">Patrick Clark<br /><a href="people/clark.html">Bio</a></td>
-<td valign="top"><img width="100" height="124" src="people/photos/Kylee_Jo_Cook.jpg" alt="Kylee Jo Cook" /><br /><br /><font size="1" face="verdana">Kylee Jo Cook<br /><a href="people/cook.html">Bio</a></td>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Torres_Cacoullos.jpg" border="1" alt="Torres Cacoullos" /><span class="name">Rena Torres Cacoullos</span><a href="people/Cacoullos.html">Bio</a></div>
+<div class="person"><img src="people/photos/carlson_matt.jpg" border="1" alt="Matt Carlson" /><span class="name">Matt Carlson</span><a href="people/Carlson.html">Bio</a></div>
+<div class="person"><img src="people/photos/Carrie_Jackson.jpg" border="1" alt="Carrie Jackson" /><span class="name">Carrie Jackson</span><a href="people/jackson.html">Bio</a></div>
+<div class="person"><img src="people/photos/ping_li2.jpg" border="1" alt="Ping Li" /><span class="name">Ping Li</span><a href="people/li.html">Bio</a></div>
+<div class="person"><img src="people/photos/John_Lipski.jpg" border="1" alt="John Lipski" /><span class="name">John Lipski</span><a href="people/lipski.html">Bio</a></div>
+<div class="person"><img src="people/photos/carol_miller.jpg" border="1" alt="Carol Miller" /><span class="name">Carol Miller</span><a href="people/Miller.html">Bio</a></div>
+<div class="person"><img src="people/photos/Karen_Miller .jpg" border="1" alt="Karen Miller" /><span class="name">Karen Miller</span><a href="people/k_Miller.html">Bio</a></div>
+<div class="person"><img src="people/photos/Marianna_Nadeu.jpg" border="1" alt="Marianna Nadeu" /><span class="name">Marianna Nadeu</span><a href="people/Nadeu.html">Bio</a></div>
+<div class="person"><img src="people/photos/Richard_Page.jpg" border="1" alt="Richard Page" /><span class="name">Richard Page</span><a href="people/page.html">Bio</a></div>
+<div class="person"><img src="people/photos/Mike_Putnam.jpg" border="1" alt="Mike Putnam" /><span class="name">Michael T. Putnam</span><a href="people/Putnam.html">Bio</a></div>
+<div class="person"><img src="people/photos/rossi_eleonora.jpg" border="1" alt="Eleonora Rossi" /><span class="name">Eleonora Rossi</span><a href="people/Rossi.html">Bio</a></div>
+<div class="person"><img src="people/photos/Dan_Weiss.jpg" border="1" alt="Daniel Weiss" /><span class="name">Daniel Weiss</span><a href="people/weiss.html">Bio</a></div>
+<div class="clear"></div>
+</div>
 
-<td valign="top"><img width="100" height="124" src="people/photos/James_Graham.jpg" alt="James Graham" /><br /><br /><font size="1" face="verdana">James Graham<br /><a href="people/graham.html">Bio</a></td>
+<hr />
+<a name="domesticpartners"></a>
+<h4>Domestic Partners</h4>
 
-<td valign="top"><img width="100" height="124" src="people/photos/Nathan_Hollister.jpg" alt="Nathan Hollister" /><br /><br /><font size="1" face="verdana">Nathan Hollister<br /><a href="people/hollister.html">Bio</a></td>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Thomas_Allen.jpg" border="1" alt="Dr. Thomas E. Allen" /><span class="name">Thomas E. Allen</span><a href="people/allen.html">Bio</a></div>
+<div class="person"><img src="people/photos/Jill_Morford.jpg" border="1" alt="Jill Morford" /><span class="name">Jill Morford</span><a href="people/morford.html">Bio</a></div>
+<div class="person"><img src="people/photos/Ken_Pugh.jpg" border="1" alt="Ken Pugh" /><span class="name">Ken Pugh</span><a href="people/pugh.html">Bio</a></div>
+<div class="clear"></div>
+</div>
 
-</tr>
+<hr />    
+<a name="foreignpartners"></a>
+<h4>Foreign Partners</h4>
+   
+<div class="persongroup">
+<div class="person"><img src="people/photos/Teresa_Bajo.jpg" border="1" alt="Dr. Teresa Bajo" /><span class="name">Teresa Bajo</span><a href="people/bajo.html">Bio</a></div>
+<div class="person"><img src="people/photos/Chwilla_Dorothee.jpg" border="1" alt="Dorothee Chwilla" /><span class="name">Dorothee Chwilla</span><a href="people/Chwilla.html">Bio</a></div>
+<div class="person"><img src="people/photos/Margaret_Deuchar.jpg" border="1" alt="Dr. Margaret Deuchar" /><span class="name">Margaret Deuchar</span><a href="people/deuchar.html" target="_blank">Bio</a></div>
+<div class="person"><img src="people/photos/Demestre.jpg" border="1" alt="Dr. Josep Demestre" /><span class="name">Josep Demestre</span><a href="people/Demestre.html" target="_blank">Bio</a></div>
+<div class="person"><img src="people/photos/gullberg.jpg" border="1" alt="Dr. Marianne Gullberg" /><span class="name">Marianne Gullberg</span><a href="people/gullberg.html" target="_blank">Bio</a></div>
+<div class="person"><img src="people/photos/Taomei Guo.jpeg" border="1" alt="Dr. Taomei Guo" /><span class="name">Taomei Guo</span><a href="people/Guo.html" target="_blank">Bio</a></div>
+<!--<div class="person"><img src="people/photos/Sonja_Kotz.jpg" border="1" alt="Sonja Kotz" /><span class="name">Sonja Kotz</span><a href="people/kotz.html">Bio</a></div>-->
+<div class="person"><img src="people/photos/Hopp_Holger.jpeg" border="1" alt="Dr. Holger Hopp" /><span class="name">Holger Hopp</span><a href="people/hopp.html" target="_blank">Bio</a></div>
+<div class="person"><img src="people/photos/Hua_Shu.jpg" border="1" alt="Hua Shu" /><span class="name">Hua Shu</span><a href="people/shu.html">Bio</a></div>
+<div class="person"><img src="people/photos/Li-Hai_Tan.jpg" border="1" alt="Li Hai Tan" /><span class="name">Li Hai Tan</span><a href="people/tan.html">Bio</a></div>
+<div class="person"><img src="people/photos/Guillaume_ Thierry.jpg" border="1" alt="Dr. Guillaume Thierry" /><span class="name">Guillaume Thierry</span><a href="people/thierry.html">Bio</a></div>
+<div class="person"><img src="people/photos/Weekes.png" border="1" alt="Dr. Brendan Weekes" /><span class="name">Brendan Weekes</span><a href="people/Weekes.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<hr />
+<a name="postdocs"></a>
+<h4>Current Postdocs</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/Carla_Contemori.jpg" width="125" height="150" border="1" alt="Carla Contemori" /><span class="name">Carla Contemori</span><a href="people/Contemori.html">Bio</a></div>
+<div class="person"><img src="people/photos/cruz.png" width="125" height="150" border="1" alt="María Cruz Martín García" /><span class="name">María Cruz Martín García</span><a href="people/Cruz.html">Bio</a></div>
+<div class="person"><img src="people/photos/Patricia_Roman.jpg" width="125" height="150" border="1" alt="Patricia Roman" /><span class="name">Patricia Rom&aacute;n</span><a href="people/Roman.html">Bio</a></div>
+<div class="person"><img src="people/photos/Megan_Zirnstein.jpg" width="125" height="150" border="1" alt="Megan Zirnstein" /><span class="name">Megan Zirnstein</span><a href="people/Zirnstein.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<hr />
+<a name="pastpostdocs"></a>
+<h4> Past Postdocs</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/Darren_Tanner.jpg" width="125" height="150" border="1" alt="Darren Tanner" /><span class="name">Darren Tanner</span><a href="people/Tanner.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<hr />
+<h3>Current PIRE Students</h3>
+
+<a name="gradstudents_2014_2015"></a>
+<h4>2014-2015 Graduate Student Cohort</h4>
+<!--
+<div class="persongroup">
+<div class="person"><img src="people/photos/Benevento_Nicole.jpg" width="125" height="151" border="1" alt="Nicole Benevento" /><span class="name">Nicole Benevento</span><a href="people/Benevento.html">Bio</a></div>
+<div class="clear"></div>
+</div>-->
+
+<a name="undergrads_2014_2015"></a>
+<h4>2014-2015 Undergraduate Student Cohort</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/Katzev_Jacqueline.jpg" border="1" alt="Nick Anderegg" /><span class="name">Jacqueline Katzev</span><a href="people/Katzev.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<hr />
+<h3>PIRE Student Alumni</h3>
+
+<a name="gradstudents_2013_2014"></a>
+<h4>2013-2014 Graduate Student Cohort</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/Benevento_Nicole.jpg" width="125" height="151" border="1" alt="Nicole Benevento" /><span class="name">Nicole Benevento</span><a href="people/Benevento.html">Bio</a></div>
+<div class="person"><img src="people/photos/Henry_Nick.jpg" border="1" alt="Nick Henry" /><span class="name">Nick Henry</span><a href="people/Henry.html">Bio</a></div>
+<div class="person"><img src="people/photos/pablo_requena.jpg" border="1" alt="Pablo Requena" /><span class="name">Pablo Requena</span><a href="people/requena.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<a name="undergrads_2013_1014"></a>
+<h4>2013-2014 Undergraduate Student Cohort</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/Anderegg_Nick.jpg" border="1" alt="Nick Anderegg" /><span class="name">Nick Anderegg</span><a href="people/Anderegg.html">Bio</a></div>
+<div class="person"><img src="people/photos/Dennis_Mindy.jpg" border="1" alt="Mindy Dennis" /><span class="name">Mindy Dennis</span><a href="people/Dennis.html">Bio</a></div>
+<div class="person"><img src="people/photos/Elinsky_Paige.jpg" border="1" alt="Paige Elinsky" /><span class="name">Paige Elinsky</span><a href="people/Elinsky.html">Bio</a></div>
+<div class="person"><img src="people/photos/Hotchner_Julia.jpg" border="1" alt="Julia Hotchner" /><span class="name">Julia Hotchner</span><a href="people/Hotchner.html">Bio</a></div>
+<div class="person"><img src="people/photos/Kline_Jenny.jpg" border="1" alt="Jenny Kline" /><span class="name">Jenny Kline</span><a href="people/Kline.html">Bio</a></div>
+<div class="person"><img src="people/photos/Krass_Kyra.jpg" border="1" alt="Kyra Krass" /><span class="name">Kyra Krass</span><a href="people/Krass.html">Bio</a></div>
+<div class="person"><img src="people/photos/Lichtenwalner_Molly.jpg" border="1" alt="Molly Lichtenwalner" /><span class="name">Molly Lichtenwalner</span><a href="people/Lichtenwalner.html">Bio</a></div>
+<div class="person"><img src="people/photos/Magerman_Daniel.jpg" border="1" alt="Daniel Magerman" /><span class="name">Daniel Magerman</span><a href="people/Magerman.html">Bio</a></div>
+<div class="person"><img src="people/photos/Massaro_Abigail.jpg" border="1" alt="Abby Massaro" /><span class="name">Abby Massaro</span><a href="people/Massaro.html">Bio</a></div>
+<div class="person"><img src="people/photos/Spang_Marybeth.jpg" border="1" alt="Mary Beth Spang" /><span class="name">Mary Beth Spang</span><a href="people/Spang.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<a name="gradstudents_2012_2013"></a>
+<h4>2012-2013 Graduate Student Cohort</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/balukas_colleen.jpg" border="1" alt="Colleen Balukas" /><span class="name">Colleen Balukas</span><a href="people/Balukas.html">Bio</a></div>
+<div class="person"><img src="people/photos/litcofsky_kaitlyn.jpg" border="1" alt="Kaitlyn Litcofsky" /><span class="name">Kaitlyn Litcofsky</span><a href="people/Litcofsky.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<a name="undergrads_2012_2013"></a>
+<h4>2012-2013 Undergraduate Student Cohort</h4>
+
+<div class="persongroup">
+<div class="person"><img src="people/photos/bloodgood.jpg" border="1" alt="Daniel Bloodgood" /><span class="name">Daniel Bloodgood</span><a href="people/Bloodgood.html">Bio</a></div>
+<div class="person"><img src="people/photos/halloran_kelsey.jpg" border="1" alt="Kelsey Halloran" /><span class="name">Kelsey Halloran</span><a href="people/Halloran.html">Bio</a></div>
+<div class="person"><img src="people/photos/lamb_maggie.jpg" border="1" alt="Maggie Lamb" /><span class="name">Maggie Lamb</span><a href="people/Lamb.html">Bio</a></div>
+<div class="person"><img src="people/photos/massimino_britney.jpg" border="1" alt="Britney Massimino" /><span class="name">Britney Massimino</span><a href="people/Massimino.html">Bio</a></div>
+<div class="person"><img src="people/photos/pappas_leah.jpg" border="1" alt="Leah Pappas" /><span class="name">Leah Pappas</span><a href="people/Pappas.html">Bio</a></div>
+<div class="person"><img src="people/photos/roupas_kaylee.jpg" border="1" alt="Kaylee Roupas" /><span class="name">Kaylee Roupas</span><a href="people/Roupas.html">Bio</a></div>
+<div class="person"><img src="people/photos/stewart_benjamin.jpg" border="1" alt="Benjamin Stewart" /><span class="name">Benjamin Stewart</span><a href="people/Stewart.html">Bio</a></div>
+<div class="person"><img src="people/photos/tomoschuk_brendan.jpg" border="1" alt="Brendan Tomoschuk" /><span class="name">Brendan Tomoschuk</span><a href="people/Tomoschuk.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<a name="gradstudents_2011_2012"></a>
+<h4>2011-2012 Graduate Student Cohort</h4>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Dietrich.png" border="1" alt="Amelia Dietrich" /><span class="name">Amelia Dietrich</span><a href="people/Dietrich.html">Bio</a></div>
+<div class="person"><img src="people/photos/Johnson_Fowler.jpg" border="1" alt="Courtney Johnson-Fowler" /><span class="name">Courtney Johnson-Fowler</span><a href="people/Johnson_Fowler.html">Bio</a></div>
+<div class="person"><img src="people/photos/Poepsel.jpg" border="1" alt="Tim Poepsel" /><span class="name">Tim Poepsel</span><a href="people/poepsel.html">Bio</a></div>
+<!--<div class="person"><img src="people/photos/Bogulski.jpg" width="125" height="150" border="1" alt="Cari Bogulski" /><span class="name">Cari Bogulski</span><a href="people/bogulski.html">Bio</a></div>-->
+<div class="clear"></div>
+</div>
+
+<a name="undergrads_2011_2012"></a>
+<h4>2011-2012 Undergraduate Student Cohort</h4>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Carter_Sara.jpg" border="1" alt="Sara Carter" /><span class="name">Sara Carter</span><a href="people/Carter_Sara.html">Bio</a></div>
+<div class="person"><img src="people/photos/Fairchild.jpg" border="1" alt="Sarah Fairchild" /><span class="name">Sarah Fairchild</span><a href="people/Fairchild.html">Bio</a></div>
+<div class="person"><img src="people/photos/Hance_Emma.jpg" border="1" alt="Emma Hance" /><span class="name">Emma Hance</span><a href="people/Hance_Emma.html">Bio</a></div>
+<div class="person"><img src="people/photos/Holt.jpg" border="1" alt="Thomas Holt" /><span class="name">Thomas Holt</span><a href="people/Holt.html">Bio</a></div>
+<div class="person"><img src="people/photos/Magro_Melissa.jpg" border="1" alt="Melissa Magro" /><span class="name">Melissa Magro</span><a href="people/Magro_Melissa.html">Bio</a></div>
+<div class="person"><img src="people/photos/Martz_Jesse.jpg" border="1" alt="Jesse Martz" /><span class="name">Jesse Martz</span><a href="people/Martz_Jesse.html">Bio</a></div>
+<div class="person"><img src="people/photos/Mormer_Elizabeth.jpg" border="1" alt="Elizabeth Mormer" /><span class="name">Elizabeth Mormer</span><a href="people/Mormer_Elizabeth.html">Bio</a></div>
+<div class="person"><img src="people/photos/Pelella1.jpg" border="1" alt="Clair Pelella" /><span class="name">Clair Pelella</span><a href="people/Pelella.html">Bio</a></div>
+<div class="person"><img src="people/photos/Sabo_Emily.jpg" border="1" alt="Emily Sabo" /><span class="name">Emily Sabo</span><a href="people/Sabo_Emily.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<a name="gradstudents_2010_2011"></a>
+<h4>2010-2011 Graduate Student Cohort</h4>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Jason_Gullifer.jpg" border="1" alt="Jason Gullifer" /><span class="name">Jason Gullifer</span><a href="people/gullifer.html">Bio</a></div>
+<div class="person"><img src="people/photos/Jorge_Valdes_Kroff.jpg" border="1" alt="Jorge Valdés Kroff" /><span class="name">Jorge Valdés Kroff</span><a href="people/kroff.html">Bio</a></div>
+<div class="person"><img src="people/photos/Ben_Zinszer.jpg" border="1" alt="Ben Zinszer" /><span class="name">Benjamin Zinszer</span><a href="people/zinszer.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<a name="undergrads_2010_2011"></a>
+<h4>2010-2011 Undergraduate Student Cohort</h4>
+<div class="persongroup">
+<div class="person"><img src="people/photos/Patrick_Clark.jpg" alt="Patrick Clark" /><span class="name">Patrick Clark</span><a href="people/clark.html">Bio</a></div>
+<div class="person"><img src="people/photos/Kylee_Jo_Cook.jpg" alt="Kylee Jo Cook" /><span class="name">Kylee Jo Cook</span><a href="people/cook.html">Bio</a></div>
+<div class="person"><img src="people/photos/James_Graham.jpg" alt="James Graham" /><span class="name">James Graham</span><a href="people/graham.html">Bio</a></div>
+<div class="person"><img src="people/photos/Nathan_Hollister.jpg" alt="Nathan Hollister" /><span class="name">Nathan Hollister</span><a href="people/hollister.html">Bio</a></div>
+<div class="person"><img src="people/photos/Rebecca_Leimkuhler.jpg" alt="Rebecca Leimkuhler" /><span class="name">Rebecca Leimkuhler</span><a href="people/leimkuhler.html">Bio</a></div>
+<div class="person"><img src="people/photos/Rachel_Negron.jpg" alt="Rachel Negron" /><span class="name">Rachel Negron</span><a href="people/negron.html">Bio</a></div>
+<div class="person"><img src="people/photos/Lauren_Perrotti.jpg" alt="Lauren Perrotti" /><span class="name">Lauren Perrotti</span><a href="people/perrotti.html">Bio</a></div>
+<div class="person"><img src="people/photos/Nicole_Wasilus.jpg" alt="Nicole Wasilus" /><span class="name">Nicole Wasilus</span><a href="people/wasilus.html">Bio</a></div>
+<div class="clear"></div>
+</div>
+
+<hr />
+<a name="staff"></a>
+<h3>Staff</h4>
+
+<!--<div style="font-size : 10pt; 
+     font-family : verdana">
+<div id="staffpic" style="height:160px;width:175px;float:left;">
+<div class="person"><img src="people/photos/Chen.jpg" width="125" height="150" border="1" alt="Peiyao Chen"  style="float:left;margin:0 5px 0 0;"/></div>
+</div>
+<p>Peiyao Chen<Br />
+Research Assistant/Lab Manager<Br />
+<a href="http://www.cls.psu.edu">Center for Language Science</a><Br />
+Room 4A Thomas Building<Br />
+University Park, PA 16802<Br />
+Phone: 814-867-3033<Br />
+Email: <a href="mailto:puc15@psu.edu">puc15@psu.edu</a><Br /><Br /><Br /><Br />
+</font></p>
+</div>-->
+
+<div style="font-size : 10pt; 
+     font-family : verdana">
+<div id="staffpic" style="height:160px;width:175px;float:left;">
+<div class="person"><img src="people/photos/elder_sharon.jpg" width="125" height="150" border="1" alt="Sharon Elder"  style="float:left;margin:0 5px 0 0;"/></div>
+</div>
+<p>Sharon L. Elder<Br />
+Administrative Support Assistant<Br />
+<a href="http://cls.psu.edu/PIRE/pire_about.html">PIRE: Understanding the bilingual mind and brain</a><Br />
+<a href="http://www.cls.psu.edu">Center for Language Science</a><Br />
+<a href="http://linguistics.psu.edu">Program in Linguistics</a><Br />
+College of the Liberal Arts<Br />
+Room 110 Moore Building<Br />
+University Park, PA 16802<Br />
+Phone: 814-865-7970<Br />
+Email: <a href="mailto:sle9@psu.edu">sle9@psu.edu</a><Br /><Br />
+</font></p>
+</div>
+
+<div style="font-size : 10pt; 
+     font-family : verdana">
+<div id="staffpic" style="height:160px;width:175px;float:left;">
+<div class="person"><img src="people/photos/Fairchild_Sarah.jpeg" width="125" height="150" border="1" alt="Sarah Fairchild"  style="float:left;margin:0 5px 0 0;"/></div>
+</div>
+<p>Sarah Fairchild<Br />
+Research Technologist/Lab Manager<Br />
+<a href="http://cls.psu.edu/PIRE/pire_about.html">PIRE: Understanding the bilingual mind and brain</a><Br />
+<a href="http://www.cls.psu.edu">Center for Language Science</a><Br />
+<a href="http://linguistics.psu.edu">Program in Linguistics</a><Br />
+Room 5 Moore Building<Br />
+University Park, PA 16802<Br />
+Phone: 814-867-3033<Br />
+Email: <a href="mailto:scf5081@psu.edu">scf5081@psu.edu</a><Br /><Br />
+</font></p>
+</div>
 
 
-		<tr><td valign="top"><img width="100" height="124" src="people/photos/Rebecca_Leimkuhler.jpg" alt="Rebecca Leimkuhler" /><br /><br /><font size="1" face="verdana">Rebecca Leimkuhler<br /><a href="people/leimkuhler.html">Bio</a></td>
-<td valign="top"><img width="100" height="124" src="people/photos/Rachel_Negron.jpg" alt="Rachel Negron" /><br /><br /><font size="1" face="verdana">Rachel Negron<br /><a href="people/negron.html">Bio</a></td>
+<div style="font-size : 10pt; 
+     font-family : verdana">
+<div id="staffpic" style="height:160px;width:175px;float:left;">	 
+<div class="person"><img src="people/photos/marker_bobby.jpg" width="125" height="150" border="1" alt="Bobby Marker"  style="float:left;margin:0 5px 0 0;"/></div>
+</div>
+<p>Bobby Marker<Br />
+Research Assistant/Lab Manager<Br />
+<a href="http://www.cls.psu.edu">Center for Language Science</a><Br />
+Room 5 Moore Building<Br />
+University Park, PA 16802<Br />
+Phone: 814-867-3033<Br />
+Email: <a href="mailto:rjmarker@psu.edu">rjmarker@psu.edu</a><Br /><Br /><Br /><Br />
+</font></p>
+</div>
 
-<td valign="top"><img width="100" height="124" src="people/photos/Lauren_Perrotti.jpg" alt="Lauren Perrotti" /><br /><br /><font size="1" face="verdana">Lauren Perrotti<br /><a href="people/perrotti.html">Bio</a></td>
+<div style="font-size : 10pt; 
+     font-family : verdana">
+<div id="staffpic" style="height:160px;width:175px;float:left;">	 
+<div class="person"><img src="people/photos/Christian_navarro.torres.png" width="125" height="150" border="1" alt="Christian A. Navarro-Torres"  style="float:left;margin:0 5px 0 0;"/></div>
+</div>
+<p>Christian A. Navarro-Torres<Br />
+Research Assistant/Lab Manager<Br />
+<a href="http://www.cls.psu.edu">Center for Language Science</a><Br />
+Room 5 Moore Building<Br />
+University Park, PA 16802<Br />
+Phone: 814-867-3033<Br />
+Email: <a href="mailto:navarro.torresc@gmail.com">navarro.torresc@gmail.com</a><Br /><Br /><Br /><Br />
+</font></p>
+</div>
 
-<td valign="top"><img width="100" height="124" src="people/photos/Nicole_Wasilus.jpg" alt="Nicole Wasilus" /><br /><br /><font size="1" face="verdana">Nicole Wasilus<br /><a href="people/wasilus.html">Bio</a></td>
-
-</tr>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-</p>
-<p>
-
-</p>
-<p>
-
- </p>
-
+<div style="font-size : 10pt; 
+     font-family : verdana">
+<div id="staffpic" style="height:160px;width:175px;float:left;">
+<div class="person"><img src="people/photos/ray_nick.jpg" width="125" height="150" border="1" alt="Nick Ray"  style="float:left;margin:0 5px 0 0;"/></div>
+</div>
+<p>Nick Ray<Br />
+Research Technologist<Br />
+<a href="http://cls.psu.edu/PIRE/pire_partners_isi_psu.html">IS&Iacute; (I see): Bilingual language processing eye-tracking lab</a><Br />
+Room 5 Moore Building<Br />
+University Park, PA 16802<Br />
+Phone: 814-867-3033<Br />
+Email: <a href="mailto:nrr5025@psu.edu">nrr5025@psu.edu</a><Br />
+</font></p>
+</div>
 
     </div>
 
     <div id="right">
 
-
+	<!--<strong><font size=4>People</font></strong>--><br />	
+    <br /> 
+    <ul class="education">
+    <li type="square"><a href="#copis">Co-PIs</a></li>
+    <li type="square"><a href="#faculty">Faculty</a></li>
+    <li type="square"><a href="#domesticpartners">Domestic Partners</a></li>
+    <li type="square"><a href="#foreignpartners">Foreign Partners</a></li> 
+	<li type="square"><a href="#postdocs">Postdocs</a></li>
+    <li type="square"><a href="#gradstudents_2013_2014">Current Graduate Students</a></li> 
+    <li type="square"><a href="#undergrads_2013_1014">Current Undergraduate Students</a></li>
+	<li type="square"><a href="#gradstudents_2012_2013">Graduate Student Alumni</a></li> 
+	<li type="square"><a href="#undergrads_2012_2013">Undergraduate Student Alumni</a></li> 
+	<li type="square"><a href="#staff">Staff</a></li> 
+    </ul>
+</br>
+<hr />
 
     <img id="contact-info" src="images/contact-info.png" alt="Contact Info" />
 
     <p>
     Center for Language Science<br />
-    Pennsylvania State University<br />
-    2M Thomas Building<br />
+    3 Moore Building<br />
+    The Pennsylvania State University<br />
     University Park, PA 16802
     </p>
 <p>
-For more details, please click <a href="http://cls.psu.edu" target="_new">here</a>  
+For more details, please click <a href="http://cls.psu.edu" target="_blank">here</a>  
 </p>
     </div>
     
